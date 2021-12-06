@@ -1,11 +1,12 @@
 input: src
 output: .retype
-url: http://docs.telefon1c.ru
+url: https://docs.telefon1c.ru
 
 integrations:
   googleAnalytics:
     id: GTM-KXBHF8J
-  gravatar:
+
+gravatar:
     default: monsterid
     enabled: true
 
@@ -15,7 +16,7 @@ branding:
 
 links:
   - text: В начало
-    link: http://docs.telefon1c.ru
+    link: https://docs.telefon1c.ru
   - text: MikoPBX
     link: https://www.mikopbx.ru
     target: blank
