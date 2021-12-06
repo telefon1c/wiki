@@ -8,6 +8,6 @@ tags: [config]
 
 Какой-то текст 4
 
-![Картиночка](../static/index/NewVersion.png)
+![Картиночка](static/index/NewVersion.png)
 
 Еще какой то текст
