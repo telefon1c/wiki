@@ -1,6 +1,6 @@
 input: src
 output: .retype
-url: https://telefon1c.github.io/wiki/
+url: http://docs.telefon1c.ru
 
 integrations:
   googleAnalytics:
@@ -15,7 +15,7 @@ branding:
 
 links:
   - text: В начало
-    link: https://telefon1c.github.io/wiki/
+    link: http://docs.telefon1c.ru
   - text: MikoPBX
     link: https://www.mikopbx.ru
     target: blank
