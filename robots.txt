@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://telefon1c.github.io/wiki/sitemap.xml.gz
