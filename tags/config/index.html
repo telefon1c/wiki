@@ -22,11 +22,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/wiki/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/wiki/resources/css/retype.css?v=1.11.1.692102398985" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/wiki/resources/css/retype.css?v=1.11.1.692102551736" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/wiki/resources/js/config.js?v=1.11.1.692102398985" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/wiki/resources/js/config.js?v=1.11.1.692102551736" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/wiki/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/wiki/resources/js/lunr.js?v=1.11.1.692102398985" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/wiki/resources/js/lunr.js?v=1.11.1.692102551736" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -169,6 +169,9 @@
 </doc-anchor-target>
 <p>See all <a href="/wiki/tags/">tags</a>.</p>
 <a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="/wiki/">
+    <div class="relative flex-shrink-0 bg-gray-300 md:w-5/12 pb-9/16 md:pb-0 dark:bg-dark-450">
+        <img class="absolute object-cover w-full h-full" src="/wiki/static/index/newversion.png" />
+    </div>
     <div class="p-6">
         <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">Заголовок</div>
         <div class="line-clamp-3"><p class="hidden mt-2 md:block">Какой-то текст 4</p></div>
