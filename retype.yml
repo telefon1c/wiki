@@ -5,3 +5,36 @@ url: https://telefon1c.github.io/wiki/
 integrations:
   googleAnalytics:
     id: GTM-KXBHF8J
+  gravatar:
+    default: monsterid
+    enabled: true
+
+branding:
+  title: Панель телефонии для 1С
+  label: wiki
+
+links:
+  - text: В начало
+    link: https://telefon1c.github.io/wiki/
+  - text: MikoPBX
+    link: https://www.mikopbx.ru
+    target: blank
+  - text: telefon.miko.ru
+    link: https://telefon.miko.ru
+    target: blank
+
+meta:
+  title: " | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии"
+
+search:
+  placeholder: Поиск
+  noResultsFoundMsg: Ничего не нашли по вашему запросу
+
+edit:
+  repo: "https://github.com/telefon1c/wiki/edit/"
+  base: /src
+  branch: master
+  label: Редактировать в GitHub
+
+footer:
+  copyright: "&copy; {{ year }} [МИКО](https://www.miko.ru/) . Все права защищены."
