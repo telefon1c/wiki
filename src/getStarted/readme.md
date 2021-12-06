@@ -8,6 +8,6 @@ tags: [config]
 
 Some text 2
 
-![Some picture](static/index/NewVersion.png)
+![Some picture](../static/index/NewVersion.png)
 
 SomeExtra Text
