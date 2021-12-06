@@ -4,10 +4,10 @@ order: 200
 icon: package
 tags: [config]
 ---
-# Заголовок
+# Header1
 
-Какой-то текст 4
+Some text 2
 
-![Картиночка](static/index/NewVersion.png)
+![Some picture](static/index/NewVersion.png)
 
-Еще какой то текст
+SomeExtra Text
