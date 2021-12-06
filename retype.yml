@@ -1,3 +1,7 @@
 input: src
 output: .retype
 url: https://telefon1c.github.io/wiki/
+
+integrations:
+  googleAnalytics:
+    id: GTM-KXBHF8J
