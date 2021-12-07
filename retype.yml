@@ -10,12 +10,12 @@ integrations:
     enabled: true
 
 branding:
-  title: Панель телефонии для 1С
+  title: МИКО
   label: wiki
 
 links:
-  - text: В начало
-    link: http://docs.telefon1c.ru
+  - text: Быстрый старт
+    link: https://telefon1c.github.io/wiki/getStarted
   - text: MikoPBX
     link: https://www.mikopbx.ru
     target: blank
