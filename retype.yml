@@ -1,11 +1,12 @@
 input: src
 output: .retype
-url: http://docs.telefon1c.ru
+url: https://docs.telefon1c.ru
 
 integrations:
   googleAnalytics:
     id: GTM-KXBHF8J
-  gravatar:
+
+gravatar:
     default: monsterid
     enabled: true
 
