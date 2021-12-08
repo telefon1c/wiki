@@ -28,8 +28,9 @@ icon: home
 
 ![748x720](../assets/sandbox/test9.png)
 
-![748x664 с уменьшемным масштабом в панели](../assets/sandbox/test10.png)
 
+
+[![748x664 с уменьшемным масштабом в панели](../assets/sandbox/test10.png)](https://www.youtube.com/watch?v=ipAnwilMncI)
 ---
 
 Набор инструментов, входящих в состав панели телефонии, оптимизирует работу операторов во время
