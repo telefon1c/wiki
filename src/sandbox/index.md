@@ -1,4 +1,5 @@
 ---
+visibility: hidden
 icon: home
 ---
 # Панель телефонии для 1С
@@ -7,15 +8,29 @@ icon: home
 с клиентской базой 1С.
 
 Картинка Максим
-![Картинка Максим](assets/index/previewLOWRES.png)
+![720x411](../assets/sandbox/previewLOWRES.png)
 
 Коля на маке обычное разрешение
-![Коля на маке обычное разрешение](assets/index/previewMacUsual.png)
+![2512x1658](../assets/sandbox/previewMacUsual.png)
 
 Коля на маке в режиме HiResolution
-![Коля на маке в режиме HiResolution](assets/index/preview.png)
+![2546x1662](../assets/sandbox/preview.png)
 
----
+
+![1280x720](../assets/sandbox/test8.gif)
+
+![1280x720](../assets/sandbox/test8.png)
+
+![1830x900](../assets/sandbox/test2.gif)
+
+
+![748x720](../assets/sandbox/test9.gif)
+
+![748x720](../assets/sandbox/test9.png)
+
+
+
+<a href="https://www.youtube.com/watch?v=ipAnwilMncI" target="_blank">![748x664 с уменьшемным масштабом в панели](../assets/sandbox/test10.png)</a>
 
 Набор инструментов, входящих в состав панели телефонии, оптимизирует работу операторов во время
 общения с клиентом. Звонок в один клик, отправка сообщений, информация по клиенту при поднятии
@@ -25,11 +40,11 @@ icon: home
 
 ### Быстрый старт
 
-!!! :zap: [Начать с MikoPBX](get-started/mikopbx.md) :zap:
+!!! :zap: [Начать с MikoPBX](../get-started/mikopbx.md) :zap:
 Максимальную функциональность при интеграции с офисной АТС MikoPBX.
 !!!
 
-!!! :zap: [Начать с FreePBX](get-started/freepbx.md) :zap:
+!!! :zap: [Начать с FreePBX](../get-started/freepbx.md) :zap:
 Интеграция с популярным решение на базе Asterisk.
 !!!
 
@@ -41,19 +56,19 @@ icon: home
 
 ### Руководство пользователя
 
-!!!secondary [Панель телефонии](user-guides/panel/index.md)
+!!!secondary [Панель телефонии](../user-guides/panel/index.md)
 Узнайте, как можно настроить панель телефонии под себя, управлять звонками и отправлять сообщения
 !!!
 
-!!!secondary [Мессенджер](user-guides/messenger/index.md)
+!!!secondary [Мессенджер](../user-guides/messenger/index.md)
 Настройка приложения для приема и обработки сообщений из WhatsApp
 !!!
 
-!!!secondary [Журнал звонков](user-guides/journal/index.md)
+!!!secondary [Журнал звонков](../user-guides/journal/index.md)
 Прослушивание записей разговоров и анализ звонков по всех организации
 !!!
 
-!!!secondary [Маршрутизация звонков](user-guides/routing/index.md)
+!!!secondary [Маршрутизация звонков](../user-guides/routing/index.md)
 Настройка модуля умной маршрутизации для автоматического определения ответственных сотрудников
 !!!
 
@@ -61,7 +76,7 @@ icon: home
 
 ### Остались вопросы?
 
-Проверьте, нет ли ответа в разделе [FAQ](faq.md).
+Проверьте, нет ли ответа в разделе [FAQ](../faq.md).
 Свяжитесь с [отделом технической поддержки](https://telefon.miko.ru/contacts/).
 Посмотрите [наши вебинары](https://telefon.miko.ru/events/playback/) 
 или задайте свой вопрос на [форуме](https://telefon.miko.ru/forum/).
