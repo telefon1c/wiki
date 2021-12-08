@@ -24,9 +24,9 @@ icon: home
 ![1830x900](../assets/sandbox/test2.gif)
 
 
-![640x616](../assets/sandbox/test9.gif)
+![748x720](../assets/sandbox/test9.gif)
 
-![640x616](../assets/sandbox/test9.png)
+![748x720](../assets/sandbox/test9.png)
 
 ---
 
