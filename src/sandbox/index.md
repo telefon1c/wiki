@@ -1,4 +1,5 @@
 ---
+visibility: hidden
 icon: home
 ---
 # Панель телефонии для 1С
@@ -21,6 +22,11 @@ icon: home
 ![1280x720](../assets/sandbox/test8.png)
 
 ![1830x900](../assets/sandbox/test2.gif)
+
+
+![640x616](../assets/sandbox/test9.gif)
+
+![640x616](../assets/sandbox/test9.png)
 
 ---
 
