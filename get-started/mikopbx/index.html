@@ -9,26 +9,29 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>Начать с MikoPBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
-    <meta name="title" content="Начать с MikoPBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <title>Интеграция с MikoPBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
+    <meta name="title" content="Интеграция с MikoPBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta name="description" content="В этом руководстве показано, как настроить подключение между АТС MikoPBX и конфигурацией 1С:Предприятие для принятия и обработки звонков." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/get-started/mikopbx/">
-    <meta property="og:title" content="Начать с MikoPBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:title" content="Интеграция с MikoPBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:description" content="В этом руководстве показано, как настроить подключение между АТС MikoPBX и конфигурацией 1С:Предприятие для принятия и обработки звонков.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/get-started/mikopbx/">
-    <meta property="twitter:title" content="Начать с MikoPBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:title" content="Интеграция с MikoPBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:description" content="В этом руководстве показано, как настроить подключение между АТС MikoPBX и конфигурацией 1С:Предприятие для принятия и обработки звонков.">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692284103043" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692284305103" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692284103043" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692284305103" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692284103043" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692284305103" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -188,12 +191,247 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="начать-с-mikopbx" class="break-words">
+<doc-anchor-target id="интеграция-с-mikopbx" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#начать-с-mikopbx">#</doc-anchor-trigger>
-        <span>Начать с MikoPBX</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#интеграция-с-mikopbx">#</doc-anchor-trigger>
+        <span>Интеграция с MikoPBX</span>
     </h1>
 </doc-anchor-target>
+<p>В этом руководстве показано, как настроить подключение между
+АТС MikoPBX и конфигурацией 1С:Предприятие для принятия и обработки звонков.</p>
+<hr />
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/R8teD1V8pYQ"></iframe>
+    </div>
+</figure>
+</p>
+<doc-anchor-target id="регистрация-в-marketplace">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#регистрация-в-marketplace">#</doc-anchor-trigger>
+        <span>Регистрация в Marketplace</span>
+    </h3>
+</doc-anchor-target>
+<p>Для установки дополнительных модулей требуется регистрация в Marketplace. Откройте веб-интерфейс MikoPBX и перейдите
+в раздел <code v-pre>Управление модулями</code>.</p>
+<p>Если у вас уже есть <code v-pre>лицензионный ключ</code>, то достаточно указать его в соответствущем поле, на вкладке
+<code v-pre>Регистрация и управление лицензией</code> и нажать кнопку <code v-pre>Сохранить</code>.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+            <h5>Лицензионный ключ</h5>
+<p>Ключ имеет формат <strong>MIKO-XXXXX-XXXXX-XXXXX-XXXXX</strong> и отправляется автоматически после регистрации
+на ваш email с адреса <a href="mailto:lic@miko.ru">lic@miko.ru</a></p>
+        </div>
+    </div>
+</div>
+<p>Если у вас нет лицензионного ключа, заполните форму регистрации. Укажите свой email, на него будет выслан лицензионный
+ключ с активированным триальным периодом на <strong>30-дней</strong>.</p>
+<doc-anchor-target id="установка-модуля">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#установка-модуля">#</doc-anchor-trigger>
+        <span>Установка модуля</span>
+    </h3>
+</doc-anchor-target>
+<p>В раздел <code v-pre>Управление модулями</code> найдите модуль <code v-pre>Панель телефонии 4.0 для 1С</code> и нажмите кнопку <code v-pre>Установить модуль</code>. Модуль
+будет загружен и установлен на АТС.</p>
+<p>Включите установленный модуль, нажав на тумблер.</p>
+<doc-anchor-target id="установка-расширения-для-1с">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#установка-расширения-для-1с">#</doc-anchor-trigger>
+        <span>Установка расширения для 1С</span>
+    </h3>
+</doc-anchor-target>
+<p>Найдите среди установленных модулей <code v-pre>Панель телефонии 4.0 для 1С</code> и нажмите кнопку <code v-pre>Изменить</code>. В интерфейсе модуля
+нажмите на ссылку
+<img src="/assets/cloud-storage-download.png" alt="cloud-storage-download" />
+чтобы скачать <code v-pre>установщик расширений</code> (файл <code v-pre>Установщик.epf</code>).</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+            <h5>Установщик расширений</h5>
+<p><strong>Установщик.epf</strong> - это внешняя обработка для 1С. Для ее использования потребуются роли: <code v-pre>Полные права</code> и
+<code v-pre>Интерактивное открытие внешних отчетов и обработок</code>.
+Расширения адаптированы для работы с актуальными релизами типовых конфигураций. Список поддерживаемых конфигураций
+можно проверить в <a href="../system-requirement/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>системных требованиях</span>
+</a>.</p>
+        </div>
+    </div>
+</div>
+<p>Откройте конфигурацию 1С:Предприятие и нажмите комбинацию клавиш <strong>Ctrl+O</strong> (или <strong>Файл/Открыть</strong>).
+В появившемся диалоговом окне выберите скаченный файл <code v-pre>Установщик.epf</code>.</p>
+<p>В форме установщика расширений введите свой <code v-pre>лицензионный ключ</code> для проверки доступных версий и нажмите <code v-pre>Далее</code>.
+В списке найденных расширений выберите подходящую версию и нажмите <code v-pre>Установить</code>.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+            <h5>Подписка на обновления</h5>
+<p>При проверке доступных версий расширений проверяется статус подписки на обновления. Если лицензионный ключ был получен
+некоторое время назад, то подписка может быть уже не активна и некоторые версии расширения недоступны для установки.
+Для продления подписки требуется <a href="/root-guides/license/coupon-activation/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>активировать купон</span>
+</a>.</p>
+        </div>
+    </div>
+</div>
+<p>После установки расширения программа предложит перезапустить сеанс для дальнейшей настройки.</p>
+<doc-anchor-target id="первоначальная-настройка">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#первоначальная-настройка">#</doc-anchor-trigger>
+        <span>Первоначальная настройка</span>
+    </h3>
+</doc-anchor-target>
+<p>После установки расширения и перезапуска сеанса запускается <code v-pre>Мастер первоначальной настройки</code>. Если это не произошло
+автоматически запустите его из нового раздела <code v-pre>Звонки и сообщения</code>.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+            <h5>Публикация на веб-сервере</h5>
+<p>Для работы чатов, а также при выборе некоторых схем подключения необходимо предварительно
+<a href="/root-guides/base-publishing" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>настроить публикацию</span>
+</a>
+информационной базы на веб-сервере.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="схема-подключения">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#схема-подключения">#</doc-anchor-trigger>
+        <span>Схема подключения</span>
+    </h4>
+</doc-anchor-target>
+<p>Выберите одну из подходящих для вашей конфигурации сети
+<a href="/root-guides/select-connection-mode/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>схему соединения</span>
+</a>
+между АТС и 1С:Предприятие и нажмите <code v-pre>Далее</code>.</p>
+<doc-anchor-target id="система-взаимодействия">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#система-взаимодействия">#</doc-anchor-trigger>
+        <span>Система взаимодействия</span>
+    </h4>
+</doc-anchor-target>
+<p>Для работы чатов, а также при работе в веб-клиенте или тонком клиенте для ОС Linux или ОС MacOS требуется
+зарегистрировать информационную базу в
+<a href="https://its.1c.ru/db/v8317doc#bookmark:dev:TI000001900" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>системе взаимодействия</span>
+</a>.</p>
+<doc-anchor-target id="проверка-связи">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#проверка-связи">#</doc-anchor-trigger>
+        <span>Проверка связи</span>
+    </h4>
+</doc-anchor-target>
+<p>Из предложенных вариантов АТС выберите MikoPBX. Вернитесь в интерфейс модуля панели телефонии на АТС и скопируйте
+<code v-pre>код автоматической настройки</code>. Вставьте этот код в соответствующее поле в мастере и нажмите <code v-pre>Далее</code>.</p>
+<p>Откроется окно <code v-pre>Настройка модуля на АТС</code> Если применяется подключение с публикацией информационной базы на веб-сервере,
+то в процессе автоматической настройки нужно указать <code v-pre>веб-сервер</code> и <code v-pre>имя публикации</code>. Кнопка <code v-pre>Обновить состояние</code>
+сохраняет введенные данные и выполняет повторную настройку модуля.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+            <h5>Проблемы связи</h5>
+<p>На этом этапе выполняется проверка двусторонней связи. Причиной проблемы может быть <strong>файервол</strong>, <strong>блокировка запуска
+регламентных заданий</strong>, неправильный выбор схемы подключения.</p>
+        </div>
+    </div>
+</div>
+<p>После завершения настройки модуля нажмите <code v-pre>Закрыть</code> для возврата к мастеру.</p>
+<doc-anchor-target id="виды-номеров">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#виды-номеров">#</doc-anchor-trigger>
+        <span>Виды номеров</span>
+    </h4>
+</doc-anchor-target>
+<p>Укажите виды контактной информации, которые используются в вашей информационной базе для хранения <code v-pre>внутреннего телефона</code>
+и <code v-pre>мобильного телефона</code> пользователя. Если таких видов контактной информации в базе нет, их можно создать на этом этапе.
+Обязателен к заполнению только вид <code v-pre>внутреннего телефона</code>.</p>
+<doc-anchor-target id="пользователи-телефонии">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#пользователи-телефонии">#</doc-anchor-trigger>
+        <span>Пользователи телефонии</span>
+    </h4>
+</doc-anchor-target>
+<p>На этом этапе мастера отображается таблица сотрудников их телефоны, если они были в базе заполнены. Вы можете заполнить
+номера сотрудников сейчас или сделать это позже. Только для сотрудников, которым на данном этапе назначен
+<code v-pre>внутренний телефон</code> мастер настроит права доступа к телефонии и чатам.</p>
+<p>После нажатия <code v-pre>Далее</code> мастер некоторое время будет выполнять настройку подсистемы.</p>
+<doc-anchor-target id="установка-приложения">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#установка-приложения">#</doc-anchor-trigger>
+        <span>Установка приложения</span>
+    </h3>
+</doc-anchor-target>
+<p>Чтобы скачать и установить приложение на свой рабочий стол в разделе <code v-pre>Звонки и сообщения</code> нажмите
+<code v-pre>Установка CTI приложения</code>.</p>
+<p>Программа покажет доступную для установки версию. Кликните на ссылку с <code v-pre>доступной версией</code>. В появившемся диалоговом
+окне выберите место, куда будет скачен дистрибутив программы.</p>
+<p>Запустите скаченный дистрибутив и следуя указаниям мастера завершите установку приложения.</p>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">Персональные настройки</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>/user-guides/panel/setup/</span>
+    </div>
+    <a href="/user-guides/panel/setup/" class="absolute block inset-0"></a>
+</div>
+</p>
 
 
 
