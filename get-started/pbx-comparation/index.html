@@ -11,24 +11,27 @@
     <!-- Primary Meta Tags -->
     <title>Поддерживаемые функции | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
     <meta name="title" content="Поддерживаемые функции | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta name="description" content="В данной таблице приводится сравнение доступной функциональности в зависимости от АТС и режима работы." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/get-started/pbx-comparation/">
     <meta property="og:title" content="Поддерживаемые функции | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:description" content="В данной таблице приводится сравнение доступной функциональности в зависимости от АТС и режима работы.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/get-started/pbx-comparation/">
     <meta property="twitter:title" content="Поддерживаемые функции | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:description" content="В данной таблице приводится сравнение доступной функциональности в зависимости от АТС и режима работы.">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692285474210" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692288156856" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692285474210" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692288156856" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692285474210" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692288156856" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -194,6 +197,297 @@
         <span>Поддерживаемые функции</span>
     </h1>
 </doc-anchor-target>
+<p>В данной таблице приводится сравнение доступной функциональности в зависимости от АТС и режима работы.
+Рекомендованный режим работы - совместное использование подсистемы телефонии для 1С:Предприятие и приложения панели
+телефонии.</p>
+<doc-anchor-target id="приложение-панель-телефонии">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#приложение-панель-телефонии">#</doc-anchor-trigger>
+        <span>Приложение &quot;Панель телефонии&quot;</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Функция</th>
+<th>MikoPBX</th>
+<th>FreePBX</th>
+<th>Манго Офис</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Работа с аппаратным IP телефоном</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Работа с гарнитурой</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Поддерживаемые ОС</td>
+<td>7/8/10/2012/2016</td>
+<td>тоже</td>
+<td>тоже</td>
+</tr>
+<tr>
+<td>Работа на сервере терминалов (RDP)</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Уведомление о входящем вызове</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Идентификация клиента по номеру телефона ((Возможность определения названия клиента по номеру телефона появляется после выполнения интеграции с 1С.))</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Ответ на звонок по кнопке</td>
+<td>Да <a id="fnref:1" href="#fn:1" class="footnote-ref"><sup>1</sup></a></td>
+<td>Да <a id="fnref:2" href="#fn:1" class="footnote-ref"><sup>1</sup></a></td>
+<td>Да <a id="fnref:3" href="#fn:2" class="footnote-ref"><sup>2</sup></a></td>
+</tr>
+<tr>
+<td>Совершение исходящих вызовов</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Перевод вызова на сотрудника</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>История последних вызовов</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Запись разговоров</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да <a id="fnref:4" href="#fn:3" class="footnote-ref"><sup>3</sup></a></td>
+</tr>
+<tr>
+<td>Чаты с клиентами (WhatsApp)</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Отображение собеседников сотрудников (супервизор)</td>
+<td>Да</td>
+<td>Да</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Подсушивание разговора, суфлирование (супервизор)</td>
+<td>Да</td>
+<td>Да</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Конференц-вызовы</td>
+<td>Да</td>
+<td>Да</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Перехват вызова (в ручную)</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Перехват вызова (автоматически) на ответственного сотрудника</td>
+<td>Да</td>
+<td>Да</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Статусы телефонов (в сети, занят, не в сети)</td>
+<td>Да</td>
+<td>Да</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Статусы присутствия (на месте, отошел)</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="подсистема-телефонии-для-1спредприятие">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#подсистема-телефонии-для-1спредприятие">#</doc-anchor-trigger>
+        <span>Подсистема телефонии для 1С:Предприятие</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Функция</th>
+<th>MikoPBX</th>
+<th>FreePBX</th>
+<th>Манго Офис</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Работа с конфигурациями на управляемых формах</td>
+<td>УТ 11, КА 2, ERP, УНФ, CRM 3 (возможна интеграция с другими конфигурациями)</td>
+<td>тоже</td>
+<td>тоже</td>
+</tr>
+<tr>
+<td>Работа с конфигурациями на обычных формах</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Режим запуска 1С:Предприятие</td>
+<td>Тонкий клиент, веб-клиент</td>
+<td>тоже</td>
+<td>тоже</td>
+</tr>
+<tr>
+<td>Поддерживаемые ОС</td>
+<td>Windows 7/8/10/2012/2016, Ubuntu 16.04 LTS/18.04 LTS, Mac OS X 10.8 и выше</td>
+<td>тоже</td>
+<td>тоже</td>
+</tr>
+<tr>
+<td>Работа с аппаратным IP телефоном</td>
+<td>Да</td>
+<td>Да</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Работа с гарнитурой</td>
+<td>Да <a id="fnref:6" href="#fn:4" class="footnote-ref"><sup>4</sup></a></td>
+<td>Да <a id="fnref:7" href="#fn:4" class="footnote-ref"><sup>4</sup></a></td>
+<td>Да <a id="fnref:8" href="#fn:4" class="footnote-ref"><sup>4</sup></a></td>
+</tr>
+<tr>
+<td>Уведомление о входящем вызове</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Идентификация клиента по номеру телефона</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Ответ на звонок по кнопке</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Совершение исходящих вызовов</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Перевод вызова на сотрудника</td>
+<td>Да <a id="fnref:9" href="#fn:5" class="footnote-ref"><sup>5</sup></a></td>
+<td>Да <a id="fnref:10" href="#fn:5" class="footnote-ref"><sup>5</sup></a></td>
+<td>Да <a id="fnref:11" href="#fn:5" class="footnote-ref"><sup>5</sup></a></td>
+</tr>
+<tr>
+<td>История звонков</td>
+<td>Да, общая история в журнале звонков</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Запись разговоров</td>
+<td>Да, все записи в журнале звонков</td>
+<td>Да</td>
+<td>Да <a id="fnref:5" href="#fn:3" class="footnote-ref"><sup>3</sup></a></td>
+</tr>
+<tr>
+<td>Чаты с клиентами (WhatsApp)</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Функции супервизора</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Конференц-вызовы</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Перехват вызова</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Статусы телефонов (в сети, занят, не в сети)</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Статусы присутствия (на месте, отошел)</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn:1">
+<p>При работе с IP телефоном ответить на звонок по кнопке из панели телефонии возможно, если телефон поддерживает функцию автоподъема трубки. Поддерживаются модели телефонов Cisco, Yealink, Linksys и некоторые др.<a href="#fnref:1" class="footnote-back-ref">&#8617;</a><a href="#fnref:2" class="footnote-back-ref">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Некоторые функции управления IP телефоном или определение его состояния могут быть недоступны. При этом функциональность сохраняется при работе через гарнитуру.<a href="#fnref:3" class="footnote-back-ref">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Запись разговоров может требовать дополнительной оплаты со стороны поставщика услуги связи.<a href="#fnref:4" class="footnote-back-ref">&#8617;</a><a href="#fnref:5" class="footnote-back-ref">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Интеграция с SIP-телефонией и работа с гарнитурой возможна только при использовании приложения панели телефонии.<a href="#fnref:6" class="footnote-back-ref">&#8617;</a><a href="#fnref:7" class="footnote-back-ref">&#8617;</a><a href="#fnref:8" class="footnote-back-ref">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Перевод вызова возможен при использовании новой карточки клиента из подсистемы телефонии.<a href="#fnref:9" class="footnote-back-ref">&#8617;</a><a href="#fnref:10" class="footnote-back-ref">&#8617;</a><a href="#fnref:11" class="footnote-back-ref">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
