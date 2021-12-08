@@ -30,8 +30,7 @@ icon: home
 
 
 
-[![748x664 с уменьшемным масштабом в панели](../assets/sandbox/test10.png)](https://www.youtube.com/watch?v=ipAnwilMncI)
----
+<a href="https://www.youtube.com/watch?v=ipAnwilMncI" target="_blank">![748x664 с уменьшемным масштабом в панели](../assets/sandbox/test10.png)</a>
 
 Набор инструментов, входящих в состав панели телефонии, оптимизирует работу операторов во время
 общения с клиентом. Звонок в один клик, отправка сообщений, информация по клиенту при поднятии
