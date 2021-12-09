@@ -37,11 +37,8 @@ icon: home
 
 
 Картинка подстраивающаяся под разрешения
-<img border="0"
-style="background:url(../assets/sandbox/previewLOWRES.png) no-repeat;
-width:100%;
-height:auto"
-src="../assets/sandbox/preview.png" />
+<img srcset="../assets/sandbox/previewLOWRES.png, ../assets/sandbox/preview.png 3x" src="../assets/sandbox/previewLOWRES.png">
+
 
 Набор инструментов, входящих в состав панели телефонии, оптимизирует работу операторов во время
 общения с клиентом. Звонок в один клик, отправка сообщений, информация по клиенту при поднятии
