@@ -9,26 +9,29 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>Начать с FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
-    <meta name="title" content="Начать с FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <title>Интеграция с FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
+    <meta name="title" content="Интеграция с FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta name="description" content="Данное руководство предполагает наличие навыков настройки АТС и работы с конфигуратором 1С. Для выполнения некоторых инструкций могут потребоваться..." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/get-started/freepbx/">
-    <meta property="og:title" content="Начать с FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:title" content="Интеграция с FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:description" content="Данное руководство предполагает наличие навыков настройки АТС и работы с конфигуратором 1С. Для выполнения некоторых инструкций могут потребоваться...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/get-started/freepbx/">
-    <meta property="twitter:title" content="Начать с FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:title" content="Интеграция с FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:description" content="Данное руководство предполагает наличие навыков настройки АТС и работы с конфигуратором 1С. Для выполнения некоторых инструкций могут потребоваться...">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692454754652" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692463317973" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692454754652" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692463317973" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692454754652" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692463317973" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -188,12 +191,42 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="начать-с-freepbx" class="break-words">
+<doc-anchor-target id="интеграция-с-freepbx" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#начать-с-freepbx">#</doc-anchor-trigger>
-        <span>Начать с FreePBX</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#интеграция-с-freepbx">#</doc-anchor-trigger>
+        <span>Интеграция с FreePBX</span>
     </h1>
 </doc-anchor-target>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>Данное руководство предполагает наличие навыков настройки АТС и работы с конфигуратором 1С.
+Для выполнения некоторых инструкций могут потребоваться права администратора.
+На сегодняшний момент поддерживается только <strong>FreePBX 15 (Asterisk 16)</strong>.</p>
+        </div>
+    </div>
+</div>
+<p>Данная инструкция предназначена для редакции 2.2, для предыдущих версий используйте другую инструкцию.</p>
+<doc-anchor-target id="подготовьте-атс">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#подготовьте-атс">#</doc-anchor-trigger>
+        <span>Подготовьте АТС</span>
+    </h3>
+</doc-anchor-target>
+<p>Суть работы модуля заключется в подключении к AMI интерфейсу Asterisk, сбору информации о звонках, состоянии каналов, а также взаимодействие с 1С:Предприятием и Панелью телефонии для управления вызовами.</p>
+<p>На текущий момент протестирована работа модуля на следующих версиях FreePBX/Asterisk</p>
+<p>FreePBX 15.0.17.12 - Asterisk 16.6.2
+FreePBX 14.0.13.34 - Asterisk 16.15.1</p>
 
 
 
