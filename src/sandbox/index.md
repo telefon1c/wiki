@@ -17,7 +17,7 @@ icon: home
 ![2546x1662](../assets/sandbox/preview.png)
 
 Пробная картинка, которую можно удалить.
-![720x411](../assets/sandbox/registraciya_mango_3.png)
+![Картинка про Интеграцию с манго](../assets/sandbox/registraciya_mango_3.png)
 
 ![1280x720](../assets/sandbox/test8.gif)
 
