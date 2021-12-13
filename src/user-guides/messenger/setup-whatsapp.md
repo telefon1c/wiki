@@ -22,7 +22,11 @@ order: -1
 
 1. Запустите сеанс 1С:Предприятие и в разделе `Звонки и сообщения` откройте<br> `Настройки мессенджера`. На экране
    отобразится QR-код.
-   ![](~/assets/whatsapp/scan-qrcode.png)
+   
+   <figure class="content-center">
+     <img  src="/assets/whatsapp/scan-qrcode.png" style="box-shadow: 0 0 20px 0 grey">
+   </figure>
+   
 2. Откройте приложение **WhatsApp** или **WhatsApp Business** на своём телефоне.
    - На **Android**: нажмите `Другие опции`.
    - На **iPhone**: перейдите в `Настройки` WhatsApp.

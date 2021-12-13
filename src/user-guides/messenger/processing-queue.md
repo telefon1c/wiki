@@ -21,7 +21,7 @@ order: -2
 В панели телефонии отображаются чаты со статусами **в очереди** и **в работе**. В последнем случае отображаются только
 те чаты, где текущий сотрудник является владельцем. Чтобы стать владельцем чата достаточно ответить на первое сообщение.
 
-[![](~/assets/whatsapp/chat-panel-preview.png)](~/assets/whatsapp/chat-panel.png)
+[<img src="/assets/whatsapp/chat-panel-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/whatsapp/chat-panel.png)
 
 ##### Для обработки сообщения:
 1. Перейдите в раздел `Чаты`.
@@ -33,7 +33,7 @@ order: -2
 Для чтения и отправки сообщений в 1С используется встроенный платформу механизм **Обсуждения**. Все чаты привязаны к
 конкретным объектам **Чат**, расположенным в разделе **Звонки и сообщения**.
 
-[![](~/assets/whatsapp/chat-1c-preview.png)](~/assets/whatsapp/chat-1c.png)
+[<img src="/assets/whatsapp/chat-1c-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/whatsapp/chat-1c.png)
 
 ##### Для обработки сообщения:
 1. В разделе `Звонки и сообщения` откройте `Чаты`.
