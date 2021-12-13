@@ -18,20 +18,22 @@
     <meta property="og:url" content="https://docs.telefon1c.ru/get-started/freepbx/">
     <meta property="og:title" content="Интеграция с FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
     <meta property="og:description" content="Данное руководство предполагает наличие навыков настройки АТС и работы с конфигуратором 1С. Для выполнения некоторых инструкций могут потребоваться...">
+    <meta property="og:image" content="https://docs.telefon1c.ru/assets/freepbx/freepbx_mod_0.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/get-started/freepbx/">
     <meta property="twitter:title" content="Интеграция с FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
     <meta property="twitter:description" content="Данное руководство предполагает наличие навыков настройки АТС и работы с конфигуратором 1С. Для выполнения некоторых инструкций могут потребоваться...">
+    <meta property="twitter:image" content="https://docs.telefon1c.ru/assets/freepbx/freepbx_mod_0.png">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692720451217" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692727451410" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692720451217" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692727451410" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692720451217" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692727451410" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -227,6 +229,76 @@
 <p>На текущий момент протестирована работа модуля на следующих версиях FreePBX/Asterisk</p>
 <p>FreePBX 15.0.17.12 - Asterisk 16.6.2
 FreePBX 14.0.13.34 - Asterisk 16.15.1</p>
+<p>Перейдите в веб-интерфейс АТС, выберите раздел <strong>FreePBX Administration</strong>.
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_mod_0.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Выполните <strong>Admin -&gt; Module Admin</strong>
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_mod_1.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Выполните <strong>Upload modules</strong>
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_mod_2.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Выберите <strong>Type</strong> выберите <strong>Download (From Web)</strong>.
+Скопируйте <a href="https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/latest.tgz">ссылку на последнюю версию</a>  модуля &quot;Панель телефонии 2.0 для 1С&quot;.<br />
+Вставьте ее в поле <strong>Download Remote Module</strong>.<br />
+Выполните <strong>Download (From Web)</strong>
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_mod_3.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Дождитесь загрузки модуля на АТС. Затем выполните <strong>Manage Local Modules</strong>
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_mod_4.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>В разделе <strong>Appliations</strong> найдите модуль <strong>MIKO CTI Client 4.0</strong>, нажмите <strong>Install</strong>.
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_mod_5.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Прокрутите страницу с модулями в самый низ и выполните <strong>Process</strong>.
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_mod_6.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>После установки модуля выполните <strong>Confirm</strong>.
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_mod_7.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>В появившемся окне <strong>Status</strong> выполните <strong>Return</strong>.
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_mod_8.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Приметите изменения. Для эого выполните <strong>Apply Config</strong>.
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_mod_9.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>После этого разделе <strong>Applications</strong> появится команда <strong>MIKO CTI Client 4.0 for 1C (Подсистема телефонии для 1С)</strong>. Выполните ее.
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_mod_10.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>В открывшемcя модуле перейдите на вкладку <strong>Лицензирование</strong>. Если вы не имеете лицензионного ключа заполните поля раздела <mark>Регистрация нового клиента</mark></p>
 
 
 
