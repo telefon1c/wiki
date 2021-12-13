@@ -92,7 +92,7 @@ order: -1
 
 #### Присвоение номера существующему клиенту
 
-<video autoplay loop style="box-shadow: 0px 0px 20px 0px grey">
+<video autoplay muted loop style="box-shadow: 0px 0px 20px 0px grey">
  <source src="/assets/journal/phone-assign.mp4">
 </video>
 
