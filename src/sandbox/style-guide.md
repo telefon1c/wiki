@@ -2,46 +2,86 @@
 visibility: hidden
 icon: brush
 ---
-# Оформление картинок
+# Рекомендации по единому стилю
 
+Чтобы документация смотрелась цельно, нужно придерживаться общих правил при написании документации, 
+именованию файлов, картинок, использованию единого набора стилей.
+
+## Картинки
+Все картинки распологаем в одноименных названию раздела документации папках в директории assets.
+
+### Правила вставки картинок
+Для картинок желательно, а для красивых картинок обязательно заполняем тег `alt` в формате "МИКО: Название картинки", чтобы поисковые роботы их индексировали
+
+```
+<img src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+```
+
+<img src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков" class="miko-shadow"/>
+
+Для отображения тени, добавляем параметр `class="miko-shadow"`
+
+```
+<img src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+```
+
+<img src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+
+Для отображения плашки, добавляем параметр `class="miko-sticker"`
+
+```
+<img src="/assets/index/data-details-preview.png" class="miko-sticker" alt="МИКО: Журнал звонков"/>
+```
+
+<img src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+
+### Картинки для разных мониторов
 Для корректного отображения больших картинок рекомендую использовать картинки двух разрешений.
 Чтобы браузер не масштарибовал картинку с размытием, она должна иметь фиксированную ширину 748px.
-Оригинал картники кладем рядом и добавляем `@2x` в конец имени файла, как на примере ниже.
+
+Оригинал картники кладем рядом и добавляем `-preview` в конец имени файла, как на примере ниже.
 
 ```
 
 <figure class="content-center">
     <img class="miko-shadow"
-    srcset="/assets/index/panel-miko.png 1x, /assets/index/panel-miko2x.png 2x"
-    src="/assets/index/panel-miko.png" alt="МИКО: Панель телефонии 4"/>
-    
+    srcset="/assets/index/data-details-preview.png 1x, /assets/index/data-details.png 2x"
+    src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
     <figcaption class="caption">
-        МИКО: Панель телефонии 4
+        МИКО: Журнал звонков
     </figcaption>
 </figure>
 
 ```
-Для картинок желательно, а для красивых картинок обязательно заполняем тег `alt` в формате "МИКО: Название картинки"
-Для отображения тени, добавляем `class="miko-shadow"`
 
-В итоге получится такая картника, которая хорошо смотрится и на монитрах с стандартным разрешением и на мониторах с высокой плотностью пикселей.
+
+В итоге получится такая картника, которая хорошо смотрится и на монитрах с стандартным разрешением и на мониторах с 
+высокой плотностью пикселей, браузер сам выберет какую картинку надо загрузить
 
 <figure class="content-center">
     <img class="miko-shadow"
-    srcset="/assets/index/panel-miko.png 1x, /assets/index/panel-miko2x.png 2x"
-    src="/assets/index/panel-miko.png" alt="МИКО: Панель телефонии 4"/>
+    srcset="/assets/index/data-details-preview.png 1x, /assets/index/data-details.png 2x"
+    src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
     <figcaption class="caption">
-        МИКО: Панель телефонии 4
+        МИКО: Журнал звонков
     </figcaption>
 </figure>
 
-Подобную конструкцию желательно использовать для тех кортинок на которых много деталей и нам нужно, чтобы они проиндексировались поисковыми роботами.
 
-Если нам нужно сделаль картинку с возможностью зума, необходимо добавить параметр `data-original` и указать адрес большой картинки, а к самому тегу `img` добавить класс `img-zoomable`
+### Кликабельная картинка
 
-Вот пример
+Если нам нужно сделаль картинку с возможностью зума, необходимо добавить параметр `data-original` и указать адрес 
+большой картинки, а к самому тегу `img` добавить класс `img-zoomable`
+
+Вот так выглядит код
 ```
-<img class="miko-shadow img-zoomable" data-original="/assets/index/panel-miko2x.png"
-srcset="/assets/index/panel-miko.png 1x, /assets/index/panel-miko2x.png 2x"
-src="/assets/index/panel-miko.png" alt="МИКО: Панель телефонии 4"/>
+<img class="miko-shadow img-zoomable" data-original="/assets/index/data-details.png"
+srcset="/assets/index/data-details-preview.png 1x, /assets/index/data-details.png 2x"
+src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
 ```
+
+Вот что получится в итоге
+
+<img class="miko-shadow img-zoomable" data-original="/assets/index/data-details.png"
+srcset="/assets/index/data-details-preview.png 1x, /assets/index/data-details.png 2x"
+src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
