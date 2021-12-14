@@ -26,11 +26,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692804535393" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692807537614" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692804535393" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692807537614" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692804535393" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692807537614" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -367,6 +367,70 @@ FreePBX 14.0.13.34 - Asterisk 16.15.1</p>
 <p>Ознакомьтесь с лицензионным соглашенитем и примите условия.
 <figure class="content-center">
     <img src="/assets/freepbx/freepbx_1c_4.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Начнется установка расширения. После окончания установки перезагрузите информационную базу, нажав на кнопку <strong>Перезагрузить</strong>.
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_1c_5.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>После перезапуска базы в панели функций текущего раздела появится подсистема <strong>Звонки и сообщения</strong>. Также в открытых формах появится <strong>Мастер первоначальной настройки</strong>.
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_1c_6.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Перейдите в форму <strong>Мастер певонаяальной настройки</strong> и выполните на ней <strong>Далее</strong>.
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_1c_7.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>На странице <strong>Схема подключения</strong> выберите подходящую вам <a href="/root-guides/select-connection-mode/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>схему соединения</span>
+</a> АТС с 1С. Выбор приципиального значения не имеет - это своего рода подсказка. От него будет зависеть певоначальное заполнение каналов передачи событий и контактных данных.<br />
+Откройте <strong>Расширенные настройки</strong> и установите их исходя из выбранной схемы подключения. Выполните <strong>Далее</strong>.<br />
+В данном примере использовалась серверная информационная база, и выбран способ подключения Long-pooling.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+            <h5>Коротко о способах подключения</h5>
+<p>Если у вас <mark>Сервер 1С</mark> и пользователи подключаются постредством тонкого клиента - подойдет способ <strong>Long-pooling</strong>. Канал передачи контактных данных нужно установить в <strong>Long-pooling соединение</strong>, канал передачи событий в в <strong>Long-pooling соединение</strong> или <strong>Внешняя компонента</strong>.<br />
+Если у вас <mark>файловая информационная база</mark> - подойдет способ <strong>веб-сервис</strong>. Нужно <a href="/root-guides/base-publishing" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>настроить публикацию</span>
+</a> информационной базы сервере IIS или Apacheи, а каналы передачи событий и контатных данных установить в значение <strong>веб-сервис</strong>.</p>
+        </div>
+    </div>
+</div>
+<p><figure class="content-center">
+    <img src="/assets/freepbx/freepbx_1c_8.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>В веб-интерфейсе АТС в модуле <strong>МИКО:Панель телефонии 4.0</strong> на вкладке <strong>Настройка модуля</strong> скопируйте код из раздела <strong>Данные для автоматической настройки</strong>.
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_1c_9.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>На странице  <strong>проверка связи</strong> Переключатель <strong>К какой АТС выполняется подключеие</strong> установите <strong>FreePBX</strong>.<br />
+Переключатель <strong>Настройка подключения</strong> - в положение <strong>Автоматическая настройка</strong>.
+Ниже в поле вставье скопированный ранее код автоматической настройки.
+Выполните <strong>Далее</strong>.
+<figure class="content-center">
+    <img src="/assets/freepbx/freepbx_1c_10.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
