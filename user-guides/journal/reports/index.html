@@ -27,11 +27,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692798293034" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692799427542" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692798293034" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692799427542" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692798293034" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692799427542" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -292,7 +292,7 @@
         <span>Расшифровка данных отчета</span>
     </h2>
 </doc-anchor-target>
-<p>Для получения расшифровки подсчитанных данных переключите представление на табличный вид. Далее кликните дважды по
+<p>Для получения расшифровки подсчитанных данных переключите представление на табличный вид. Далее <strong>кликните дважды</strong> по
 ячейке, данные которой требуется расшифровать.</p>
 <p><a href="/assets/journal/data-details.png"><img src="/assets/journal/data-details-preview.png" style="box-shadow: 0 0 20px 0 grey"></a></p>
 <p>Окно расшифровки отчета имеет плеер аналогичный тому, что есть в <a href="../calls-and-records/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
@@ -369,6 +369,27 @@
 привлечения клиентов. Отчет позволяет оценить эффективность разных каналов привлечения, а также отслеживать изменение
 показателей по дням, неделям и месяцам.</p>
 <p><a href="/assets/journal/call-by-chanels.png"><img src="/assets/journal/call-by-chanels-preview.png" style="box-shadow: 0 0 20px 0 grey"></a></p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+            <h5>Каналы привлечения</h5>
+<p>Для работы этого отчета требуется предварительно подготовить данные. В разделе <code v-pre>Звонки и сообщения</code> откройте
+<code v-pre>Справочники</code> -&gt; <code v-pre>Каналы привлечения</code>. Справочник наполняется автоматически номерами линий, на которые приходят
+входящие звонки. Нужно только заполнить поле <code v-pre>Наименование</code>. Наименования могут повторяться. В отчете данные с
+одинаковыми наименованиями будут суммированы.</p>
+        </div>
+    </div>
+</div>
 <doc-anchor-target id="распределение-звонков-по-сотрудникам">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#распределение-звонков-по-сотрудникам">#</doc-anchor-trigger>
