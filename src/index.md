@@ -7,7 +7,7 @@ icon: home
 с клиентской базой 1С.
 
 
-  <img class="miko-shadow img-zoomable"
+  <img class="miko-shadow img-zoomable" data-original="/assets/index/panel-miko2x.png"
     srcset="/assets/index/panel-miko.png 1x, /assets/index/panel-miko2x.png 2x"
     src="/assets/index/panel-miko.png" alt="МИКО: Панель телефонии 4"/>
 
