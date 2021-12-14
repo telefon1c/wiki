@@ -35,7 +35,7 @@
 
 <!-- End github.com/kingdido999/zooming -->
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('load', function () {
 	const zooming = new Zooming({});
 
 	zooming.listen('.img-zoomable');
