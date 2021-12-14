@@ -41,7 +41,7 @@ icon: home
 Картинка подстраивающаяся под разрешения
 <img srcset="../assets/sandbox/previewLOWRES.png 1x, ../assets/sandbox/preview.png 2x" src="../assets/sandbox/previewLOWRES.png">
 
-<img style="box-shadow: 0 0 20px 0 grey" srcset="../assets/journal/overall-preview.png 1x, ../assets/journal/overall.png 2x" src="../assets/journal/overall-preview.png" alt="Журнал звонков" />
+<img class="miko-shadow" srcset="../assets/journal/overall-preview.png 1x, ../assets/journal/overall.png 2x" src="../assets/journal/overall-preview.png" alt="Журнал звонков" />
 
 [<img src="/assets/journal/overall-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/journal/overall.png)
 
