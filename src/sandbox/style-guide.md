@@ -11,29 +11,30 @@ icon: brush
 Все картинки распологаем в одноименных названию раздела документации папках в директории assets.
 
 ### Правила вставки картинок
-Для картинок желательно, а для красивых картинок обязательно заполняем тег `alt` в формате "МИКО: Название картинки", чтобы поисковые роботы их индексировали
+Для картинок желательно, а для красивых картинок обязательно заполняем тег `alt` в формате "МИКО: Название картинки",
+чтобы поисковые роботы их индексировали
 
 ```
-<img src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+<img src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
 ```
 
-<img src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков" class="miko-shadow"/>
+<img src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков" class="miko-shadow"/>
 
 Для отображения тени, добавляем параметр `class="miko-shadow"`
 
 ```
-<img src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+<img src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
 ```
 
-<img src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+<img src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
 
 Для отображения плашки, добавляем параметр `class="miko-sticker"`
 
 ```
-<img src="/assets/index/data-details-preview.png" class="miko-sticker" alt="МИКО: Журнал звонков"/>
+<img src="/assets/journal/data-details-preview.png" class="miko-sticker" alt="МИКО: Журнал звонков"/>
 ```
 
-<img src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+<img src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
 
 ### Картинки для разных мониторов
 Для корректного отображения больших картинок рекомендую использовать картинки двух разрешений.
@@ -45,8 +46,8 @@ icon: brush
 
 <figure class="content-center">
     <img class="miko-shadow"
-    srcset="/assets/index/data-details-preview.png 1x, /assets/index/data-details.png 2x"
-    src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+    srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
+    src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
     <figcaption class="caption">
         МИКО: Журнал звонков
     </figcaption>
@@ -60,8 +61,8 @@ icon: brush
 
 <figure class="content-center">
     <img class="miko-shadow"
-    srcset="/assets/index/data-details-preview.png 1x, /assets/index/data-details.png 2x"
-    src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+    srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
+    src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
     <figcaption class="caption">
         МИКО: Журнал звонков
     </figcaption>
@@ -75,13 +76,13 @@ icon: brush
 
 Вот так выглядит код
 ```
-<img class="miko-shadow img-zoomable" data-original="/assets/index/data-details.png"
-srcset="/assets/index/data-details-preview.png 1x, /assets/index/data-details.png 2x"
-src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+<img class="miko-shadow img-zoomable" data-original="/assets/journal/data-details.png"
+srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
+src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
 ```
 
 Вот что получится в итоге
 
-<img class="miko-shadow img-zoomable" data-original="/assets/index/data-details.png"
-srcset="/assets/index/data-details-preview.png 1x, /assets/index/data-details.png 2x"
-src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+<img class="miko-shadow img-zoomable" data-original="/assets/journal/data-details.png"
+srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
+src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
