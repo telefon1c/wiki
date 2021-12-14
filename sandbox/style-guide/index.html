@@ -24,12 +24,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692827522365" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692827954161" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692827522365" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692827954161" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692827522365" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.1.692827522365" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692827954161" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.1.692827954161" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -204,10 +204,10 @@
     </h2>
 </doc-anchor-target>
 <p>Все файлы изображений располагаем в одноименных названию раздела документации папках внутри директории <code v-pre>assets</code>.</p>
-<doc-anchor-target id="правила-вставки-картинок">
+<doc-anchor-target id="подписываем-для-seo">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#правила-вставки-картинок">#</doc-anchor-trigger>
-        <span>Правила вставки картинок</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#подписываем-для-seo">#</doc-anchor-trigger>
+        <span>Подписываем для SEO</span>
     </h3>
 </doc-anchor-target>
 <p>Для картинок желательно, а для красивых картинок обязательно заполняем тег <code v-pre>alt</code> в формате &quot;МИКО: Название картинки&quot;,
@@ -221,6 +221,12 @@
 <p><img src="/assets/journal/data-details-preview.png"
 alt="МИКО: Журнал звонков"
 /></p>
+<doc-anchor-target id="оформляем-тенью">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#оформляем-тенью">#</doc-anchor-trigger>
+        <span>Оформляем тенью</span>
+    </h3>
+</doc-anchor-target>
 <p>Для отображения тени под картинкой и округления краев, добавляем к картинке класс <code v-pre>miko-shadow</code></p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markup"><code v-pre class="language-markup">&lt;img src=&quot;/assets/journal/data-details-preview.png&quot; 
@@ -233,10 +239,10 @@ alt="МИКО: Журнал звонков"
 class="miko-shadow"
 alt="МИКО: Журнал звонков"
 /></p>
-<doc-anchor-target id="картинки-для-разных-мониторов">
+<doc-anchor-target id="адаптируем-под-устройства">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#картинки-для-разных-мониторов">#</doc-anchor-trigger>
-        <span>Картинки для разных мониторов</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#адаптируем-под-устройства">#</doc-anchor-trigger>
+        <span>Адаптируем под устройства</span>
     </h3>
 </doc-anchor-target>
 <p>Для корректного отображения больших картинок, рекомендую использовать картинки двух разрешений.
@@ -261,10 +267,10 @@ src="/assets/journal/data-details-preview.png"
 srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
 alt="МИКО: Журнал звонков"
 /></p>
-<doc-anchor-target id="кликабельная-картинка">
+<doc-anchor-target id="добавляем-зуммирование">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#кликабельная-картинка">#</doc-anchor-trigger>
-        <span>Кликабельная картинка</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#добавляем-зуммирование">#</doc-anchor-trigger>
+        <span>Добавляем зуммирование</span>
     </h3>
 </doc-anchor-target>
 <p>Если нам нужно сделать картинку с возможностью зума, необходимо добавить параметр <code v-pre>data-original</code> и указать адрес
