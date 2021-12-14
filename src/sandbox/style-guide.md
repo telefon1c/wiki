@@ -16,25 +16,20 @@ icon: brush
 
 ```
 <img src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
-```
 
+```
+Результат:
 <img src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков" class="miko-shadow"/>
 
-Для отображения тени, добавляем параметр `class="miko-shadow"`
+Для отображения тени под картинкой, добавляем параметр `class="miko-shadow"`
 
 ```
-<img src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+<img src="/assets/journal/data-details-preview.png" class="miko-shadow" alt="МИКО: Журнал звонков"/>
 ```
 
-<img src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+Результат:
+<img src="/assets/journal/data-details-preview.png" class="miko-shadow" alt="МИКО: Журнал звонков"/>
 
-Для отображения плашки, добавляем параметр `class="miko-sticker"`
-
-```
-<img src="/assets/journal/data-details-preview.png" class="miko-sticker" alt="МИКО: Журнал звонков"/>
-```
-
-<img src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
 
 ### Картинки для разных мониторов
 Для корректного отображения больших картинок рекомендую использовать картинки двух разрешений.
@@ -59,6 +54,7 @@ icon: brush
 В итоге получится такая картника, которая хорошо смотрится и на монитрах с стандартным разрешением и на мониторах с 
 высокой плотностью пикселей, браузер сам выберет какую картинку надо загрузить
 
+Результат:
 <figure class="content-center">
     <img class="miko-shadow"
     srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
@@ -81,8 +77,7 @@ srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-detail
 src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
 ```
 
-Вот что получится в итоге
-
+Вот что получится в итоге:
 <img class="miko-shadow img-zoomable" data-original="/assets/journal/data-details.png"
 srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
 src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
