@@ -6,29 +6,29 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>Оформление картинок | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
-    <meta name="title" content="Оформление картинок | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta name="description" content="Для корректного отображения больших картинок рекомендую использовать картинки двух разрешений. Чтобы браузер не масштарибовал картинку с размытием,..." />
+    <title>Рекомендации по единому стилю | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
+    <meta name="title" content="Рекомендации по единому стилю | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta name="description" content="Чтобы документация смотрелась цельно, нужно придерживаться общих правил при написании документации, именованию файлов, картинок, использованию единого..." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/sandbox/style-guide/">
-    <meta property="og:title" content="Оформление картинок | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="og:description" content="Для корректного отображения больших картинок рекомендую использовать картинки двух разрешений. Чтобы браузер не масштарибовал картинку с размытием,...">
+    <meta property="og:title" content="Рекомендации по единому стилю | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:description" content="Чтобы документация смотрелась цельно, нужно придерживаться общих правил при написании документации, именованию файлов, картинок, использованию единого...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/sandbox/style-guide/">
-    <meta property="twitter:title" content="Оформление картинок | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="twitter:description" content="Для корректного отображения больших картинок рекомендую использовать картинки двух разрешений. Чтобы браузер не масштарибовал картинку с размытием,...">
+    <meta property="twitter:title" content="Рекомендации по единому стилю | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:description" content="Чтобы документация смотрелась цельно, нужно придерживаться общих правил при написании документации, именованию файлов, картинок, использованию единого...">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692823427746" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692824498172" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692823427746" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692824498172" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692823427746" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692824498172" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -188,47 +188,91 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="оформление-картинок" class="break-words">
+<doc-anchor-target id="рекомендации-по-единому-стилю" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#оформление-картинок">#</doc-anchor-trigger>
-        <span>Оформление картинок</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#рекомендации-по-единому-стилю">#</doc-anchor-trigger>
+        <span>Рекомендации по единому стилю</span>
     </h1>
 </doc-anchor-target>
+<p>Чтобы документация смотрелась цельно, нужно придерживаться общих правил при написании документации,
+именованию файлов, картинок, использованию единого набора стилей.</p>
+<doc-anchor-target id="картинки">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#картинки">#</doc-anchor-trigger>
+        <span>Картинки</span>
+    </h2>
+</doc-anchor-target>
+<p>Все картинки распологаем в одноименных названию раздела документации папках в директории assets.</p>
+<doc-anchor-target id="правила-вставки-картинок">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#правила-вставки-картинок">#</doc-anchor-trigger>
+        <span>Правила вставки картинок</span>
+    </h3>
+</doc-anchor-target>
+<p>Для картинок желательно, а для красивых картинок обязательно заполняем тег <code v-pre>alt</code> в формате &quot;МИКО: Название картинки&quot;, чтобы поисковые роботы их индексировали</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&lt;img src=&quot;/assets/index/data-details-preview.png&quot; alt=&quot;МИКО: Журнал звонков&quot;/&gt;</code></pre>
+</doc-codeblock></div>
+<img src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков" class="miko-shadow"/>
+<p>Для отображения тени, добавляем параметр <code v-pre>class=&quot;miko-shadow&quot;</code></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&lt;img src=&quot;/assets/index/data-details-preview.png&quot; alt=&quot;МИКО: Журнал звонков&quot;/&gt;</code></pre>
+</doc-codeblock></div>
+<img src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+<p>Для отображения плашки, добавляем параметр <code v-pre>class=&quot;miko-sticker&quot;</code></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&lt;img src=&quot;/assets/index/data-details-preview.png&quot; class=&quot;miko-sticker&quot; alt=&quot;МИКО: Журнал звонков&quot;/&gt;</code></pre>
+</doc-codeblock></div>
+<img src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+<doc-anchor-target id="картинки-для-разных-мониторов">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#картинки-для-разных-мониторов">#</doc-anchor-trigger>
+        <span>Картинки для разных мониторов</span>
+    </h3>
+</doc-anchor-target>
 <p>Для корректного отображения больших картинок рекомендую использовать картинки двух разрешений.
-Чтобы браузер не масштарибовал картинку с размытием, она должна иметь фиксированную ширину 748px.
-Оригинал картники кладем рядом и добавляем <code v-pre>@2x</code> в конец имени файла, как на примере ниже.</p>
+Чтобы браузер не масштарибовал картинку с размытием, она должна иметь фиксированную ширину 748px.</p>
+<p>Оригинал картники кладем рядом и добавляем <code v-pre>-preview</code> в конец имени файла, как на примере ниже.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">
 &lt;figure class=&quot;content-center&quot;&gt;
     &lt;img class=&quot;miko-shadow&quot;
-    srcset=&quot;/assets/index/panel-miko.png 1x, /assets/index/panel-miko2x.png 2x&quot;
-    src=&quot;/assets/index/panel-miko.png&quot; alt=&quot;МИКО: Панель телефонии 4&quot;/&gt;
-    
+    srcset=&quot;/assets/index/data-details-preview.png 1x, /assets/index/data-details.png 2x&quot;
+    src=&quot;/assets/index/data-details-preview.png&quot; alt=&quot;МИКО: Журнал звонков&quot;/&gt;
     &lt;figcaption class=&quot;caption&quot;&gt;
-        МИКО: Панель телефонии 4
+        МИКО: Журнал звонков
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 </code></pre>
 </doc-codeblock></div>
-<p>Для картинок желательно, а для красивых картинок обязательно заполняем тег <code v-pre>alt</code> в формате &quot;МИКО: Название картинки&quot;
-Для отображения тени, добавляем <code v-pre>class=&quot;miko-shadow&quot;</code></p>
-<p>В итоге получится такая картника, которая хорошо смотрится и на монитрах с стандартным разрешением и на мониторах с высокой плотностью пикселей.</p>
+<p>В итоге получится такая картника, которая хорошо смотрится и на монитрах с стандартным разрешением и на мониторах с
+высокой плотностью пикселей, браузер сам выберет какую картинку надо загрузить</p>
 <figure class="content-center">
     <img class="miko-shadow"
-    srcset="/assets/index/panel-miko.png 1x, /assets/index/panel-miko2x.png 2x"
-    src="/assets/index/panel-miko.png" alt="МИКО: Панель телефонии 4"/>
+    srcset="/assets/index/data-details-preview.png 1x, /assets/index/data-details.png 2x"
+    src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/>
     <figcaption class="caption">
-        МИКО: Панель телефонии 4
+        МИКО: Журнал звонков
     </figcaption>
 </figure>
-<p>Подобную конструкцию желательно использовать для тех кортинок на которых много деталей и нам нужно, чтобы они проиндексировались поисковыми роботами.</p>
-<p>Если нам нужно сделаль картинку с возможностью зума, необходимо добавить параметр <code v-pre>data-original</code> и указать адрес большой картинки, а к самому тегу <code v-pre>img</code> добавить класс <code v-pre>img-zoomable</code></p>
-<p>Вот пример</p>
+<doc-anchor-target id="кликабельная-картинка">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#кликабельная-картинка">#</doc-anchor-trigger>
+        <span>Кликабельная картинка</span>
+    </h3>
+</doc-anchor-target>
+<p>Если нам нужно сделаль картинку с возможностью зума, необходимо добавить параметр <code v-pre>data-original</code> и указать адрес
+большой картинки, а к самому тегу <code v-pre>img</code> добавить класс <code v-pre>img-zoomable</code></p>
+<p>Вот так выглядит код</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">&lt;img class=&quot;miko-shadow img-zoomable&quot; data-original=&quot;/assets/index/panel-miko2x.png&quot;
-srcset=&quot;/assets/index/panel-miko.png 1x, /assets/index/panel-miko2x.png 2x&quot;
-src=&quot;/assets/index/panel-miko.png&quot; alt=&quot;МИКО: Панель телефонии 4&quot;/&gt;</code></pre>
+<pre class="language-none"><code v-pre class="language-none">&lt;img class=&quot;miko-shadow img-zoomable&quot; data-original=&quot;/assets/index/data-details.png&quot;
+srcset=&quot;/assets/index/data-details-preview.png 1x, /assets/index/data-details.png 2x&quot;
+src=&quot;/assets/index/data-details-preview.png&quot; alt=&quot;МИКО: Журнал звонков&quot;/&gt;</code></pre>
 </doc-codeblock></div>
+<p>Вот что получится в итоге</p>
+<p><img class="miko-shadow img-zoomable" data-original="/assets/index/data-details.png"
+srcset="/assets/index/data-details-preview.png 1x, /assets/index/data-details.png 2x"
+src="/assets/index/data-details-preview.png" alt="МИКО: Журнал звонков"/></p>
 
 
 
@@ -288,6 +332,6 @@ src=&quot;/assets/index/panel-miko.png&quot; alt=&quot;МИКО: Панель т
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Оформление картинок", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Рекомендации по единому стилю", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
     </body>
 </html>
