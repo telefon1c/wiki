@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692825969455" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692826746360" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692825969455" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692826746360" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692825969455" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692826746360" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -202,7 +202,7 @@
         <span>Картинки</span>
     </h2>
 </doc-anchor-target>
-<p>Все картинки распологаем в одноименных названию раздела документации папках в директории assets.</p>
+<p>Все картинки располагаем в одноименных названию раздела документации папках в директории assets.</p>
 <doc-anchor-target id="правила-вставки-картинок">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#правила-вставки-картинок">#</doc-anchor-trigger>
@@ -210,7 +210,7 @@
     </h3>
 </doc-anchor-target>
 <p>Для картинок желательно, а для красивых картинок обязательно заполняем тег <code v-pre>alt</code> в формате &quot;МИКО: Название картинки&quot;,
-чтобы поисковые роботы их индексировали</p>
+чтобы поисковые роботы их индексировали и отображали в поисковой выдаче, гнали лидов на сайт.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">&lt;img src=&quot;/assets/journal/data-details-preview.png&quot; 
      alt=&quot;МИКО: Журнал звонков&quot;
@@ -220,7 +220,7 @@
 <p><img src="/assets/journal/data-details-preview.png"
 alt="МИКО: Журнал звонков"
 /></p>
-<p>Для отображения тени под картинкой, добавляем параметр <code v-pre>class=&quot;miko-shadow&quot;</code></p>
+<p>Для отображения тени под картинкой и округления краев, добавляем к картинке класс <code v-pre>miko-shadow</code></p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">&lt;img src=&quot;/assets/journal/data-details-preview.png&quot; 
     class=&quot;miko-shadow&quot; 
@@ -238,9 +238,9 @@ alt="МИКО: Журнал звонков"
         <span>Картинки для разных мониторов</span>
     </h3>
 </doc-anchor-target>
-<p>Для корректного отображения больших картинок рекомендую использовать картинки двух разрешений.
-Чтобы браузер не масштарибовал картинку с размытием, она должна иметь фиксированную ширину 748px.</p>
-<p>Оригинал картники кладем рядом и добавляем <code v-pre>-preview</code> в конец имени файла, как на примере ниже.</p>
+<p>Для корректного отображения больших картинок, рекомендую использовать картинки двух разрешений.
+Чтобы браузер не масштарибовал картинку с размытием, основная картинка должна иметь фиксированную ширину 748px.</p>
+<p>Оригинал картинки помещаем рядом с основной и добавляем <code v-pre>-preview</code> в конец имени файла, как в примере ниже.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">&lt;figure class=&quot;content-center&quot;&gt;
     &lt;img class=&quot;miko-shadow&quot;
@@ -251,8 +251,8 @@ alt="МИКО: Журнал звонков"
     &lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
 </doc-codeblock></div>
-<p>В итоге получится такая картника, которая хорошо смотрится и на монитрах с стандартным разрешением и на мониторах с
-высокой плотностью пикселей, браузер сам выберет какую картинку надо загрузить</p>
+<p>В итоге получится такая картника, которая хорошо смотрится и на монитрах с стандартным разрешением, и на мониторах с
+высокой плотностью пикселей, браузер сам выберет какую картинку надо загрузить.</p>
 <p>Результат:</p>
 <figure class="content-center">
     <img class="miko-shadow"
@@ -270,7 +270,7 @@ alt="МИКО: Журнал звонков"
         <span>Кликабельная картинка</span>
     </h3>
 </doc-anchor-target>
-<p>Если нам нужно сделаль картинку с возможностью зума, необходимо добавить параметр <code v-pre>data-original</code> и указать адрес
+<p>Если нам нужно сделать картинку с возможностью зума, необходимо добавить параметр <code v-pre>data-original</code> и указать адрес
 большой картинки, а к самому тегу <code v-pre>img</code> добавить класс <code v-pre>img-zoomable</code></p>
 <p>Вот так выглядит код</p>
 <div class="codeblock-wrapper"><doc-codeblock>
