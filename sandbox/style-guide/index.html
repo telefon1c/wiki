@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692825150886" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692825634480" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692825150886" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692825634480" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692825150886" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692825634480" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -212,17 +212,26 @@
 <p>Для картинок желательно, а для красивых картинок обязательно заполняем тег <code v-pre>alt</code> в формате &quot;МИКО: Название картинки&quot;,
 чтобы поисковые роботы их индексировали</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">&lt;img src=&quot;/assets/journal/data-details-preview.png&quot; alt=&quot;МИКО: Журнал звонков&quot;/&gt;
-</code></pre>
+<pre class="language-none"><code v-pre class="language-none">&lt;img src=&quot;/assets/journal/data-details-preview.png&quot; 
+     alt=&quot;МИКО: Журнал звонков&quot;
+/&gt;</code></pre>
 </doc-codeblock></div>
-<p>Результат:
-<img src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков" class="miko-shadow"/></p>
+<p>Результат:</p>
+<p><img src="/assets/journal/data-details-preview.png"
+alt="МИКО: Журнал звонков"
+/></p>
 <p>Для отображения тени под картинкой, добавляем параметр <code v-pre>class=&quot;miko-shadow&quot;</code></p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">&lt;img src=&quot;/assets/journal/data-details-preview.png&quot; class=&quot;miko-shadow&quot; alt=&quot;МИКО: Журнал звонков&quot;/&gt;</code></pre>
+<pre class="language-none"><code v-pre class="language-none">&lt;img src=&quot;/assets/journal/data-details-preview.png&quot; 
+    class=&quot;miko-shadow&quot; 
+    alt=&quot;МИКО: Журнал звонков&quot;
+/&gt;</code></pre>
 </doc-codeblock></div>
-<p>Результат:
-<img src="/assets/journal/data-details-preview.png" class="miko-shadow" alt="МИКО: Журнал звонков"/></p>
+<p>Результат:</p>
+<p><img src="/assets/journal/data-details-preview.png"
+class="miko-shadow"
+alt="МИКО: Журнал звонков"
+/></p>
 <doc-anchor-target id="картинки-для-разных-мониторов">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#картинки-для-разных-мониторов">#</doc-anchor-trigger>
@@ -233,24 +242,24 @@
 Чтобы браузер не масштарибовал картинку с размытием, она должна иметь фиксированную ширину 748px.</p>
 <p>Оригинал картники кладем рядом и добавляем <code v-pre>-preview</code> в конец имени файла, как на примере ниже.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">
-&lt;figure class=&quot;content-center&quot;&gt;
+<pre class="language-none"><code v-pre class="language-none">&lt;figure class=&quot;content-center&quot;&gt;
     &lt;img class=&quot;miko-shadow&quot;
     srcset=&quot;/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x&quot;
     src=&quot;/assets/journal/data-details-preview.png&quot; alt=&quot;МИКО: Журнал звонков&quot;/&gt;
     &lt;figcaption class=&quot;caption&quot;&gt;
         МИКО: Журнал звонков
     &lt;/figcaption&gt;
-&lt;/figure&gt;
-</code></pre>
+&lt;/figure&gt;</code></pre>
 </doc-codeblock></div>
 <p>В итоге получится такая картника, которая хорошо смотрится и на монитрах с стандартным разрешением и на мониторах с
 высокой плотностью пикселей, браузер сам выберет какую картинку надо загрузить</p>
 <p>Результат:</p>
 <figure class="content-center">
     <img class="miko-shadow"
-    srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
-    src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/>
+            src="/assets/journal/data-details-preview.png"
+            srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
+            alt="МИКО: Журнал звонков"
+    />
     <figcaption class="caption">
         МИКО: Журнал звонков
     </figcaption>
@@ -265,14 +274,20 @@
 большой картинки, а к самому тегу <code v-pre>img</code> добавить класс <code v-pre>img-zoomable</code></p>
 <p>Вот так выглядит код</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">&lt;img class=&quot;miko-shadow img-zoomable&quot; data-original=&quot;/assets/journal/data-details.png&quot;
-srcset=&quot;/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x&quot;
-src=&quot;/assets/journal/data-details-preview.png&quot; alt=&quot;МИКО: Журнал звонков&quot;/&gt;</code></pre>
+<pre class="language-none"><code v-pre class="language-none">&lt;img class=&quot;miko-shadow img-zoomable&quot; 
+     src=&quot;/assets/journal/data-details-preview.png&quot;
+     data-original=&quot;/assets/journal/data-details.png&quot;
+     srcset=&quot;/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x&quot; 
+     alt=&quot;МИКО: Журнал звонков&quot;
+/&gt;</code></pre>
 </doc-codeblock></div>
-<p>Вот что получится в итоге:
-<img class="miko-shadow img-zoomable" data-original="/assets/journal/data-details.png"
+<p>Вот что получится в итоге:</p>
+<p><img class="miko-shadow img-zoomable"
+src="/assets/journal/data-details-preview.png"
+data-original="/assets/journal/data-details.png"
 srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
-src="/assets/journal/data-details-preview.png" alt="МИКО: Журнал звонков"/></p>
+alt="МИКО: Журнал звонков"
+/></p>
 
 
 
