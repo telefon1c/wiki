@@ -29,11 +29,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692794955937" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692798057550" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692794955937" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692798057550" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692794955937" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692798057550" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -255,7 +255,9 @@
 <p>Картинка ссылкой открывающейся в этом окнне
 <a href="https://www.youtube.com/watch?v=ipAnwilMncI"><img src="../assets/sandbox/test10.png" alt="748x664 с уменьшемным масштабом в панели" /></a></p>
 <p>Картинка подстраивающаяся под разрешения
-<img srcset="../assets/sandbox/previewLOWRES.png, ../assets/sandbox/preview.png 3x" src="../assets/sandbox/previewLOWRES.png"></p>
+<img srcset="../assets/sandbox/previewLOWRES.png 1x, ../assets/sandbox/preview.png 2x" src="../assets/sandbox/previewLOWRES.png"></p>
+<img style="box-shadow: 0 0 20px 0 grey" srcset="../assets/journal/overall-preview.png 1x, ../assets/journal/overall.png 2x" src="../assets/journal/overall-preview.png" alt="Журнал звонков" />
+<p><a href="/assets/journal/overall.png"><img src="/assets/journal/overall-preview.png" style="box-shadow: 0 0 20px 0 grey"></a></p>
 <p>Набор инструментов, входящих в состав панели телефонии, оптимизирует работу операторов во время
 общения с клиентом. Звонок в один клик, отправка сообщений, информация по клиенту при поднятии
 трубки и запись разговоров лишь часть доступной функциональности.</p>
