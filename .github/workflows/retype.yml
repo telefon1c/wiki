@@ -18,7 +18,7 @@ jobs:
       - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/head.min.js >> ${RETYPE_OUTPUT_PATH}/resources/js/config.js
       - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/google-tag-manager.js >> ${RETYPE_OUTPUT_PATH}/resources/js/config.js
       - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/zooming.js >> ${RETYPE_OUTPUT_PATH}/resources/js/config.js
-        -
+
       - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/custom.js >> ${RETYPE_OUTPUT_PATH}/resources/js/lunr.js
 
       - run: cat ${RETYPE_OUTPUT_PATH}/assets/css/custom.css >> ${RETYPE_OUTPUT_PATH}/resources/css/retype.css
