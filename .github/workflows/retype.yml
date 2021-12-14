@@ -18,9 +18,9 @@ jobs:
 
       - run: ls -a ${RETYPE_OUTPUT_PATH}
 
-      - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/google-tag-manager.js >> ${RETYPE_OUTPUT_PATH}/resources/js/retype.js
-      - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/zooming.min.js >> ${RETYPE_OUTPUT_PATH}/resources/js/retype.js
-      - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/custom.js >> ${RETYPE_OUTPUT_PATH}/resources/js/retype.js
+      - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/google-tag-manager.js >> ${RETYPE_OUTPUT_PATH}/resources/js/config.js
+      - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/zooming.min.js >> ${RETYPE_OUTPUT_PATH}/resources/js/config.js
+      - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/custom.js >> ${RETYPE_OUTPUT_PATH}/resources/js/config.js
 
       - run: cat ${RETYPE_OUTPUT_PATH}/assets/css/custom.css >> ${RETYPE_OUTPUT_PATH}/resources/css/retype.css
 

@@ -6,11 +6,11 @@ icon: home
 [Панель телефонии](https://telefon.miko.ru) - это комплексное программное решение объединяющее телефонию и мессенджер
 с клиентской базой 1С.
 
-<a href="/assets/index/panel-miko2x.png">
+
   <img class="miko-shadow img-zoomable"
     srcset="/assets/index/panel-miko.png 1x, /assets/index/panel-miko2x.png 2x"
     src="/assets/index/panel-miko.png" alt="МИКО: Панель телефонии 4"/>
-</a>
+
 
 
 ---
