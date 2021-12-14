@@ -16,6 +16,12 @@ jobs:
 
       - uses: retypeapp/action-build@v1
 
+      - run: ls -a ${RETYPE_OUTPUT_PATH}
+
+      - run: cat ${RETYPE_OUTPUT_PATH}/assets/custom.js >> ${RETYPE_OUTPUT_PATH}/resources/js/retype.js
+
+      - run: cat ${RETYPE_OUTPUT_PATH}/assets/custom.css >> ${RETYPE_OUTPUT_PATH}/resources/css/retype.css
+
       - uses: retypeapp/action-github-pages@v1
         with:
           update-branch: true
