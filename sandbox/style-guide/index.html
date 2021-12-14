@@ -24,11 +24,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692826746360" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692827522365" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692826746360" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692827522365" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692826746360" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692827522365" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.1.692827522365" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -196,13 +197,13 @@
 </doc-anchor-target>
 <p>Чтобы документация смотрелась цельно, нужно придерживаться общих правил при написании документации,
 именованию файлов, картинок, использованию единого набора стилей.</p>
-<doc-anchor-target id="картинки">
+<doc-anchor-target id="про-картинки">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#картинки">#</doc-anchor-trigger>
-        <span>Картинки</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#про-картинки">#</doc-anchor-trigger>
+        <span>Про картинки</span>
     </h2>
 </doc-anchor-target>
-<p>Все картинки располагаем в одноименных названию раздела документации папках в директории assets.</p>
+<p>Все файлы изображений располагаем в одноименных названию раздела документации папках внутри директории <code v-pre>assets</code>.</p>
 <doc-anchor-target id="правила-вставки-картинок">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#правила-вставки-картинок">#</doc-anchor-trigger>
@@ -212,7 +213,7 @@
 <p>Для картинок желательно, а для красивых картинок обязательно заполняем тег <code v-pre>alt</code> в формате &quot;МИКО: Название картинки&quot;,
 чтобы поисковые роботы их индексировали и отображали в поисковой выдаче, гнали лидов на сайт.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">&lt;img src=&quot;/assets/journal/data-details-preview.png&quot; 
+<pre class="language-markup"><code v-pre class="language-markup">&lt;img src=&quot;/assets/journal/data-details-preview.png&quot; 
      alt=&quot;МИКО: Журнал звонков&quot;
 /&gt;</code></pre>
 </doc-codeblock></div>
@@ -222,7 +223,7 @@ alt="МИКО: Журнал звонков"
 /></p>
 <p>Для отображения тени под картинкой и округления краев, добавляем к картинке класс <code v-pre>miko-shadow</code></p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">&lt;img src=&quot;/assets/journal/data-details-preview.png&quot; 
+<pre class="language-markup"><code v-pre class="language-markup">&lt;img src=&quot;/assets/journal/data-details-preview.png&quot; 
     class=&quot;miko-shadow&quot; 
     alt=&quot;МИКО: Журнал звонков&quot;
 /&gt;</code></pre>
@@ -239,31 +240,27 @@ alt="МИКО: Журнал звонков"
     </h3>
 </doc-anchor-target>
 <p>Для корректного отображения больших картинок, рекомендую использовать картинки двух разрешений.
-Чтобы браузер не масштарибовал картинку с размытием, основная картинка должна иметь фиксированную ширину 748px.</p>
-<p>Оригинал картинки помещаем рядом с основной и добавляем <code v-pre>-preview</code> в конец имени файла, как в примере ниже.</p>
+Чтобы браузер не масштарибовал картинку с размытием при отображении страницы, необоходимо</p>
+<ul>
+<li>создать копию оригинальной картнинки</li>
+<li>уменьшить ее в графическом редакторе пропорционально до ширины 748px</li>
+<li>добавить в наименование окончание <code v-pre>-preview</code>, как в примере ниже</li>
+<li>положить ее рядом с оригинальной в папку assets</li>
+</ul>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">&lt;figure class=&quot;content-center&quot;&gt;
-    &lt;img class=&quot;miko-shadow&quot;
+<pre class="language-markup"><code v-pre class="language-markup">&lt;img class=&quot;miko-shadow&quot;
     srcset=&quot;/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x&quot;
-    src=&quot;/assets/journal/data-details-preview.png&quot; alt=&quot;МИКО: Журнал звонков&quot;/&gt;
-    &lt;figcaption class=&quot;caption&quot;&gt;
-        МИКО: Журнал звонков
-    &lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
+    src=&quot;/assets/journal/data-details-preview.png&quot; 
+    alt=&quot;МИКО: Журнал звонков&quot;/&gt;</code></pre>
 </doc-codeblock></div>
 <p>В итоге получится такая картника, которая хорошо смотрится и на монитрах с стандартным разрешением, и на мониторах с
 высокой плотностью пикселей, браузер сам выберет какую картинку надо загрузить.</p>
 <p>Результат:</p>
-<figure class="content-center">
-    <img class="miko-shadow"
-            src="/assets/journal/data-details-preview.png"
-            srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
-            alt="МИКО: Журнал звонков"
-    />
-    <figcaption class="caption">
-        МИКО: Журнал звонков
-    </figcaption>
-</figure>
+<p><img class="miko-shadow"
+src="/assets/journal/data-details-preview.png"
+srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
+alt="МИКО: Журнал звонков"
+/></p>
 <doc-anchor-target id="кликабельная-картинка">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#кликабельная-картинка">#</doc-anchor-trigger>
@@ -271,17 +268,17 @@ alt="МИКО: Журнал звонков"
     </h3>
 </doc-anchor-target>
 <p>Если нам нужно сделать картинку с возможностью зума, необходимо добавить параметр <code v-pre>data-original</code> и указать адрес
-большой картинки, а к самому тегу <code v-pre>img</code> добавить класс <code v-pre>img-zoomable</code></p>
-<p>Вот так выглядит код</p>
+оригинальной(большой) картинки, а к самому тегу <code v-pre>img</code> добавить класс <code v-pre>img-zoomable</code></p>
+<p>Вот так выглядит код:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">&lt;img class=&quot;miko-shadow img-zoomable&quot; 
+<pre class="language-markup"><code v-pre class="language-markup">&lt;img class=&quot;miko-shadow img-zoomable&quot; 
      src=&quot;/assets/journal/data-details-preview.png&quot;
      data-original=&quot;/assets/journal/data-details.png&quot;
      srcset=&quot;/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x&quot; 
      alt=&quot;МИКО: Журнал звонков&quot;
 /&gt;</code></pre>
 </doc-codeblock></div>
-<p>Вот что получится в итоге:</p>
+<p>Вот что получится в итоге, попробуй кликнуть на нее:</p>
 <p><img class="miko-shadow img-zoomable"
 src="/assets/journal/data-details-preview.png"
 data-original="/assets/journal/data-details.png"
@@ -347,6 +344,6 @@ alt="МИКО: Журнал звонков"
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Рекомендации по единому стилю", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Рекомендации по единому стилю", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
     </body>
 </html>
