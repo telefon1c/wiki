@@ -1,0 +1,21 @@
+
+/*! MIKO CUSTOM */
+
+/*Поправим ширину правого меню*/
+@media (min-width: 1024px) {
+    .lg\:w-56 {
+        width: 16rem;
+    }
+}
+
+/*Поправвим ширину левого меню*/
+@media (min-width: 1024px) {
+    .md\:w-75 {
+        width:19.75rem
+    }
+}
+
+/*Стиль для картинок с тенью*/
+img.miko-shadow {
+    box-shadow: 0 0 20px 0 grey;
+}
