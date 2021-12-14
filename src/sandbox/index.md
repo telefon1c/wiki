@@ -39,8 +39,11 @@ icon: home
 
 
 Картинка подстраивающаяся под разрешения
-<img srcset="../assets/sandbox/previewLOWRES.png, ../assets/sandbox/preview.png 3x" src="../assets/sandbox/previewLOWRES.png">
+<img srcset="../assets/sandbox/previewLOWRES.png 1x, ../assets/sandbox/preview.png 2x" src="../assets/sandbox/previewLOWRES.png">
 
+<img style="box-shadow: 0 0 20px 0 grey" srcset="../assets/journal/overall-preview.png 1x, ../assets/journal/overall.png 2x" src="../assets/journal/overall-preview.png" alt="Журнал звонков" />
+
+[<img src="/assets/journal/overall-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/journal/overall.png)
 
 Набор инструментов, входящих в состав панели телефонии, оптимизирует работу операторов во время
 общения с клиентом. Звонок в один клик, отправка сообщений, информация по клиенту при поднятии
@@ -90,3 +93,4 @@ icon: home
 Свяжитесь с [отделом технической поддержки](https://telefon.miko.ru/contacts/).
 Посмотрите [наши вебинары](https://telefon.miko.ru/events/playback/) 
 или задайте свой вопрос на [форуме](https://telefon.miko.ru/forum/).
+
