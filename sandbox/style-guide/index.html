@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692822519181" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692823427746" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692822519181" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692823427746" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692822519181" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692823427746" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -222,7 +222,13 @@
     </figcaption>
 </figure>
 <p>Подобную конструкцию желательно использовать для тех кортинок на которых много деталей и нам нужно, чтобы они проиндексировались поисковыми роботами.</p>
-<p>Если нам нужно сделаль картинку с возможностью зума, необходимо обернуть ее в <code v-pre>a</code> тег и в параметре <code v-pre>href</code> указать ссылку на большую картинку, а к самому тегу <code v-pre>img</code> добавить класс <code v-pre>img-zoomable</code></p>
+<p>Если нам нужно сделаль картинку с возможностью зума, необходимо добавить параметр <code v-pre>data-original</code> и указать адрес большой картинки, а к самому тегу <code v-pre>img</code> добавить класс <code v-pre>img-zoomable</code></p>
+<p>Вот пример</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&lt;img class=&quot;miko-shadow img-zoomable&quot; data-original=&quot;/assets/index/panel-miko2x.png&quot;
+srcset=&quot;/assets/index/panel-miko.png 1x, /assets/index/panel-miko2x.png 2x&quot;
+src=&quot;/assets/index/panel-miko.png&quot; alt=&quot;МИКО: Панель телефонии 4&quot;/&gt;</code></pre>
+</doc-codeblock></div>
 
 
 
