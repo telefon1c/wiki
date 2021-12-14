@@ -31,3 +31,8 @@ img.miko-shadow {
     -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 }
+
+/*Запрет переноса выделенных блоков по словам*/
+.docs-markdown code:not([class*=language-]):not(.member-signature) {
+    white-space: nowrap;
+}
