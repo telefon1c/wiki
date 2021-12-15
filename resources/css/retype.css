@@ -36,3 +36,19 @@ img.miko-shadow {
 .docs-markdown code:not([class*=language-]):not(.member-signature) {
     white-space: nowrap;
 }
+
+/* Подзаголовок в компоненте ref */
+.miko-ref .subtitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Скрываем адрес ссылки в компоненте ref */
+.miko-ref .text-gray-400 {
+    display: none;
+}
+
+/* Отступ справа от иконки */
+.miko-ref svg {
+    margin-right: 12px;
+}
