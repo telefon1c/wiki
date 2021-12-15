@@ -23,37 +23,61 @@ icon: home
 
 ### Быстрый старт
 
-!!! :zap: [Начать с MikoPBX](get-started/mikopbx.md) :zap:
-Максимальную функциональность при интеграции с офисной АТС MikoPBX.
-!!!
+<div class="miko-ref">
 
-!!! :zap: [Начать с FreePBX](get-started/freepbx.md) :zap:
-Интеграция с популярным решение на базе Asterisk.
-!!!
+[!ref
+  icon="rocket"
+  text="Начать с MikoPBX<div class='subtitle text-gray-700 dark:text-dark-300'>Максимальная функциональность при интеграции с офисной АТС MikoPBX</div>"
+](get-started/mikopbx.md)
+</div>
 
-!!! :zap: [Начать с Манго Офис](get-started/mango.md) :zap:
-Настройка интеграции между 1С:Предпритие и виртуальной АТС от Манго.
-!!!
+<div class="miko-ref">
+
+[!ref
+icon="rocket"
+text="Начать с FreePBX<div class='subtitle text-gray-700 dark:text-dark-300'>Интеграция с популярным решением на базе Asterisk</div>"
+](get-started/freepbx.md)
+</div>
+
+<div class="miko-ref">
+
+[!ref
+icon="rocket"
+text="Начать с Манго Офис<div class='subtitle text-gray-700 dark:text-dark-300'>Настройка интеграции между 1С:Предпритие и виртуальной АТС от Манго</div>"
+](get-started/mango.md)
+</div>
 
 <br>
 
 ### Руководство пользователя
 
-!!!secondary [Панель телефонии](user-guides/panel/index.md)
-Узнайте, как можно настроить панель телефонии под себя, управлять звонками и отправлять сообщения
-!!!
+<div class="miko-ref">
 
-!!!secondary [Мессенджер](user-guides/messenger/index.md)
-Настройка приложения для приема и обработки сообщений из WhatsApp
-!!!
+[!ref
+text="Панель телефонии<div class='subtitle text-gray-700 dark:text-dark-300'>Узнайте, как использовать панель телефонии для звонков и отправки сообщений</div>"
+](user-guides/panel/index.md)
+</div>
 
-!!!secondary [Журнал звонков](user-guides/journal/index.md)
-Прослушивание записей разговоров и анализ звонков по всех организации
-!!!
+<div class="miko-ref">
 
-!!!secondary [Маршрутизация звонков](user-guides/routing/index.md)
-Настройка модуля умной маршрутизации для автоматического определения ответственных сотрудников
-!!!
+[!ref
+text="Мессенджер<div class='subtitle text-gray-700 dark:text-dark-300'>Настройка приложения для приема и обработки сообщений из WhatsApp</div>"
+](user-guides/messenger/index.md)
+</div>
+
+<div class="miko-ref">
+
+[!ref
+text="Журнал звонков<div class='subtitle text-gray-700 dark:text-dark-300'>Прослушивание записей разговоров и анализ звонков по всей организации</div>"
+](user-guides/journal/index.md)
+</div>
+
+<div class="miko-ref">
+
+[!ref
+text="Маршрутизация звонков<div class='subtitle text-gray-700 dark:text-dark-300'>Настройка модуля маршрутизации для автоматического определения ответственных</div>"
+](user-guides/routing/index.md)
+</div>
 
 <br>
 
