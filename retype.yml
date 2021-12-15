@@ -2,10 +2,6 @@ input: src
 output: .retype
 url: https://docs.telefon1c.ru
 
-integrations:
-  googleAnalytics:
-    id: GTM-KXBHF8J
-
 gravatar:
     default: monsterid
     enabled: true
@@ -15,8 +11,9 @@ branding:
   label: wiki
 
 links:
-  - text: Быстрый старт
-    link: https://telefon1c.github.io/wiki/getStarted
+  - text: CRM
+    link: https://crm.miko.ru
+    target: blank
   - text: MikoPBX
     link: https://www.mikopbx.ru
     target: blank

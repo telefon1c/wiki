@@ -1,0 +1,31 @@
+
+/*! MIKO CUSTOM */
+
+/* Поправим ширину правого меню */
+@media (min-width: 1024px) {
+    .lg\:w-56 {
+        width: 16rem;
+    }
+}
+
+/* Поправвим ширину левого меню */
+@media (min-width: 1024px) {
+    .md\:w-75 {
+        width:19.75rem
+    }
+}
+
+/* Стиль для картинок с тенью */
+img.miko-shadow {
+    border-radius: 5px;
+    background-color: #e4e4e4;
+    border: 1px solid #adadad;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*Запрет переноса выделенных блоков по словам*/
+.docs-markdown code:not([class*=language-]):not(.member-signature) {
+    white-space: nowrap;
+}

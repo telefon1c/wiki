@@ -6,14 +6,12 @@ icon: home
 [Панель телефонии](https://telefon.miko.ru) - это комплексное программное решение объединяющее телефонию и мессенджер
 с клиентской базой 1С.
 
-Картинка Максим
-![Картинка Максим](assets/index/previewLOWRES.png)
 
-Коля на маке обычное разрешение
-![Коля на маке обычное разрешение](assets/index/previewMacUsual.png)
+  <img class="miko-shadow img-zoomable" data-original="/assets/index/panel-miko2x.png"
+    srcset="/assets/index/panel-miko.png 1x, /assets/index/panel-miko2x.png 2x"
+    src="/assets/index/panel-miko.png" alt="МИКО: Панель телефонии 4"/>
 
-Коля на маке в режиме HiResolution
-![Коля на маке в режиме HiResolution](assets/index/preview.png)
+
 
 ---
 
