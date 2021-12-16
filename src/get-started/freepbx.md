@@ -20,7 +20,7 @@ order: -2
 
 На текущий момент протестирована работа модуля на следующих версиях FreePBX/Asterisk
 
-FreePBX 15.0.17.12 - Asterisk 16.6.2
+FreePBX 15.0.17.12 - Asterisk 16.6.2  
 FreePBX 14.0.13.34 - Asterisk 16.15.1
 
 Перейдите в веб-интерфейс АТС, выберите раздел **FreePBX Administration**.
