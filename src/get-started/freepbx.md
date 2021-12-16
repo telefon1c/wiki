@@ -26,10 +26,10 @@ FreePBX 14.0.13.34 / Asterisk 16.15.1
 Перейдите в веб-интерфейс АТС, выберите раздел **FreePBX Administration**.
 ![](../assets/freepbx/freepbx_mod_0.png)
 
-Выполните **Admin -> Module Admin**
+Выполните **Admin -> Module Admin**.
 ![](../assets/freepbx/freepbx_mod_1.png)
 
-Выполните **Upload modules**
+Выполните **Upload modules**.
 ![](../assets/freepbx/freepbx_mod_2.png)
 
 Выберите **Type** выберите **Download (From Web)**. 
@@ -85,6 +85,7 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
 Запустите информационную базу 1С в режиме "1С:Предприятие". Войдите пользователем, имеющим права администратора.
 В главном меню выполните  Файл - > Открыть (или нажмите комбинацию клавиш **Ctrl+O**).  Выберите скачанную обработку **Установщик.epf**
 ![](../assets/freepbx/freepbx_1c_0.png)
+
 Согласитесь в появившемся предупреждении безопасности.
 ![](../assets/freepbx/freepbx_1c_1.png)
 
