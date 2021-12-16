@@ -26,11 +26,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.692960948792" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.692970175128" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692960948792" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.692970175128" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692960948792" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.692970175128" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.1.692970175128" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -215,90 +216,93 @@
         </div>
     </div>
 </div>
-<p>Данная инструкция предназначена для редакции 2.2, для предыдущих версий используйте другую инструкцию.</p>
+<p>Данная инструкция предназначена для подсистемы телефонии редакции 2.2. Для предыдущих версий используйте другую инструкцию.</p>
 <doc-anchor-target id="установка-модуля-на-атс">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#установка-модуля-на-атс">#</doc-anchor-trigger>
         <span>Установка модуля на АТС</span>
     </h3>
 </doc-anchor-target>
-<p>Суть работы модуля заключется в подключении к AMI интерфейсу Asterisk, сбору информации о звонках, состоянии каналов, а также взаимодействие с 1С:Предприятием и Панелью телефонии для управления вызовами.</p>
+<p>Суть работы модуля заключается в подключении к AMI интерфейсу Asterisk, сбору информации о звонках, состоянии каналов, а также взаимодействие с 1С:Предприятием и Панелью телефонии для управления вызовами.</p>
 <p>На текущий момент протестирована работа модуля на следующих версиях FreePBX/Asterisk</p>
-<p>FreePBX 15.0.17.12 - Asterisk 16.6.2<br />
-FreePBX 14.0.13.34 - Asterisk 16.15.1</p>
+<p>FreePBX 15.0.17.12 / Asterisk 16.6.2,<br />
+FreePBX 14.0.13.34 / Asterisk 16.15.1</p>
 <p>Перейдите в веб-интерфейс АТС, выберите раздел <strong>FreePBX Administration</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_0.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_0.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Выполните <strong>Admin -&gt; Module Admin</strong>
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_1.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_1.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Выполните <strong>Upload modules</strong>
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_2.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_2.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Выберите <strong>Type</strong> выберите <strong>Download (From Web)</strong>.
-Скопируйте <a href="https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/latest.tgz">ссылку на последнюю версию</a>  модуля &quot;Панель телефонии 2.0 для 1С&quot;.<br />
-Вставьте ее в поле <strong>Download Remote Module</strong>.<br />
-Выполните <strong>Download (From Web)</strong>
+Скопируйте ссылку на последнюю версию модуля &quot;Панель телефонии 2.0 для 1С&quot;:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markup"><code v-pre class="language-markup">https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/latest.tgz</code></pre>
+</doc-codeblock></div>
+<p>Вставьте ее в поле <strong>Download Remote Module</strong>.<br />
+Выполните <strong>Download (From Web)</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_3.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_3.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Дождитесь загрузки модуля на АТС. Затем выполните <strong>Manage Local Modules</strong>
+<p>Дождитесь загрузки модуля на АТС. Затем выполните <strong>Manage Local Modules</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_4.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_4.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>В разделе <strong>Appliations</strong> найдите модуль <strong>MIKO CTI Client 4.0</strong>, нажмите <strong>Install</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_5.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_5.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Прокрутите страницу с модулями в самый низ и выполните <strong>Process</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_6.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_6.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>После установки модуля выполните <strong>Confirm</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_7.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_7.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>В появившемся окне <strong>Status</strong> выполните <strong>Return</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_8.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_8.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Приметите изменения. Для эого выполните <strong>Apply Config</strong>.
+<p>Приметите изменения. Для этого выполните <strong>Apply Config</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_9.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_9.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>После этого разделе <strong>Applications</strong> появится команда <strong>MIKO CTI Client 4.0 for 1C (Подсистема телефонии для 1С)</strong>. Выполните ее.
+<p>После этого в разделе <strong>Applications</strong> появится команда <strong>MIKO CTI Client 4.0 for 1C (Подсистема телефонии для 1С)</strong>. Выполните ее.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_10.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_10.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>В открывшемcя модуле перейдите на вкладку <strong>Лицензирование</strong>.
-Если вы не имеете лицензионного ключа заполните поля разделе <strong>Регистрация нового клиента</strong><br />
+Если вы не имеете лицензионного ключа, заполните поля раздела <strong>Регистрация нового клиента</strong>.<br />
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_11.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_11.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -323,80 +327,80 @@ FreePBX 14.0.13.34 - Asterisk 16.15.1</p>
 </div>
 <p>Если у вас уже есть лицензионный ключ, вставьте его в поле <strong>Лицензионный ключ</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_12.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_12.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Перейдите на вкладку <strong>Настройки модуля</strong>. В разделе <strong>Общие настройки</strong> установите переключатель в положение <strong>Автоматическая настройка модуля</strong>.<br />
 В разделе <strong>Прочие настройки</strong> переключатель <strong>Включить режим отладки модуля</strong> установите в положение <strong>Включить</strong>. Выполните <strong>Submit</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_13.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_13.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Скачайте расширение для 1С, нажав на ссылку.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_14.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_14.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="встраивание-расширения-телефонии-в-информационную-базу-1спредпритие">
+<doc-anchor-target id="встраивание-расширения-телефонии-в-информационную-базу-1спредприятие">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#встраивание-расширения-телефонии-в-информационную-базу-1спредпритие">#</doc-anchor-trigger>
-        <span>Встраивание расширения телефонии в информационную базу 1С:Предпритие</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#встраивание-расширения-телефонии-в-информационную-базу-1спредприятие">#</doc-anchor-trigger>
+        <span>Встраивание расширения телефонии в информационную базу 1С:Предприятие</span>
     </h3>
 </doc-anchor-target>
 <p>Запустите информационную базу 1С в режиме &quot;1С:Предприятие&quot;. Войдите пользователем, имеющим права администратора.
-В главном меню выполните  Файл - &gt; Открыть (или нажмите конмбинацию клавиш <strong>Ctrl+O</strong>).  Выберите скачанную обработку <strong>Установщик.epf</strong>
+В главном меню выполните  Файл - &gt; Открыть (или нажмите комбинацию клавиш <strong>Ctrl+O</strong>).  Выберите скачанную обработку <strong>Установщик.epf</strong>
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_0.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_0.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 Согласитесь в появившемся предупреждении безопасности.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_1.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_1.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>На странице <strong>Проверка доступных лицензий</strong> вставьте ваш лицензионный ключ в одноименное поле и выполните <strong>Далее</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_2.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_2.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Выберите последнюю версию расширения, если их несколько и выполните <strong>Установить</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_3.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_3.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Ознакомьтесь с лицензионным соглашенитем и примите условия.
+<p>Ознакомьтесь с лицензионным соглашением и примите условия.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_4.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_4.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Начнется установка расширения. После окончания установки перезагрузите информационную базу, нажав на кнопку <strong>Перезагрузить</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_5.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_5.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>После перезапуска базы в панели функций текущего раздела появится подсистема <strong>Звонки и сообщения</strong>. Также в открытых формах появится <strong>Мастер первоначальной настройки</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_6.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_6.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Перейдите в форму <strong>Мастер первоначальной настройки</strong> и выполните на ней <strong>Далее</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_7.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_7.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>На странице <strong>Схема подключения</strong> выберите подходящую вам <a href="/root-guides/select-connection-mode/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>схему соединения</span>
-</a> АТС с 1С. Выбор приципиального значения не имеет - это своего рода подсказка. От него будет зависеть певоначальное заполнение каналов передачи событий и контактных данных.<br />
+</a> АТС с 1С. Выбор приципиального значения не имеет - это, своего рода, подсказка. От него будет зависеть первоначальное заполнение каналов передачи событий и контактных данных.<br />
 Откройте <strong>Расширенные настройки</strong> и установите их исходя из выбранной схемы подключения. Выполните <strong>Далее</strong>.<br />
 В данном примере использовалась серверная информационная база, и выбран способ подключения Long-pooling.</p>
 <div class="flex mb-6">
@@ -413,69 +417,69 @@ FreePBX 14.0.13.34 - Asterisk 16.15.1</p>
         </div>
         <div class="pr-5 ml-3">
             <h5>Коротко о способах подключения</h5>
-<p>Если у вас <mark>Сервер 1С</mark> и пользователи подключаются постредством тонкого клиента - подойдет способ <strong>Long-pooling</strong>. Канал передачи контактных данных нужно установить в <strong>Long-pooling соединение</strong>, канал передачи событий в в <strong>Long-pooling соединение</strong> или <strong>Внешняя компонента</strong>.<br />
+<p>Если у вас <mark>Сервер 1С</mark> и пользователи подключаются посредством тонкого клиента - подойдет способ <strong>Long-pooling</strong>. Канал передачи контактных данных нужно установить в <strong>Long-pooling соединение</strong>, канал передачи событий в <strong>Long-pooling соединение</strong> или <strong>Внешняя компонента</strong>.<br />
 Если у вас <mark>файловая информационная база</mark> - подойдет способ <strong>веб-сервис</strong>. Нужно <a href="/root-guides/base-publishing" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>настроить публикацию</span>
-</a> информационной базы сервере IIS или Apacheи, а каналы передачи событий и контатных данных установить в значение <strong>веб-сервис</strong>.</p>
+</a> информационной базы на сервере IIS или Apache, а каналы передачи событий и контактных данных установить в значение <strong>веб-сервис</strong>.</p>
         </div>
     </div>
 </div>
 <p><figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_8.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_8.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>В веб-интерфейсе АТС в модуле <strong>МИКО:Панель телефонии 4.0</strong> на вкладке <strong>Настройка модуля</strong> скопируйте код из раздела <strong>Данные для автоматической настройки</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_9.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_9.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>На странице  <strong>проверка связи</strong> Переключатель <strong>К какой АТС выполняется подключеие</strong> установите <strong>FreePBX</strong>.<br />
+<p>На странице <strong>Проверка связи</strong> Переключатель <strong>К какой АТС выполняется подключение</strong> установите <strong>FreePBX</strong>.<br />
 Переключатель <strong>Настройка подключения</strong> - в положение <strong>Автоматическая настройка</strong>.
-Ниже в поле вставье скопированный ранее код автоматической настройки.
+Ниже в поле вставьте скопированный ранее код автоматической настройки.
 Выполните <strong>Далее</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_10.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_10.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Дожитесь установления соединения с АТС (около 30 с).</p>
-<p>Если в автоматическом режиме настроить соедиенение не удалось, можно его настроить в ручном режиме.<br />
+<p>Дождитесь установления соединения с АТС (около 30 с).</p>
+<p>Если в автоматическом режиме настроить соединение не удалось, можно его настроить в ручном режиме.<br />
 Для этого в веб-интерфейсе АТС в модуле <strong>МИКО:Панель телефонии 4.0</strong> на вкладке <strong>Настройка модуля</strong> в разделе <strong>Общие настройки</strong> установите переключатель в положение <strong>Ввести параметры подключения к 1С вручную</strong>.<br />
 В разделе <strong>Связь с 1С:Предприятие 8</strong> установите переключатель в соответствие с вашей <a href="/root-guides/select-connection-mode/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
     <span>схеме соединения</span>
 </a>
 Скопируйте IP-адрес АТС и выполните <strong>Submit</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_mod_15.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_mod_15.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>В мастере первоначальной настройки 1С переключатель <strong>Настройка подключения</strong> установите в положение <strong>Ручная настройка</strong>.<br />
-В поле ниже вставьте адрес АТС и выполните <strong>Далее</strong>. Если соединееие с АТС установится, мастер перейдет на следующую страницу.
+В поле ниже вставьте адрес АТС и выполните <strong>Далее</strong>. Если соединение с АТС установится, мастер перейдет на следующую страницу.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_11.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_11.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>На странице <strong>Виды номеров</strong> в поле <strong>Вид внутреннего телефона</strong> выберите <strong>Телефон</strong>.<br />
 В поле <strong>Вид мобильного телефона</strong> выберите создание нового элемента.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_12.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_12.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>В появившейся форме создания вида контактной информации отметьте флажками поля <strong>Запрещать ввод некорректных номеров</strong> и <strong>Вводить номер по маске</strong>.
 Ниже выберите маску <strong>+7(999) 999-99-99</strong>. Затем выполните <strong>Записать и закрыть</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_13.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_13.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>После заполнения видов номеов перейдите на следующую страницу мастера, выполнив <strong>Далее</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_14.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_14.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -499,25 +503,25 @@ FreePBX 14.0.13.34 - Asterisk 16.15.1</p>
     </div>
 </div>
 <p><figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_15.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_15.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>Дождитесь окончания настройки и для установки Внешней панели 4.0 откройте предложенную ссылку. Страницу с мастером первоначальной настройки можно закрыть, она больше не понадобится.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_16.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_16.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>В открывшейся форме нажмите на ссылку с доступной для скачивания версией.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_17.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_17.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>В открывшемся проводнике выберите папку и выполните &quot;Сохранить&quot;. Начнется скачивание Внешней панели.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_1c_18.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_1c_18.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -544,19 +548,19 @@ FreePBX 14.0.13.34 - Asterisk 16.15.1</p>
         <div class="pr-5 ml-3">
             <h5>Способы установки</h5>
 <p>При выборе &quot;<strong>Для всех пользователей данного компьютера</strong>&quot; программа будет установлена по пути <em>C:\Program Files (x86)\MIKO CTI</em> и будет доступна для всех пользователей компьютера.<br />
-Для такого способа установки нужны права адмистратора для данного компьтера.<br />
+Для такого способа установки нужны права администратора для данного компьютера.<br />
 При выборе Только для меня(*) программа будет установлена по пути C:\Users\[Текущий пользователь]\AppData\Local\Programs\MIKO CTI&quot;</p>
         </div>
     </div>
 </div>
 <p><figure class="content-center">
-    <img src="/assets/freepbx/freepbx_cti_0.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_cti_0.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <p>После завершения установки нажмите <strong>Готово</strong>.
 <figure class="content-center">
-    <img src="/assets/freepbx/freepbx_cti_1.png" alt="" />
+    <img src="../../assets/freepbx/freepbx_cti_1.png" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -640,6 +644,6 @@ FreePBX 14.0.13.34 - Asterisk 16.15.1</p>
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Начать с FreePBX", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Начать с FreePBX", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
     </body>
 </html>
