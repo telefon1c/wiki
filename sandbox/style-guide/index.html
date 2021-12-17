@@ -15,21 +15,23 @@
     <meta property="og:url" content="https://docs.telefon1c.ru/sandbox/style-guide/">
     <meta property="og:title" content="Рекомендации по единому стилю | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
     <meta property="og:description" content="Чтобы документация смотрелась цельно, нужно придерживаться общих правил при написании документации, именованию файлов, картинок, использованию единого...">
+    <meta property="og:image" content="https://docs.telefon1c.ru/assets/sandbox/custom-css-plugin.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/sandbox/style-guide/">
     <meta property="twitter:title" content="Рекомендации по единому стилю | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
     <meta property="twitter:description" content="Чтобы документация смотрелась цельно, нужно придерживаться общих правил при написании документации, именованию файлов, картинок, использованию единого...">
+    <meta property="twitter:image" content="https://docs.telefon1c.ru/assets/sandbox/custom-css-plugin.png">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.1.693050009147" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.1.693050753107" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.693050009147" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.1.693050753107" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.693050009147" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.1.693050009147" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.1.693050753107" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.1.693050753107" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -291,8 +293,13 @@ data-original="/assets/journal/data-details.png"
 srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
 alt="МИКО: Журнал звонков"
 /></p>
-<p>##Настройка Chrome
-При разработке используются кастомизированные скрипты и стили, чтобы во время разработки документ выглядел точно так,
+<doc-anchor-target id="настройка-chrome">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#настройка-chrome">#</doc-anchor-trigger>
+        <span>Настройка Chrome</span>
+    </h2>
+</doc-anchor-target>
+<p>При разработке используются кастомизированные скрипты и стили, чтобы во время разработки документ выглядел точно так,
 как он выглядит на опубликованном сайте необходимо в локальный браузер Chrome, в котором вы отркрываете сайт, установить расширение
 <code v-pre>User JavaScript and CSS</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -302,8 +309,27 @@ alt="МИКО: Журнал звонков"
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">chrome-extension://nbhcbdghjpllgmfilhnhkllmkecfmpld/options.html</code></pre>
 </doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="../../assets/sandbox/custom-css-plugin.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <p>Жмем кнопку Upload and Apply (Загрузить и применить) и заливаем файл настроек</p>
-<p><a href="/assets/sandbox/user-js-css-v8.json">!PluginSettings</a></p>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 14c-.55 0-1 .45-1 1v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-4c0-.55-.45-1-1-1z"/><path d="M11.29 15.71c.09.09.2.17.33.22.12.04.25.07.38.07s.26-.03.38-.08.23-.12.33-.22l5-5a.996.996 0 10-1.41-1.41l-3.3 3.3V3c0-.55-.45-1-1-1s-1 .45-1 1v9.59l-3.29-3.3A.996.996 0 106.3 10.7l4.99 5.01z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">user-js-css-v8.json</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>user-js-css-v8.json</span>
+        <span class="inline-block ml-2">2.42KB</span>
+    </div>
+    <a href="/assets/sandbox/user-js-css-v8.json" class="absolute block inset-0" target="_blank" download="user-js-css-v8.json"></a>
+</div>
+</p>
 <p>Обновлем страницу, если главная картинка стала кликабельной, значит все заработало.</p>
 
 
