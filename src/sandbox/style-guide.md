@@ -99,3 +99,25 @@ data-original="/assets/journal/data-details.png"
 srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-details.png 2x"
 alt="МИКО: Журнал звонков"
 />
+
+## Настройка Chrome
+При разработке используются кастомизированные скрипты и стили, чтобы во время разработки документ выглядел точно так, 
+как он выглядит на опубликованном сайте необходимо в локальный браузер Chrome, в котором вы отркрываете сайт, установить расширение
+`User JavaScript and CSS`.
+
+```
+https://chrome.google.com/webstore/detail/user-javascript-and-css/nbhcbdghjpllgmfilhnhkllmkecfmpld?hl=ru
+```
+После установки перейти по ссылке к настройкам
+
+``` 
+chrome-extension://nbhcbdghjpllgmfilhnhkllmkecfmpld/options.html
+```
+
+![](../assets/sandbox/custom-css-plugin.png)
+
+Жмем кнопку Upload and Apply (Загрузить и применить) и заливаем файл настроек
+
+[!File](/assets/sandbox/user-js-css-v8.json)
+
+Обновлем страницу, если главная картинка стала кликабельной, значит все заработало.
