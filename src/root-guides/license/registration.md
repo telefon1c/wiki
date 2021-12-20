@@ -13,3 +13,17 @@ order: -1
 Если у вас АТС **MikoPBX** пройдите регистрацию по [!badge этой инструкции](../registration)  
 Если у вас АТС **FreePBX или VoxPBX** регистрация выполняется [!badge в модуле Панель телефонии 2.0 для 1С](~/get-started/freepbx/#установка-модуля-на-атс)  
 Если у вас АТС **Mango** пройдите регистрацию по этой инструкции[!badge этой инструкции](../registration)  
+
+### Регистрация клиента на MikoPBX
+1. Перейдите в веб-интерфейс управления АТС.
+2. Перейдите раздел «**Лицензирование**» → «Закладка «**Регистрация и управление лицензией**».
+
+<img class="miko-shadow img-zoomable"
+src="/assets/registration/registr_mikopbx_2.png"
+data-original="/assets/registration/registr_mikopbx_2.png"
+srcset="/assets/registration/registr_mikopbx_2_preview.png 1x, /assets/registration/registr_mikopbx_2.png 2x"
+alt="МИКО: Регистрация MIkoPBX"
+/>
+
+3. Заполните представленные поля. Мы рекомендуем заполнить все поля, а не только поля со «*» - так вашу организацию можно будет быстрее найти в списке (по ИНН), а также связаться по телефону.
+4. Выполните «**Сохранить**».
