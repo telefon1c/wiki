@@ -8,24 +8,28 @@
     <!-- Primary Meta Tags -->
     <title>Установка панели телефонии на терминальный сервер | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
     <meta name="title" content="Установка панели телефонии на терминальный сервер | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta name="description" content="Если Вы не хотите многократно дублировать файлы программы на терминальном сервере, то возможна ручная установка дистрибутива в выбранное место." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/root-guides/cti-terminal-setup/">
     <meta property="og:title" content="Установка панели телефонии на терминальный сервер | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:description" content="Если Вы не хотите многократно дублировать файлы программы на терминальном сервере, то возможна ручная установка дистрибутива в выбранное место.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/root-guides/cti-terminal-setup/">
     <meta property="twitter:title" content="Установка панели телефонии на терминальный сервер | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:description" content="Если Вы не хотите многократно дублировать файлы программы на терминальном сервере, то возможна ручная установка дистрибутива в выбранное место.">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.694166863044" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.694189475517" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.694166863044" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.694189475517" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.694166863044" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.694189475517" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.694189475517" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -191,6 +195,46 @@
         <span>Установка панели телефонии на терминальный сервер</span>
     </h1>
 </doc-anchor-target>
+<p>Если Вы не хотите многократно дублировать файлы программы на терминальном сервере, то возможна ручная установка дистрибутива в выбранное место. В этом случае Вам нужно будет самостоятельно вывести ярлык для запуска программы на рабочий стол пользователей. Для установки требуются права администратора.</p>
+<doc-anchor-target id="установка">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#установка">#</doc-anchor-trigger>
+        <span>Установка</span>
+    </h2>
+</doc-anchor-target>
+<ol>
+<li>Скачайте и распакуйте дистрибутив панели телефонии 4.0.</li>
+<li>Запустите командную строку Windows от имени администратора.</li>
+<li>Перейдите в каталог, где находится инсталлятор панели телефонии. Выполните команду:</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markup"><code v-pre class="language-markup">&quot;MIKO CTI Setup 2.*.*.exe&quot; /D=&quot;c:\Program Files (x86)\MIKO CTI&quot;</code></pre>
+</doc-codeblock></div>
+<ol start="4">
+<li>Выполните установку программы.</li>
+<li>Поместите ярлык для запуска программы на рабочий стол всех пользователей - c:\Users\Public\Desktop.</li>
+</ol>
+<doc-anchor-target id="запуск-панели-телефонии-с-заданным-адресом-сервера-интеграции">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#запуск-панели-телефонии-с-заданным-адресом-сервера-интеграции">#</doc-anchor-trigger>
+        <span>Запуск панели телефонии с заданным адресом сервера интеграции</span>
+    </h2>
+</doc-anchor-target>
+<p>Для того, чтобы пользователям не приходилось самостоятельно вводить адрес сервера интеграции, системный администратор может настроить запуск панели телефонии с заданным адресом сервера. Эта опция может быть удобна при работе в терминальном сервере.</p>
+<p>Для настройки запуска панели телефонии с заданным адресом:</p>
+<ol>
+<li>Откройте свойства ярлыка для запуска программы.</li>
+<li>Добавьте к значению поля Объект параметр --server-address=[АдресСервера]. Для данного примера поле будет выглядеть так:</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markup"><code v-pre class="language-markup">&quot;C:\Program Files (x86)\MIKO CTI\MIKO CTI.exe&quot; --server-address=172.16.32.76</code></pre>
+</doc-codeblock></div>
+<ol start="3">
+<li>(Опционально) Если все пользователи используют настольные телефоны, то рекомендуется указать параметр --desk-phone=1.</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markup"><code v-pre class="language-markup">&quot;C:\Program Files (x86)\MIKO CTI\MIKO CTI.exe&quot; --server-address=172.16.32.76 --desk-phone=1</code></pre>
+</doc-codeblock></div>
 
 
 
@@ -271,6 +315,6 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Установка панели телефонии на терминальный сервер", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Установка панели телефонии на терминальный сервер", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
     </body>
 </html>

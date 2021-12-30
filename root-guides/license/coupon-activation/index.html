@@ -24,12 +24,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.694166863044" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.694189475517" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.694166863044" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.694189475517" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.694166863044" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.694166863044" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.694189475517" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.694189475517" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -266,22 +266,23 @@ alt="МИКО: Активация купона на FreePBX, VoxPBX"
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markup"><code v-pre class="language-markup">http://127.0.0.1:8222/license</code></pre>
 </doc-codeblock></div>
-<ol start="2">
-<li>Откроется форма со списком продуктов, присутствующих в лицензионном ключе.</li>
-</ol>
+<p>Откроется форма со списком продуктов, присутствующих в лицензионном ключе.</p>
 <p><img class="miko-shadow img-zoomable"  
 src="/assets/registration/registraciya_mango_2.png"
 data-original="/assets/registration/registraciya_mango_2.png"
 srcset="/assets/registration/registraciya_mango_2_preview.png 1x, /assets/registration/registraciya_mango_2.png 2x" 
 alt="МИКО: Регистрация MikoPBX при использовании ВАТС Манго"
 /></p>
-<ol start="3">
+<ol start="2">
 <li>Внизу формы в поле <strong>Активация купона</strong> вставьте купон и нажмите кнопку <strong>Активировать</strong>.</li>
 </ol>
 <p><img class="miko-shadow"  
 src="/assets/registration/aktiv_kupon_mango_0.png"
 alt="МИКО: Активация купона на Mango"
 /></p>
+<ol start="3">
+<li>На странице лицензирования в список продуктов добавится продукт, купон на который вы активировали.</li>
+</ol>
 
 
 
