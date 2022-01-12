@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.695225462661" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.695315379616" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.695225462661" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.695315379616" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.695225462661" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.695315379616" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -201,10 +201,10 @@ data-original="/assets/panel/setup/cti_nastr_0.jpg"
 srcset="/assets/panel/setup/cti_nastr_0_prev.png 1x, /assets/panel/setup/cti_nastr_0.jpg 2x" 
 alt="МИКО: настройки внешней панели"
 /></p>
-<doc-anchor-target id="закладка-режим-работы">
+<doc-anchor-target id="режим-работы">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#закладка-режим-работы">#</doc-anchor-trigger>
-        <span>Закладка &quot;Режим работы&quot;</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#режим-работы">#</doc-anchor-trigger>
+        <span>Режим работы</span>
     </h2>
 </doc-anchor-target>
 <p><img class="miko-shadow"  
@@ -215,6 +215,73 @@ alt="МИКО: настройки внешней панели, режим раб
 <p>Режим &quot;<strong>Настольный телефон</strong>&quot; используется, когда имеется аппаратный телефоны, на котором авторизован внутренний номер сотрудника, а внешняя панель используется для управления телефоном (совершения звонков, принятия вызовов).</p>
 <p>Режим &quot;<strong>Софтфон</strong>&quot; используется, когда у сотрудника нет аппаратного телефона и внешняя панель используется в качестве софтфона (программного телефона).</p>
 <p>В группе &quot;<strong>Источник контактов</strong>&quot; можно выбрать будут ли загружаться наименования клиентов и сотрудников из &quot;<strong>1С:Предприятие</strong>&quot; или из <strong>АТС MikoPBX/FreePBX/VoxPBX</strong> будут загружаться только наименования сотрудников.</p>
+<doc-anchor-target id="sip-аккаунт">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sip-аккаунт">#</doc-anchor-trigger>
+        <span>SIP аккаунт</span>
+    </h2>
+</doc-anchor-target>
+<p><img class="miko-shadow"  
+src="/assets/panel/setup/cti_nastr_2.png"
+alt="МИКО: настройки внешней панели, SIP аккаунт"
+/></p>
+<p>На этой закладке можно посмотреть/изменить параметры учетной записи SIP (внутренний номер сотрудника).
+Зеленый флажок означает, что данный номер SIP аккаунт в данный момент подключен.</p>
+<doc-anchor-target id="аудио-устройства">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#аудио-устройства">#</doc-anchor-trigger>
+        <span>Аудио устройства</span>
+    </h2>
+</doc-anchor-target>
+<p><img class="miko-shadow"  
+src="/assets/panel/setup/cti_nastr_3.png"
+alt="МИКО: настройки внешней панели, аудио устройства"
+/></p>
+<p>На этой закладке можно изменить устройства ввода и вывода звука, а также проверить что они работают.<br />
+Отдельно друг от друга выбираются: устройство для вывода звукового уведомления о поступающем звонке и устройство для вывода голосовые данных.</p>
+<doc-anchor-target id="оформление">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#оформление">#</doc-anchor-trigger>
+        <span>Оформление</span>
+    </h2>
+</doc-anchor-target>
+<p><img class="miko-shadow"  
+src="/assets/panel/setup/cti_nastr_4.png"
+alt="МИКО: настройки внешней панели, оформление"
+/></p>
+<p>На этой закладке можно изменить язык интерфейса приложения и графическую тему. На данный момент поддерживаются языки: русский, английский. По умолчанию язык выбирается исходя из настроек операционной системы.</p>
+<doc-anchor-target id="поведение">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#поведение">#</doc-anchor-trigger>
+        <span>Поведение</span>
+    </h2>
+</doc-anchor-target>
+<p><img class="miko-shadow"  
+src="/assets/panel/setup/cti_nastr_5.png"
+alt="МИКО: настройки внешней панели, поведение"
+/>
+Когда флажок &quot;<strong>Свернуть при запуске</strong>&quot; установлен, при запуске приложения оно не открывается на рабочем столе, а находится в системном трее.<br />
+Когда флажок &quot;<strong>Свернуть при закрытии</strong>&quot; установлен, при закрытии программы путем нажатия на (X) в правом верхнем углу, приложение будет свернуто в трей, но будет продолжать работать.
+Если флажок снят, при нажатии на кнопку закрытия, будет осуществлен выход из программы.</p>
+<p>Когда флажок &quot;<strong>Отображать поверх всех окон</strong>&quot; установлен программа всегда будет &quot;на переднем плане&quot;, вне зависимости от того, какое окно из всех открытых на рабочем столе на данный момент является активным.
+Когда флажок &quot;<strong>Звонить по двойному клику</strong>&quot; установлен, на закладке &quot;Сотрудники&quot; основного окна программы, звонок может осуществляться путем двойного клика на выбранном сотруднике.<br />
+На закладку &quot;Последние вызовы&quot; эта настройка не распространяется. На ней вызовы всегда могут осуществляться путем двойного клика.<br />
+Когда флажок &quot;<strong>Запускать вместе с Windows</strong>&quot; установлен программа будет добавлена в автозапуск.</p>
+<doc-anchor-target id="звонки">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#звонки">#</doc-anchor-trigger>
+        <span>Звонки</span>
+    </h2>
+</doc-anchor-target>
+<p><img class="miko-shadow"  
+src="/assets/panel/setup/cti_nastr_6.png"
+alt="МИКО: настройки внешней панели, поведение"
+/></p>
+<p>Флажок &quot;<strong>Набор номера по ссылке (callto:, <a href="tel:"></a>) в браузере</strong>&quot; позволяет осуществлять звонки по телефонным номерам указанным такими ссылками.</p>
+<p><img class="miko-shadow"  
+src="/assets/panel/setup/cti_callto.gif"
+alt="МИКО: настройки внешней панели, звонок из браузера"
+/></p>
 
 
 
