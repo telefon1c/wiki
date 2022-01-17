@@ -46,3 +46,30 @@ order: -4
     alt="МИКО: прием внешнего звонка"
 /> 
 
+В режиме софтфона, после поднятия трубки, в блоке активного звонка будут доступны кнопки:
+- включение/отключение звука;
+- включение/отключение микрофона;
+- включение/отключение звука;
+- открытие экранной клавиатуры;
+- перевод вызова;
+- завершение разговора.
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/panel/incoming-call/cti_priem_3.png"
+    data-original="/assets/panel/incoming-call/cti_priem_3.png"
+    srcset="/assets/panel/incoming-call/cti_priem_3_prev.png 1x, /assets/panel/incoming-call/cti_priem_3.png 2x" 
+    alt="МИКО: разговор в режиме софтфона"
+/> 
+
+В режиме настольного телефона, после поднятия трубки, в блоке активного звонка будет доступна кнопки: 
+- перевод вызова;
+- завершение разговора.
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/panel/incoming-call/cti_priem_4.png"
+    data-original="/assets/panel/incoming-call/cti_priem_4.png"
+    srcset="/assets/panel/incoming-call/cti_priem_4_prev.png 1x, /assets/panel/incoming-call/cti_priem_4.png 2x" 
+    alt="МИКО: разговор в режиме софтфона"
+/> 
+
+
