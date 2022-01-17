@@ -6,18 +6,20 @@ order: -2
 В настройки внешней панели можно зайти путем нажатия кнопки "шестеренка".  
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/setup/cti_nastr_0.jpg"
-    data-original="/assets/panel/setup/cti_nastr_0.jpg"
-    srcset="/assets/panel/setup/cti_nastr_0_prev.png 1x, /assets/panel/setup/cti_nastr_0.jpg 2x" 
+    src="/assets/panel/setup/nastr_0.png"
+    data-original="/assets/panel/setup/nastr_0.png"
+    srcset="/assets/panel/setup/nastr_0_prev.png 1x, /assets/panel/setup/nastr_0.png 2x" 
     alt="МИКО: настройки внешней панели"
 /> 
 
 ## Режим работы
-<img class="miko-shadow"  
-    src="/assets/panel/setup/cti_nastr_1.png"
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/panel/setup/nastr_1.png"
+    data-original="/assets/panel/setup/nastr_1.png"
+    srcset="/assets/panel/setup/nastr_1_prev.png 1x, /assets/panel/setup/nastr_1.png 2x" 
     alt="МИКО: настройки внешней панели, режим работы"
 /> 
-
 В группе "**Режим работы со звонками**" можно выбрать режим "**Настольный телефон**" или "**Софтфон**".  
 
 Режим "**Настольный телефон**" используется, когда имеется аппаратный телефоны, на котором авторизован внутренний номер сотрудника, а внешняя панель используется для управления телефоном (совершения звонков, принятия вызовов).  
