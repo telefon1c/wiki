@@ -41,26 +41,34 @@ order: -2
 На этой закладке можно посмотреть/изменить параметры учетной записи SIP (внутренний номер сотрудника).
 Зеленый флажок означает, что данный номер SIP аккаунт в данный момент подключен.
 
-## Аудио устройства
-<img class="miko-shadow"  
+## Аудио устройства  
+
+<img class="miko-shadow img-zoomable"  
     src="/assets/panel/setup/cti_nastr_3.png"
+    data-original="/assets/panel/setup/cti_nastr_3.png"
+    srcset="/assets/panel/setup/cti_nastr_3_prev.png 1x, /assets/panel/setup/cti_nastr_3.png 2x"   
     alt="МИКО: настройки внешней панели, аудио устройства"
 /> 
 
 На этой закладке можно изменить устройства ввода и вывода звука, а также проверить что они работают.  
 Отдельно друг от друга выбираются: устройство для вывода звукового уведомления о поступающем звонке и устройство для вывода голосовые данных.
 
-## Оформление
-<img class="miko-shadow"  
+## Оформление  
+
+<img class="miko-shadow img-zoomable"  
     src="/assets/panel/setup/cti_nastr_4.png"
+    data-original="/assets/panel/setup/cti_nastr_4.png"
+    srcset="/assets/panel/setup/cti_nastr_4_prev.png 1x, /assets/panel/setup/cti_nastr_4.png 2x"   
     alt="МИКО: настройки внешней панели, оформление"
 /> 
 
 На этой закладке можно изменить язык интерфейса приложения и графическую тему. На данный момент поддерживаются языки: русский, английский. По умолчанию язык выбирается исходя из настроек операционной системы.
 
 ## Поведение
-<img class="miko-shadow"  
+<img class="miko-shadow img-zoomable"  
     src="/assets/panel/setup/cti_nastr_5.png"
+    data-original="/assets/panel/setup/cti_nastr_5.png"
+    srcset="/assets/panel/setup/cti_nastr_5_prev.png 1x, /assets/panel/setup/cti_nastr_5.png 2x" 
     alt="МИКО: настройки внешней панели, поведение"
 /> 
 
@@ -74,9 +82,11 @@ order: -2
 Когда флажок "**Запускать вместе с Windows**" установлен программа будет добавлена в автозапуск.
 
 ## Звонки
-<img class="miko-shadow"  
+<img class="miko-shadow img-zoomable"  
     src="/assets/panel/setup/cti_nastr_6.png"
-    alt="МИКО: настройки внешней панели, поведение"
+    data-original="/assets/panel/setup/cti_nastr_6.png"
+    srcset="/assets/panel/setup/cti_nastr_6_prev.png 1x, /assets/panel/setup/cti_nastr_6.png 2x"
+    alt="МИКО: настройки внешней панели, звонки"
 /> 
 
 Флажок "**Набор номера по ссылке (callto:, tel:) в браузере**" позволяет осуществлять звонки по телефонным номерам указанным такими ссылками. 
@@ -117,8 +127,10 @@ order: -2
 Опция "**Ответ на звонок из приложения**" позволяет следующее.  
 Используя настольный телефон, при ответе на звонок во внешней панели голосовые данные будут направлены либо в гарнитуру, если она подключена к телефону, либо на телефоне будет включена громкая связь.
  ## Чаты
-<img class="miko-shadow"  
+<img class="miko-shadow img-zoomable"  
     src="/assets/panel/setup/cti_nastr_7.png"
+    data-original="/assets/panel/setup/cti_nastr_7.png"
+    srcset="/assets/panel/setup/cti_nastr_7_prev.png 1x, /assets/panel/setup/cti_nastr_7.png 2x"
     alt="МИКО: настройки внешней панели, чаты"
 /> 
 
