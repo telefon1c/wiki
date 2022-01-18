@@ -30,8 +30,11 @@ order: -2
 В группе "**Источник контактов**" можно выбрать будут ли загружаться наименования клиентов и сотрудников из "**1С:Предприятие**" или из **АТС MikoPBX/FreePBX/VoxPBX** будут загружаться только наименования сотрудников.
 
 ## SIP аккаунт
-<img class="miko-shadow"  
+
+<img class="miko-shadow img-zoomable"  
     src="/assets/panel/setup/cti_nastr_2.png"
+    data-original="/assets/panel/setup/cti_nastr_2.png"
+    srcset="/assets/panel/setup/cti_nastr_2_prev.png 1x, /assets/panel/setup/cti_nastr_2.png 2x"
     alt="МИКО: настройки внешней панели, SIP аккаунт"
 /> 
 
