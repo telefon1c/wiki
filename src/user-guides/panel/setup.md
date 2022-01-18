@@ -20,6 +20,7 @@ order: -2
     srcset="/assets/panel/setup/nastr_1_prev.png 1x, /assets/panel/setup/nastr_1.png 2x" 
     alt="МИКО: настройки внешней панели, режим работы"
 /> 
+
 В группе "**Режим работы со звонками**" можно выбрать режим "**Настольный телефон**" или "**Софтфон**".  
 
 Режим "**Настольный телефон**" используется, когда имеется аппаратный телефоны, на котором авторизован внутренний номер сотрудника, а внешняя панель используется для управления телефоном (совершения звонков, принятия вызовов).  
@@ -77,8 +78,10 @@ order: -2
 
 Флажок "**Набор номера по ссылке (callto:, tel:) в браузере**" позволяет осуществлять звонки по телефонным номерам указанным такими ссылками. 
 
-<img class="miko-shadow"  
+<img class="miko-shadow img-zoomable"  
     src="/assets/panel/setup/cti_callto.gif"
+    data-original="/assets/panel/setup/cti_callto.gif"
+    srcset="/assets/panel/setup/cti_callto_prev.gif 1x, /assets/panel/setup/cti_callto.gif 2x" 
     alt="МИКО: настройки внешней панели, звонок из браузера"
 /> 
 
