@@ -48,17 +48,6 @@ order: -6
     alt="МИКО: внешняя панель, последние звонки"
 /> 
 
-## Из документа-ленты 1С:Предприятие
-
-Можно позвонить клиенту по гиперссылке в блоке "Контактная информация" или по кнопке "**Перезвонить**".
-
-<img class="miko-shadow img-zoomable"  
-    src="/assets/panel/outgoing-call/cti_ishod_6.png"
-    data-original="/assets/panel/outgoing-call/cti_ishod_6.png"
-    srcset="/assets/panel/outgoing-call/cti_ishod_6_prev.png 1x, /assets/panel/outgoing-call/cti_ishod_6.png 2x" 
-    alt="МИКО: звонок из документа ленты 1С:Предприятие"
-/> 
-
 ## Из соответствующего справочника 1С:Предприятие
 
 ### Из формы списка
@@ -79,4 +68,25 @@ order: -6
     data-original="/assets/panel/outgoing-call/cti_ishod_8.png"
     srcset="/assets/panel/outgoing-call/cti_ishod_8_prev.png 1x, /assets/panel/outgoing-call/cti_ishod_8.png 2x" 
     alt="МИКО: звонок из формы элемента справочника 1С:Предприятие"
+/> 
+
+## Из документа-ленты 1С:Предприятие
+
+Можно позвонить клиенту по гиперссылке в блоке "Контактная информация" или по кнопке "**Перезвонить**".
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/panel/outgoing-call/cti_ishod_6.png"
+    data-original="/assets/panel/outgoing-call/cti_ishod_6.png"
+    srcset="/assets/panel/outgoing-call/cti_ishod_6_prev.png 1x, /assets/panel/outgoing-call/cti_ishod_6.png 2x" 
+    alt="МИКО: звонок из документа ленты 1С:Предприятие"
+/> 
+
+## Из журнала звонков  1С:Предприятие
+Позвонить клиенту можно по кнопке "**Перезвонить**" встроенного плеера журнала звонков подсистемы телефонии.
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/panel/outgoing-call/cti_ishod_9.png"
+    data-original="/assets/panel/outgoing-call/cti_ishod_9.png"
+    srcset="/assets/panel/outgoing-call/cti_ishod_9_prev.png 1x, /assets/panel/outgoing-call/cti_ishod_9.png 2x" 
+    alt="МИКО: звонок из встроенного плеера журнала звонков 1С:Предприятие"
 /> 
