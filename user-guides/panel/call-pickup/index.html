@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.695917550531" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.695980422615" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.695917550531" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.695980422615" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.695917550531" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.695980422615" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -196,8 +196,26 @@
 </doc-anchor-target>
 <p>В продукте &quot;Панель телефонии&quot; предусмотрен механизм перехвата внешнего входящего вызова ответственным.
 Ответственный - сотрудник, который в информационной базе назначен ответственным для данного контрагента.</p>
-<p>// Здесь будет картинка</p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/panel/call-pickup/cti_perehv_1.png"
+data-original="/assets/panel/call-pickup/cti_perehv_1.png"
+srcset="/assets/panel/call-pickup/cti_perehv_1_prev.png 1x, /assets/panel/call-pickup/cti_perehv_1.png 2x" 
+alt="МИКО: внешняя панель, ответственный по клиенту"
+/></p>
 <p>Данный механизм может быть полезен в том, чтобы клиент не попадал в очередь или на секретаря с последующим переводом его на менеджера, который работает с клиентом. Менеджер увидит, что звонит &quot;его&quot; клиент и заберет вызов себе (при желании).</p>
+<p>Механизм работает так:<br />
+Внешний входящий звонок обновременно с обычным правилом маршрутизации для него идет еще и на ответственного по нему сотрудника.<br />
+В течении определенного времени звонит у ответственного. Дальше возможны два варианта:</p>
+<ul>
+<li>Ответственный <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-red-600 bg-red-100 h-6 px-2 text-xs rounded-md">
+    <span>не поднимает</span>
+</span> трубку в течении определенного времени.<br />
+Тогда у ответственного звонок прекращается. Обычное правило маршрутизации для данного звонка применяться продолжает.</li>
+<li>Ответственный <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>поднимает</span>
+</span> трубку.<br />
+Ответственный начинает разговор с клиентом. Обычное правило маршрутизации для данного вызова прекращает применяться.</li>
+</ul>
 
 
 
