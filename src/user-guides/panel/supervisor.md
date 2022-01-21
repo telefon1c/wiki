@@ -52,3 +52,5 @@ order: -10
     srcset="/assets/panel/supervisor/cti_superviz_5_prev.png 1x, /assets/panel/supervisor/cti_superviz_5.png 2x" 
     alt="МИКО: внешняя панель, функция супервизора"
 /> 
+
+По кнопке "**Завершить**" можно прекратить функцию.
