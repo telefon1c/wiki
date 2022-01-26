@@ -8,24 +8,27 @@
     <!-- Primary Meta Tags -->
     <title>Решение проблем с лицензией | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
     <meta name="title" content="Решение проблем с лицензией | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta name="description" content="Решение Вы уже зарегистрированы. Ваш регистрационный номер был отправлен на почту, поищите его во входящих письмах с адреса" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/root-guides/license/problem-solving/">
     <meta property="og:title" content="Решение проблем с лицензией | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:description" content="Решение Вы уже зарегистрированы. Ваш регистрационный номер был отправлен на почту, поищите его во входящих письмах с адреса">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/root-guides/license/problem-solving/">
     <meta property="twitter:title" content="Решение проблем с лицензией | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:description" content="Решение Вы уже зарегистрированы. Ваш регистрационный номер был отправлен на почту, поищите его во входящих письмах с адреса">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.696343204222" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.696518176404" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.696343204222" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.696518176404" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.696343204222" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.696518176404" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -191,6 +194,67 @@
         <span>Решение проблем с лицензией</span>
     </h1>
 </doc-anchor-target>
+<doc-anchor-target id="примеры-ошибок-и-их-решения">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#примеры-ошибок-и-их-решения">#</doc-anchor-trigger>
+        <span>Примеры ошибок и их решения</span>
+    </h2>
+</doc-anchor-target>
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-red-600 bg-red-100 h-6 px-2 text-xs rounded-md">
+    <span>Не удается пройти регистрацию по причине ошибки 1058 - e-mail уже занят.</span>
+</span><br />
+<strong>Решение</strong><br />
+Вы уже зарегистрированы. Ваш регистрационный номер был отправлен на почту, поищите его во входящих письмах с адреса <a href="mailto:lic@miko.ru">lic@miko.ru</a>.<br />
+Если вы пытаетесь получить триал на другой продукт, то повторная регистрация не требуется. Просто укажите свой регистрационный номер в новом продукте.</p>
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-red-600 bg-red-100 h-6 px-2 text-xs rounded-md">
+    <span>Не удается пройти регистрацию по причине ошибки 1059 - с этого хоста уже регистрировались.</span>
+</span><br />
+<strong>Решение</strong><br />
+Возможно вы уже зарегистрированы и ваш регистрационный номер был отправлен на электронную почту. Поищите его во входящих письмах с адреса <a href="mailto:lic@miko.ru">lic@miko.ru</a>.</p>
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-red-600 bg-red-100 h-6 px-2 text-xs rounded-md">
+    <span>Нет ответа от сервера лицензирования. Ошибки 1011-1014.</span>
+</span><br />
+<strong>Решение</strong></p>
+<ol>
+<li>Откройте в брандмауэре доступ к серверу лицензирования <strong>lm.miko.ru:443</strong> и <strong>lic.miko.ru:443</strong>.</li>
+<li>Если доступ в интернет открыт через прокси-сервер, то отключите проксирование запросов на <strong>lic.miko.ru:443</strong> и <strong>lm.miko.ru:443</strong> по <strong>https</strong> протоколу.</li>
+</ol>
+<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-red-600 bg-red-100 h-6 px-2 text-xs rounded-md">
+    <span>Я не помню свой регистрационный номер.</span>
+</span><br />
+<strong>Решение</strong></p>
+<ol>
+<li>Регистрационный номер имеет вид MIKO-XXXXX-XXXXX-XXXXX-XXXXX и высылается на почту сразу после регистрации. Вы можете найти его во входящих письмах с адреса <a href="mailto:lic@miko.ru">lic@miko.ru</a>.</li>
+<li>Если у Вас есть купон вида MIKOUPD-XXXXX-XXXXX-XXXXX-XXXXX, то регистрационный номер можно найти в личном кабинете. Для авторизации в личном кабинете используйте номер купона.</li>
+</ol>
+<doc-anchor-target id="диагностика-утилитой-licdiag">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#диагностика-утилитой-licdiag">#</doc-anchor-trigger>
+        <span>Диагностика утилитой licdiag</span>
+    </h2>
+</doc-anchor-target>
+<p>Утилита licdiag позволяет определить код ошибки в системе лицензирования. Скачать утилиту можно <a href="https://files.miko.ru/s/abAwhIg2Le6inOe">по ссылке.</a></p>
+<p>Для запуска утилиты:</p>
+<ol>
+<li>Откройте в проводнике папку, в которую была предварительно скачена утилита licdiag.</li>
+<li>В адресной строке проводника введите <code v-pre>cmd</code> и нажмите Enter.</li>
+</ol>
+<p><img class="miko-shadow"  
+src="/assets/root-guides/problem-solving/lic_prob_0.png"
+alt="МИКО: запуск licdiag"
+/></p>
+<ol start="3">
+<li>В появившемся окне командной строки наберите команду диагностики проблем с панелью телефонии:<br />
+<code v-pre>licdiag 1 MIKO-XXXXX-XXXXX-XXXXX-XXXXX</code><br />
+где <strong>MIKO-XXXXX-XXXXX-XXXXX-XXXXX</strong> - ваш регистрационный номер.</li>
+</ol>
+<p>Ниже приведен пример ошибки, отображаемой утилитой, когда нехватает лицензии на АТС MikoPBX. То есть все фичи №33, которые есть в лицензионном ключе, заняты.</p>
+<p><img class="miko-shadow"  
+src="/assets/root-guides/problem-solving/lic_prob_3.png"
+alt="МИКО: нехватка лицензии"
+/></p>
+<p>Для диагностики проблем с журналом звонков используйте команду:<br />
+<code v-pre>licdiag 31 MIKO-XXXXX-XXXXX-XXXXX-XXXXX</code></p>
 
 
 
