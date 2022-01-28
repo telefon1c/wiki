@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.696604934862" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.696667511798" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.696604934862" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.696667511798" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.696604934862" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.696667511798" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -294,12 +294,17 @@ alt="МИКО: схема подключения, 1С в облаке, веб-к
 <p><strong>Дополнительно:</strong><br />
 Установить Apache или IIS (в облаке это обычно уже выполнено) и опубликовать веб-сервис 1С.<br />
 Зарегистрировать базу в сервисе 1С:Диалог для получения доступа к системе взаимодействия.</p>
-<p>// Заготовка таблицы</p>
+<doc-anchor-target id="сравнительная-таблица-режимов">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#сравнительная-таблица-режимов">#</doc-anchor-trigger>
+        <span>Сравнительная таблица режимов</span>
+    </h2>
+</doc-anchor-target>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
-<th>----</th>
+<th>-</th>
 <th>Внешняя компонента</th>
 <th>Веб-сервис</th>
 <th>Long-poll соединение</th>
@@ -319,104 +324,26 @@ alt="МИКО: схема подключения, 1С в облаке, веб-к
 <td>Windows, Linux, macOS</td>
 </tr>
 <tr>
-<td>Поддерживаемые ОС</td>
-<td>Windows 7/8/10/2012/2016</td>
-<td>тоже</td>
-<td>тоже</td>
+<td>Файловый вариант работы</td>
+<td>Да</td>
+<td>Да</td>
+<td>Нет</td>
 </tr>
 <tr>
-<td>Работа на сервере терминалов (RDP)</td>
-<td>Да</td>
-<td>Да</td>
-<td>Да</td>
-</tr>
-<tr>
-<td>Уведомление о входящем вызове</td>
+<td>Клиент-серверный вариант работы</td>
 <td>Да</td>
 <td>Да</td>
 <td>Да</td>
 </tr>
 <tr>
-<td>Идентификация клиента по номеру телефона ((Возможность определения названия клиента по номеру телефона появляется после выполнения интеграции с 1С.))</td>
+<td>Требует публикации на веб-сервере</td>
+<td>Нет</td>
 <td>Да</td>
-<td>Да</td>
-<td>Да</td>
+<td>Нет</td>
 </tr>
 <tr>
-<td>Ответ на звонок по кнопке</td>
-<td>Да [^1]</td>
-<td>Да [^1]</td>
-<td>Да [^2]</td>
-</tr>
-<tr>
-<td>Совершение исходящих вызовов</td>
-<td>Да</td>
-<td>Да</td>
-<td>Да</td>
-</tr>
-<tr>
-<td>Перевод вызова на сотрудника</td>
-<td>Да</td>
-<td>Да</td>
-<td>Да</td>
-</tr>
-<tr>
-<td>История последних вызовов</td>
-<td>Да</td>
-<td>Да</td>
-<td>Да</td>
-</tr>
-<tr>
-<td>Запись разговоров</td>
-<td>Да</td>
-<td>Да</td>
-<td>Да [^3]</td>
-</tr>
-<tr>
-<td>Чаты с клиентами (WhatsApp)</td>
-<td>Да</td>
-<td>Да</td>
-<td>Да</td>
-</tr>
-<tr>
-<td>Отображение собеседников сотрудников (супервизор)</td>
-<td>Да</td>
-<td>Да</td>
-<td>---</td>
-</tr>
-<tr>
-<td>Подсушивание разговора, суфлирование (супервизор)</td>
-<td>Да</td>
-<td>Да</td>
-<td>---</td>
-</tr>
-<tr>
-<td>Конференц-вызовы</td>
-<td>Да</td>
-<td>Да</td>
-<td>---</td>
-</tr>
-<tr>
-<td>Перехват вызова (в ручную)</td>
-<td>Да</td>
-<td>Да</td>
-<td>Да</td>
-</tr>
-<tr>
-<td>Перехват вызова (автоматически) на ответственного сотрудника</td>
-<td>Да</td>
-<td>Да</td>
-<td>---</td>
-</tr>
-<tr>
-<td>Статусы телефонов (в сети, занят, не в сети)</td>
-<td>Да</td>
-<td>Да</td>
-<td>---</td>
-</tr>
-<tr>
-<td>Статусы присутствия (на месте, отошел)</td>
-<td>Да</td>
+<td>Требует регистрации в 1С:Диалог</td>
+<td>Нет</td>
 <td>Да</td>
 <td>Да</td>
 </tr>
