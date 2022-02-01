@@ -6,26 +6,29 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>Начать с Манго Офис | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
-    <meta name="title" content="Начать с Манго Офис | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <title>Интеграция с ВАТС Манго | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
+    <meta name="title" content="Интеграция с ВАТС Манго | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta name="description" content="Данная инструкция предназначена для редакции 4.0, для предыдущих версий используйте эту инструкцию. Для интеграции виртуальной АТС Манго с 1С..." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/get-started/mango/">
-    <meta property="og:title" content="Начать с Манго Офис | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:title" content="Интеграция с ВАТС Манго | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:description" content="Данная инструкция предназначена для редакции 4.0, для предыдущих версий используйте эту инструкцию. Для интеграции виртуальной АТС Манго с 1С...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/get-started/mango/">
-    <meta property="twitter:title" content="Начать с Манго Офис | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:title" content="Интеграция с ВАТС Манго | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:description" content="Данная инструкция предназначена для редакции 4.0, для предыдущих версий используйте эту инструкцию. Для интеграции виртуальной АТС Манго с 1С...">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.697013605706" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697042315530" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697013605706" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697042315530" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697013605706" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697042315530" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -185,12 +188,63 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="начать-с-манго-офис" class="break-words">
+<doc-anchor-target id="интеграция-с-ватс-манго" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#начать-с-манго-офис">#</doc-anchor-trigger>
-        <span>Начать с Манго Офис</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#интеграция-с-ватс-манго">#</doc-anchor-trigger>
+        <span>Интеграция с ВАТС Манго</span>
     </h1>
 </doc-anchor-target>
+<p>Данная инструкция предназначена для редакции 4.0, для предыдущих версий используйте <a href="https://wiki.miko.ru/nightbird:v21:get-started-mango">эту инструкцию</a>.<br />
+Для интеграции виртуальной АТС Манго с 1С необходимо в <a href="https://lk.mango-office.ru">личном кабинете</a> подключить услугу «API коннектор» и сгенерировать уникальные ключи. После чего нужно установить и настроить сервер интеграции.</p>
+<doc-anchor-target id="установка-сервера-интеграции">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#установка-сервера-интеграции">#</doc-anchor-trigger>
+        <span>Установка сервера интеграции</span>
+    </h2>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>Необходимо наличие административного доступа к личному кабинету Манго и подключенной услуги &quot;<strong>API коннектор</strong>&quot; от Манго.</p>
+        </div>
+    </div>
+</div>
+<p>Сервер интеграции обеспечивает взаимосвязь между всеми компонентами панели телефонии. Он может быть установлен на терминальный сервер Windows, либо отдельный компьютер. Сервер интеграции устанавливается как служба Windows. Для установки требуются права администратора.</p>
+<doc-anchor-target id="вариант-а---если-вы-еще-не-являетесь-клиентом-мико">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#вариант-а---если-вы-еще-не-являетесь-клиентом-мико">#</doc-anchor-trigger>
+        <span>Вариант &quot;А&quot; - если вы еще не являетесь клиентом МИКО</span>
+    </h4>
+</doc-anchor-target>
+<p>В письме, пришедшем после заказа триала на <code v-pre>https://telefon.miko.ru/</code> скачайте архив с дистрибутивом по ссылке в письме: <strong>Панель телефонии и Журнал звонков для 1С(ред.2)</strong> → <strong>Скачайте дистрибутив</strong>.</p>
+<p><img class="miko-shadow"  
+src="/assets/mango/mango_0.png"
+alt="МИКО: скачать триал"
+/></p>
+<doc-anchor-target id="вариант-б---если-вы-уже-клиент-мико">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#вариант-б---если-вы-уже-клиент-мико">#</doc-anchor-trigger>
+        <span>Вариант &quot;Б&quot; - если вы уже клиент МИКО</span>
+    </h4>
+</doc-anchor-target>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_0.gif"
+data-original="/assets/mango/mango_0.gif"
+srcset="/assets/mango/mango_0_prev.gif 1x, /assets/mango/mango_0.gif 2x" 
+alt="МИКО: скачать дистрибутив"
+/></p>
+<p>Откройте <a href="https://telefon.miko.ru/personal/update-files">личный кабинет МИКО</a>.
+Скачайте и распакуйте дистрибутив «<strong>Панель телефонии и журнал звонков для 1С, редакция 2</strong>».</p>
 
 
 
@@ -271,6 +325,6 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Начать с Манго Офис", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Интеграция с ВАТС Манго", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
     </body>
 </html>
