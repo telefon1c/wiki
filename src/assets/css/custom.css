@@ -17,9 +17,10 @@
         max-width: 1450px;
     }
 
-    /*img.miko-shadow {*/
-    /*    width: 748px;*/
-    /*}*/
+    /* В ретине большие картинки не на всю страничку*/
+    img.img-zoomable {
+        width: 748px;
+    }
 }
 
 
