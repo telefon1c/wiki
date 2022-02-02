@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.697046923609" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697125875294" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697046923609" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697125875294" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697046923609" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697125875294" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -195,7 +195,7 @@
     </h1>
 </doc-anchor-target>
 <p>Данная инструкция предназначена для редакции 4.0, для предыдущих версий используйте <a href="https://wiki.miko.ru/nightbird:v21:get-started-mango">эту инструкцию</a>.<br />
-Для интеграции виртуальной АТС Манго с 1С необходимо в <a href="https://lk.mango-office.ru">личном кабинете</a> подключить услугу «API коннектор» и сгенерировать уникальные ключи. После чего нужно установить и настроить сервер интеграции.</p>
+Для интеграции виртуальной АТС Манго с 1С необходимо в личном кабинете подключить услугу «API коннектор» и сгенерировать уникальные ключи. После чего нужно установить и настроить сервер интеграции.</p>
 <doc-anchor-target id="установка-сервера-интеграции">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#установка-сервера-интеграции">#</doc-anchor-trigger>
@@ -215,7 +215,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3">
-<p>Необходимо наличие административного доступа к личному кабинету Манго и подключенной услуги &quot;<strong>API коннектор</strong>&quot; от Манго.</p>
+<p>Необходимо наличие административного доступа к <a href="https://lk.mango-office.ru">личному кабинету Манго</a> и подключенной в ВАТС услуги &quot;<strong>API коннектор</strong>&quot; .</p>
         </div>
     </div>
 </div>
@@ -226,6 +226,12 @@
         <span>Вариант &quot;А&quot; - если вы еще не являетесь клиентом МИКО</span>
     </h4>
 </doc-anchor-target>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_1.gif"
+data-original="/assets/mango/mango_1.gif"
+srcset="/assets/mango/mango_1_prev.gif 1x, /assets/mango/mango_1.gif 2x" 
+alt="МИКО: скачать триал"
+/></p>
 <p>В письме, пришедшем после заказа триала на <code v-pre>https://telefon.miko.ru/</code> скачайте архив с дистрибутивом по ссылке в письме: <strong>Панель телефонии и Журнал звонков для 1С(ред.2)</strong> → <strong>Скачайте дистрибутив</strong>.</p>
 <p><img class="miko-shadow"  
 src="/assets/mango/mango_0.png"
@@ -243,8 +249,108 @@ data-original="/assets/mango/mango_0.gif"
 srcset="/assets/mango/mango_0_prev.gif 1x, /assets/mango/mango_0.gif 2x" 
 alt="МИКО: скачать дистрибутив"
 /></p>
-<p>Откройте <a href="https://telefon.miko.ru/personal/update-files">личный кабинет МИКО</a>.
-Скачайте и распакуйте дистрибутив «<strong>Панель телефонии и журнал звонков для 1С, редакция 2</strong>».</p>
+<ol>
+<li>Зайдите в <a href="https://telefon.miko.ru/personal/update-files">личный кабинет МИКО</a>.</li>
+<li>Скачайте и распакуйте дистрибутив «<strong>Панель телефонии и журнал звонков для 1С, редакция 2</strong>».</li>
+</ol>
+<doc-anchor-target id="продолжение-одинаковое-для-обоих-вариантов">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#продолжение-одинаковое-для-обоих-вариантов">#</doc-anchor-trigger>
+        <span>Продолжение: одинаковое для обоих вариантов</span>
+    </h4>
+</doc-anchor-target>
+<ol>
+<li>В скачанном архиве в папке «Интеграция с Манго» запустите файл «<strong>Скачать сервер интеграции.url</strong>».</li>
+<li>Выберите подходящий для разрядности вашей операционной системы сервер интеграции и скачайте его.</li>
+<li>Запустите мастер установки сервера интеграции. Следуйте указаниям мастера.</li>
+<li>По окончанию установки запустите службу сервера Nightbird, <strong>Пуск</strong> → <strong>Nightbird сервер</strong> → <strong>Запустить сервер Nightbird</strong>.</li>
+</ol>
+<p><img class="miko-shadow"  
+src="/assets/mango/mango_1.png"
+alt="МИКО: запуск сервера интеграции"
+/></p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>После запуска службы будут заняты <strong>TCP</strong> порты: <strong>4222, 8000, 8222, 8223, 8224</strong>. Для подключения к серверу интеграции с другого компьютера сети необходимо в брандмауэре открыть <strong>TCP</strong> порты <strong>4222</strong> и <strong>8222</strong>.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="подключение-к-api-ватс-манго">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#подключение-к-api-ватс-манго">#</doc-anchor-trigger>
+        <span>Подключение к API ВАТС Манго</span>
+    </h2>
+</doc-anchor-target>
+<p>Сервер интеграции подключается к серверу API Манго. Для подключения необходимо получить код и ключ, уникальные для каждой ВАТС.</p>
+<ol>
+<li>Зайдите в <a href="https://lk.mango-office.ru">личный кабинет Манго</a> и выберите виртуальную АТС, с которой будет выполняться интеграция панели телефонии.</li>
+<li>Перейдите в раздел <strong>Настройки АТС</strong> → <strong>Интеграции</strong>. Выберите <strong>API коннектор</strong>.</li>
+</ol>
+<p><img class="miko-shadow"  
+src="/assets/mango/mango_2.png"
+alt="МИКО: API коннектор"
+/></p>
+<ol start="3">
+<li>Нажмите кнопку &quot;<strong>Подключить API коннектор</strong>&quot;.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_3.png"
+data-original="/assets/mango/mango_3.png"
+srcset="/assets/mango/mango_3_prev.png 1x, /assets/mango/mango_3.png 2x" 
+alt="МИКО: API коннектор"
+/></p>
+<ol start="4">
+<li>Согласитесь с условиями и нажмите &quot;<strong>Подключить</strong>&quot;.</li>
+</ol>
+<p><img class="miko-shadow"  
+src="/assets/mango/mango_4.png"
+alt="МИКО: API коннектор"
+/></p>
+<ol start="5">
+<li>Откроется страница с настройками API. Здесь указаны код и ключ для доступа к API.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_5.png"
+data-original="/assets/mango/mango_5.png"
+srcset="/assets/mango/mango_5_prev.png 1x, /assets/mango/mango_5.png 2x" 
+alt="МИКО: API ключ и код АТС"
+/></p>
+<ol start="6">
+<li>Запустите менеджер сервера интеграции, <strong>Пуск</strong> → <strong>Nightbird сервер</strong> → <strong>Менеджер сервера</strong>. Пароль администратора по умолчанию отсутствует. Если войти не удается, проверьте в службах Windows, запущена ли служба <strong>MIKO.Nightbird.Monitor</strong>.</li>
+<li>В разделе сервисов нажмите <strong>Добавить</strong>.</li>
+</ol>
+<p><img class="miko-shadow"  
+src="/assets/mango/mango_7.png"
+alt="МИКО: настройка сервера интеграции"
+/></p>
+<ol start="8">
+<li>Выберите сервис MANGO OFFICE. Вставьте уникальный код АТС и ключ для создания подписи в соответствующие поля.</li>
+</ol>
+<p><img class="miko-shadow"  
+src="/assets/mango/mango_8.png"
+alt="МИКО: добавление API Mango"
+/></p>
+<ol start="9">
+<li>Нажмите <strong>Сохранить</strong>.</li>
+<li>Сервер интеграции должен установить соединение с АТС Манго. Об этом будет свидетельствовать статус &quot;Ок&quot;.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_9.png"
+data-original="/assets/mango/mango_9.png"
+srcset="/assets/mango/mango_9_prev.png 1x, /assets/mango/mango_9.png 2x" 
+alt="МИКО: подключение сервера интеграции к АТС Манго"
+/></p>
 
 
 
