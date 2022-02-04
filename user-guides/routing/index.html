@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.697126229033" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697279933442" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697126229033" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697279933442" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697126229033" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697279933442" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -194,19 +194,25 @@
         <span>Маршрутизация звонков</span>
     </h1>
 </doc-anchor-target>
-<p>Модуль маршрутизации накапливает информации о взаимодействиях между клиентами и сотрудниками компании. Эти данные
-позволяют определять ответственного и автоматически изменять его при смене сотрудников.</p>
-<p>Для каждого клиента при входящем звонке телефонная система на основе данных модуля генерирует персональное
-голосовое меню - IVR. Система напоминает клиенту, с кем он общался в последний раз, и помогает соединиться с нужным
-сотрудником.</p>
 <hr />
-<doc-anchor-target id="настройка-маршрутизации">
+<p>Модуль маршрутизации накапливает информации о взаимодействиях между клиентами и сотрудниками компании. Эти данные
+позволяют определять ответственного и автоматически изменять его при смене сотрудников.<br />
+Для каждого клиента при входящем звонке телефонная система на основе данных модуля генерирует персональное
+голосовое меню - IVR. Система напоминает клиенту, с кем он общался в последний раз, и помогает соединиться с нужным
+сотрудником.<br />
+Если клиент не выбирает ни один из предложенных вариантов - звонок переадресуется на номер по-умолчанию. Если происходит сбой при генерации речи или при обращении к 1С в момент звонка, вызов переадресуется на аварийный номер.
+Подробное описание работы модуля <a href="https://telefon.miko.ru/products/smart-transfer/">в разделе на нашем сайте</a>.</p>
+<doc-anchor-target id="этап-1-настройте-модуль-телефонии-на-атс-и-подсистему-телефонии-в-1с">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#настройка-маршрутизации">#</doc-anchor-trigger>
-        <span>Настройка маршрутизации</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#этап-1-настройте-модуль-телефонии-на-атс-и-подсистему-телефонии-в-1с">#</doc-anchor-trigger>
+        <span>Этап 1. Настройте модуль телефонии на АТС и подсистему телефонии в 1С</span>
     </h2>
 </doc-anchor-target>
-<p>Следуйте инструкции для настройки модуля.</p>
+<p>Модуль умной маршрутизации поставляется вместе с подсистемой телефонии 4.0. Для начала нужно настроить интеграцию 1С и телефонии.</p>
+<ul>
+<li>Если у вас АТС - MikoPBX, следуйте <a href="/get-started/mikopbx/">инструкции &quot;Интеграция с MikoPBX&quot;</a>;</li>
+<li>Если у вас АТС - FreePBX, следуйте <a href="/get-started/freepbx/">инструкции &quot;Интеграция с FreePBX&quot;</a>.</li>
+</ul>
 <doc-anchor-target id="этап-1-выбор-tts-сервиса">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#этап-1-выбор-tts-сервиса">#</doc-anchor-trigger>
@@ -231,7 +237,7 @@
         </div>
         <div class="pr-5 ml-3">
             <h5>Дополнительная оплата</h5>
-<p>Сервисы генерации речи взымают плату за каждую сгенерированную фразу. Но благодаря системе кеширования фраз после
+<p>Сервисы генерации речи взимают плату за каждую сгенерированную фразу. Но благодаря системе кеширования фраз после
 обучения модуль не обращается за повторной генерацией к сервисам.</p>
         </div>
     </div>
@@ -325,10 +331,10 @@
     </div>
 
     <div class="w-1/2">
-        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/user-guides/routing/crt-tts/">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/user-guides/routing/smart-ivr-miko/">
             <span>
                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                <span class="block mt-1">Центр Речевых Технологий</span>
+                <span class="block mt-1">Smart ivr miko</span>
             </span>
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         </a>
