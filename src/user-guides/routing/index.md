@@ -29,7 +29,7 @@ order: -4
 
 Установите и настройте модуль умной маршрутизации звонков на АТС. Процесс установки зависит от АТС:
 - [АТС MikoPBX](/user-guides/routing/smart-ivr-miko)
-- [АТС FreePBX](freepbx)
+- [АТС FreePBX](/user-guides/routing/smart-ivr-freepbx)
 
 ### Этап 3. Настройка параметров в 1С
 
