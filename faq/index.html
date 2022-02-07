@@ -8,27 +8,27 @@
     <!-- Primary Meta Tags -->
     <title>FAQ | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
     <meta name="title" content="FAQ | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta name="description" content="На FreePBX может возникнуть неисправность, связаная с обрывами внешнего входящего звонка, если имя клиента содержит кавычки и несколько символов..." />
+    <meta name="description" content="На FreePBX может возникнуть неисправность, связанная с обрывами внешнего входящего звонка, если имя клиента содержит кавычки и несколько символов..." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/faq/">
     <meta property="og:title" content="FAQ | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="og:description" content="На FreePBX может возникнуть неисправность, связаная с обрывами внешнего входящего звонка, если имя клиента содержит кавычки и несколько символов...">
+    <meta property="og:description" content="На FreePBX может возникнуть неисправность, связанная с обрывами внешнего входящего звонка, если имя клиента содержит кавычки и несколько символов...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/faq/">
     <meta property="twitter:title" content="FAQ | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="twitter:description" content="На FreePBX может возникнуть неисправность, связаная с обрывами внешнего входящего звонка, если имя клиента содержит кавычки и несколько символов...">
+    <meta property="twitter:description" content="На FreePBX может возникнуть неисправность, связанная с обрывами внешнего входящего звонка, если имя клиента содержит кавычки и несколько символов...">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.697557584981" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697561482141" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697557584981" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697561482141" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697557584981" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697561482141" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -200,7 +200,7 @@
         <span>Входящий звонок обрывается, когда имя клиента содержит символ &quot; и символы кириллицы после них</span>
     </h2>
 </doc-anchor-target>
-<p>На FreePBX может возникнуть неисправность, связаная с обрывами внешнего входящего звонка, если имя клиента содержит кавычки и несколько символов после них кириллицей.
+<p>На FreePBX может возникнуть неисправность, связанная с обрывами внешнего входящего звонка, если имя клиента содержит кавычки и несколько символов после них кириллицей.<br />
 Если вариант решения - не использовать кавычки или написать имя латиницей неприменим, тогда решением данной проблемы может послужить использование odbc-коннектора <strong>mariadb-connector-odbc</strong> вместо <strong>mysql-connector-odbc</strong>.</p>
 
 
