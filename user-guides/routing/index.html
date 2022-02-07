@@ -8,27 +8,27 @@
     <!-- Primary Meta Tags -->
     <title>Маршрутизация звонков | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
     <meta name="title" content="Маршрутизация звонков | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta name="description" content="Модуль маршрутизации накапливает информации о взаимодействиях между клиентами и сотрудниками компании. Эти данные" />
+    <meta name="description" content="Суть работы в накоплении информации о взаимодействиях между клиентами и сотрудниками компании, после чего модуль маршрутизации для каждого клиента..." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/user-guides/routing/">
     <meta property="og:title" content="Маршрутизация звонков | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="og:description" content="Модуль маршрутизации накапливает информации о взаимодействиях между клиентами и сотрудниками компании. Эти данные">
+    <meta property="og:description" content="Суть работы в накоплении информации о взаимодействиях между клиентами и сотрудниками компании, после чего модуль маршрутизации для каждого клиента...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/user-guides/routing/">
     <meta property="twitter:title" content="Маршрутизация звонков | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="twitter:description" content="Модуль маршрутизации накапливает информации о взаимодействиях между клиентами и сотрудниками компании. Эти данные">
+    <meta property="twitter:description" content="Суть работы в накоплении информации о взаимодействиях между клиентами и сотрудниками компании, после чего модуль маршрутизации для каждого клиента...">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.697302080477" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697539252855" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697302080477" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697539252855" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697302080477" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697539252855" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -195,12 +195,8 @@
     </h1>
 </doc-anchor-target>
 <hr />
-<p>Модуль маршрутизации накапливает информации о взаимодействиях между клиентами и сотрудниками компании. Эти данные
-позволяют определять ответственного и автоматически изменять его при смене сотрудников.<br />
-Для каждого клиента при входящем звонке телефонная система на основе данных модуля генерирует персональное
-голосовое меню - IVR. Система напоминает клиенту, с кем он общался в последний раз, и помогает соединиться с нужным
-сотрудником.<br />
-Если клиент не выбирает ни один из предложенных вариантов - звонок переадресуется на номер по-умолчанию. Если происходит сбой при генерации речи или при обращении к 1С в момент звонка, вызов переадресуется на аварийный номер.
+<p>Суть работы в накоплении информации о взаимодействиях между клиентами и сотрудниками компании, после чего модуль маршрутизации для каждого клиента формирует персональное голосовое приветствие. При входящем звонке телефонная система обращается к 1С для получения текста приветствия. С помощью сервисов генерации речи оно преобразуется в IVR меню, которое произносится клиенту при звонке.</p>
+<p>Если клиент не выбирает ни один из предложенных вариантов - звонок переадресуется на номер по-умолчанию. Если происходит сбой при генерации речи или при обращении к 1С в момент звонка, вызов переадресуется на аварийный номер.
 Подробное описание работы модуля <a href="https://telefon.miko.ru/products/smart-transfer/">в разделе на нашем сайте</a>.</p>
 <doc-anchor-target id="этап-1-настройте-модуль-телефонии-на-атс-и-подсистему-телефонии-в-1с">
     <h2>
