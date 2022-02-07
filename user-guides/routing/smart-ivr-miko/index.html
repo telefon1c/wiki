@@ -26,11 +26,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.697539252855" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697554293974" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697539252855" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697554293974" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697539252855" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697554293974" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -219,7 +219,7 @@ alt="МИКО: установка модуля умной маршрутизац
 <li>«<strong>Версия подсистемы интеграции на стороне 1С</strong>» - выберите &quot;Версия 2.0&quot;.</li>
 <li>«<strong>Количество повторов IVR меню перед переводом звонка номер по-умолчанию</strong>» - сколько раз диктор произнесет приветствие, прежде чем вызов будет переведен на номер по-умолчанию.</li>
 <li>«<strong>Номер по-умолчанию</strong>» - номер на который будет переведен вызов, если в течении установленного количества повторов приветствия абонент не наберет добавочный номер.</li>
-<li>«<strong>Номер, куда отправим звонок в случае сбоев связи с 1С и TTS</strong>» - если происходит сбой при генерации речи или при обращении к 1С в момент звонка.</li>
+<li>«<strong>Номер, куда отправим звонок в случае сбоев связи с 1С и TTS</strong>» - номер на который будет переведен вызов, если происходит сбой при генерации речи или при обращении к 1С в момент звонка (&quot;аварийный маршрут&quot;).</li>
 <li>«<strong>Количество минут, за которое следует анализировать CDR для поиска ответственного</strong>» - опция относится к упрощенной функции перехвата на ответственного. Если с клиентом кто-либо уже разговаривал за последние N минут, то вызов сразу поступит на «ответственного».</li>
 <li>«<strong>Количество секунд, как долго звонить последнему ответственному</strong>» - опция относится к упрощенной функции перехвата на ответственного.</li>
 </ul>
@@ -271,7 +271,7 @@ alt="МИКО: параметры модуля умной маршрутизац
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                <span class="block mt-1">Smart ivr freepbx</span>
+                <span class="block mt-1">Настройка модуля маршрутизации на FreePBX</span>
             </span>
         </a>
     </div>

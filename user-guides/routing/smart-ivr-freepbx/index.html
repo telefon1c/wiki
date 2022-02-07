@@ -6,26 +6,30 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>Smart ivr freepbx | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
-    <meta name="title" content="Smart ivr freepbx | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <title>Настройка модуля маршрутизации на FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
+    <meta name="title" content="Настройка модуля маршрутизации на FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta name="description" content="Скопируйте ссылку на модуль для FreePBX" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/user-guides/routing/smart-ivr-freepbx/">
-    <meta property="og:title" content="Smart ivr freepbx | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:title" content="Настройка модуля маршрутизации на FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:description" content="Скопируйте ссылку на модуль для FreePBX">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/user-guides/routing/smart-ivr-freepbx/">
-    <meta property="twitter:title" content="Smart ivr freepbx | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:title" content="Настройка модуля маршрутизации на FreePBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:description" content="Скопируйте ссылку на модуль для FreePBX">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.697539252855" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697554293974" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697539252855" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697554293974" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697539252855" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697554293974" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.697554293974" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -185,12 +189,45 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="smart-ivr-freepbx" class="break-words">
+<doc-anchor-target id="настройка-модуля-маршрутизации-на-freepbx" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#smart-ivr-freepbx">#</doc-anchor-trigger>
-        <span>Smart ivr freepbx</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#настройка-модуля-маршрутизации-на-freepbx">#</doc-anchor-trigger>
+        <span>Настройка модуля маршрутизации на FreePBX</span>
     </h1>
 </doc-anchor-target>
+<ol>
+<li>Скопируйте ссылку на модуль для FreePBX</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markup"><code v-pre class="language-markup">https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1csmartivr/latest.tgz</code></pre>
+</doc-codeblock></div>
+<ol start="2">
+<li>Установите модуль путем загрузки из веб аналогично <a href="/get-started/freepbx/#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8F-%D0%BD%D0%B0-%D0%B0%D1%82%D1%81">примеру</a></li>
+<li>В качестве входящего маршрута установите - &quot;<strong>1C Smart IVR</strong>&quot;.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/rooting/mod_f_0.gif"
+data-original="/assets/rooting/mod_f_0.gif"
+srcset="/assets/rooting/mod_f_0_prev.gif 1x, /assets/rooting/mod_f_0.gif 2x" 
+alt="МИКО: правило входящей маршрутизации на умную маршрутизацию"
+/></p>
+<ol start="4">
+<li>В разделе &quot;<strong>Приложения</strong>&quot; перейдите в &quot;<strong>1C Smart IVR (Модуль умной маршрутизации для 1С)</strong>&quot;.</li>
+</ol>
+<p><img class="miko-shadow"  
+src="/assets/rooting/mod_f_2.png"
+alt="МИКО: настройка модуля умной маршрутизации FreePBX"
+/></p>
+<ol start="5">
+<li>Установите параметры модуля маршрутизации:</li>
+</ol>
+<ul>
+<li>в качестве &quot;<strong>Версия подсистемы интеграции на стороне 1С</strong>&quot; - выберите &quot;<strong>Версия 2.0</strong>&quot;.</li>
+<li>&quot;<strong>Номер по-умолчанию, если абонент не выбрал ни один из пунктов меню</strong>&quot; - номер на который будет переведен вызов, если в течении установленного количества повторов приветствия абонент не наберет добавочный номер.</li>
+<li>&quot;<strong>Номер, куда отправим звонок в случае сбоев связи с 1С или TTS</strong>&quot; - номер на который будет переведен вызов, если происходит сбой при генерации речи или при обращении к 1С в момент звонка (&quot;аварийный маршрут&quot;).</li>
+<li>&quot;<strong>Длина внутреннего номера</strong>&quot; - число символов донабора, которое будет ожидать IVR от абонента.</li>
+<li>&quot;<strong>Режим отладки модуля</strong>&quot; - сбор логов о работе модуля в файл &quot;<strong>ModuleSmartIVR</strong>&quot;.</li>
+</ul>
 
 
 
@@ -271,6 +308,6 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Smart ivr freepbx", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Настройка модуля маршрутизации на FreePBX", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
     </body>
 </html>
