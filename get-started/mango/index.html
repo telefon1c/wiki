@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.697561482141" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697646823034" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697561482141" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697646823034" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697561482141" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697646823034" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -318,8 +318,14 @@ src="/assets/mango/mango_4.png"
 alt="МИКО: API коннектор"
 /></p>
 <ol start="5">
-<li>Откроется страница с настройками API. Здесь указаны код и ключ для доступа к API.</li>
+<li>Откроется страница с настройками API.</li>
 </ol>
+<ul>
+<li>Здесь указаны код и ключ для доступа к API.</li>
+<li>Переключатель <strong>Разрешенные IP-адреса</strong> оставьте в положении &quot;<strong>Свободный доступ. Соединения по API возможны с любых IP-адресов</strong>&quot;. Позже Вы сможете изменить эту настройку, когда убедитесь, что компоненты системы работают нормально.</li>
+<li>Установите флажок «<strong>Предоставлять возможность генерации и использования ссылок</strong>».</li>
+<li>Нажмите &quot;<strong>Сохранить</strong>&quot;.</li>
+</ul>
 <p><img class="miko-shadow img-zoomable"  
 src="/assets/mango/mango_5.png"
 data-original="/assets/mango/mango_5.png"
@@ -350,6 +356,21 @@ src="/assets/mango/mango_9.png"
 data-original="/assets/mango/mango_9.png"
 srcset="/assets/mango/mango_9_prev.png 1x, /assets/mango/mango_9.png 2x" 
 alt="МИКО: подключение сервера интеграции к АТС Манго"
+/></p>
+<ol start="11">
+<li>Убедитесь, что у вас включена запись разговора внутри АТС. Перейдите: <strong>Виртуальная АТС</strong> → <strong>Записи разговоров</strong>.
+Должно отображается имя кнопки «<strong>ИЗМЕНИТЬ</strong>» (а не «<strong>ПОДКЛЮЧИТЬ</strong>»), на вкладке «<strong>Правила записи</strong>» «<strong>Записывать все звонки</strong>»</li>
+</ol>
+<p><img class="miko-shadow"  
+src="/assets/mango/mango_10.png"
+alt=""
+/></p>
+<p>Ниже приведен пример включения записи разговоров.</p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_2.gif"
+data-original="/assets/mango/mango_2.gif"
+srcset="/assets/mango/mango_2_prev.gif 1x, /assets/mango/mango_2.gif 2x" 
+alt="МИКО: включение записи разговоров в ВАТС Манго"
 /></p>
 
 
