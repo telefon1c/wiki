@@ -15,20 +15,22 @@
     <meta property="og:url" content="https://docs.telefon1c.ru/get-started/mango/">
     <meta property="og:title" content="Интеграция с ВАТС Манго | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
     <meta property="og:description" content="Данная инструкция предназначена для редакции 4.0, для предыдущих версий используйте эту инструкцию. Для интеграции виртуальной АТС Манго с 1С...">
+    <meta property="og:image" content="https://docs.telefon1c.ru/assets/freepbx/freepbx_1c_0.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/get-started/mango/">
     <meta property="twitter:title" content="Интеграция с ВАТС Манго | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
     <meta property="twitter:description" content="Данная инструкция предназначена для редакции 4.0, для предыдущих версий используйте эту инструкцию. Для интеграции виртуальной АТС Манго с 1С...">
+    <meta property="twitter:image" content="https://docs.telefon1c.ru/assets/freepbx/freepbx_1c_0.png">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.697646823034" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.697717991920" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697646823034" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.697717991920" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697646823034" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.697717991920" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -372,6 +374,79 @@ data-original="/assets/mango/mango_2.gif"
 srcset="/assets/mango/mango_2_prev.gif 1x, /assets/mango/mango_2.gif 2x" 
 alt="МИКО: включение записи разговоров в ВАТС Манго"
 /></p>
+<doc-anchor-target id="подключение-к-1с">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#подключение-к-1с">#</doc-anchor-trigger>
+        <span>Подключение к 1С</span>
+    </h2>
+</doc-anchor-target>
+<p>Связь с 1С обеспечит доступ к телефонной книге Вашей информационной базы для панели телефонии.</p>
+<ol>
+<li>В менеджере сервера в разделе сервисов нажмите &quot;<strong>Добавить</strong>&quot;.</li>
+<li>Выберите сервис &quot;<strong>1С:Предприятие</strong>&quot;.</li>
+<li>Выберите <a href="http://localhost:5000/root-guides/select-connection-mode">подходящий способ соединения с 1С.</a></li>
+</ol>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+            <h5>Коротко о способах подключения</h5>
+<p>Если у вас <mark>Сервер 1С</mark> и пользователи подключаются посредством тонкого клиента - подойдет способ <strong>Long-pooling</strong>. Канал передачи контактных данных нужно установить в <strong>Long-pooling соединение</strong>, канал передачи событий в <strong>Long-pooling соединение</strong> или <strong>Внешняя компонента</strong>.<br />
+Если у вас <mark>файловая информационная база</mark> - подойдет способ <strong>веб-сервис</strong>. Нужно <a href="/root-guides/base-publishing/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+    <span>настроить публикацию</span>
+</a> информационной базы на сервере IIS или Apache, а каналы передачи событий и контактных данных установить в значение <strong>веб-сервис</strong>.</p>
+        </div>
+    </div>
+</div>
+<p>Для способа соединения «<strong>веб-сервис</strong>», заполните параметры подключения к веб-сервису.
+// Вставить картинку</p>
+<p>При использовании <strong>long-pool</strong> соединения выполните данное подключение после настройки подсистемы 1С и выбора данного типа соединения в настройках.  Завершите настройку нажав &quot;<strong>Сохранить</strong>&quot;.</p>
+<p><img class="miko-shadow"  
+src="/assets/mango/mango_11.png"
+alt=""
+/></p>
+<p>На данном этапе<span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-red-600 bg-red-100 h-6 px-2 text-xs rounded-md">
+    <span>соединение с 1С установлено не будет</span>
+</span>. Требуется дальнейшая настройка в 1С:Предприятие.</p>
+<doc-anchor-target id="встраивание-расширения-телефонии-в-информационную-базу-1спредприятие">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#встраивание-расширения-телефонии-в-информационную-базу-1спредприятие">#</doc-anchor-trigger>
+        <span>Встраивание расширения телефонии в информационную базу 1С:Предприятие</span>
+    </h2>
+</doc-anchor-target>
+<ol>
+<li>Запустите информационную базу 1С в режиме &quot;1С:Предприятие&quot;. Войдите пользователем, имеющим права администратора.
+В главном меню выполните  Файл - &gt; Открыть (или нажмите комбинацию клавиш <strong>Ctrl+O</strong>).<br />
+<figure class="content-center">
+    <img src="../../assets/freepbx/freepbx_1c_0.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</li>
+</ol>
+<p>Выберите обработку <strong>Установщик.epf</strong> из скачанного архива по пути <code v-pre>Подсистема телефонии для 1С\Редакция 2.2\Установщик.epf</code></p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_12.png"
+data-original="/assets/mango/mango_12.png"
+srcset="/assets/mango/mango_12_prev.png 1x, /assets/mango/mango_12.png 2x" 
+alt=""
+/></p>
+<ol start="2">
+<li>Согласитесь в появившемся предупреждении безопасности.
+<figure class="content-center">
+    <img src="../../assets/freepbx/freepbx_1c_1.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</li>
+</ol>
 
 
 
