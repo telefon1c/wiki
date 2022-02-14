@@ -110,15 +110,19 @@ order: -2
 
 После этого мобильный телефон появится во внешней панели.
 
-<img class="miko-shadow"  
-    src="/assets/panel/setup/cti_nastr_8.png"
+<img class="miko-shadow img-zoomable"  
+    src="/assets/panel/setup/cti_nastr_8_1.png"
+    data-original="/assets/panel/setup/cti_nastr_8_1.png"
+    srcset="/assets/panel/setup/cti_nastr_8_1_prev.png 1x, /assets/panel/setup/cti_nastr_8_1.png 2x" 
     alt="МИКО: настройки внешней панели, переводить на мобильный телефон"
 /> 
 
 Если установлен флажок "**Переводить только при статусе "Звонить на мобильный"**", то звонок направляется на мобильный по истечении таймера только в том случае, если сотрудник установил статус "Звонить на мобильный". 
 
-<img class="miko-shadow"  
-    src="/assets/panel/setup/cti_nastr_9.png"
+<img class="miko-shadow img-zoomable"  
+    src="/assets/panel/setup/cti_nastr_9_1.png"
+    data-original="/assets/panel/setup/cti_nastr_9_1.png"
+    srcset="/assets/panel/setup/cti_nastr_9_1_prev.png 1x, /assets/panel/setup/cti_nastr_9_1.png 2x" 
     alt="МИКО: настройки внешней панели, статус звонить на мобильный"
 /> 
 
