@@ -1,4 +1,5 @@
 ---
+visibility: hidden
 order: -3
 icon: terminal
 ---

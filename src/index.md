@@ -83,7 +83,7 @@ text="Маршрутизация звонков<div class='subtitle text-gray-70
 
 ### Остались вопросы?
 
-Проверьте, нет ли ответа в разделе [FAQ](faq/faq.md).
+Проверьте, нет ли ответа в разделе [FAQ](faq/index.md).
 Свяжитесь с [отделом технической поддержки](https://telefon.miko.ru/contacts/).
 Посмотрите [наши вебинары](https://telefon.miko.ru/events/playback/) 
 или задайте свой вопрос на [форуме](https://telefon.miko.ru/forum/).
