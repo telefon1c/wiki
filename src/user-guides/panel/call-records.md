@@ -26,8 +26,10 @@ order: -7
 Если в разговоре были переводы звонка, каждая запись прослушивается отдельно.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/call-records/cti_zapisi_2.png"
-    alt="МИКО: прослушивание записи во встроенном плеере"
+    src="/assets/panel/call-records/cti_zapisi_2_1.png"
+    data-original="/assets/panel/call-records/cti_zapisi_2_1.png"
+    srcset="/assets/panel/call-records/cti_zapisi_2_1_prev.png 1x, /assets/panel/call-records/cti_zapisi_2_1.png 2x" 
+    alt="МИКО: прослушивание записи во встроенном плеере журнала звонков"
 /> 
 
 Подробнее про журнал звонков 1С:Предприятие можно почитать [в этом разделе.](~/user-guides/journal/calls-and-records/)

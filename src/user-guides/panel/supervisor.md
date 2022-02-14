@@ -29,28 +29,28 @@ order: -10
 Чтобы воспользоваться функцией супервизора, нужно во время разговора сотрудника с другим абонентом, на закладке "**Сотрудники**" нажать правой кнопкой мыши на нужного сотрудника и в открывшемся списке выбрать нужную функцию.  
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/supervisor/cti_superviz_3.png"
-    data-original="/assets/panel/supervisor/cti_superviz_3.png"
-    srcset="/assets/panel/supervisor/cti_superviz_3_prev.png 1x, /assets/panel/supervisor/cti_superviz_3.png 2x" 
+    src="/assets/panel/supervisor/cti_superviz_3_1.png"
+    data-original="/assets/panel/supervisor/cti_superviz_3_1.png"
+    srcset="/assets/panel/supervisor/cti_superviz_3_1_prev.png 1x, /assets/panel/supervisor/cti_superviz_3_1.png 2x" 
     alt="МИКО: внешняя панель, вызов функции супервизора"
 /> 
 
 После активации функции в блоке звонка вы будете видеть сотрудника, на которого вы вызвали функцию и абонента, с которым он разговаривает.  
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/supervisor/cti_superviz_4.png"
-    data-original="/assets/panel/supervisor/cti_superviz_4.png"
-    srcset="/assets/panel/supervisor/cti_superviz_4_prev.png 1x, /assets/panel/supervisor/cti_superviz_4.png 2x" 
+    src="/assets/panel/supervisor/cti_superviz_4_1.png"
+    data-original="/assets/panel/supervisor/cti_superviz_4_1.png"
+    srcset="/assets/panel/supervisor/cti_superviz_4_1_prev.png 1x, /assets/panel/supervisor/cti_superviz_4_1.png 2x" 
     alt="МИКО: внешняя панель, функция супервизора"
 /> 
 
 По кнопке "**Супервизор**", можно изменить выбранную функцию на другую.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/supervisor/cti_superviz_5.png"
-    data-original="/assets/panel/supervisor/cti_superviz_5.png"
-    srcset="/assets/panel/supervisor/cti_superviz_5_prev.png 1x, /assets/panel/supervisor/cti_superviz_5.png 2x" 
-    alt="МИКО: внешняя панель, функция супервизора"
+    src="/assets/panel/supervisor/cti_superviz_6_1.png"
+    data-original="/assets/panel/supervisor/cti_superviz_6_1.png"
+    srcset="/assets/panel/supervisor/cti_superviz_6_1_prev.png 1x, /assets/panel/supervisor/cti_superviz_6_1.png 2x" 
+    alt="МИКО: внешняя панель, смена функции супервизора"
 /> 
 
 По кнопке "**Завершить**" можно прекратить функцию.
