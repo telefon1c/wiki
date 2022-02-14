@@ -6,29 +6,29 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>FAQ | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
-    <meta name="title" content="FAQ | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta name="description" content="На FreePBX может возникнуть неисправность, связанная с обрывами внешнего входящего звонка, если имя клиента содержит кавычки и несколько символов..." />
+    <title>Выбор режима соединения | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
+    <meta name="title" content="Выбор режима соединения | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta name="description" content="Предусмотрено несколько методов соединения MikoPBX (или сервера интеграции) и 1С." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.telefon1c.ru/faq/">
-    <meta property="og:title" content="FAQ | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="og:description" content="На FreePBX может возникнуть неисправность, связанная с обрывами внешнего входящего звонка, если имя клиента содержит кавычки и несколько символов...">
+    <meta property="og:url" content="https://docs.telefon1c.ru/faq/select-connection-mode/">
+    <meta property="og:title" content="Выбор режима соединения | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:description" content="Предусмотрено несколько методов соединения MikoPBX (или сервера интеграции) и 1С.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.telefon1c.ru/faq/">
-    <meta property="twitter:title" content="FAQ | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="twitter:description" content="На FreePBX может возникнуть неисправность, связанная с обрывами внешнего входящего звонка, если имя клиента содержит кавычки и несколько символов...">
+    <meta property="twitter:url" content="https://docs.telefon1c.ru/faq/select-connection-mode/">
+    <meta property="twitter:title" content="Выбор режима соединения | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:description" content="Предусмотрено несколько методов соединения MikoPBX (или сервера интеграции) и 1С.">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.698160545245" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.698168195030" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698160545245" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698168195030" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698160545245" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698168195030" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -188,20 +188,168 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="faq" class="break-words">
+<doc-anchor-target id="выбор-режима-соединения" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#faq">#</doc-anchor-trigger>
-        <span>FAQ</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#выбор-режима-соединения">#</doc-anchor-trigger>
+        <span>Выбор режима соединения</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="входящий-звонок-обрывается-когда-имя-клиента-содержит-символ--и-символы-кириллицы-после-них">
+<doc-anchor-target id="общая-схема-подключения">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#входящий-звонок-обрывается-когда-имя-клиента-содержит-символ--и-символы-кириллицы-после-них">#</doc-anchor-trigger>
-        <span>Входящий звонок обрывается, когда имя клиента содержит символ &quot; и символы кириллицы после них</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#общая-схема-подключения">#</doc-anchor-trigger>
+        <span>Общая схема подключения</span>
     </h2>
 </doc-anchor-target>
-<p>На FreePBX может возникнуть неисправность, связанная с обрывами внешнего входящего звонка, если имя клиента содержит кавычки и несколько символов после них кириллицей.<br />
-Если вариант решения - не использовать кавычки или написать имя латиницей неприменим, тогда решением данной проблемы может послужить использование odbc-коннектора <strong>mariadb-connector-odbc</strong> вместо <strong>mysql-connector-odbc</strong>.</p>
+<p>Предусмотрено несколько методов соединения MikoPBX (или сервера интеграции) и 1С. Разделение методов подключения обусловлено различными ограничениями клиентских приложений 1С и схемами организации сети. При настройке MikoPBX или сервера интеграции требуется выбрать между схемой с веб-сервисом или long-polling соединением. Ниже показана общая схема подключения.</p>
+<p><img class="miko-shadow"  
+src="/assets/root-guides/select-connection-mode/sposob_0.png"
+alt="МИКО: общая схема подключения"
+/></p>
+<p>Панель телефонии всегда подключается к MikoPBX (порт 4222). Сервер 1С подключается к MikoPBX для загрузки истории звонков (порт 8222). Далее в зависимости от схемы соединения может устанавливаться подключение от MikoPBX к веб-серверу 1С (порт по умолчанию 80) или наоборот от сервера 1С к MikoPBX (порт 8222).<br />
+В настройках подсистемы 1С доступно два параметра:</p>
+<ul>
+<li>Канал передачи событий</li>
+<li>Канал передачи контактных данных</li>
+</ul>
+<p>Первый определяет, как события о поступающих звонках будут доставлены от АТС до клиента 1С. А второй - как внешняя панель получит из 1С информацию о контактах.<br />
+Ниже предложено несколько примеров организации сети, чтобы помочь разобраться в правильном выборе настроек.</p>
+<doc-anchor-target id="пример-1-работа-в-локальная-сети-тонкий-клиент-1с">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#пример-1-работа-в-локальная-сети-тонкий-клиент-1с">#</doc-anchor-trigger>
+        <span>Пример 1. Работа в локальная сети, тонкий клиент 1С</span>
+    </h2>
+</doc-anchor-target>
+<p><img class="miko-shadow"  
+src="/assets/root-guides/select-connection-mode/sposob_1.png"
+alt="МИКО: схема подключения, локальная сеть, тонкий клиент"
+/></p>
+<p><strong>Организация сети:</strong> сервер 1С и АТС расположены в одной сети.<br />
+<strong>Режим работы 1С:</strong> тонкий клиент.
+Самая простая схема. Все оборудование находится в одной сети. Тонкий клиент 1С подключается к MikoPBX через внешнюю компоненту. MikoPBX подключается к веб-сервису 1С опубликованному на веб-сервере Apache или IIS.</p>
+<p><strong>Настройки в MikoPBX:</strong><br />
+Способ соединения с 1С: веб-сервис.<br />
+Адрес и порт: 172.16.32.1:80.</p>
+<p><strong>Настройки в 1С:</strong><br />
+Адрес и порт: 172.16.32.2:8222.<br />
+Канал передачи событий: внешняя компонента.<br />
+Канал передачи контактных данных: веб-сервис.</p>
+<p><strong>Дополнительно:</strong><br />
+Установить Apache или IIS и опубликовать веб-сервис 1С.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>Если работа с внешней панелью телефонии не предполагается, то можно не публиковать веб-сервис.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="пример-2-mikopbx-в-облаке-тонкий-клиент-1с">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#пример-2-mikopbx-в-облаке-тонкий-клиент-1с">#</doc-anchor-trigger>
+        <span>Пример 2. MikoPBX в облаке, тонкий клиент 1С</span>
+    </h2>
+</doc-anchor-target>
+<p><img class="miko-shadow"  
+src="/assets/root-guides/select-connection-mode/sposob_2.png"
+alt="МИКО: схема подключения, АТС в облаке, тонкий клиент 1С"
+/></p>
+<p><strong>Организация сети:</strong> сервер 1С расположен в локальной сети, АТС - в облаке.<br />
+<strong>Режим работы 1С:</strong> тонкий клиент.</p>
+<p>Поскольку АТС расположена за пределами локальной сети, то у нее нет прямого сообщения с сервером 1С. Можно получить выделенный IP-адрес и опубликовать базу в интернете или использовать схему с long-polling соединением. В этом случае сервер 1С установит постоянное подключение к MikoPBX.</p>
+<p><strong>Настройки в MikoPBX:</strong><br />
+Способ соединения с 1С: long-polling соединение.</p>
+<p><strong>Настройки в 1С:</strong><br />
+Адрес и порт: 94.100.180.202:8222.<br />
+Канал передачи событий: внешняя компонента.<br />
+Канал передачи контактных данных: long-polling соединение.</p>
+<doc-anchor-target id="пример-3-1с-в-облаке-веб-клиент-1с">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#пример-3-1с-в-облаке-веб-клиент-1с">#</doc-anchor-trigger>
+        <span>Пример 3. 1С в облаке, веб-клиент 1С</span>
+    </h2>
+</doc-anchor-target>
+<p><img class="miko-shadow"  
+src="/assets/root-guides/select-connection-mode/sposob_3.png"
+alt="МИКО: схема подключения, 1С в облаке, веб-клиент 1С"
+/></p>
+<p><strong>Организация сети:</strong> сервер 1С расположен в облаке, АТС - в облаке.<br />
+<strong>Режим работы 1С:</strong> веб-клиент.</p>
+<p>Сервер 1С расположен в облаке. Поэтому для работы журнала звонков АТС также потребуется разместить в облаке или на компьютере с выделенным IP адресом. Веб-клиент 1С не имеет прямого сообщения с MikoPBX. События о звонках сначала поступают на сервер 1С и далее в веб-клиент через систему взаимодействия. Потребуется опубликовать веб-сервис и зарегистрировать базу в системе взаимодействия 1С.</p>
+<p><strong>Настройки в MikoPBX:</strong><br />
+Способ соединения с 1С: веб-сервис.<br />
+Адрес и порт: 185.98.85.241:80.</p>
+<p><strong>Настройки в 1С:</strong><br />
+Адрес и порт: 94.100.180.202:8222.<br />
+Канал передачи событий: веб-сервис.<br />
+Канал передачи контактных данных: веб-сервис.</p>
+<p><strong>Дополнительно:</strong><br />
+Установить Apache или IIS (в облаке это обычно уже выполнено) и опубликовать веб-сервис 1С.<br />
+Зарегистрировать базу в сервисе 1С:Диалог для получения доступа к системе взаимодействия.</p>
+<doc-anchor-target id="сравнительная-таблица-режимов">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#сравнительная-таблица-режимов">#</doc-anchor-trigger>
+        <span>Сравнительная таблица режимов</span>
+    </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>-</th>
+<th>Внешняя компонента</th>
+<th>Веб-сервис</th>
+<th>Long-poll соединение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Вид клиента 1С</td>
+<td>Тонкий клиент</td>
+<td>Тонкий и веб клиенты</td>
+<td>Тонкий и веб клиенты</td>
+</tr>
+<tr>
+<td>Операционная система</td>
+<td>Windows</td>
+<td>Windows, Linux, macOS</td>
+<td>Windows, Linux, macOS</td>
+</tr>
+<tr>
+<td>Файловый вариант работы</td>
+<td>Да</td>
+<td>Да</td>
+<td>Нет</td>
+</tr>
+<tr>
+<td>Клиент-серверный вариант работы</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Требует публикации на веб-сервере</td>
+<td>Нет</td>
+<td>Да</td>
+<td>Нет</td>
+</tr>
+<tr>
+<td>Требует регистрации в 1С:Диалог</td>
+<td>Нет</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 
@@ -211,7 +359,7 @@
             </div>
 
             <div class="flex flex-wrap items-center justify-between mt-14">
-    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/telefon1c/wiki/edit/master/src/faq.md" target="_blank" rel="noopener">
+    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/telefon1c/wiki/edit/master/src/faq/select-connection-mode.md" target="_blank" rel="noopener">
         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         <span>Редактировать в GitHub</span>
     </a>
@@ -221,16 +369,23 @@
 
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/root-guides/base-publishing/">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/user-guides/routing/">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                <span class="block mt-1">Публикация информационной базы на веб-сервере</span>
+                <span class="block mt-1">Маршрутизация звонков</span>
             </span>
         </a>
     </div>
 
     <div class="w-1/2">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/faq/cti-terminal-setup/">
+            <span>
+                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                <span class="block mt-1">Установка панели телефонии на терминальный сервер</span>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+        </a>
     </div>
 </nav>
 
@@ -275,6 +430,6 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "FAQ", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Выбор режима соединения", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
     </body>
 </html>
