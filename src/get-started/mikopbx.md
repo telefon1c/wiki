@@ -30,15 +30,13 @@ order: -1
 ключ с активированным триальным периодом на **30-дней**.
 
 ### Установка модуля
-
-В раздел `Управление модулями` найдите модуль `Панель телефонии 4.0 для 1С` и нажмите кнопку `Установить модуль`. Модуль
-будет загружен и установлен на АТС.
-
-<figure class="content-center">
-  <img  src="/assets/mikopbx/module-install.png" style="box-shadow: 0 0 20px 0 grey">
-</figure>
-
-**Включите** установленный модуль, нажав на тумблер.
+1. Установите и включите модуль "**Панель телефонии 4.0 для 1С**" 
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mikopbx/mikopbx_0.gif"
+    data-original="/assets/mikopbx/mikopbx_0.gif"
+    srcset="/assets/mikopbx/mikopbx_0_prev.gif 1x, /assets/mikopbx/mikopbx_0.gif 2x" 
+    alt="МИКО: установка модуля на MikoPBX"
+/> 
 
 ### Установка расширения для 1С
 

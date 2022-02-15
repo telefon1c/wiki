@@ -172,8 +172,14 @@ order: -3
 
 ## Встраивание расширения телефонии в информационную базу 1С:Предприятие
 1. Запустите информационную базу 1С в режиме "1С:Предприятие". Войдите пользователем, имеющим права администратора.
-В главном меню выполните  Файл - > Открыть (или нажмите комбинацию клавиш **Ctrl+O**).   
-![](../assets/freepbx/freepbx_1c_0.png)
+В главном меню выполните  Файл - > Открыть (или нажмите комбинацию клавиш **Ctrl+O**).  
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_23.png"
+    data-original="/assets/mango/mango_23.png"
+    srcset="/assets/mango/mango_23_prev.png 1x, /assets/mango/mango_23.png 2x" 
+    alt=""
+/> 
 
 Выберите обработку **Установщик.epf** из скачанного архива по пути `Подсистема телефонии для 1С\Редакция 2.2\Установщик.epf`  
 
@@ -184,35 +190,62 @@ order: -3
     alt=""
 /> 
 
-2. Согласитесь в появившемся предупреждении безопасности.
-![](../assets/freepbx/freepbx_1c_1.png)
-
 3. На странице **Проверка доступных лицензий** вставьте ваш лицензионный ключ в одноименное поле и выполните **Далее**.
-![](../assets/freepbx/freepbx_1c_2.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_24.png"
+    data-original="/assets/mango/mango_24.png"
+    srcset="/assets/mango/mango_24_prev.png 1x, /assets/mango/mango_24.png 2x" 
+    alt="МИКО: вставить лицензионный ключ в обработке"
+/> 
 
 4. Выберите последнюю версию расширения, если их несколько и выполните **Установить**.
 ![](../assets/freepbx/freepbx_1c_3.png)
 
 5. Ознакомьтесь с лицензионным соглашением и примите условия.
-![](../assets/freepbx/freepbx_1c_4.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_25.png"
+    data-original="/assets/mango/mango_25.png"
+    srcset="/assets/mango/mango_25_prev.png 1x, /assets/mango/mango_25.png 2x" 
+    alt="МИКО: лицензионное соглашение"
+/> 
 
 6. Начнется установка расширения. После окончания установки перезагрузите информационную базу, нажав на кнопку **Перезагрузить**.
-![](../assets/freepbx/freepbx_1c_5.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_26.png"
+    data-original="/assets/mango/mango_26.png"
+    srcset="/assets/mango/mango_26_prev.png 1x, /assets/mango/mango_26.png 2x" 
+    alt="МИКО: завершение установки расширения телефонии"
+/> 
 
 7. После перезапуска базы в панели функций текущего раздела появится подсистема **Звонки и сообщения**. Также в открытых формах появится **Мастер первоначальной настройки**.
-![](../assets/freepbx/freepbx_1c_6.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_27.png"
+    data-original="/assets/mango/mango_27.png"
+    srcset="/assets/mango/mango_27_prev.png 1x, /assets/mango/mango_27.png 2x" 
+    alt="МИКО: установлена подсистема звонки и сообщения"
+/> 
 
 8. Перейдите в форму **Мастер первоначальной настройки** и выполните на ней **Далее**.
-![](../assets/freepbx/freepbx_1c_7.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_28.png"
+    data-original="/assets/mango/mango_28.png"
+    srcset="/assets/mango/mango_28_prev.png 1x, /assets/mango/mango_28.png 2x" 
+    alt="МИКО: установлена подсистема звонки и сообщения"
+/> 
 
 9. На странице **Схема подключения** выберите подходящую вам [схему соединения](/root-guides/select-connection-mode) АТС с 1С. Выбор принципиального значения не имеет - это, своего рода, подсказка. От него будет зависеть первоначальное заполнение каналов передачи событий и контактных данных.  
 Откройте **Расширенные настройки** и установите их исходя из выбранной схемы подключения. Выполните **Далее**.  
 В данном примере использовалась файловая информационная база, и выбран способ подключения - через веб-сервис.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/mango/mango_14.png"
-    data-original="/assets/mango/mango_14.png"
-    srcset="/assets/mango/mango_14_prev.png 1x, /assets/mango/mango_14.png 2x" 
+    src="/assets/mango/mango_29.png"
+    data-original="/assets/mango/mango_29.png"
+    srcset="/assets/mango/mango_29_prev.png 1x, /assets/mango/mango_29.png 2x" 
     alt="МИКО: способ подключения к серверу интеграции"
 /> 
 
@@ -250,9 +283,9 @@ order: -3
 14. На странице "Проверка связи" выберите тип АТС "**Mango office**" IP-адрес сервера интеграции. Нажмите "**Далее**".
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/mango/mango_20.png"
-    data-original="/assets/mango/mango_20.png"
-    srcset="/assets/mango/mango_20_prev.png 1x, /assets/mango/mango_20.png 2x" 
+    src="/assets/mango/mango_30.png"
+    data-original="/assets/mango/mango_30.png"
+    srcset="/assets/mango/mango_30_prev.png 1x, /assets/mango/mango_30.png 2x" 
     alt="МИКО: подключения 1С к серверу интеграции"
 /> 
 

@@ -26,21 +26,10 @@ order: -2
 1. Перейдите в веб-интерфейс АТС, выберите раздел **FreePBX Administration**.
 ![](../assets/freepbx/freepbx_mod_0.png)
 
-2. Выполните **Admin -> Module Admin**.
-![](../assets/freepbx/freepbx_mod_1.png)
-
-3. Выполните **Upload modules**.
-![](../assets/freepbx/freepbx_mod_2.png)
-
-4. Выберите **Type** выберите **Download (From Web)**. 
-Скопируйте ссылку на последнюю версию модуля "Панель телефонии 2.0 для 1С":   
+2. Установите модуль "**Панель телефонии 4.0 для 1С**" путем "**Загрузить из Веб**" использовав ссылку для скачивания последней версии.  
 ```html
 https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/latest.tgz
 ```
-Вставьте ее в поле **Download Remote Module**.  
-Выполните **Download (From Web)**.
-![](../assets/freepbx/freepbx_mod_3.png)
-
 5. Дождитесь загрузки модуля на АТС. Затем выполните **Manage Local Modules**.
 ![](../assets/freepbx/freepbx_mod_4.png)
 
@@ -84,37 +73,76 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
 ### Встраивание расширения телефонии в информационную базу 1С:Предприятие
 1. Запустите информационную базу 1С в режиме "1С:Предприятие". Войдите пользователем, имеющим права администратора.
 В главном меню выполните  Файл - > Открыть (или нажмите комбинацию клавиш **Ctrl+O**).  Выберите скачанную обработку **Установщик.epf**
-![](../assets/freepbx/freepbx_1c_0.png)
 
-2. Согласитесь в появившемся предупреждении безопасности.
-![](../assets/freepbx/freepbx_1c_1.png)
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_23.png"
+    data-original="/assets/mango/mango_23.png"
+    srcset="/assets/mango/mango_23_prev.png 1x, /assets/mango/mango_23.png 2x" 
+    alt=""
+/> 
 
 3. На странице **Проверка доступных лицензий** вставьте ваш лицензионный ключ в одноименное поле и выполните **Далее**.
-![](../assets/freepbx/freepbx_1c_2.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_24.png"
+    data-original="/assets/mango/mango_24.png"
+    srcset="/assets/mango/mango_24_prev.png 1x, /assets/mango/mango_24.png 2x" 
+    alt="МИКО: вставить лицензионный ключ в обработке"
+/> 
 
 4. Выберите последнюю версию расширения, если их несколько и выполните **Установить**.
 ![](../assets/freepbx/freepbx_1c_3.png)
 
 5. Ознакомьтесь с лицензионным соглашением и примите условия.
-![](../assets/freepbx/freepbx_1c_4.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_25.png"
+    data-original="/assets/mango/mango_25.png"
+    srcset="/assets/mango/mango_25_prev.png 1x, /assets/mango/mango_25.png 2x" 
+    alt="МИКО: лицензионное соглашение"
+/> 
 
 6. Начнется установка расширения. После окончания установки перезагрузите информационную базу, нажав на кнопку **Перезагрузить**.
-![](../assets/freepbx/freepbx_1c_5.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_26.png"
+    data-original="/assets/mango/mango_26.png"
+    srcset="/assets/mango/mango_26_prev.png 1x, /assets/mango/mango_26.png 2x" 
+    alt="МИКО: завершение установки расширения телефонии"
+/> 
 
 7. После перезапуска базы в панели функций текущего раздела появится подсистема **Звонки и сообщения**. Также в открытых формах появится **Мастер первоначальной настройки**.
-![](../assets/freepbx/freepbx_1c_6.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_27.png"
+    data-original="/assets/mango/mango_27.png"
+    srcset="/assets/mango/mango_27_prev.png 1x, /assets/mango/mango_27.png 2x" 
+    alt="МИКО: установлена подсистема звонки и сообщения"
+/> 
 
 8. Перейдите в форму **Мастер первоначальной настройки** и выполните на ней **Далее**.
-![](../assets/freepbx/freepbx_1c_7.png)
 
-9. На странице **Схема подключения** выберите подходящую вам [схему соединения](~/root-guides/select-connection-mode) АТС с 1С. Выбор принципиального значения не имеет - это, своего рода, подсказка. От него будет зависеть первоначальное заполнение каналов передачи событий и контактных данных.  
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_28.png"
+    data-original="/assets/mango/mango_28.png"
+    srcset="/assets/mango/mango_28_prev.png 1x, /assets/mango/mango_28.png 2x" 
+    alt="МИКО: установлена подсистема звонки и сообщения"
+/> 
+
+9. На странице **Схема подключения** выберите подходящую вам [схему соединения](/root-guides/select-connection-mode) АТС с 1С. Выбор принципиального значения не имеет - это, своего рода, подсказка. От него будет зависеть первоначальное заполнение каналов передачи событий и контактных данных.  
 Откройте **Расширенные настройки** и установите их исходя из выбранной схемы подключения. Выполните **Далее**.  
 В данном примере использовалась серверная информационная база, и выбран способ подключения Long-pooling.
 !!! Коротко о способах подключения
 Если у вас **Сервер 1С** и пользователи подключаются посредством тонкого клиента - подойдет способ **Long-pooling**. Канал передачи контактных данных нужно установить в **Long-pooling соединение**, канал передачи событий в **Long-pooling соединение** или **Внешняя компонента**.  
 Если у вас **файловая информационная база** - подойдет способ **веб-сервис**. Нужно [настроить публикацию](/faq/base-publishing) информационной базы на сервере IIS или Apache, а каналы передачи событий и контактных данных установить в значение **веб-сервис**.  
 !!!
-![](../assets/freepbx/freepbx_1c_8.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/freepbx/freepbx_1c_8.png"
+    data-original="/assets/freepbx/freepbx_1c_8.png"
+    srcset="/assets/freepbx/freepbx_1c_8_prev.png 1x, /assets/freepbx/freepbx_1c_8.png 2x" 
+    alt="МИКО: выбор способа соединения"
+/> 
 
 10. В веб-интерфейсе АТС в модуле **МИКО:Панель телефонии 4.0** на вкладке **Настройка модуля** скопируйте код из раздела **Данные для автоматической настройки**.
 ![](../assets/freepbx/freepbx_1c_9.png)
