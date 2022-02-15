@@ -26,12 +26,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.698224756683" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.698247526294" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698224756683" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698247526294" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698224756683" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.698224756683" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698247526294" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.698247526294" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -235,34 +235,12 @@
 </figure>
 </p>
 </li>
-<li><p>Выполните <strong>Admin -&gt; Module Admin</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_mod_1.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>Выполните <strong>Upload modules</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_mod_2.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>Выберите <strong>Type</strong> выберите <strong>Download (From Web)</strong>.
-Скопируйте ссылку на последнюю версию модуля &quot;Панель телефонии 2.0 для 1С&quot;:</p>
+<li><p>Установите модуль &quot;<strong>Панель телефонии 4.0 для 1С</strong>&quot; путем &quot;<strong>Загрузить из Веб</strong>&quot; использовав ссылку для скачивания последней версии.</p>
 </li>
 </ol>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markup"><code v-pre class="language-markup">https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/latest.tgz</code></pre>
 </doc-codeblock></div>
-<p>Вставьте ее в поле <strong>Download Remote Module</strong>.<br />
-Выполните <strong>Download (From Web)</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_mod_3.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
 <ol start="5">
 <li><p>Дождитесь загрузки модуля на АТС. Затем выполните <strong>Manage Local Modules</strong>.
 <figure class="content-center">
@@ -371,28 +349,25 @@
     </h3>
 </doc-anchor-target>
 <ol>
-<li><p>Запустите информационную базу 1С в режиме &quot;1С:Предприятие&quot;. Войдите пользователем, имеющим права администратора.
-В главном меню выполните  Файл - &gt; Открыть (или нажмите комбинацию клавиш <strong>Ctrl+O</strong>).  Выберите скачанную обработку <strong>Установщик.epf</strong>
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_0.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>Согласитесь в появившемся предупреждении безопасности.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_1.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>На странице <strong>Проверка доступных лицензий</strong> вставьте ваш лицензионный ключ в одноименное поле и выполните <strong>Далее</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_2.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
+<li>Запустите информационную базу 1С в режиме &quot;1С:Предприятие&quot;. Войдите пользователем, имеющим права администратора.
+В главном меню выполните  Файл - &gt; Открыть (или нажмите комбинацию клавиш <strong>Ctrl+O</strong>).  Выберите скачанную обработку <strong>Установщик.epf</strong></li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_23.png"
+data-original="/assets/mango/mango_23.png"
+srcset="/assets/mango/mango_23_prev.png 1x, /assets/mango/mango_23.png 2x" 
+alt=""
+/></p>
+<ol start="3">
+<li>На странице <strong>Проверка доступных лицензий</strong> вставьте ваш лицензионный ключ в одноименное поле и выполните <strong>Далее</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_24.png"
+data-original="/assets/mango/mango_24.png"
+srcset="/assets/mango/mango_24_prev.png 1x, /assets/mango/mango_24.png 2x" 
+alt="МИКО: вставить лицензионный ключ в обработке"
+/></p>
+<ol start="4">
 <li><p>Выберите последнюю версию расширения, если их несколько и выполните <strong>Установить</strong>.
 <figure class="content-center">
     <img src="../../assets/freepbx/freepbx_1c_3.png" alt="" />
@@ -400,38 +375,46 @@
 </figure>
 </p>
 </li>
-<li><p>Ознакомьтесь с лицензионным соглашением и примите условия.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_4.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
+<li><p>Ознакомьтесь с лицензионным соглашением и примите условия.</p>
 </li>
-<li><p>Начнется установка расширения. После окончания установки перезагрузите информационную базу, нажав на кнопку <strong>Перезагрузить</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_5.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>После перезапуска базы в панели функций текущего раздела появится подсистема <strong>Звонки и сообщения</strong>. Также в открытых формах появится <strong>Мастер первоначальной настройки</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_6.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>Перейдите в форму <strong>Мастер первоначальной настройки</strong> и выполните на ней <strong>Далее</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_7.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>На странице <strong>Схема подключения</strong> выберите подходящую вам <a href="/root-guides/select-connection-mode/">схему соединения</a> АТС с 1С. Выбор принципиального значения не имеет - это, своего рода, подсказка. От него будет зависеть первоначальное заполнение каналов передачи событий и контактных данных.<br />
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_25.png"
+data-original="/assets/mango/mango_25.png"
+srcset="/assets/mango/mango_25_prev.png 1x, /assets/mango/mango_25.png 2x" 
+alt="МИКО: лицензионное соглашение"
+/></p>
+<ol start="6">
+<li>Начнется установка расширения. После окончания установки перезагрузите информационную базу, нажав на кнопку <strong>Перезагрузить</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_26.png"
+data-original="/assets/mango/mango_26.png"
+srcset="/assets/mango/mango_26_prev.png 1x, /assets/mango/mango_26.png 2x" 
+alt="МИКО: завершение установки расширения телефонии"
+/></p>
+<ol start="7">
+<li>После перезапуска базы в панели функций текущего раздела появится подсистема <strong>Звонки и сообщения</strong>. Также в открытых формах появится <strong>Мастер первоначальной настройки</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_27.png"
+data-original="/assets/mango/mango_27.png"
+srcset="/assets/mango/mango_27_prev.png 1x, /assets/mango/mango_27.png 2x" 
+alt="МИКО: установлена подсистема звонки и сообщения"
+/></p>
+<ol start="8">
+<li>Перейдите в форму <strong>Мастер первоначальной настройки</strong> и выполните на ней <strong>Далее</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_28.png"
+data-original="/assets/mango/mango_28.png"
+srcset="/assets/mango/mango_28_prev.png 1x, /assets/mango/mango_28.png 2x" 
+alt="МИКО: установлена подсистема звонки и сообщения"
+/></p>
+<ol start="9">
+<li>На странице <strong>Схема подключения</strong> выберите подходящую вам <a href="/root-guides/select-connection-mode/">схему соединения</a> АТС с 1С. Выбор принципиального значения не имеет - это, своего рода, подсказка. От него будет зависеть первоначальное заполнение каналов передачи событий и контактных данных.<br />
 Откройте <strong>Расширенные настройки</strong> и установите их исходя из выбранной схемы подключения. Выполните <strong>Далее</strong>.<br />
-В данном примере использовалась серверная информационная база, и выбран способ подключения Long-pooling.</p>
-</li>
+В данном примере использовалась серверная информационная база, и выбран способ подключения Long-pooling.</li>
 </ol>
 <div class="flex mb-6">
     <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
@@ -452,11 +435,12 @@
         </div>
     </div>
 </div>
-<p><figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_8.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/freepbx/freepbx_1c_8.png"
+data-original="/assets/freepbx/freepbx_1c_8.png"
+srcset="/assets/freepbx/freepbx_1c_8_prev.png 1x, /assets/freepbx/freepbx_1c_8.png 2x" 
+alt="МИКО: выбор способа соединения"
+/></p>
 <ol start="10">
 <li><p>В веб-интерфейсе АТС в модуле <strong>МИКО:Панель телефонии 4.0</strong> на вкладке <strong>Настройка модуля</strong> скопируйте код из раздела <strong>Данные для автоматической настройки</strong>.
 <figure class="content-center">

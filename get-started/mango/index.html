@@ -15,22 +15,22 @@
     <meta property="og:url" content="https://docs.telefon1c.ru/get-started/mango/">
     <meta property="og:title" content="Интеграция с ВАТС Манго | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
     <meta property="og:description" content="Данная инструкция предназначена для редакции 4.0, для предыдущих версий используйте эту инструкцию. Для интеграции виртуальной АТС Манго с 1С...">
-    <meta property="og:image" content="https://docs.telefon1c.ru/assets/freepbx/freepbx_1c_0.png">
+    <meta property="og:image" content="https://docs.telefon1c.ru/assets/freepbx/freepbx_1c_3.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/get-started/mango/">
     <meta property="twitter:title" content="Интеграция с ВАТС Манго | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
     <meta property="twitter:description" content="Данная инструкция предназначена для редакции 4.0, для предыдущих версий используйте эту инструкцию. Для интеграции виртуальной АТС Манго с 1С...">
-    <meta property="twitter:image" content="https://docs.telefon1c.ru/assets/freepbx/freepbx_1c_0.png">
+    <meta property="twitter:image" content="https://docs.telefon1c.ru/assets/freepbx/freepbx_1c_3.png">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.698224756683" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.698247526294" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698224756683" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698247526294" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698224756683" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698247526294" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -434,13 +434,14 @@ alt=""
 </doc-anchor-target>
 <ol>
 <li>Запустите информационную базу 1С в режиме &quot;1С:Предприятие&quot;. Войдите пользователем, имеющим права администратора.
-В главном меню выполните  Файл - &gt; Открыть (или нажмите комбинацию клавиш <strong>Ctrl+O</strong>).<br />
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_0.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</li>
+В главном меню выполните  Файл - &gt; Открыть (или нажмите комбинацию клавиш <strong>Ctrl+O</strong>).</li>
 </ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_23.png"
+data-original="/assets/mango/mango_23.png"
+srcset="/assets/mango/mango_23_prev.png 1x, /assets/mango/mango_23.png 2x" 
+alt=""
+/></p>
 <p>Выберите обработку <strong>Установщик.epf</strong> из скачанного архива по пути <code v-pre>Подсистема телефонии для 1С\Редакция 2.2\Установщик.epf</code></p>
 <p><img class="miko-shadow img-zoomable"  
 src="/assets/mango/mango_12.png"
@@ -448,21 +449,16 @@ data-original="/assets/mango/mango_12.png"
 srcset="/assets/mango/mango_12_prev.png 1x, /assets/mango/mango_12.png 2x" 
 alt=""
 /></p>
-<ol start="2">
-<li><p>Согласитесь в появившемся предупреждении безопасности.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_1.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>На странице <strong>Проверка доступных лицензий</strong> вставьте ваш лицензионный ключ в одноименное поле и выполните <strong>Далее</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_2.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
+<ol start="3">
+<li>На странице <strong>Проверка доступных лицензий</strong> вставьте ваш лицензионный ключ в одноименное поле и выполните <strong>Далее</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_24.png"
+data-original="/assets/mango/mango_24.png"
+srcset="/assets/mango/mango_24_prev.png 1x, /assets/mango/mango_24.png 2x" 
+alt="МИКО: вставить лицензионный ключ в обработке"
+/></p>
+<ol start="4">
 <li><p>Выберите последнюю версию расширения, если их несколько и выполните <strong>Установить</strong>.
 <figure class="content-center">
     <img src="../../assets/freepbx/freepbx_1c_3.png" alt="" />
@@ -470,43 +466,51 @@ alt=""
 </figure>
 </p>
 </li>
-<li><p>Ознакомьтесь с лицензионным соглашением и примите условия.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_4.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>Начнется установка расширения. После окончания установки перезагрузите информационную базу, нажав на кнопку <strong>Перезагрузить</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_5.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>После перезапуска базы в панели функций текущего раздела появится подсистема <strong>Звонки и сообщения</strong>. Также в открытых формах появится <strong>Мастер первоначальной настройки</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_6.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>Перейдите в форму <strong>Мастер первоначальной настройки</strong> и выполните на ней <strong>Далее</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_7.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>На странице <strong>Схема подключения</strong> выберите подходящую вам <a href="/root-guides/select-connection-mode/">схему соединения</a> АТС с 1С. Выбор принципиального значения не имеет - это, своего рода, подсказка. От него будет зависеть первоначальное заполнение каналов передачи событий и контактных данных.<br />
-Откройте <strong>Расширенные настройки</strong> и установите их исходя из выбранной схемы подключения. Выполните <strong>Далее</strong>.<br />
-В данном примере использовалась файловая информационная база, и выбран способ подключения - через веб-сервис.</p>
+<li><p>Ознакомьтесь с лицензионным соглашением и примите условия.</p>
 </li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
-src="/assets/mango/mango_14.png"
-data-original="/assets/mango/mango_14.png"
-srcset="/assets/mango/mango_14_prev.png 1x, /assets/mango/mango_14.png 2x" 
+src="/assets/mango/mango_25.png"
+data-original="/assets/mango/mango_25.png"
+srcset="/assets/mango/mango_25_prev.png 1x, /assets/mango/mango_25.png 2x" 
+alt="МИКО: лицензионное соглашение"
+/></p>
+<ol start="6">
+<li>Начнется установка расширения. После окончания установки перезагрузите информационную базу, нажав на кнопку <strong>Перезагрузить</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_26.png"
+data-original="/assets/mango/mango_26.png"
+srcset="/assets/mango/mango_26_prev.png 1x, /assets/mango/mango_26.png 2x" 
+alt="МИКО: завершение установки расширения телефонии"
+/></p>
+<ol start="7">
+<li>После перезапуска базы в панели функций текущего раздела появится подсистема <strong>Звонки и сообщения</strong>. Также в открытых формах появится <strong>Мастер первоначальной настройки</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_27.png"
+data-original="/assets/mango/mango_27.png"
+srcset="/assets/mango/mango_27_prev.png 1x, /assets/mango/mango_27.png 2x" 
+alt="МИКО: установлена подсистема звонки и сообщения"
+/></p>
+<ol start="8">
+<li>Перейдите в форму <strong>Мастер первоначальной настройки</strong> и выполните на ней <strong>Далее</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_28.png"
+data-original="/assets/mango/mango_28.png"
+srcset="/assets/mango/mango_28_prev.png 1x, /assets/mango/mango_28.png 2x" 
+alt="МИКО: установлена подсистема звонки и сообщения"
+/></p>
+<ol start="9">
+<li>На странице <strong>Схема подключения</strong> выберите подходящую вам <a href="/root-guides/select-connection-mode/">схему соединения</a> АТС с 1С. Выбор принципиального значения не имеет - это, своего рода, подсказка. От него будет зависеть первоначальное заполнение каналов передачи событий и контактных данных.<br />
+Откройте <strong>Расширенные настройки</strong> и установите их исходя из выбранной схемы подключения. Выполните <strong>Далее</strong>.<br />
+В данном примере использовалась файловая информационная база, и выбран способ подключения - через веб-сервис.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_29.png"
+data-original="/assets/mango/mango_29.png"
+srcset="/assets/mango/mango_29_prev.png 1x, /assets/mango/mango_29.png 2x" 
 alt="МИКО: способ подключения к серверу интеграции"
 /></p>
 <ol start="10">
@@ -558,9 +562,9 @@ alt="Подключение к сервису 1С:Диалог"
 <li>На странице &quot;Проверка связи&quot; выберите тип АТС &quot;<strong>Mango office</strong>&quot; IP-адрес сервера интеграции. Нажмите &quot;<strong>Далее</strong>&quot;.</li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
-src="/assets/mango/mango_20.png"
-data-original="/assets/mango/mango_20.png"
-srcset="/assets/mango/mango_20_prev.png 1x, /assets/mango/mango_20.png 2x" 
+src="/assets/mango/mango_30.png"
+data-original="/assets/mango/mango_30.png"
+srcset="/assets/mango/mango_30_prev.png 1x, /assets/mango/mango_30.png 2x" 
 alt="МИКО: подключения 1С к серверу интеграции"
 /></p>
 <ol start="15">
