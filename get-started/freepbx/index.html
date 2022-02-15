@@ -26,12 +26,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.698171240862" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.698224756683" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698171240862" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698224756683" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698171240862" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.698171240862" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698224756683" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.698224756683" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -428,9 +428,7 @@
 </figure>
 </p>
 </li>
-<li><p>На странице <strong>Схема подключения</strong> выберите подходящую вам <a href="/root-guides/select-connection-mode/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-    <span>схему соединения</span>
-</a> АТС с 1С. Выбор принципиального значения не имеет - это, своего рода, подсказка. От него будет зависеть первоначальное заполнение каналов передачи событий и контактных данных.<br />
+<li><p>На странице <strong>Схема подключения</strong> выберите подходящую вам <a href="/root-guides/select-connection-mode/">схему соединения</a> АТС с 1С. Выбор принципиального значения не имеет - это, своего рода, подсказка. От него будет зависеть первоначальное заполнение каналов передачи событий и контактных данных.<br />
 Откройте <strong>Расширенные настройки</strong> и установите их исходя из выбранной схемы подключения. Выполните <strong>Далее</strong>.<br />
 В данном примере использовалась серверная информационная база, и выбран способ подключения Long-pooling.</p>
 </li>
@@ -449,10 +447,8 @@
         </div>
         <div class="pr-5 ml-3">
             <h5>Коротко о способах подключения</h5>
-<p>Если у вас <mark>Сервер 1С</mark> и пользователи подключаются посредством тонкого клиента - подойдет способ <strong>Long-pooling</strong>. Канал передачи контактных данных нужно установить в <strong>Long-pooling соединение</strong>, канал передачи событий в <strong>Long-pooling соединение</strong> или <strong>Внешняя компонента</strong>.<br />
-Если у вас <mark>файловая информационная база</mark> - подойдет способ <strong>веб-сервис</strong>. Нужно <a href="/root-guides/base-publishing" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-    <span>настроить публикацию</span>
-</a> информационной базы на сервере IIS или Apache, а каналы передачи событий и контактных данных установить в значение <strong>веб-сервис</strong>.</p>
+<p>Если у вас <strong>Сервер 1С</strong> и пользователи подключаются посредством тонкого клиента - подойдет способ <strong>Long-pooling</strong>. Канал передачи контактных данных нужно установить в <strong>Long-pooling соединение</strong>, канал передачи событий в <strong>Long-pooling соединение</strong> или <strong>Внешняя компонента</strong>.<br />
+Если у вас <strong>файловая информационная база</strong> - подойдет способ <strong>веб-сервис</strong>. Нужно <a href="/faq/base-publishing/">настроить публикацию</a> информационной базы на сервере IIS или Apache, а каналы передачи событий и контактных данных установить в значение <strong>веб-сервис</strong>.</p>
         </div>
     </div>
 </div>
@@ -503,9 +499,7 @@
 <ol start="13">
 <li><p>Если в автоматическом режиме настроить соединение не удалось, можно его настроить в ручном режиме.<br />
 Для этого в веб-интерфейсе АТС в модуле <strong>МИКО:Панель телефонии 4.0</strong> на вкладке <strong>Настройка модуля</strong> в разделе <strong>Общие настройки</strong> установите переключатель в положение <strong>Ввести параметры подключения к 1С вручную</strong>.<br />
-В разделе <strong>Связь с 1С:Предприятие 8</strong> установите переключатель в соответствие с вашей <a href="/root-guides/select-connection-mode/" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-    <span>схеме соединения</span>
-</a><br />
+В разделе <strong>Связь с 1С:Предприятие 8</strong> установите переключатель в соответствие с вашей <a href="/root-guides/select-connection-mode/">схеме соединения</a><br />
 Скопируйте IP-адрес АТС и выполните <strong>Submit</strong>.
 <figure class="content-center">
     <img src="../../assets/freepbx/freepbx_mod_15.png" alt="" />
@@ -604,7 +598,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                <span class="block mt-1">Начать с MikoPBX</span>
+                <span class="block mt-1">Интеграция с MikoPBX</span>
             </span>
         </a>
     </div>
@@ -661,6 +655,6 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Начать с FreePBX", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Интеграция с FreePBX", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
     </body>
 </html>
