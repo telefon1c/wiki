@@ -201,9 +201,21 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
 !!! Важно
 Присваиваемые номера должны существовать на АТС.
 !!!
-![](../assets/freepbx/freepbx_1c_15.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_34.png"
+    data-original="/assets/mango/mango_34.png"
+    srcset="/assets/mango/mango_34_prev.png 1x, /assets/mango/mango_34.png 2x" 
+    alt="МИКО: добавление вида контактной информации"
+/> 
 
 20. Дождитесь окончания настройки. Страницу с мастером первоначальной настройки можно закрыть, она больше не понадобится. 
-![](../assets/freepbx/freepbx_1c_16.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_35.png"
+    data-original="/assets/mango/mango_35.png"
+    srcset="/assets/mango/mango_35_prev.png 1x, /assets/mango/mango_35.png 2x" 
+    alt="МИКО: добавление вида контактной информации"
+/> 
 
 21. Перейдите к [установке Внешней панели 4.0](/user-guides/panel/install)
