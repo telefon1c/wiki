@@ -26,12 +26,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.698247526294" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.698329912125" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698247526294" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698329912125" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698247526294" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.698247526294" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698329912125" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.698329912125" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -500,30 +500,36 @@ alt="МИКО: выбор способа соединения"
 </p>
 </li>
 <li><p>На странице <strong>Виды номеров</strong> в поле <strong>Вид внутреннего телефона</strong> выберите <strong>Телефон</strong>.<br />
-В поле <strong>Вид мобильного телефона</strong> выберите создание нового элемента.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_12.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
+В поле <strong>Вид мобильного телефона</strong> выберите создание нового элемента.</p>
 </li>
-<li><p>В появившейся форме создания вида контактной информации отметьте флажками поля <strong>Запрещать ввод некорректных номеров</strong> и <strong>Вводить номер по маске</strong>.
-Ниже выберите маску <strong>+7(999) 999-99-99</strong>. Затем выполните <strong>Записать и закрыть</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_13.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>После заполнения видов номеров перейдите на следующую страницу мастера, выполнив <strong>Далее</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_14.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>На странице <strong>Пользователи телефонии</strong> присвойте внутренние номера пользователям информационной базы, которые будут использовать телефонию (лучше сразу заполнить и мобильные телефоны).</p>
-</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_31.png"
+data-original="/assets/mango/mango_31.png"
+srcset="/assets/mango/mango_31_prev.png 1x, /assets/mango/mango_31.png 2x" 
+alt="МИКО: виды контактной информации"
+/></p>
+<ol start="16">
+<li>В появившейся форме создания вида контактной информации отметьте флажками поля <strong>Запрещать ввод некорректных номеров</strong> и <strong>Вводить номер по маске</strong>.
+Ниже выберите маску <strong>+7(999) 999-99-99</strong>. Затем выполните <strong>Записать и закрыть</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_32.png"
+data-original="/assets/mango/mango_32.png"
+srcset="/assets/mango/mango_32_prev.png 1x, /assets/mango/mango_32.png 2x" 
+alt="МИКО: добавление вида контактной информации"
+/></p>
+<ol start="17">
+<li>После заполнения видов номеров перейдите на следующую страницу мастера, выполнив <strong>Далее</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_33.png"
+data-original="/assets/mango/mango_33.png"
+srcset="/assets/mango/mango_33_prev.png 1x, /assets/mango/mango_33.png 2x" 
+alt="МИКО: добавление вида контактной информации"
+/></p>
+<ol start="19">
+<li>На странице <strong>Пользователи телефонии</strong> присвойте внутренние номера пользователям информационной базы, которые будут использовать телефонию (лучше сразу заполнить и мобильные телефоны).</li>
 </ol>
 <div class="flex mb-6">
     <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
@@ -548,7 +554,7 @@ alt="МИКО: выбор способа соединения"
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<ol start="19">
+<ol start="20">
 <li><p>Дождитесь окончания настройки. Страницу с мастером первоначальной настройки можно закрыть, она больше не понадобится.
 <figure class="content-center">
     <img src="../../assets/freepbx/freepbx_1c_16.png" alt="" />
