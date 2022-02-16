@@ -291,22 +291,52 @@ order: -3
 
 15. На странице **Виды номеров** в поле **Вид внутреннего телефона** выберите **Телефон**.  
 В поле **Вид мобильного телефона** выберите создание нового элемента. 
-![](../assets/freepbx/freepbx_1c_12.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_31.png"
+    data-original="/assets/mango/mango_31.png"
+    srcset="/assets/mango/mango_31_prev.png 1x, /assets/mango/mango_31.png 2x" 
+    alt="МИКО: виды контактной информации"
+/> 
 
 16. В появившейся форме создания вида контактной информации отметьте флажками поля **Запрещать ввод некорректных номеров** и **Вводить номер по маске**.
 Ниже выберите маску **+7(999) 999-99-99**. Затем выполните **Записать и закрыть**.
-![](../assets/freepbx/freepbx_1c_13.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_32.png"
+    data-original="/assets/mango/mango_32.png"
+    srcset="/assets/mango/mango_32_prev.png 1x, /assets/mango/mango_32.png 2x" 
+    alt="МИКО: добавление вида контактной информации"
+/> 
 
 17. После заполнения видов номеров перейдите на следующую страницу мастера, выполнив **Далее**.
-![](../assets/freepbx/freepbx_1c_14.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_33.png"
+    data-original="/assets/mango/mango_33.png"
+    srcset="/assets/mango/mango_33_prev.png 1x, /assets/mango/mango_33.png 2x" 
+    alt="МИКО: добавление вида контактной информации"
+/> 
 
 18. На странице **Пользователи телефонии** присвойте внутренние номера пользователям информационной базы, которые будут использовать телефонию (лучше сразу заполнить и мобильные телефоны).
 !!! Важно
 На ВАТС Манго должны существовать сотрудники с присваиваемыми номерами.
 !!!
-![](../assets/freepbx/freepbx_1c_15.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_34.png"
+    data-original="/assets/mango/mango_34.png"
+    srcset="/assets/mango/mango_34_prev.png 1x, /assets/mango/mango_34.png 2x" 
+    alt="МИКО: добавление вида контактной информации"
+/> 
 
 19. Дождитесь окончания настройки. Страницу с мастером первоначальной настройки можно закрыть, она больше не понадобится. 
-![](../assets/freepbx/freepbx_1c_16.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_35.png"
+    data-original="/assets/mango/mango_35.png"
+    srcset="/assets/mango/mango_35_prev.png 1x, /assets/mango/mango_35.png 2x" 
+    alt="МИКО: добавление вида контактной информации"
+/> 
 
 20. Перейдите к [установке Внешней панели 4.0](/user-guides/panel/install)
