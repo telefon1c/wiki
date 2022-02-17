@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.698410546588" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.698419756290" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698410546588" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698419756290" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698410546588" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698419756290" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -195,7 +195,7 @@
     </h1>
 </doc-anchor-target>
 <hr />
-<p>Суть работы в накоплении информации о взаимодействиях между клиентами и сотрудниками компании, после чего модуль маршрутизации для каждого клиента формирует персональное голосовое приветствие. При входящем звонке телефонная система обращается к 1С для получения текста приветствия. С помощью сервисов генерации речи оно преобразуется в IVR меню, которое произносится клиенту при звонке.</p>
+<p>Суть работы в накоплении информации о взаимодействиях между клиентами и сотрудниками компании, после чего модуль маршрутизации для каждого клиента формирует персональное голосовое приветствие. <br> При входящем звонке телефонная система обращается к 1С для получения текста приветствия. С помощью сервисов генерации речи оно преобразуется в IVR меню, которое произносится клиенту при звонке.</p>
 <p>Если клиент не выбирает ни один из предложенных вариантов - звонок переадресуется на номер по-умолчанию. Если происходит сбой при генерации речи или при обращении к 1С в момент звонка, вызов переадресуется на аварийный номер.
 Подробное описание работы модуля <a href="https://telefon.miko.ru/products/smart-transfer/">в разделе на нашем сайте</a>.</p>
 <doc-anchor-target id="этап-1-настройте-модуль-телефонии-на-атс-и-подсистему-телефонии-в-1с">
@@ -209,11 +209,11 @@
 <li>Если у вас АТС - MikoPBX, следуйте <a href="/get-started/mikopbx/">инструкции &quot;Интеграция с MikoPBX&quot;</a></li>
 <li>Если у вас АТС - FreePBX, следуйте <a href="/get-started/freepbx/">инструкции &quot;Интеграция с FreePBX&quot;</a></li>
 </ul>
-<doc-anchor-target id="этап-1-выбор-tts-сервиса">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#этап-1-выбор-tts-сервиса">#</doc-anchor-trigger>
-        <span>Этап 1. Выбор TTS-сервиса</span>
-    </h3>
+<doc-anchor-target id="этап-2-выбор-tts-сервиса">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#этап-2-выбор-tts-сервиса">#</doc-anchor-trigger>
+        <span>Этап 2. Выбор TTS-сервиса</span>
+    </h2>
 </doc-anchor-target>
 <p>Для работы модуля требуется подключить один из сервисов генерации речи:</p>
 <ul>
@@ -238,28 +238,47 @@
         </div>
     </div>
 </div>
-<doc-anchor-target id="этап-2-установка-модуля">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#этап-2-установка-модуля">#</doc-anchor-trigger>
-        <span>Этап 2. Установка модуля</span>
-    </h3>
+<doc-anchor-target id="этап-3-установка-модуля">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#этап-3-установка-модуля">#</doc-anchor-trigger>
+        <span>Этап 3. Установка модуля</span>
+    </h2>
 </doc-anchor-target>
 <p>Установите и настройте модуль умной маршрутизации звонков на АТС. Процесс установки зависит от АТС:</p>
 <ul>
 <li><a href="/user-guides/routing/smart-ivr-miko/">АТС MikoPBX</a></li>
 <li><a href="/user-guides/routing/smart-ivr-freepbx/">АТС FreePBX</a></li>
 </ul>
-<doc-anchor-target id="этап-3-настройка-параметров-в-1с">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#этап-3-настройка-параметров-в-1с">#</doc-anchor-trigger>
-        <span>Этап 3. Настройка параметров в 1С</span>
-    </h3>
+<doc-anchor-target id="этап-4-настройка-параметров-в-1с">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#этап-4-настройка-параметров-в-1с">#</doc-anchor-trigger>
+        <span>Этап 4. Настройка параметров в 1С</span>
+    </h2>
 </doc-anchor-target>
-<p>Запустите сеанс 1С:Предприятие и в разделе <code v-pre>Звонки и сообщения</code> откройте<br> <code v-pre>Настройки модуля маршрутизации</code>.</p>
 <ol>
-<li><p>Выберите <code v-pre>сервис</code> генерации речи и используйте <code v-pre>параметры подключения</code>, которые были получены на этапе 1.</p>
+<li><p>Запустите сеанс 1С:Предприятие и в разделе &quot;<strong>Звонки и сообщения&quot; -&gt; &quot;Настройки подсистемы&quot; -&gt; &quot;Маршрутизация звонков&quot;</strong>.</p>
 </li>
-<li><p>Выберите одного из доступных <code v-pre>дикторов</code> для озвучивания голосового меню. Установите свой текст <code v-pre>приветствия для новых клиентов</code>. Для проверки качества синтеза речи, используйте кнопку <code v-pre>Прослушать</code>.</p>
+<li><p>Выберите <strong>сервис генерации речи</strong> и используйте параметры подключения, которые были получены на <doc-anchor-trigger to="#%D1%8D%D1%82%D0%B0%D0%BF-1-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%82%D0%B5-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%B8%D0%B8-%D0%BD%D0%B0-%D0%B0%D1%82%D1%81-%D0%B8-%D0%BF%D0%BE%D0%B4%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83-%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%B8%D0%B8-%D0%B2-1%D1%81">этапе 1</doc-anchor-trigger>.</p>
+</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/rooting/mod_f_1.gif"
+data-original="/assets/rooting/mod_f_1.gif"
+srcset="/assets/rooting/mod_f_1_prev.gif 1x, /assets/rooting/mod_f_1.gif 2x" 
+alt="МИКО: умная маршрутизация выбор сервиса генерации речи"
+/></p>
+<ol start="3">
+<li>Выберите одного из доступных дикторов для озвучивания голосового меню. Установите свой текст приветствия для
+новых и известных клиентов.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/rooting/mod_f_2.gif"
+data-original="/assets/rooting/mod_f_2.gif"
+srcset="/assets/rooting/mod_f_2_prev.gif 1x, /assets/rooting/mod_f_2.gif 2x" 
+alt="МИКО: умная маршрутизация выбор диктора"
+/></p>
+<ol start="4">
+<li><p>Для проверки качества синтеза речи, используйте кнопку <strong>Прослушать</strong>.</p>
 <div class="flex mb-6">
     <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
