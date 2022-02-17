@@ -26,12 +26,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.698331705845" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.698406444887" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698331705845" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698406444887" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698331705845" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.698331705845" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698406444887" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.698406444887" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -235,71 +235,46 @@
 </figure>
 </p>
 </li>
-<li><p>Установите модуль &quot;<strong>Панель телефонии 4.0 для 1С</strong>&quot; путем &quot;<strong>Загрузить из Веб</strong>&quot; использовав ссылку для скачивания последней версии.</p>
+<li><p>Установите модуль &quot;<strong>Панель телефонии 4.0 для 1С</strong>&quot; путем &quot;<strong>Загрузить из Веб</strong>&quot; использовав нижеприведенную ссылку для скачивания последней версии.</p>
 </li>
 </ol>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markup"><code v-pre class="language-markup">https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/latest.tgz</code></pre>
 </doc-codeblock></div>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/freepbx/freepbx_mod_0.gif"
+data-original="/assets/freepbx/freepbx_mod_0.gif"
+srcset="/assets/freepbx/freepbx_mod_0_prev.gif 1x, /assets/freepbx/freepbx_mod_0.gif 2x" 
+alt="МИКО: FreePBX установка модуля панель телефонии"
+/></p>
 <ol start="5">
-<li><p>Дождитесь загрузки модуля на АТС. Затем выполните <strong>Manage Local Modules</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_mod_4.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>В разделе <strong>Appliations</strong> найдите модуль <strong>MIKO CTI Client 4.0</strong>, нажмите <strong>Install</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_mod_5.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>Прокрутите страницу с модулями в самый низ и выполните <strong>Process</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_mod_6.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>После установки модуля выполните <strong>Confirm</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_mod_7.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>В появившемся окне <strong>Status</strong> выполните <strong>Return</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_mod_8.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>Приметите изменения. Для этого выполните <strong>Apply Config</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_mod_9.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>После этого в разделе <strong>Applications</strong> появится команда <strong>MIKO CTI Client 4.0 for 1C (Подсистема телефонии для 1С)</strong>. Выполните ее.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_mod_10.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>В открывшемcя модуле перейдите на вкладку <strong>Лицензирование</strong>.
-Если вы не имеете лицензионного ключа, заполните поля раздела <strong>Регистрация нового клиента</strong>.<br />
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_mod_11.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
+<li>Дождитесь загрузки модуля на АТС, затем включите его.</li>
 </ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/freepbx/freepbx_mod_1.gif"
+data-original="/assets/freepbx/freepbx_mod_1.gif"
+srcset="/assets/freepbx/freepbx_mod_1_prev.gif 1x, /assets/freepbx/freepbx_mod_1.gif 2x" 
+alt="МИКО: FreePBX установка модуля панель телефонии"
+/></p>
+<ol start="11">
+<li>После этого в разделе <strong>Приложения</strong> появится команда <strong>MIKO CTI Client 4.0 for 1C (Подсистема телефонии для 1С)</strong>. Выполните ее.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/freepbx/freepbx_mod_10.png"
+data-original="/assets/freepbx/freepbx_mod_10.png"
+srcset="/assets/freepbx/freepbx_mod_10_prev.png 1x, /assets/freepbx/freepbx_mod_10.png 2x" 
+alt="МИКО: FreePBX установка модуля панель телефонии"
+/></p>
+<ol start="12">
+<li>В открывшемcя модуле перейдите на вкладку <strong>Лицензирование</strong>.
+Если вы не имеете лицензионного ключа, заполните поля раздела <strong>Регистрация нового клиента</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/freepbx/freepbx_mod_11.png"
+data-original="/assets/freepbx/freepbx_mod_11.png"
+srcset="/assets/freepbx/freepbx_mod_11_prev.png 1x, /assets/freepbx/freepbx_mod_11.png 2x" 
+alt="МИКО: FreePBX регистрация клиента в модуле панели телефонии"
+/></p>
 <div class="flex mb-6">
     <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
