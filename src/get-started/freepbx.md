@@ -72,7 +72,14 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
 !!!
 
 Если у вас уже есть лицензионный ключ, вставьте его в поле **Лицензионный ключ**.
-![](../assets/freepbx/freepbx_mod_12.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/freepbx/freepbx_mod_12.png"
+    data-original="/assets/freepbx/freepbx_mod_12.png"
+    srcset="/assets/freepbx/freepbx_mod_12_prev.png 1x, /assets/freepbx/freepbx_mod_12.png 2x" 
+    alt="МИКО: FreePBX лицензионный ключ клиента в модуле панели телефонии"
+/> 
+
 
 13. Перейдите на вкладку **Настройки модуля**. В разделе **Общие настройки** установите переключатель в положение **Автоматическая настройка модуля**.  
 В разделе **Прочие настройки** переключатель **Включить режим отладки модуля** установите в положение **Включить**. Выполните **Submit**.
