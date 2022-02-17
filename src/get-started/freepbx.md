@@ -26,34 +26,45 @@ order: -2
 1. Перейдите в веб-интерфейс АТС, выберите раздел **FreePBX Administration**.
 ![](../assets/freepbx/freepbx_mod_0.png)
 
-2. Установите модуль "**Панель телефонии 4.0 для 1С**" путем "**Загрузить из Веб**" использовав ссылку для скачивания последней версии.  
+2. Установите модуль "**Панель телефонии 4.0 для 1С**" путем "**Загрузить из Веб**" использовав нижеприведенную ссылку для скачивания последней версии.  
 ```html
 https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/latest.tgz
 ```
-5. Дождитесь загрузки модуля на АТС. Затем выполните **Manage Local Modules**.
-![](../assets/freepbx/freepbx_mod_4.png)
 
-6. В разделе **Appliations** найдите модуль **MIKO CTI Client 4.0**, нажмите **Install**.
-![](../assets/freepbx/freepbx_mod_5.png)
+<img class="miko-shadow img-zoomable"  
+    src="/assets/freepbx/freepbx_mod_0.gif"
+    data-original="/assets/freepbx/freepbx_mod_0.gif"
+    srcset="/assets/freepbx/freepbx_mod_0_prev.gif 1x, /assets/freepbx/freepbx_mod_0.gif 2x" 
+    alt="МИКО: FreePBX установка модуля панель телефонии"
+/> 
 
-7. Прокрутите страницу с модулями в самый низ и выполните **Process**.
-![](../assets/freepbx/freepbx_mod_6.png)
+5. Дождитесь загрузки модуля на АТС, затем включите его.
 
-8. После установки модуля выполните **Confirm**.
-![](../assets/freepbx/freepbx_mod_7.png)
+<img class="miko-shadow img-zoomable"  
+    src="/assets/freepbx/freepbx_mod_1.gif"
+    data-original="/assets/freepbx/freepbx_mod_1.gif"
+    srcset="/assets/freepbx/freepbx_mod_1_prev.gif 1x, /assets/freepbx/freepbx_mod_1.gif 2x" 
+    alt="МИКО: FreePBX установка модуля панель телефонии"
+/> 
 
-9. В появившемся окне **Status** выполните **Return**.
-![](../assets/freepbx/freepbx_mod_8.png)
+11. После этого в разделе **Приложения** появится команда **MIKO CTI Client 4.0 for 1C (Подсистема телефонии для 1С)**. Выполните ее.
 
-10. Приметите изменения. Для этого выполните **Apply Config**.
-![](../assets/freepbx/freepbx_mod_9.png)
-
-11. После этого в разделе **Applications** появится команда **MIKO CTI Client 4.0 for 1C (Подсистема телефонии для 1С)**. Выполните ее.
-![](../assets/freepbx/freepbx_mod_10.png)
+<img class="miko-shadow img-zoomable"  
+    src="/assets/freepbx/freepbx_mod_10.png"
+    data-original="/assets/freepbx/freepbx_mod_10.png"
+    srcset="/assets/freepbx/freepbx_mod_10_prev.png 1x, /assets/freepbx/freepbx_mod_10.png 2x" 
+    alt="МИКО: FreePBX установка модуля панель телефонии"
+/> 
 
 12. В открывшемcя модуле перейдите на вкладку **Лицензирование**.
 Если вы не имеете лицензионного ключа, заполните поля раздела **Регистрация нового клиента**.  
-![](../assets/freepbx/freepbx_mod_11.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/freepbx/freepbx_mod_11.png"
+    data-original="/assets/freepbx/freepbx_mod_11.png"
+    srcset="/assets/freepbx/freepbx_mod_11_prev.png 1x, /assets/freepbx/freepbx_mod_11.png 2x" 
+    alt="МИКО: FreePBX регистрация клиента в модуле панели телефонии"
+/> 
 
 !!!info Лицензионный ключ
 Ключ имеет формат **MIKO-XXXXX-XXXXX-XXXXX-XXXXX** и отправляется автоматически после регистрации
