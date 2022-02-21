@@ -6,21 +6,21 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>Установка панели телефонии на терминальный сервер | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
-    <meta name="title" content="Установка панели телефонии на терминальный сервер | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta name="description" content="Если Вы не хотите многократно дублировать файлы программы на терминальном сервере, то возможна ручная установка дистрибутива в выбранное место." />
+    <title>Настройка АТС | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
+    <meta name="title" content="Настройка АТС | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta name="description" content="В настоящее время поддерживаются следующие типы АТС:" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.telefon1c.ru/faq/cti-terminal-setup/">
-    <meta property="og:title" content="Установка панели телефонии на терминальный сервер | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="og:description" content="Если Вы не хотите многократно дублировать файлы программы на терминальном сервере, то возможна ручная установка дистрибутива в выбранное место.">
+    <meta property="og:url" content="https://docs.telefon1c.ru/get-started/nastroyka_ats/">
+    <meta property="og:title" content="Настройка АТС | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="og:description" content="В настоящее время поддерживаются следующие типы АТС:">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.telefon1c.ru/faq/cti-terminal-setup/">
-    <meta property="twitter:title" content="Установка панели телефонии на терминальный сервер | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="twitter:description" content="Если Вы не хотите многократно дублировать файлы программы на терминальном сервере, то возможна ручная установка дистрибутива в выбранное место.">
+    <meta property="twitter:url" content="https://docs.telefon1c.ru/get-started/nastroyka_ats/">
+    <meta property="twitter:title" content="Настройка АТС | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
+    <meta property="twitter:description" content="В настоящее время поддерживаются следующие типы АТС:">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -29,7 +29,6 @@
     <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698754990474" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
     <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698754990474" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.698754990474" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -189,52 +188,37 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="установка-панели-телефонии-на-терминальный-сервер" class="break-words">
+<doc-anchor-target id="настройка-атс" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#установка-панели-телефонии-на-терминальный-сервер">#</doc-anchor-trigger>
-        <span>Установка панели телефонии на терминальный сервер</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#настройка-атс">#</doc-anchor-trigger>
+        <span>Настройка АТС</span>
     </h1>
 </doc-anchor-target>
-<p>Если Вы не хотите многократно дублировать файлы программы на терминальном сервере, то возможна ручная установка дистрибутива в выбранное место. В этом случае Вам нужно будет самостоятельно вывести ярлык для запуска программы на рабочий стол пользователей. Для установки требуются права администратора.</p>
-<doc-anchor-target id="установка">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#установка">#</doc-anchor-trigger>
-        <span>Установка</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li>Скачайте и распакуйте дистрибутив панели телефонии 4.0.</li>
-<li>Запустите командную строку Windows от имени администратора.</li>
-<li>Перейдите в каталог, где находится инсталлятор панели телефонии. Выполните команду:</li>
-</ol>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markup"><code v-pre class="language-markup">&quot;MIKO CTI Setup 2.*.*.exe&quot; /D=&quot;c:\Program Files (x86)\MIKO CTI&quot;</code></pre>
-</doc-codeblock></div>
-<ol start="4">
-<li>Выполните установку программы.</li>
-<li>Поместите ярлык для запуска программы на рабочий стол всех пользователей - c:\Users\Public\Desktop.</li>
-</ol>
-<doc-anchor-target id="запуск-панели-телефонии-с-заданным-адресом-сервера-интеграции">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#запуск-панели-телефонии-с-заданным-адресом-сервера-интеграции">#</doc-anchor-trigger>
-        <span>Запуск панели телефонии с заданным адресом сервера интеграции</span>
-    </h2>
-</doc-anchor-target>
-<p>Для того, чтобы пользователям не приходилось самостоятельно вводить адрес сервера интеграции, системный администратор может настроить запуск панели телефонии с заданным адресом сервера. Эта опция может быть удобна при работе в терминальном сервере.</p>
-<p>Для настройки запуска панели телефонии с заданным адресом:</p>
-<ol>
-<li>Откройте свойства ярлыка для запуска программы.</li>
-<li>Добавьте к значению поля Объект параметр --server-address=[АдресСервера]. Для данного примера поле будет выглядеть так:</li>
-</ol>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markup"><code v-pre class="language-markup">&quot;C:\Program Files (x86)\MIKO CTI\MIKO CTI.exe&quot; --server-address=172.16.32.76</code></pre>
-</doc-codeblock></div>
-<ol start="3">
-<li>(Опционально) Если все пользователи используют настольные телефоны, то рекомендуется указать параметр --desk-phone=1.</li>
-</ol>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markup"><code v-pre class="language-markup">&quot;C:\Program Files (x86)\MIKO CTI\MIKO CTI.exe&quot; --server-address=172.16.32.76 --desk-phone=1</code></pre>
-</doc-codeblock></div>
+<p>В настоящее время поддерживаются следующие типы АТС:</p>
+<ul>
+<li>Бесплатная АТС <strong>MikoPBX</strong> - собственная разработка МИКО (рекомендована для работы с панелью телефонии)</li>
+<li>АТС <a href="https://voxlink.ru"><strong>VoxPBX</strong></a> версия 14, Asterisk 16</li>
+<li>АТС <strong>FreePBX</strong>, версия 15, Asterisk 16 (поддерживаются SIP, PJSIP внутренние номера)</li>
+<li>АТС <strong>Манго Офис</strong></li>
+</ul>
+<p><a href="/get-started/mikopbx/">Настройка MikoPBX</a> <br>
+<a href="/get-started/freepbx/">Настройка VoxPBX</a> <br>
+<a href="/get-started/freepbx/">Настройка FreePBX</a> <br>
+<a href="/get-started/mango/">Настройка АТС Манго</a> <br></p>
+<p>После выполнения действий в одной из перечисленных выше инструкций перейдите к настройке 1С 
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">настройка 1С</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>/get-started/nastroyka_1c/</span>
+    </div>
+    <a href="/get-started/nastroyka_1c/" class="absolute block inset-0"></a>
+</div>
+</p>
 
 
 
@@ -244,7 +228,7 @@
             </div>
 
             <div class="flex flex-wrap items-center justify-between mt-14">
-    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/telefon1c/wiki/edit/master/src/faq/cti-terminal-setup.md" target="_blank" rel="noopener">
+    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/telefon1c/wiki/edit/master/src/get-started/nastroyka_ats.md" target="_blank" rel="noopener">
         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         <span>Редактировать в GitHub</span>
     </a>
@@ -252,6 +236,27 @@
     <!--<p class="my-2.5 text-gray-500 dark:text-dark-350 text-sm">Last updated on <strong>2021-03-14</strong> by <strong>Geoffrey McGill</strong></p>-->
 </div>
 
+<nav class="flex mt-14">
+    <div class="w-1/2">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+            <span>
+                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                <span class="block mt-1">Панель телефонии для 1С</span>
+            </span>
+        </a>
+    </div>
+
+    <div class="w-1/2">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/get-started/nastroyka_1c/">
+            <span>
+                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                <span class="block mt-1">Настройка 1C</span>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+        </a>
+    </div>
+</nav>
 
 
         </main>
@@ -294,6 +299,6 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Установка панели телефонии на терминальный сервер", icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+        <script>window.__DOCS__ = { "title": "Настройка АТС", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
     </body>
 </html>
