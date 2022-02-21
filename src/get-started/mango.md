@@ -1,4 +1,5 @@
 ---
+visibility: hidden
 label: Интеграция с ВАТС Манго
 icon: zap
 order: -3
