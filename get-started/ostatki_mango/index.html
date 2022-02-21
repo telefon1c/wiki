@@ -26,11 +26,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.698756984424" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.698758140391" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698756984424" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698758140391" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698756984424" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698758140391" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -430,6 +430,32 @@ alt=""
         </div>
     </div>
 </div>
+<doc-anchor-target id="остатки-freepbx">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#остатки-freepbx">#</doc-anchor-trigger>
+        <span>Остатки freepbx</span>
+    </h2>
+</doc-anchor-target>
+<ol start="13">
+<li><p>Если в автоматическом режиме настроить соединение не удалось, можно его настроить в ручном режиме.<br />
+Для этого в веб-интерфейсе АТС в модуле <strong>МИКО:Панель телефонии 4.0</strong> на вкладке <strong>Настройка модуля</strong> в разделе <strong>Общие настройки</strong> установите переключатель в положение <strong>Ввести параметры подключения к 1С вручную</strong>.<br />
+В разделе <strong>Связь с 1С:Предприятие 8</strong> установите переключатель в соответствие с вашей <a href="/root-guides/select-connection-mode/">схеме соединения</a><br />
+Скопируйте IP-адрес АТС и выполните <strong>Submit</strong>.
+<figure class="content-center">
+    <img src="../../assets/freepbx/freepbx_mod_15.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+</li>
+<li><p>В мастере первоначальной настройки 1С переключатель <strong>Настройка подключения</strong> установите в положение <strong>Ручная настройка</strong>.<br />
+В поле ниже вставьте адрес АТС и выполните <strong>Далее</strong>. Если соединение с АТС установится, мастер перейдет на следующую страницу.
+<figure class="content-center">
+    <img src="../../assets/freepbx/freepbx_1c_11.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+</li>
+</ol>
 
 
 

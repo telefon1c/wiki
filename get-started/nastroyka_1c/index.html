@@ -26,11 +26,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.698756984424" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.698758140391" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698756984424" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.698758140391" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698756984424" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.698758140391" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -304,14 +304,9 @@ srcset="/assets/freepbx/freepbx_1c_8_prev.png 1x, /assets/freepbx/freepbx_1c_8.p
 alt="МИКО: выбор способа соединения"
 /></p>
 <ol start="10">
-<li><p>В веб-интерфейсе АТС в модуле <strong>МИКО:Панель телефонии 4.0</strong> на вкладке <strong>Настройка модуля</strong> скопируйте код из раздела <strong>Данные для автоматической настройки</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_9.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
+<li><p>Вставьте код для автоматической настройки, скопированный ранее из АТС на этапе <a href="/get-started/nastroyka_ats/">настройка АТС</a>.</p>
 </li>
-<li><p>На странице <strong>Проверка связи</strong> Переключатель <strong>К какой АТС выполняется подключение</strong> установите <strong>FreePBX</strong>.<br />
+<li><p>На странице <strong>Проверка связи</strong> Переключатель <strong>К какой АТС выполняется подключение</strong> установите в соответствии с вашей АТС.<br />
 Переключатель <strong>Настройка подключения</strong> - в положение <strong>Автоматическая настройка</strong>.
 Ниже в поле вставьте скопированный ранее код автоматической настройки.
 Выполните <strong>Далее</strong>.
@@ -343,27 +338,8 @@ alt="МИКО: выбор способа соединения"
     </div>
 </div>
 <ol start="13">
-<li><p>Если в автоматическом режиме настроить соединение не удалось, можно его настроить в ручном режиме.<br />
-Для этого в веб-интерфейсе АТС в модуле <strong>МИКО:Панель телефонии 4.0</strong> на вкладке <strong>Настройка модуля</strong> в разделе <strong>Общие настройки</strong> установите переключатель в положение <strong>Ввести параметры подключения к 1С вручную</strong>.<br />
-В разделе <strong>Связь с 1С:Предприятие 8</strong> установите переключатель в соответствие с вашей <a href="/root-guides/select-connection-mode/">схеме соединения</a><br />
-Скопируйте IP-адрес АТС и выполните <strong>Submit</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_mod_15.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>В мастере первоначальной настройки 1С переключатель <strong>Настройка подключения</strong> установите в положение <strong>Ручная настройка</strong>.<br />
-В поле ниже вставьте адрес АТС и выполните <strong>Далее</strong>. Если соединение с АТС установится, мастер перейдет на следующую страницу.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_11.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>На странице <strong>Виды номеров</strong> в поле <strong>Вид внутреннего телефона</strong> выберите <strong>Телефон</strong>.<br />
-В поле <strong>Вид мобильного телефона</strong> выберите создание нового элемента.</p>
-</li>
+<li>На странице <strong>Виды номеров</strong> в поле <strong>Вид внутреннего телефона</strong> выберите <strong>Телефон</strong>.<br />
+В поле <strong>Вид мобильного телефона</strong> выберите создание нового элемента.</li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
 src="/assets/mango/mango_31.png"
@@ -371,7 +347,7 @@ data-original="/assets/mango/mango_31.png"
 srcset="/assets/mango/mango_31_prev.png 1x, /assets/mango/mango_31.png 2x" 
 alt="МИКО: виды контактной информации"
 /></p>
-<ol start="16">
+<ol start="14">
 <li>В появившейся форме создания вида контактной информации отметьте флажками поля <strong>Запрещать ввод некорректных номеров</strong> и <strong>Вводить номер по маске</strong>.
 Ниже выберите маску <strong>+7(999) 999-99-99</strong>. Затем выполните <strong>Записать и закрыть</strong>.</li>
 </ol>
@@ -381,7 +357,7 @@ data-original="/assets/mango/mango_32.png"
 srcset="/assets/mango/mango_32_prev.png 1x, /assets/mango/mango_32.png 2x" 
 alt="МИКО: добавление вида контактной информации"
 /></p>
-<ol start="17">
+<ol start="15">
 <li>После заполнения видов номеров перейдите на следующую страницу мастера, выполнив <strong>Далее</strong>.</li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
@@ -390,7 +366,7 @@ data-original="/assets/mango/mango_33.png"
 srcset="/assets/mango/mango_33_prev.png 1x, /assets/mango/mango_33.png 2x" 
 alt="МИКО: добавление вида контактной информации"
 /></p>
-<ol start="18">
+<ol start="16">
 <li>На странице <strong>Пользователи телефонии</strong> присвойте внутренние номера пользователям информационной базы, которые будут использовать телефонию (лучше сразу заполнить и мобильные телефоны).</li>
 </ol>
 <div class="flex mb-6">
@@ -417,7 +393,7 @@ data-original="/assets/mango/mango_34.png"
 srcset="/assets/mango/mango_34_prev.png 1x, /assets/mango/mango_34.png 2x" 
 alt="МИКО: добавление вида контактной информации"
 /></p>
-<ol start="19">
+<ol start="17">
 <li>Дождитесь окончания настройки. Страницу с мастером первоначальной настройки можно закрыть, она больше не понадобится.</li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
@@ -426,7 +402,7 @@ data-original="/assets/mango/mango_35.png"
 srcset="/assets/mango/mango_35_prev.png 1x, /assets/mango/mango_35.png 2x" 
 alt="МИКО: добавление вида контактной информации"
 /></p>
-<ol start="20">
+<ol start="18">
 <li>Перейдите к <a href="/user-guides/panel/install/">установке Внешней панели 4.0</a></li>
 </ol>
 
