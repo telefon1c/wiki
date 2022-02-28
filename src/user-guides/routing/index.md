@@ -81,3 +81,19 @@ order: -4
    определяются только по звонкам, но вы можете выбрать и другие документы, с которыми работают сотрудники.
    Выберите наименование документа, укажите в каких реквизитах документа содержатся ключевые для модуля данные
    (`Дата`, `клиент` и `пользователь`), а также заполните исходный `вес` документа и его `срок действия`.
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/rooting/dobav_vzaimod.gif"
+    data-original="/assets/rooting/dobav_vzaimod.gif"
+    srcset="/assets/rooting/dobav_vzaimod_prev.gif 1x, /assets/rooting/dobav_vzaimod.gif 2x" 
+    alt="МИКО: умная маршрутизация добавление вида взаимодействия"
+/> 
+
+8. Включите регламентное задание "**Обновлять таблицу маршрутизации**".
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/rooting/vkluchenie_reglam_zadan.gif"
+    data-original="/assets/rooting/vkluchenie_reglam_zadan.gif"
+    srcset="/assets/rooting/vkluchenie_reglam_zadan_prev.gif 1x, /assets/rooting/vkluchenie_reglam_zadan.gif 2x" 
+    alt="МИКО: умная маршрутизация включение регламентного задания обновлять таблицу маршрутизации"
+/> 

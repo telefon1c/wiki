@@ -31,4 +31,11 @@ order: -3
     alt="МИКО: запись в журнале звонков"
 />
 
-5. Найдите в справочнике "Клиенты" созданного вами клиента из позвоните ему, выполнив команду "Позвонить" из формы (списка или элемента - любой) справочника.
+5. Найдите в справочнике "Клиенты" клиента и позвоните ему.
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/proverka_integracii/prov_int_zvonok_iz_1c.gif"
+    data-original="/assets/proverka_integracii/prov_int_zvonok_iz_1c.gif"
+    srcset="/assets/proverka_integracii/prov_int_zvonok_iz_1c_prev.gif 1x, /assets/proverka_integracii/prov_int_zvonok_iz_1c.gif 2x" 
+    alt="МИКО: совершения звонка из 1С"
+/>
