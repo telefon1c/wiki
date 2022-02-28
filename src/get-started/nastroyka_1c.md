@@ -38,7 +38,13 @@ order: -2
 /> 
 
 4. Выберите последнюю версию расширения, если их несколько и выполните **Установить**.
-![](../assets/freepbx/freepbx_1c_3.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_37.png"
+    data-original="/assets/mango/mango_37.png"
+    srcset="/assets/mango/mango_37_prev.png 1x, /assets/mango/mango_37.png 2x" 
+    alt="МИКО: установка расширения 1С"
+/> 
 
 5. Ознакомьтесь с лицензионным соглашением и примите условия.
 
@@ -97,7 +103,13 @@ order: -2
 Переключатель **Настройка подключения** - в положение **Автоматическая настройка**. 
 Ниже в поле вставьте скопированный ранее код автоматической настройки.
 Выполните **Далее**.
-![](../assets/freepbx/freepbx_1c_10.png)
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mango/mango_38.png"
+    data-original="/assets/mango/mango_38.png"
+    srcset="/assets/mango/mango_38_prev.png 1x, /assets/mango/mango_38.png 2x" 
+    alt="МИКО: автонастройка соединения"
+/> 
 
 12. Дождитесь установления соединения с АТС (около 30 с). 
 
