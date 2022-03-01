@@ -1,7 +1,7 @@
 ---
 visibility: hidden
 label: Интеграция с MikoPBX
-icon: zap
+icon: tools
 order: -1
 ---
 

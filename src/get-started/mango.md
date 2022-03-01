@@ -1,7 +1,7 @@
 ---
 visibility: hidden
 label: Интеграция с ВАТС Манго
-icon: zap
+icon: tools
 order: -3
 ---
 Данная инструкция предназначена для редакции 4.0, для предыдущих версий используйте [эту инструкцию](https://wiki.miko.ru/nightbird:v21:get-started-mango).  
@@ -157,3 +157,5 @@ order: -3
 /> 
 
 На данном этапе[!badge variant="danger" text="соединение с 1С установлено не будет"]. Требуется дальнейшая настройка в 1С:Предприятие.
+
+[!ref Настройка 1С](/get-started/nastroyka_1c)

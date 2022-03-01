@@ -1,6 +1,6 @@
 ---
 label: Звонок из 1С
-icon: zap
+icon: rocket
 order: -4
 ---
 
