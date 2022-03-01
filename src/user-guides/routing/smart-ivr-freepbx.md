@@ -32,3 +32,12 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1csmartivr/late
 - "**Номер, куда отправим звонок в случае сбоев связи с 1С или TTS**" - номер на который будет переведен вызов, если происходит сбой при генерации речи или при обращении к 1С в момент звонка ("аварийный маршрут").  
 - "**Длина внутреннего номера**" - число символов донабора, которое будет ожидать IVR от абонента.
 - "**Режим отладки модуля**" - сбор логов о работе модуля в файл "**ModuleSmartIVR**".
+
+6. В качестве правила входящей маршрутизации укажите **1С Smart IVR**.
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/rooting/mod_f_3.png"
+    data-original="/assets/rooting/mod_f_3.png"
+    srcset="/assets/rooting/mod_f_3_prev.png 1x, /assets/rooting/mod_f_3.png 2x" 
+    alt="МИКО: правило входящей маршрутизации на умную маршрутизацию"
+/> 

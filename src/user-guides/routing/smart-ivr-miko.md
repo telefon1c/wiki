@@ -38,3 +38,13 @@ order: -4
 !!!
 На данном этапе статус модуля [!badge variant="danger" text="Ошибка соединения с 1С"] является нормальным.
 !!!
+
+4. В качестве правила входящей маршрутизации укажите **Модуль Smart IVR**.
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/rooting/mod_m_4.png"
+    data-original="/assets/rooting/mod_m_4.png"
+    srcset="/assets/rooting/mod_m_4_prev.png 1x, /assets/rooting/mod_m_4.png 2x" 
+    alt="МИКО: умная маршрутизации в качестве входящей маршрутизации"
+/> 
+
