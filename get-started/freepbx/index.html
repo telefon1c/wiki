@@ -26,12 +26,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.699456225755" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.699460685498" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.699456225755" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.699460685498" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.699456225755" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.699456225755" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.699460685498" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.699460685498" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -218,10 +218,10 @@
 </div>
 <p>Данная инструкция предназначена для подсистемы телефонии редакции 4.0. Для предыдущих версий используйте другую инструкцию.</p>
 <doc-anchor-target id="установка-модуля-на-атс">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#установка-модуля-на-атс">#</doc-anchor-trigger>
         <span>Установка модуля на АТС</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <p>Суть работы модуля заключается в подключении к AMI интерфейсу Asterisk, сбору информации о звонках, состоянии каналов, а также взаимодействие с 1С:Предприятием и Панелью телефонии для управления вызовами.</p>
 <p>На текущий момент протестирована работа модуля на следующих версиях FreePBX/Asterisk</p>
@@ -256,6 +256,12 @@ data-original="/assets/freepbx/freepbx_mod_1.gif"
 srcset="/assets/freepbx/freepbx_mod_1_prev.gif 1x, /assets/freepbx/freepbx_mod_1.gif 2x" 
 alt="МИКО: FreePBX установка модуля панель телефонии"
 /></p>
+<doc-anchor-target id="получение-лицензионного-ключа">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#получение-лицензионного-ключа">#</doc-anchor-trigger>
+        <span>Получение лицензионного ключа</span>
+    </h2>
+</doc-anchor-target>
 <ol start="11">
 <li>После этого в разделе <strong>Приложения</strong> появится команда <strong>MIKO CTI Client 4.0 for 1C (Подсистема телефонии для 1С)</strong>. Выполните ее.</li>
 </ol>
@@ -301,9 +307,17 @@ data-original="/assets/freepbx/freepbx_mod_12.png"
 srcset="/assets/freepbx/freepbx_mod_12_prev.png 1x, /assets/freepbx/freepbx_mod_12.png 2x" 
 alt="МИКО: FreePBX лицензионный ключ клиента в модуле панели телефонии"
 /></p>
+<doc-anchor-target id="получение-ключа-автонастройки">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#получение-ключа-автонастройки">#</doc-anchor-trigger>
+        <span>Получение ключа автонастройки</span>
+    </h2>
+</doc-anchor-target>
 <ol start="13">
 <li>Перейдите на вкладку <strong>Настройки модуля</strong>. В разделе <strong>Общие настройки</strong> установите переключатель в положение <strong>Автоматическая настройка модуля</strong>.<br />
-В разделе <strong>Прочие настройки</strong> переключатели <strong>Включить режим отладки модуля</strong> установите в положение <strong>Включить</strong>, &quot;<strong>Устанавливать CallerID из 1С</strong>&quot; - <strong>Включить</strong>, &quot;<strong>Выполнять транслитерацию CallerID полученного из 1С</strong>&quot; - в любое положение. <br>
+В разделе <strong>Прочие настройки</strong> переключатели <strong>Включить режим отладки модуля</strong> установите в положение <strong>Включить</strong>, <br>
+&quot;<strong>Устанавливать CallerID из 1С</strong>&quot; - <strong>Включить</strong>, <br>
+&quot;<strong>Выполнять транслитерацию CallerID полученного из 1С</strong>&quot; - в любое положение. <br>
 Выполните <strong>Сохранить</strong>. Скачайте обработку для 1С, нажав на ссылку.</li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
@@ -312,7 +326,23 @@ data-original="/assets/freepbx/mod_f_3.gif"
 srcset="/assets/freepbx/mod_f_3_prev.gif 1x, /assets/freepbx/mod_f_3.gif 2x" 
 alt="МИКО: FreePBX настройка модуля панель телефонии"
 /></p>
-<p>21.Скопируйте себе лицензионный ключ и и код автоматической настройки. Они понадобятся вам при дальнейшей настройке в 1С.</p>
+<ol start="14">
+<li>Скопируйте себе лицензионный ключ и код автоматической настройки. Они понадобятся вам при дальнейшей настройке в 1С.</li>
+</ol>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">Настройка 1С</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>/get-started/nastroyka_1c/</span>
+    </div>
+    <a href="/get-started/nastroyka_1c/" class="absolute block inset-0"></a>
+</div>
+</p>
 
 
 
