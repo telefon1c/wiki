@@ -7,36 +7,45 @@ order: -1
 
 # Интеграция с MikoPBX
 
-В этом руководстве показано, как настроить подключение между
-АТС MikoPBX и конфигурацией 1С:Предприятие для принятия и обработки звонков.
+В этом руководстве показано, как настроить АТС MikoPBX для работы подсистемы телефонии 4.0.
 
 ---
 
-[!embed](https://youtu.be/R8teD1V8pYQ)
+[!embed](https://www.youtube.com/watch?v=96dr4T9KAlQ)
 
 ### Регистрация в Marketplace
  
 Для установки дополнительных модулей требуется регистрация в Marketplace. Откройте веб-интерфейс MikoPBX и перейдите
-в раздел `Управление модулями`.
-
-Если у вас уже есть `лицензионный ключ`, то достаточно указать его в соответствущем поле, на вкладке
-`Регистрация и управление лицензией` и нажать кнопку `Сохранить`.
-
-!!!info Лицензионный ключ
-Ключ имеет формат **MIKO-XXXXX-XXXXX-XXXXX-XXXXX** и отправляется автоматически после регистрации
-на ваш email с адреса lic@miko.ru
+в раздел "**Лицензирование**", закладка "**Регистрация и управление лицензией**".
+Заполните форму регистрации и нажмите "**Сохранить**". Вам будет автоматически присвоен лицензионный ключ, с активированным триальным периодом на **30-дней** на продукт "**Триальная лицензия на интеграцию 1С и телефонии (ПРОФ)**".<br>
+!!!info Лицензионный ключ имеет формат **MIKO-XXXXX-XXXXX-XXXXX-XXXXX**
+Также лицензионный ключ будет выслан на указанный вами email с адреса lic@miko.ru. 
 !!!
 
-Если у вас нет лицензионного ключа, заполните форму регистрации. Укажите свой email, на него будет выслан лицензионный 
-ключ с активированным триальным периодом на **30-дней**.
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mikopbx/mikopbx_0.png"
+    data-original="/assets/mikopbx/mikopbx_0.png"
+    srcset="/assets/mikopbx/mikopbx_0_prev.png 1x, /assets/mikopbx/mikopbx_0.png 2x" 
+    alt="МИКО: получение Лицензионного ключа"
+/> 
+
+Если у вас уже есть лицензионный ключ, то достаточно указать его в поле "**Лицензионный ключ**" и нажать кнопку "**Сохранить**".
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/mikopbx/mikopbx_1.png"
+    data-original="/assets/mikopbx/mikopbx_1.png"
+    srcset="/assets/mikopbx/mikopbx_1_prev.png 1x, /assets/mikopbx/mikopbx_1.png 2x" 
+    alt="МИКО: присваивание лицензионного ключа MikoPBX"
+/> 
 
 ### Установка модуля
-1. Установите и включите модуль "**Панель телефонии 4.0 для 1С**" 
+Перейдите в раздел "**Управление модулями**", установите и включите модуль "**Панель телефонии 4.0 для 1С**" 
+
 <img class="miko-shadow img-zoomable"  
-    src="/assets/mikopbx/mikopbx_0.gif"
-    data-original="/assets/mikopbx/mikopbx_0.gif"
-    srcset="/assets/mikopbx/mikopbx_0_prev.gif 1x, /assets/mikopbx/mikopbx_0.gif 2x" 
-    alt="МИКО: установка модуля на MikoPBX"
+   src="/assets/mikopbx/mikopbx_0.gif"
+   data-original="/assets/mikopbx/mikopbx_0.gif"
+   srcset="/assets/mikopbx/mikopbx_0_prev.gif 1x, /assets/mikopbx/mikopbx_0.gif 2x" 
+   alt="МИКО: установка модуля на MikoPBX"
 /> 
 
 ### Установка расширения для 1С
