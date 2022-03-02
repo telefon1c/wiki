@@ -48,15 +48,13 @@ order: -1
    alt="МИКО: установка модуля на MikoPBX"
 /> 
 
-### Получение ключа автонастройки
+### Получение кода автонастройки
 
 1. Перейдите к настройкам модуля, нажав кнопку "**Изменить**". <br>
 Установите "**Автоматическая настройка параметров связи модуля и 1С**" в положение "**Включить**". <br>
 "**Режим отладки модуля и логирование всех событий**" - в положение "**Включить**". <br>
 "**Устанавливать CallerID из 1С**" - в положение "**Включить**". <br>
-Нажмите на ссылку,
-<img src="~/assets/cloud-storage-download.png" alt="cloud-storage-download"/>
-чтобы скачать обработку для 1С (файл **Установщик.epf**).
+Нажмите "**Сохранить**".
 
 <img class="miko-shadow img-zoomable"  
    src="/assets/mikopbx/mikopbx_2.gif"
@@ -65,13 +63,15 @@ order: -1
    alt="МИКО: настройка модуля панели телефонии на MikoPBX"
 /> 
 
-2. Скопируйте код автоматической настройки из модуля панели телефонии и лицензионный ключ.
+2. Нажмите на ссылку, <img src="~/assets/cloud-storage-download.png" alt="cloud-storage-download"/>
+чтобы скачать обработку для 1С (файл **Установщик.epf**). <br>
+Скопируйте код автоматической настройки из модуля панели телефонии и лицензионный ключ.
 
 <img class="miko-shadow img-zoomable"  
-   src="/assets/mikopbx/mikopbx_3.gif"
-   data-original="/assets/mikopbx/mikopbx_3.gif"
-   srcset="/assets/mikopbx/mikopbx_3_prev.gif 1x, /assets/mikopbx/mikopbx_3.gif 2x" 
-   alt="МИКО: копирование кода автонастройки и лицензионного ключа"
+   src="/assets/mikopbx/mikopbx_4.gif"
+   data-original="/assets/mikopbx/mikopbx_4.gif"
+   srcset="/assets/mikopbx/mikopbx_4_prev.gif 1x, /assets/mikopbx/mikopbx_4.gif 2x" 
+   alt="МИКО: скачивание обработки и копирование кода автонастройки и лицензионного ключа"
 /> 
 
 Перейдите к настройке в 1С:Предприятие.

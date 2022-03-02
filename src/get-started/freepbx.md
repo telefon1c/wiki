@@ -82,27 +82,29 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
     alt="МИКО: FreePBX лицензионный ключ клиента в модуле панели телефонии"
 /> 
 
-## Получение ключа автонастройки
+## Получение кода автонастройки
 13. Перейдите на вкладку **Настройки модуля**. В разделе **Общие настройки** установите переключатель в положение **Автоматическая настройка модуля**.  
 В разделе **Прочие настройки** переключатели **Включить режим отладки модуля** установите в положение **Включить**, <br>
 "**Устанавливать CallerID из 1С**" - **Включить**, <br>
 "**Выполнять транслитерацию CallerID полученного из 1С**" - в любое положение. <br> 
-Выполните **Сохранить**. Скачайте обработку для 1С, нажав на ссылку.
+Выполните **Сохранить**.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/freepbx/mod_f_4.gif"
-    data-original="/assets/freepbx/mod_f_4.gif"
-    srcset="/assets/freepbx/mod_f_4_prev.gif 1x, /assets/freepbx/mod_f_4.gif 2x" 
+    src="/assets/freepbx/mod_f_6.gif"
+    data-original="/assets/freepbx/mod_f_6.gif"
+    srcset="/assets/freepbx/mod_f_6_prev.gif 1x, /assets/freepbx/mod_f_6.gif 2x" 
     alt="МИКО: FreePBX настройка модуля панель телефонии"
 /> 
 
-14. Скопируйте себе лицензионный ключ и код автоматической настройки. Они понадобятся вам при дальнейшей настройке в 1С.
+14.Нажмите на ссылку, <img src="~/assets/cloud-storage-download.png" alt="cloud-storage-download"/>
+чтобы скачать обработку для 1С (файл **Установщик.epf**). <br>
+Скопируйте себе лицензионный ключ и код автоматической настройки. Они понадобятся вам при дальнейшей настройке в 1С.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/freepbx/mod_f_5.gif"
-    data-original="/assets/freepbx/mod_f_5.gif"
-    srcset="/assets/freepbx/mod_f_5_prev.gif 1x, /assets/freepbx/mod_f_5.gif 2x" 
-    alt="МИКО: FreePBX копирование кода автонастройки и ключа"
+    src="/assets/freepbx/mod_f_7.gif"
+    data-original="/assets/freepbx/mod_f_7.gif"
+    srcset="/assets/freepbx/mod_f_7_prev.gif 1x, /assets/freepbx/mod_f_7.gif 2x" 
+    alt="МИКО: FreePBX скачивание обработки и копирование кода автонастройки и ключа"
 /> 
 
 Перейдите к настройке в 1С:Предприятие.
