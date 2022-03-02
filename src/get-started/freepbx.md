@@ -90,12 +90,21 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
 Выполните **Сохранить**. Скачайте обработку для 1С, нажав на ссылку.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/freepbx/mod_f_3.gif"
-    data-original="/assets/freepbx/mod_f_3.gif"
-    srcset="/assets/freepbx/mod_f_3_prev.gif 1x, /assets/freepbx/mod_f_3.gif 2x" 
+    src="/assets/freepbx/mod_f_4.gif"
+    data-original="/assets/freepbx/mod_f_4.gif"
+    srcset="/assets/freepbx/mod_f_4_prev.gif 1x, /assets/freepbx/mod_f_4.gif 2x" 
     alt="МИКО: FreePBX настройка модуля панель телефонии"
 /> 
 
 14. Скопируйте себе лицензионный ключ и код автоматической настройки. Они понадобятся вам при дальнейшей настройке в 1С.
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/freepbx/mod_f_5.gif"
+    data-original="/assets/freepbx/mod_f_5.gif"
+    srcset="/assets/freepbx/mod_f_5_prev.gif 1x, /assets/freepbx/mod_f_5.gif 2x" 
+    alt="МИКО: FreePBX копирование кода автонастройки и ключа"
+/> 
+
+Перейдите к настройке в 1С:Предприятие.
 
 [!ref Настройка 1С](/get-started/nastroyka_1c)
