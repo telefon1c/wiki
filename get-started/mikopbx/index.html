@@ -8,27 +8,27 @@
     <!-- Primary Meta Tags -->
     <title>Интеграция с MikoPBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
     <meta name="title" content="Интеграция с MikoPBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta name="description" content="В этом руководстве показано, как настроить подключение между АТС MikoPBX и конфигурацией 1С:Предприятие для принятия и обработки звонков." />
+    <meta name="description" content="В этом руководстве показано, как настроить АТС MikoPBX для работы подсистемы телефонии 4.0." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/get-started/mikopbx/">
     <meta property="og:title" content="Интеграция с MikoPBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="og:description" content="В этом руководстве показано, как настроить подключение между АТС MikoPBX и конфигурацией 1С:Предприятие для принятия и обработки звонков.">
+    <meta property="og:description" content="В этом руководстве показано, как настроить АТС MikoPBX для работы подсистемы телефонии 4.0.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/get-started/mikopbx/">
     <meta property="twitter:title" content="Интеграция с MikoPBX | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="twitter:description" content="В этом руководстве показано, как настроить подключение между АТС MikoPBX и конфигурацией 1С:Предприятие для принятия и обработки звонков.">
+    <meta property="twitter:description" content="В этом руководстве показано, как настроить АТС MikoPBX для работы подсистемы телефонии 4.0.">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.699460685498" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.699520931948" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.699460685498" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.699520931948" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.699460685498" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.699520931948" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -194,13 +194,12 @@
         <span>Интеграция с MikoPBX</span>
     </h1>
 </doc-anchor-target>
-<p>В этом руководстве показано, как настроить подключение между
-АТС MikoPBX и конфигурацией 1С:Предприятие для принятия и обработки звонков.</p>
+<p>В этом руководстве показано, как настроить АТС MikoPBX для работы подсистемы телефонии 4.0.</p>
 <hr />
 <p>
 <figure>
     <div class="relative w-full mb-6 overflow-hidden pt-9/16">
-        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/R8teD1V8pYQ" allowfullscreen></iframe>
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/96dr4T9KAlQ" allowfullscreen></iframe>
     </div>
 </figure>
 </p>
@@ -211,9 +210,8 @@
     </h3>
 </doc-anchor-target>
 <p>Для установки дополнительных модулей требуется регистрация в Marketplace. Откройте веб-интерфейс MikoPBX и перейдите
-в раздел <code v-pre>Управление модулями</code>.</p>
-<p>Если у вас уже есть <code v-pre>лицензионный ключ</code>, то достаточно указать его в соответствущем поле, на вкладке
-<code v-pre>Регистрация и управление лицензией</code> и нажать кнопку <code v-pre>Сохранить</code>.</p>
+в раздел &quot;<strong>Лицензирование</strong>&quot;, закладка &quot;<strong>Регистрация и управление лицензией</strong>&quot;.
+Заполните форму регистрации и нажмите &quot;<strong>Сохранить</strong>&quot;. Вам будет автоматически присвоен лицензионный ключ, с активированным триальным периодом на <strong>30-дней</strong> на продукт &quot;<strong>Триальная лицензия на интеграцию 1С и телефонии (ПРОФ)</strong>&quot;.<br></p>
 <div class="flex mb-6">
     <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -227,29 +225,37 @@
             </svg>
         </div>
         <div class="pr-5 ml-3">
-            <h5>Лицензионный ключ</h5>
-<p>Ключ имеет формат <strong>MIKO-XXXXX-XXXXX-XXXXX-XXXXX</strong> и отправляется автоматически после регистрации
-на ваш email с адреса <a href="mailto:lic@miko.ru">lic@miko.ru</a></p>
+            <h5>Лицензионный ключ имеет формат <strong>MIKO-XXXXX-XXXXX-XXXXX-XXXXX</strong></h5>
+<p>Также лицензионный ключ будет выслан на указанный вами email с адреса <a href="mailto:lic@miko.ru">lic@miko.ru</a>.</p>
         </div>
     </div>
 </div>
-<p>Если у вас нет лицензионного ключа, заполните форму регистрации. Укажите свой email, на него будет выслан лицензионный
-ключ с активированным триальным периодом на <strong>30-дней</strong>.</p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mikopbx/mikopbx_0.png"
+data-original="/assets/mikopbx/mikopbx_0.png"
+srcset="/assets/mikopbx/mikopbx_0_prev.png 1x, /assets/mikopbx/mikopbx_0.png 2x" 
+alt="МИКО: получение Лицензионного ключа"
+/></p>
+<p>Если у вас уже есть лицензионный ключ, то достаточно указать его в поле &quot;<strong>Лицензионный ключ</strong>&quot; и нажать кнопку &quot;<strong>Сохранить</strong>&quot;.</p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mikopbx/mikopbx_1.png"
+data-original="/assets/mikopbx/mikopbx_1.png"
+srcset="/assets/mikopbx/mikopbx_1_prev.png 1x, /assets/mikopbx/mikopbx_1.png 2x" 
+alt="МИКО: присваивание лицензионного ключа MikoPBX"
+/></p>
 <doc-anchor-target id="установка-модуля">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#установка-модуля">#</doc-anchor-trigger>
         <span>Установка модуля</span>
     </h3>
 </doc-anchor-target>
-<ol>
-<li>Установите и включите модуль &quot;<strong>Панель телефонии 4.0 для 1С</strong>&quot;
-<img class="miko-shadow img-zoomable"  
+<p>Перейдите в раздел &quot;<strong>Управление модулями</strong>&quot;, установите и включите модуль &quot;<strong>Панель телефонии 4.0 для 1С</strong>&quot;</p>
+<p><img class="miko-shadow img-zoomable"  
 src="/assets/mikopbx/mikopbx_0.gif"
 data-original="/assets/mikopbx/mikopbx_0.gif"
 srcset="/assets/mikopbx/mikopbx_0_prev.gif 1x, /assets/mikopbx/mikopbx_0.gif 2x" 
 alt="МИКО: установка модуля на MikoPBX"
-/></li>
-</ol>
+/></p>
 <doc-anchor-target id="установка-расширения-для-1с">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#установка-расширения-для-1с">#</doc-anchor-trigger>
