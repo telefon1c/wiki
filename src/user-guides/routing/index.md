@@ -103,4 +103,4 @@ order: -4
     data-original="/assets/rooting/vkluchenie_reglam_zadan.gif"
     srcset="/assets/rooting/vkluchenie_reglam_zadan_prev.gif 1x, /assets/rooting/vkluchenie_reglam_zadan.gif 2x" 
     alt="МИКО: умная маршрутизация включение регламентного задания обновлять таблицу маршрутизации"
-/> 
+/>
