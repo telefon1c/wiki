@@ -16,7 +16,7 @@ icon: tools
 1. Запустите сеанс 1С:Предприятие и в разделе "**Звонки и сообщения**" откройте <br> "**Настройки мессенджера**". На экране
    отобразится QR-код.
    
-<img class="miko-shadow"  
+<img class="miko-shadow img-zoomable"  
     src="/assets/whatsapp/wp_0.gif"
     data-original="/assets/whatsapp/wp_0.gif"
     srcset="/assets/whatsapp/wp_0_prev.gif 1x, /assets/whatsapp/wp_0.gif 2x" 
