@@ -50,7 +50,7 @@ text="Установка внешней панели<div class='subtitle text-gr
 <div class="miko-ref">
 
 [!ref
-icon="tools"
+icon="rocket"
 text="Звонок из 1С<div class='subtitle text-gray-700 dark:text-dark-300'>Проверка работы интеграции 1С и телефонии. Ваше решение готово к работе</div>"
 ](/get-started/proverka_integracii)
 </div>
