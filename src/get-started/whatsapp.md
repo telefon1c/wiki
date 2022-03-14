@@ -16,10 +16,8 @@ icon: tools
 1. Запустите сеанс 1С:Предприятие и в разделе "**Звонки и сообщения**" откройте <br> "**Настройки мессенджера**". На экране
    отобразится QR-код.
    
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/whatsapp/wp_0.gif"
-    data-original="/assets/whatsapp/wp_0.gif"
-    srcset="/assets/whatsapp/wp_0_prev.gif 1x, /assets/whatsapp/wp_0.gif 2x" 
     alt="МИКО: whatsapp отсканировать qr код"
 /> 
    
@@ -68,10 +66,8 @@ icon: tools
 Настройке расписание регламентного задания. Входящие сообщения поступают моментально, время отправки исходящих
 сообщений будет зависеть от установленного расписания.
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/whatsapp/wp_2.gif"
-    data-original="/assets/whatsapp/wp_2.gif"
-    srcset="/assets/whatsapp/wp_2_prev.gif 1x, /assets/whatsapp/wp_2.gif 2x" 
     alt="МИКО: whatsapp расписание регламентного задания"
 /> 
 
@@ -80,11 +76,9 @@ icon: tools
 Заполните **Очередь сотрудников**, указав тех пользователей, которые будут получать уведомления при поступлении
 новых сообщений.
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/whatsapp/wp_3.gif"
-    data-original="/assets/whatsapp/wp_3.gif"
-    srcset="/assets/whatsapp/wp_3_prev.gif 1x, /assets/whatsapp/wp_3.gif 2x" 
-    alt="МИКО: whatsapp добавить сотрудников в очередь"
+   alt="МИКО: whatsapp добавить сотрудников в очередь"
 /> 
 !!! info
 Право читать и отправлять сообщения, получают все пользователи состоящие в группе доступа
@@ -93,9 +87,7 @@ icon: tools
 ## Прием входящего сообщения
 Теперь сообщения, отправленные в WhatsApp на номер, к которому вы привязывали панель телефонии в пункте [Подключение WhatsApp](#этап-1-подключение-whatsapp) будут отображаться у сотрудников, которых вы сделали участниками очереди в предыдущем пункте. 
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/whatsapp/wp_vh.gif"
-    data-original="/assets/whatsapp/wp_vh.gif"
-    srcset="/assets/whatsapp/wp_vh_prev.gif 1x, /assets/whatsapp/wp_vh.gif 2x" 
     alt="МИКО: whatsapp прием входящего сообщения"
 /> 

@@ -41,10 +41,8 @@ order: -1
 ### Установка модуля на АТС
 Перейдите в раздел "**Управление модулями**", установите и включите модуль "**Панель телефонии 4.0 для 1С**" 
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
    src="/assets/mikopbx/mikopbx_0.gif"
-   data-original="/assets/mikopbx/mikopbx_0.gif"
-   srcset="/assets/mikopbx/mikopbx_0_prev.gif 1x, /assets/mikopbx/mikopbx_0.gif 2x" 
    alt="МИКО: установка модуля на MikoPBX"
 /> 
 
@@ -56,10 +54,8 @@ order: -1
 "**Устанавливать CallerID из 1С**" - в положение "**Включить**". <br>
 Нажмите "**Сохранить**".
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
    src="/assets/mikopbx/mikopbx_2.gif"
-   data-original="/assets/mikopbx/mikopbx_2.gif"
-   srcset="/assets/mikopbx/mikopbx_2_prev.gif 1x, /assets/mikopbx/mikopbx_2.gif 2x" 
    alt="МИКО: настройка модуля панели телефонии на MikoPBX"
 /> 
 
@@ -67,10 +63,8 @@ order: -1
 чтобы скачать обработку для 1С (файл **Установщик.epf**). <br>
 Скопируйте код автоматической настройки из модуля панели телефонии и лицензионный ключ.
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
    src="/assets/mikopbx/mikopbx_4.gif"
-   data-original="/assets/mikopbx/mikopbx_4.gif"
-   srcset="/assets/mikopbx/mikopbx_4_prev.gif 1x, /assets/mikopbx/mikopbx_4.gif 2x" 
    alt="МИКО: скачивание обработки и копирование кода автонастройки и лицензионного ключа"
 /> 
 
