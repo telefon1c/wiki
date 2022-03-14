@@ -32,19 +32,15 @@ order: -2
 https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/latest.tgz
 ```
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/freepbx/freepbx_mod_0.gif"
-    data-original="/assets/freepbx/freepbx_mod_0.gif"
-    srcset="/assets/freepbx/freepbx_mod_0_prev.gif 1x, /assets/freepbx/freepbx_mod_0.gif 2x" 
     alt="МИКО: FreePBX установка модуля панель телефонии"
 /> 
 
 5. Дождитесь загрузки модуля на АТС, затем включите его.
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/freepbx/freepbx_mod_1.gif"
-    data-original="/assets/freepbx/freepbx_mod_1.gif"
-    srcset="/assets/freepbx/freepbx_mod_1_prev.gif 1x, /assets/freepbx/freepbx_mod_1.gif 2x" 
     alt="МИКО: FreePBX установка модуля панель телефонии"
 /> 
 
@@ -89,10 +85,8 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
 "**Выполнять транслитерацию CallerID полученного из 1С**" - в любое положение. <br> 
 Выполните **Сохранить**.
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/freepbx/mod_f_6.gif"
-    data-original="/assets/freepbx/mod_f_6.gif"
-    srcset="/assets/freepbx/mod_f_6_prev.gif 1x, /assets/freepbx/mod_f_6.gif 2x" 
     alt="МИКО: FreePBX настройка модуля панель телефонии"
 /> 
 
@@ -100,10 +94,8 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
 чтобы скачать обработку для 1С (файл **Установщик.epf**). <br>
 Скопируйте себе лицензионный ключ и код автоматической настройки. Они понадобятся вам при дальнейшей настройке в 1С.
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/freepbx/mod_f_7.gif"
-    data-original="/assets/freepbx/mod_f_7.gif"
-    srcset="/assets/freepbx/mod_f_7_prev.gif 1x, /assets/freepbx/mod_f_7.gif 2x" 
     alt="МИКО: FreePBX скачивание обработки и копирование кода автонастройки и ключа"
 /> 
 

@@ -5,10 +5,8 @@ icon: tools
 
 # Установка внешней панели
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/panel/setup/ust_vp.gif"
-    data-original="/assets/panel/setup/ust_vp.gif"
-    srcset="/assets/panel/setup/ust_vp_prev.gif 1x, /assets/panel/setup/ust_vp.gif 2x" 
     alt="МИКО: установка панели телефонии"
 /> 
 

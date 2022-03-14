@@ -91,20 +91,16 @@ order: -2
 
 Флажок "**Набор номера по ссылке (callto:, tel:) в браузере**" позволяет осуществлять звонки по телефонным номерам указанным такими ссылками. 
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/panel/setup/cti_callto.gif"
-    data-original="/assets/panel/setup/cti_callto.gif"
-    srcset="/assets/panel/setup/cti_callto_prev.gif 1x, /assets/panel/setup/cti_callto.gif 2x" 
     alt="МИКО: настройки внешней панели, звонок из браузера"
 /> 
 
 Если установлен флажок "**Переводить звонки на мобильный номер через * сек.**" то, в случае, если сотрудник не поднимает трубку в течении установленного таймера, звонок направляется на его мобильный телефон.  
 Мобильный телефон сотрудника должен быть указан. Устанавливается он в карточке сотрудника в 1С:Предприятие.
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/panel/setup/cti_mob.gif"
-    data-original="/assets/panel/setup/cti_mob.gif"
-    srcset="/assets/panel/setup/cti_mob_prev.gif 1x, /assets/panel/setup/cti_mob.gif 2x" 
     alt="МИКО: настройки внешней панели, указание мобильного телефона сотрудника"
 /> 
 
