@@ -12,10 +12,8 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1csmartivr/late
 2. Установите модуль путем загрузки из веб аналогично [примеру](/get-started/freepbx/#установка-модуля-на-атс)
 3. В качестве входящего маршрута установите - "**1C Smart IVR**".  
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/rooting/mod_f_0.gif"
-    data-original="/assets/rooting/mod_f_0.gif"
-    srcset="/assets/rooting/mod_f_0_prev.gif 1x, /assets/rooting/mod_f_0.gif 2x" 
     alt="МИКО: правило входящей маршрутизации на умную маршрутизацию"
 /> 
 
@@ -35,9 +33,7 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1csmartivr/late
 
 6. В качестве правила входящей маршрутизации укажите **1С Smart IVR**.
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/rooting/mod_f_3.png"
-    data-original="/assets/rooting/mod_f_3.png"
-    srcset="/assets/rooting/mod_f_3_prev.png 1x, /assets/rooting/mod_f_3.png 2x" 
     alt="МИКО: правило входящей маршрутизации на умную маршрутизацию"
 /> 

@@ -37,10 +37,8 @@ order: -4
 
 2. Выберите **сервис генерации речи** и используйте параметры подключения, которые были получены на [этапе 1](#этап-1-настройте-модуль-телефонии-на-атс-и-подсистему-телефонии-в-1с).
    
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/rooting/mod_f_1.gif"
-    data-original="/assets/rooting/mod_f_1.gif"
-    srcset="/assets/rooting/mod_f_1_prev.gif 1x, /assets/rooting/mod_f_1.gif 2x" 
     alt="МИКО: умная маршрутизация выбор сервиса генерации речи"
 /> 
 
@@ -52,19 +50,15 @@ order: -4
    - **Окончание голосового меню** может быть использовано для озвучивания дополнительных инструкций.
    <br>
    
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/rooting/mod_f_2.gif"
-    data-original="/assets/rooting/mod_f_2.gif"
-    srcset="/assets/rooting/mod_f_2_prev.gif 1x, /assets/rooting/mod_f_2.gif 2x" 
     alt="МИКО: умная маршрутизация выбор диктора"
 /> 
 
 4. Для проверки качества синтеза речи, используйте кнопку **Прослушать**.
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/rooting/dobav_vzaimod.gif"
-    data-original="/assets/rooting/dobav_vzaimod.gif"
-    srcset="/assets/rooting/dobav_vzaimod_prev.gif 1x, /assets/rooting/dobav_vzaimod.gif 2x" 
     alt="МИКО: умная маршрутизация проверка генерации речи"
 /> 
    
@@ -77,10 +71,8 @@ order: -4
    Настройте расписание, по которому сотрудники недоступны для связи. Если сотрудник недоступен в определенное время,
    то его имя не будет озвучено в голосовом меню.
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/rooting/mod_f_4.gif"
-    data-original="/assets/rooting/mod_f_4.gif"
-    srcset="/assets/rooting/mod_f_4_prev.gif 1x, /assets/rooting/mod_f_4.gif 2x" 
     alt="МИКО: умная маршрутизация участники голосового меню время доступности"
 /> 
    
@@ -89,18 +81,14 @@ order: -4
    Выберите наименование документа, укажите в каких реквизитах документа содержатся ключевые для модуля данные
    (`Дата`, `клиент` и `пользователь`), а также заполните исходный `вес` документа и его `срок действия`.
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/rooting/dobav_vzaimod.gif"
-    data-original="/assets/rooting/dobav_vzaimod.gif"
-    srcset="/assets/rooting/dobav_vzaimod_prev.gif 1x, /assets/rooting/dobav_vzaimod.gif 2x" 
     alt="МИКО: умная маршрутизация добавление вида взаимодействия"
 /> 
 
 8. Включите регламентное задание "**Обновлять таблицу маршрутизации**".
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow"  
     src="/assets/rooting/vkluchenie_reglam_zadan.gif"
-    data-original="/assets/rooting/vkluchenie_reglam_zadan.gif"
-    srcset="/assets/rooting/vkluchenie_reglam_zadan_prev.gif 1x, /assets/rooting/vkluchenie_reglam_zadan.gif 2x" 
     alt="МИКО: умная маршрутизация включение регламентного задания обновлять таблицу маршрутизации"
 />
