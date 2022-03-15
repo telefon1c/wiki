@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.700652291399" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.700660475663" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.700652291399" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.700660475663" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.700652291399" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.700660475663" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -327,7 +327,7 @@ alt="МИКО: установлена подсистема звонки и со�
 src="/assets/mango/mango_28.png"
 data-original="/assets/mango/mango_28.png"
 srcset="/assets/mango/mango_28_prev.png 1x, /assets/mango/mango_28.png 2x" 
-alt="МИКО: установлена подсистема звонки и сообщения"
+alt="МИКО: открытие мастера первоначальной настройки"
 /></p>
 <doc-anchor-target id="выбор-подходящей-схемы-подключения">
     <h3>
@@ -364,15 +364,31 @@ srcset="/assets/mango/mango_38_prev.png 1x, /assets/mango/mango_38.png 2x"
 alt="МИКО: автонастройка соединения"
 /></p>
 <ol start="11">
+<li>В открывшейся форме в поле введите:</li>
+</ol>
+<ul>
+<li>в поле &quot;<strong>веб-сервер</strong>&quot; адрес сервера <strong>Apache</strong> или <strong>IIS</strong></li>
+<li>в поле &quot;<strong>имя публикации</strong>&quot; - <a href="https://docs.telefon1c.ru/faq/base-publishing/#:%7E:text=%D0%A3%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5-,%D0%B8%D0%BC%D1%8F%20%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8,-%2C%20%D0%BF%D0%BE%D0%B4%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%BC%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82">имя публикации</a>
+Нажмите &quot;<strong>Обновить состояние</strong>&quot;</li>
+</ul>
+<p><img class="miko-shadow"  
+src="/assets/mango/mango_40.png"
+alt="МИКО: автонастройка соединения"
+/></p>
+<ol start="13">
 <li>Дождитесь установления соединения с АТС (около 30 с).</li>
 </ol>
+<p><img class="miko-shadow"  
+src="/assets/mango/mango_41.png"
+alt="МИКО: автонастройка соединения"
+/></p>
 <doc-anchor-target id="определение-видов-контактной-информации">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#определение-видов-контактной-информации">#</doc-anchor-trigger>
         <span>Определение видов контактной информации</span>
     </h3>
 </doc-anchor-target>
-<ol start="12">
+<ol start="14">
 <li>На странице <strong>Виды номеров</strong> в поле <strong>Вид внутреннего телефона</strong> выберите <strong>Телефон</strong>.<br />
 В поле <strong>Вид мобильного телефона</strong> выберите создание нового элемента.</li>
 </ol>
@@ -382,7 +398,7 @@ data-original="/assets/mango/mango_31.png"
 srcset="/assets/mango/mango_31_prev.png 1x, /assets/mango/mango_31.png 2x" 
 alt="МИКО: виды контактной информации"
 /></p>
-<ol start="13">
+<ol start="15">
 <li>В появившейся форме создания вида контактной информации отметьте флажками поля <strong>Запрещать ввод некорректных номеров</strong> и <strong>Вводить номер по маске</strong>.
 Ниже выберите маску <strong>+7(999) 999-99-99</strong>. Затем выполните <strong>Записать и закрыть</strong>.</li>
 </ol>
@@ -392,7 +408,7 @@ data-original="/assets/mango/mango_32.png"
 srcset="/assets/mango/mango_32_prev.png 1x, /assets/mango/mango_32.png 2x" 
 alt="МИКО: добавление вида контактной информации"
 /></p>
-<ol start="14">
+<ol start="16">
 <li>После заполнения видов номеров перейдите на следующую страницу мастера, выполнив <strong>Далее</strong>.</li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
@@ -407,7 +423,7 @@ alt="МИКО: добавление вида контактной информа
         <span>Присваивание телефонов сотрудникам</span>
     </h3>
 </doc-anchor-target>
-<ol start="15">
+<ol start="17">
 <li>На странице <strong>Пользователи телефонии</strong> присвойте внутренние номера пользователям информационной базы, которые будут использовать телефонию (лучше сразу заполнить и мобильные телефоны).</li>
 </ol>
 <div class="flex mb-6">
@@ -440,7 +456,7 @@ alt="МИКО: добавление вида контактной информа
         <span>Ссылка на скачивание внешней панели</span>
     </h3>
 </doc-anchor-target>
-<ol start="16">
+<ol start="18">
 <li>Дождитесь окончания настройки. Откройте ссылку предложенную ссылку с установщиком внешней панели. <br>
 Страницу с мастером первоначальной настройки можно закрыть, она больше не понадобится.</li>
 </ol>
