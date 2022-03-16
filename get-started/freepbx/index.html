@@ -26,12 +26,12 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.700759976211" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.700761770635" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.700759976211" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.700761770635" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.700759976211" defer></script>
-    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.700759976211" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.700761770635" defer></script>
+    <script id="prism-js" type="text/javascript" src="/resources/js/prism.js?v=1.11.2.700761770635" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -211,8 +211,8 @@
         </div>
         <div class="pr-5 ml-3">
 <p>Данное руководство предполагает наличие навыков настройки АТС и работы с конфигуратором 1С.
-Для выполнения некоторых инструкций могут потребоваться права администратора.
-На сегодняшний момент поддерживается только <strong>FreePBX 15 (Asterisk 16)</strong>.</p>
+Для выполнения некоторых инструкций могут потребоваться права администратора.</p>
+<p>На сегодняшний момент поддерживается только <strong>FreePBX 15 (Asterisk 16)</strong>.</p>
         </div>
     </div>
 </div>
@@ -241,14 +241,14 @@
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markup"><code v-pre class="language-markup">https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/latest.tgz</code></pre>
 </doc-codeblock></div>
-<p><img class="miko-shadow"  
+<p><img class="miko-shadow play-on-click"  
 src="/assets/freepbx/freepbx_mod_0.gif"
 alt="МИКО: FreePBX установка модуля панель телефонии"
 /></p>
 <ol start="5">
 <li>Дождитесь загрузки модуля на АТС, затем включите его.</li>
 </ol>
-<p><img class="miko-shadow"  
+<p><img class="miko-shadow play-on-click"  
 src="/assets/freepbx/freepbx_mod_1.gif"
 alt="МИКО: FreePBX установка модуля панель телефонии"
 /></p>
@@ -316,14 +316,14 @@ alt="МИКО: FreePBX лицензионный ключ клиента в мо�
 &quot;<strong>Выполнять транслитерацию CallerID полученного из 1С</strong>&quot; - в любое положение. <br>
 Выполните <strong>Сохранить</strong>.</li>
 </ol>
-<p><img class="miko-shadow freezeframe"  
+<p><img class="miko-shadow play-on-hover"  
 src="/assets/freepbx/mod_f_6.gif"
 alt="МИКО: FreePBX настройка модуля панель телефонии"
 /></p>
 <p>14.Нажмите на ссылку, <img src="/assets/cloud-storage-download.png" alt="cloud-storage-download" />
 чтобы скачать обработку для 1С (файл <strong>Установщик.epf</strong>). <br>
 Скопируйте себе лицензионный ключ и код автоматической настройки. Они понадобятся вам при дальнейшей настройке в 1С.</p>
-<p><img class="miko-shadow freezeframe"  
+<p><img class="miko-shadow play-on-hover"  
 src="/assets/freepbx/mod_f_7.gif"
 alt="МИКО: FreePBX скачивание обработки и копирование кода автонастройки и ключа"
 /></p>
