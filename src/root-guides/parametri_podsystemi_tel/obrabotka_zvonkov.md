@@ -7,6 +7,13 @@ order: -1
 <img src="/assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/obr_zv_0.png" 
     class="miko-shadow" 
 />
+## Группа "Форматирование номеров телефонов"
+
+Позволяет отформатировать номера клиентов для более удобного их восприятия.  Ниже пример.
+
+<img src="/assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/obr_zv_6.png" 
+    class="miko-shadow" 
+/>
 
 ## Группа "Действие при звонке"
 
