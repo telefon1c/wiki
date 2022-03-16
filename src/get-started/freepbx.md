@@ -85,7 +85,7 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
 "**Выполнять транслитерацию CallerID полученного из 1С**" - в любое положение. <br> 
 Выполните **Сохранить**.
 
-<img class="miko-shadow"  
+<img class="miko-shadow freezeframe"  
     src="/assets/freepbx/mod_f_6.gif"
     alt="МИКО: FreePBX настройка модуля панель телефонии"
 /> 
@@ -94,7 +94,7 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
 чтобы скачать обработку для 1С (файл **Установщик.epf**). <br>
 Скопируйте себе лицензионный ключ и код автоматической настройки. Они понадобятся вам при дальнейшей настройке в 1С.
 
-<img class="miko-shadow"  
+<img class="miko-shadow freezeframe"  
     src="/assets/freepbx/mod_f_7.gif"
     alt="МИКО: FreePBX скачивание обработки и копирование кода автонастройки и ключа"
 /> 
