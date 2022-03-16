@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.700742231871" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.700749361691" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.700742231871" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.700749361691" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.700742231871" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.700749361691" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -205,8 +205,18 @@ class="miko-shadow"
     </h2>
 </doc-anchor-target>
 <ul>
-<li>Когда переключатель &quot;<strong>Способ обработки звонка</strong>&quot; установлен в положение Стандартные действия</li>
+<li>Когда переключатель <strong>Способ обработки звонка</strong> установлен в положение <strong>Стандартные действия</strong> при поднятии трубки вызываемым абонентом произойдет действие, указанное в <strong>Звонки и сообщения -&gt; Персональные настройки</strong>.</li>
 </ul>
+<p><img src="/assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/obr_zv_4.png" 
+class="miko-shadow" 
+/></p>
+<ul>
+<li>Когда переключатель <strong>Способ обработки звонка</strong> установлен в положение <strong>Свой алгоритм</strong> при поднятии трубки вызываемым абонентом выполнен алгоритм, написанный на встроенном языке 1С. <br>
+Это действие устанавливается для всех пользователей, и пользователь сам не может изменить это действие в персональных настройках.</li>
+</ul>
+<p><img src="/assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/obr_zv_5.png" 
+class="miko-shadow" 
+/></p>
 <doc-anchor-target id="группа-перехват-звонка">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#группа-перехват-звонка">#</doc-anchor-trigger>
@@ -231,7 +241,7 @@ class="miko-shadow"
 <li>Когда переключатель <strong>Определение ответственного</strong> в положении <strong>Автоматически</strong> функция перехвата на ответственного включена. <br>
 В данном случае внешний входящий звонок одновременно с правилом входящей маршрутизации поступает ответственному по данному клиенту. <br> В данном случае ответственный определяется на основании <a href="/user-guides/routing/#%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B7%D0%B0%D0%B8%D0%BC%D0%BE%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B9-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D1%85-%D0%B1%D1%83%D0%B4%D0%B5%D1%82-%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D1%8C%D1%81%D1%8F-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0-%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8">отслеживаемых взаимодействий</a>. Их можно настроить по ссылке в этой же форме.</li>
 </ul>
-<p><img src="/assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/obr_zv_2.png" 
+<p><img src="/assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/obr_zv_3.png" 
 class="miko-shadow" 
 /></p>
 
