@@ -8,6 +8,16 @@ if (window.innerWidth > 500) {
 				var zooming = new Zooming();
 				zooming.listen('.img-zoomable');
 			});
+			head.load('https://unpkg.com/freezeframe/dist/freezeframe.min.js', function() {
+				// Custom options
+				new Freezeframe({
+					selector: 'freezeframe',
+					trigger: 'click',
+					overlay: true,
+					responsive: false,
+					warnings: false
+				});
+			});
 		});
 	})
 }
