@@ -10,6 +10,7 @@ order: -2
 !!! info
 Данное руководство предполагает наличие навыков настройки АТС и работы с конфигуратором 1С. 
 Для выполнения некоторых инструкций могут потребоваться права администратора. 
+
 На сегодняшний момент поддерживается только **FreePBX 15 (Asterisk 16)**.
 !!!
 
@@ -32,14 +33,14 @@ order: -2
 https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/latest.tgz
 ```
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-click"  
     src="/assets/freepbx/freepbx_mod_0.gif"
     alt="МИКО: FreePBX установка модуля панель телефонии"
 /> 
 
 5. Дождитесь загрузки модуля на АТС, затем включите его.
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-click"  
     src="/assets/freepbx/freepbx_mod_1.gif"
     alt="МИКО: FreePBX установка модуля панель телефонии"
 /> 
@@ -85,7 +86,7 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
 "**Выполнять транслитерацию CallerID полученного из 1С**" - в любое положение. <br> 
 Выполните **Сохранить**.
 
-<img class="miko-shadow freezeframe"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/freepbx/mod_f_6.gif"
     alt="МИКО: FreePBX настройка модуля панель телефонии"
 /> 
@@ -94,7 +95,7 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
 чтобы скачать обработку для 1С (файл **Установщик.epf**). <br>
 Скопируйте себе лицензионный ключ и код автоматической настройки. Они понадобятся вам при дальнейшей настройке в 1С.
 
-<img class="miko-shadow freezeframe"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/freepbx/mod_f_7.gif"
     alt="МИКО: FreePBX скачивание обработки и копирование кода автонастройки и ключа"
 /> 
