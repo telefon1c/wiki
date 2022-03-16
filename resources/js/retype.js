@@ -19,13 +19,22 @@
 	return}p()}}()}setTimeout(function(){l=!0;m(v,function(a){a()})},300)})(window);
 
 <!-- END headjs.github.io -->
-
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KXBHF8J');
-<!-- End Google Tag Manager -->
+document.addEventListener("turbo:load", function() {
+	head.ready(document, function() {
+		function GTMINIT(w,d,s,l,i) {
+			w[l]=w[l]||[];
+			w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+			var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),
+				dl=l!='dataLayer'?'&l='+l:'';
+			j.async=true;
+			j.src=	'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+			f.parentNode.insertBefore(j,f);
+		}
+		GTMINIT(window, document,'script','dataLayer','GTM-KXBHF8J');
+		return true;
+	})
+})
 <!-- github.com/kingdido999/zooming -->
 
 if (window.innerWidth > 500) {
@@ -34,6 +43,16 @@ if (window.innerWidth > 500) {
 			head.load('https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.js', function() {
 				var zooming = new Zooming();
 				zooming.listen('.img-zoomable');
+			});
+			head.load('https://unpkg.com/freezeframe/dist/freezeframe.min.js', function() {
+				// Custom options
+				new Freezeframe({
+					selector: 'freezeframe',
+					trigger: 'click',
+					overlay: true,
+					responsive: false,
+					warnings: false
+				});
 			});
 		});
 	})
