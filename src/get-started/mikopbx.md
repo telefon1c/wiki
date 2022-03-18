@@ -41,7 +41,7 @@ order: -1
 ### Установка модуля на АТС
 Перейдите в раздел "**Управление модулями**", установите и включите модуль "**Панель телефонии 4.0 для 1С**" 
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
    src="/assets/mikopbx/mikopbx_0.gif"
    alt="МИКО: установка модуля на MikoPBX"
 /> 
@@ -54,7 +54,7 @@ order: -1
 "**Устанавливать CallerID из 1С**" - в положение "**Включить**". <br>
 Нажмите "**Сохранить**".
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
    src="/assets/mikopbx/mikopbx_2.gif"
    alt="МИКО: настройка модуля панели телефонии на MikoPBX"
 /> 
@@ -63,7 +63,7 @@ order: -1
 чтобы скачать обработку для 1С (файл **Установщик.epf**). <br>
 Скопируйте код автоматической настройки из модуля панели телефонии и лицензионный ключ.
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
    src="/assets/mikopbx/mikopbx_4.gif"
    alt="МИКО: скачивание обработки и копирование кода автонастройки и лицензионного ключа"
 /> 

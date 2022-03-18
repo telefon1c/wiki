@@ -17,10 +17,8 @@ order: -2
 Первый сотрудник, ответивший на сообщение становится владельцем чата, а чат принимает статус **в работе**. <br>
 После завершения переписки, чат может быть **закрыт** и перемещен в архив.
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/whatsapp/wp_och_0.gif"
-    data-original="/assets/whatsapp/wp_och_0.gif"
-    srcset="/assets/whatsapp/wp_och_0_prev.gif 1x, /assets/whatsapp/wp_och_0.gif" 
     alt="МИКО: whatsapp закрытие чата"
 /> 
 
@@ -36,10 +34,8 @@ order: -2
 2. Выберите один из чатов из группы "**В очереди**".
 3. Напишите и отправьте сообщение.
 
-<img class="miko-shadow img-zoomable"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/whatsapp/wp_och_1.gif"
-    data-original="/assets/whatsapp/wp_och_1.gif"
-    srcset="/assets/whatsapp/wp_och_1_prev.gif 1x, /assets/whatsapp/wp_och_1.gif" 
     alt="МИКО: whatsapp прием чата в работу"
 /> 
 

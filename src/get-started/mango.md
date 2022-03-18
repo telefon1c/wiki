@@ -13,7 +13,7 @@ order: -3
 Сервер интеграции обеспечивает взаимосвязь между всеми компонентами панели телефонии. Он может быть установлен на терминальный сервер Windows, либо отдельный компьютер. Сервер интеграции устанавливается как служба Windows. Для установки требуются права администратора.  
 ### Вариант "А" - если вы еще не являетесь клиентом МИКО
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/mango/mango_1.gif"
     alt="МИКО: скачать триал"
 /> 
@@ -26,7 +26,7 @@ order: -3
 /> 
 ### Вариант "Б" - если вы уже клиент МИКО
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/mango/mango_0.gif"
     alt="МИКО: скачать дистрибутив"
 /> 
@@ -122,7 +122,7 @@ order: -3
 
 Ниже приведен пример включения записи разговоров.
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/mango/mango_2.gif"
     alt="МИКО: включение записи разговоров в ВАТС Манго"
 /> 

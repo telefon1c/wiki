@@ -33,14 +33,14 @@ order: -2
 https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/latest.tgz
 ```
 
-<img class="miko-shadow play-on-click"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/freepbx/freepbx_mod_0.gif"
     alt="МИКО: FreePBX установка модуля панель телефонии"
 /> 
 
 5. Дождитесь загрузки модуля на АТС, затем включите его.
 
-<img class="miko-shadow play-on-click"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/freepbx/freepbx_mod_1.gif"
     alt="МИКО: FreePBX установка модуля панель телефонии"
 /> 

@@ -5,7 +5,7 @@ icon: tools
 
 # Установка внешней панели
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/panel/setup/ust_vp.gif"
     alt="МИКО: установка панели телефонии"
 /> 
@@ -24,7 +24,7 @@ icon: tools
 
 5. Авторизуйтесь. Например, пин-кодом из 1С. 
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/proverka_integracii/prov_int_avt.gif"
     alt="МИКО: авторизация внешней панели кодом из 1С"
 /> 

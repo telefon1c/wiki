@@ -16,7 +16,7 @@ icon: tools
 1. Запустите сеанс 1С:Предприятие и в разделе "**Звонки и сообщения**" откройте <br> "**Настройки мессенджера**". На экране
    отобразится QR-код.
    
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/whatsapp/wp_0.gif"
     alt="МИКО: whatsapp отсканировать qr код"
 /> 
@@ -33,7 +33,7 @@ icon: tools
 - С помощью телефона просканируйте QR-код на своём компьютере. Если время действия QR-кода истекло, нажмите
    "**Обновить код**".
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/whatsapp/wp_andr.gif"
     alt="МИКО: whatsapp подключение android"
 /> 
@@ -46,7 +46,7 @@ icon: tools
 - С помощью телефона просканируйте QR-код на своём компьютере. Если время действия QR-кода истекло, нажмите
    "**Обновить код**".
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/whatsapp/wp_iph.gif"
     alt="МИКО: whatsapp подключение iphone"
 /> 
@@ -66,7 +66,7 @@ icon: tools
 Настройке расписание регламентного задания. Входящие сообщения поступают моментально, время отправки исходящих
 сообщений будет зависеть от установленного расписания.
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/whatsapp/wp_2.gif"
     alt="МИКО: whatsapp расписание регламентного задания"
 /> 
@@ -76,7 +76,7 @@ icon: tools
 Заполните **Очередь сотрудников**, указав тех пользователей, которые будут получать уведомления при поступлении
 новых сообщений.
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/whatsapp/wp_3.gif"
    alt="МИКО: whatsapp добавить сотрудников в очередь"
 /> 
@@ -87,7 +87,7 @@ icon: tools
 ## Прием входящего сообщения
 Теперь сообщения, отправленные в WhatsApp на номер, к которому вы привязывали панель телефонии в пункте [Подключение WhatsApp](#этап-1-подключение-whatsapp) будут отображаться у сотрудников, которых вы сделали участниками очереди в предыдущем пункте. 
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/whatsapp/wp_vh.gif"
     alt="МИКО: whatsapp прием входящего сообщения"
 /> 

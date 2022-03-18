@@ -14,7 +14,7 @@ visibility: hidden
 Если командой "**Установить обновление**" не удалось обновить подсистему, можно воспользоваться стандартным механизмом обновления расширений, который есть в конфигурациях, написанных на БСП. <br>
 1. Скачайте новое расширение по команде "**Скачать расширение**".
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/root-guides/obnovlenie/obn_1c_skach.gif"
     alt="МИКО: скачивание новой подсистемы телефонии"
 /> 
@@ -24,7 +24,7 @@ visibility: hidden
 Для установки расширения потребуется блокировка регламентных заданий на сервере 1С.
 !!!
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/root-guides/obnovlenie/obn_1c_ust.gif"
     alt="МИКО: обновление подсистемы телефонии"
 /> 

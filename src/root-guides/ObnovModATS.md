@@ -11,7 +11,7 @@ visibility: hidden
 3. Нажмите кнопку обновления.
 4. Включите модуль.
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/root-guides/obnovlenie/obn_m.gif"
     alt="МИКО: обновление модуля на mikopbx"
 /> 
@@ -27,7 +27,7 @@ visibility: hidden
 5. Начнется загрузкам модуля. После ее окончания нажмите "**Вернуться**".
 6. Нажмите "**Применить изменения**".
 
-<img class="miko-shadow"  
+<img class="miko-shadow play-on-hover"  
     src="/assets/root-guides/obnovlenie/obn_f.gif"
     alt="МИКО: обновление модуля на freepbx"
 /> 
