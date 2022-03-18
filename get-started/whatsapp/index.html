@@ -8,27 +8,27 @@
     <!-- Primary Meta Tags -->
     <title>Интеграция с WhatsApp | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
     <meta name="title" content="Интеграция с WhatsApp | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta name="description" content="Подключите WhatsApp и принимайте сообщения от клиентов в панели телефонии через единый корпоративный номер." />
+    <meta name="description" content="Если вы хотите использовать чаты с коллегами и чаты с клиентами через whatsapp нужно, чтобы соединение 1С с АТС происходило через веб-сервсис." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/get-started/whatsapp/">
     <meta property="og:title" content="Интеграция с WhatsApp | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="og:description" content="Подключите WhatsApp и принимайте сообщения от клиентов в панели телефонии через единый корпоративный номер.">
+    <meta property="og:description" content="Если вы хотите использовать чаты с коллегами и чаты с клиентами через whatsapp нужно, чтобы соединение 1С с АТС происходило через веб-сервсис.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/get-started/whatsapp/">
     <meta property="twitter:title" content="Интеграция с WhatsApp | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="twitter:description" content="Подключите WhatsApp и принимайте сообщения от клиентов в панели телефонии через единый корпоративный номер.">
+    <meta property="twitter:description" content="Если вы хотите использовать чаты с коллегами и чаты с клиентами через whatsapp нужно, чтобы соединение 1С с АТС происходило через веб-сервсис.">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.700912666881" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.700918360222" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.700912666881" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.700918360222" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.700912666881" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.700918360222" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -194,15 +194,76 @@
         <span>Интеграция с WhatsApp</span>
     </h1>
 </doc-anchor-target>
-<p>Подключите <strong>WhatsApp</strong> и принимайте сообщения от клиентов в панели
-телефонии через единый корпоративный номер.</p>
-<p>Следуйте инструкции для настройки подключения.</p>
+<doc-anchor-target id="перенастройка-соединения-1с-с-атс">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#перенастройка-соединения-1с-с-атс">#</doc-anchor-trigger>
+        <span>Перенастройка соединения 1С с АТС</span>
+    </h2>
+</doc-anchor-target>
+<p>Если вы хотите использовать чаты с коллегами и чаты с клиентами через whatsapp нужно, чтобы соединение 1С с АТС происходило через веб-сервсис. <br>
+Для этого:</p>
+<ol>
+<li><a href="/faq/base-publishing/">настройте публикацию</a> информационной базы на сервере IIS или Apache</li>
+<li>Переключите режим соединения 1С с АТС на <strong>веб-сервис</strong>. Об этом далее подробно.</li>
+</ol>
+<doc-anchor-target id="смена-способа-соединения-с-long-polling-на-веб-сервис">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#смена-способа-соединения-с-long-polling-на-веб-сервис">#</doc-anchor-trigger>
+        <span>Смена способа соединения с long-polling на веб-сервис</span>
+    </h3>
+</doc-anchor-target>
+<p>На странице <strong>Схема подключения</strong> выберите либо способ <strong>1С в облаке, сервер АТС в локальной сети</strong> либо <strong>1С и АТС расположены в облаке</strong>. Выполните <strong>Далее</strong>.</p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_39.png"
+data-original="/assets/mango/mango_39.png"
+srcset="/assets/mango/mango_39_prev.png 1x, /assets/mango/mango_39.png 2x" 
+alt="МИКО: автонастройка соединения"
+/></p>
+<doc-anchor-target id="автонастройка-соединения-с-атс">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#автонастройка-соединения-с-атс">#</doc-anchor-trigger>
+        <span>Автонастройка соединения с АТС</span>
+    </h3>
+</doc-anchor-target>
+<ol start="10">
+<li>На странице <strong>Проверка связи</strong> Переключатель <strong>К какой АТС выполняется подключение</strong> установите в соответствии с вашей АТС. <br>
+Переключатель <strong>Настройка подключения</strong> - в положение <strong>Автоматическая настройка</strong>. <br>
+Ниже в поле вставьте код автоматической настройки, скопированный ранее из АТС на этапе <a href="/get-started/nastroyka_ats/">настройка АТС</a>. <br>
+Выполните <strong>Далее</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/mango/mango_38.png"
+data-original="/assets/mango/mango_38.png"
+srcset="/assets/mango/mango_38_prev.png 1x, /assets/mango/mango_38.png 2x" 
+alt="МИКО: автонастройка соединения"
+/></p>
+<ol start="11">
+<li>В открывшейся форме в поле введите:</li>
+</ol>
+<ul>
+<li>в поле &quot;<strong>веб-сервер</strong>&quot; адрес сервера <strong>Apache</strong> или <strong>IIS</strong></li>
+<li>в поле &quot;<strong>имя публикации</strong>&quot; - <a href="/faq/base-publishing/#%D0%BE%D0%BF%D1%83%D0%B1%D0%BF%D0%BB%D0%B8%D0%BA%D1%83%D0%B9%D1%82%D0%B5-%D0%B2%D0%B5%D0%B1-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81">имя публикации</a>
+Нажмите &quot;<strong>Обновить состояние</strong>&quot;</li>
+</ul>
+<p><img class="miko-shadow"  
+src="/assets/mango/mango_40.png"
+alt="МИКО: автонастройка соединения"
+/></p>
+<ol start="13">
+<li>Дождитесь установления соединения с АТС (около 30 с).</li>
+</ol>
+<p><img class="miko-shadow"  
+src="/assets/mango/mango_41.png"
+alt="МИКО: автонастройка соединения"
+/></p>
 <doc-anchor-target id="подключение-whatsapp">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#подключение-whatsapp">#</doc-anchor-trigger>
         <span>Подключение WhatsApp</span>
     </h2>
 </doc-anchor-target>
+<p>Подключите <strong>WhatsApp</strong> и принимайте сообщения от клиентов в панели
+телефонии через единый корпоративный номер.</p>
 <p>Для работы с мессенджером потребуется телефон, на котором установленно приложение <strong>WhatsApp</strong> или
 <strong>WhatsApp Business</strong>.</p>
 <ol>
