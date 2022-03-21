@@ -38,6 +38,11 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
     alt="МИКО: FreePBX установка модуля панель телефонии"
 /> 
 
+!!! info Если вы хотите откатиться или установить конкретную версию модуля
+Для этого укажите эту версию вместо слова **latest** в названии файла, например: <br> 
+`https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/14.0.0.71.tgz`
+!!!
+
 5. Дождитесь загрузки модуля на АТС, затем включите его.
 
 <img class="miko-shadow play-on-hover"  
