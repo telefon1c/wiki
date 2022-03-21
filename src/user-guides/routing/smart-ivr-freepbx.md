@@ -9,7 +9,7 @@ order: -4
 ```html
 https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1csmartivr/latest.tgz
 ```
-2. Установите модуль путем загрузки из веб аналогично [примеру](/get-started/freepbx/#установка-модуля-на-атс)
+2. Установите модуль путем загрузки из веб аналогично <a href=/get-started/freepbx#установка-модуля-на-атс' target="_blank">примеру</a>
 3. В качестве входящего маршрута установите - "**1C Smart IVR**".  
 
 <img class="miko-shadow"  
