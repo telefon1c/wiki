@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.701268260032" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.701276552231" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701268260032" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701276552231" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701268260032" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701276552231" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -228,9 +228,7 @@ alt="МИКО: канал передачи событий"
 <li>Способ <strong>веб-сервис</strong> означает, что АТС будет обращаться к веб-сервису 1С для передачи данных о звонках и текущих соединениях. <br>
 Для этого веб-сервис должен быть опубликован и АТС должна иметь к нему доступ (АТС и сервер 1С должны быть в одной сети или у веб-сервиса должен быть настроен белый IP-адрес, или на маршрутизаторе настроен проброс портов от белого IP-адреса к хосту с опубликованным веб-сервисом). <br></li>
 <li>Способ <strong>Long-polling</strong> означает, что сервер 1С подключается к АТС и устанавливает постоянное соединение (в обе стороны <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.72 21.78a.75.75 0 001.06-1.06L5.56 17.5h14.69a.75.75 0 000-1.5H5.56l3.22-3.22a.75.75 0 10-1.06-1.06l-4.5 4.5a.75.75 0 000 1.06l4.5 4.5zm8.56-9.5a.75.75 0 11-1.06-1.06L18.44 8H3.75a.75.75 0 010-1.5h14.69l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5a.75.75 0 010 1.06l-4.5 4.5z"/></g></g></svg>). <br> По нему будут АТС будет передавать события о звонках. АТС должна быть доступна серверу 1С (АТС и сервер 1С должны быть в одной сети или АТС должна иметь белый IP-адрес, или настроен проброс портов от белого IP-адреса к IP-адресу АТС). <br>
-Для данного способа обязательным условием является выполнение регламентного задания <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-red-600 bg-red-100 h-6 px-2 text-xs rounded-md">
-    <span>Название регламентного</span>
-</span>.</li>
+Для данного способа обязательным условием является выполнение регламентного задания <strong>Онлайн обмен контактными данными</strong>.</li>
 </ul>
 <p><strong>Канал передачи контактных данных</strong> отвечает за то, каким способом будут передаваться данные о клиенте (наименование, контактное лицо) от сервера 1С до АТС. <br>
 Во-первых по данному каналу в момент звонка АТС запрашивает у 1С наименование контакта и устанавливает его в callerID, чтобы на SIP-софтфонах и аппаратных телефонах отображалось наименование контакта (а не номер телефона). <br>
