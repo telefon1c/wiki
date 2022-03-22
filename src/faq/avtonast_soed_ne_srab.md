@@ -9,7 +9,11 @@ order: -6
 `telnet [Адрес АТС] [номер порта]` <br> 
 Пример `telnet 172.16.32.82 4222` <br>
 
-<img class="miko-shadow"  
+по 4222 порту ответ должен быть наподобие такого
+`INFO {"server_id":"UFVRBAFWV0BRABlQT0dLAg","version":"1.4.1","proto":1,"go":"go1.15.6","host":"0.0.0.0","port":4222,"max_payload":1000000,"client_id":16}`
+по 8222 порту правильным результатом является просто пустой экран.
+
+<img class="miko-shadow"
     src="/assets/faq/faq_ruch_nastr_2.png"
 /> 
 
