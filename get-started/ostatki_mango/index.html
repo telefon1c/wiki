@@ -26,11 +26,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.701194094751" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.701254002229" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701194094751" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701254002229" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701194094751" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701254002229" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -430,50 +430,6 @@ alt=""
         </div>
     </div>
 </div>
-<doc-anchor-target id="остатки-freepbx">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#остатки-freepbx">#</doc-anchor-trigger>
-        <span>Остатки freepbx</span>
-    </h2>
-</doc-anchor-target>
-<div class="flex mb-6">
-    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3">
-            <h5>Если автоматически не настраивается</h5>
-<p>Тогда выполните пункты <strong>13, 14</strong>. Если автоматически настроилось, переходите к пункту <strong>15</strong>.</p>
-        </div>
-    </div>
-</div>
-<ol start="13">
-<li><p>Если в автоматическом режиме настроить соединение не удалось, можно его настроить в ручном режиме.<br />
-Для этого в веб-интерфейсе АТС в модуле <strong>МИКО:Панель телефонии 4.0</strong> на вкладке <strong>Настройка модуля</strong> в разделе <strong>Общие настройки</strong> установите переключатель в положение <strong>Ввести параметры подключения к 1С вручную</strong>.<br />
-В разделе <strong>Связь с 1С:Предприятие 8</strong> установите переключатель в соответствие с вашей <a href="/root-guides/select-connection-mode/">схеме соединения</a><br />
-Скопируйте IP-адрес АТС и выполните <strong>Submit</strong>.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_mod_15.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-<li><p>В мастере первоначальной настройки 1С переключатель <strong>Настройка подключения</strong> установите в положение <strong>Ручная настройка</strong>.<br />
-В поле ниже вставьте адрес АТС и выполните <strong>Далее</strong>. Если соединение с АТС установится, мастер перейдет на следующую страницу.
-<figure class="content-center">
-    <img src="../../assets/freepbx/freepbx_1c_11.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-</li>
-</ol>
 
 
 
