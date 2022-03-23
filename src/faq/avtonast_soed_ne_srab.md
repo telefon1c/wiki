@@ -17,6 +17,19 @@ order: -6
 
 по 8222 порту правильным результатом является просто пустой экран.
 
+На MikoPBX для открытия вышеуказанных портов достаточно в настройках сетевого экрана для сети (или сетей) в которой находятся сервер 1С, тонкий клиент включить переключатель **CTI CLIENT**.
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/faq/faq_ruch_nastr_5.png"
+    data-original="/assets/faq/faq_ruch_nastr_5.png"
+    srcset="/assets/faq/faq_ruch_nastr_5_prev.png 1x, /assets/faq/faq_ruch_nastr_5.png 2x" 
+    alt="Настройка соединения с АТС в ручном режиме"
+/> 
+
+В FreePBX, если включен firewall, нужно подключиться к АТС по SSH и разрешить входящие подключения для TCP портов 4222, 8222. 
+
+Схематично выглядит следующим образом
+
 <img class="miko-shadow"
     src="/assets/faq/faq_ruch_nastr_2.png"
 /> 
