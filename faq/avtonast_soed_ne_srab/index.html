@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.701350955339" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.701357732993" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701350955339" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701357732993" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701350955339" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701357732993" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -204,9 +204,11 @@
 Сделать это можно командой <strong>telnet</strong>. <br>
 <code v-pre>telnet [Адрес АТС] [номер порта]</code> <br>
 Пример <code v-pre>telnet 172.16.32.82 4222</code> <br></p>
-<p>по 4222 порту ответ должен быть наподобие такого
-<code v-pre>INFO {&quot;server_id&quot;:&quot;UFVRBAFWV0BRABlQT0dLAg&quot;,&quot;version&quot;:&quot;1.4.1&quot;,&quot;proto&quot;:1,&quot;go&quot;:&quot;go1.15.6&quot;,&quot;host&quot;:&quot;0.0.0.0&quot;,&quot;port&quot;:4222,&quot;max_payload&quot;:1000000,&quot;client_id&quot;:16}</code>
-по 8222 порту правильным результатом является просто пустой экран.</p>
+<p>по 4222 порту ответ должен быть наподобие такого</p>
+<p><img class="miko-shadow"
+src="/assets/faq/faq_telnet_0.png"
+/></p>
+<p>по 8222 порту правильным результатом является просто пустой экран.</p>
 <p><img class="miko-shadow"
 src="/assets/faq/faq_ruch_nastr_2.png"
 /></p>
@@ -217,23 +219,26 @@ src="/assets/faq/faq_ruch_nastr_2.png"
     </h2>
 </doc-anchor-target>
 <ol>
-<li>Для этого в веб-интерфейсе АТС в модуле <strong>МИКО:Панель телефонии 4.0</strong> на вкладке <strong>Настройка модуля</strong> в разделе <strong>Общие настройки</strong> установите переключатель в положение <strong>Ввести параметры подключения к 1С вручную</strong>. <br>
-В разделе <strong>Связь с 1С:Предприятие 8</strong> установите переключатель в положение <strong>Работать через LongPool соединение (1С подключается к FreePBX)</strong>. <br></li>
+<li>Для этого в веб-интерфейсе АТС в модуле <strong>МИКО:Панель телефонии 4.0</strong> выключить переключатель <strong>Автоматическая настройка параметров связи модуля и 1С</strong> <br></li>
+<li>Переключатель <strong>Режим соединения</strong> установите положение <strong>Через LongPool соединение (1С подключается к MikoPBX)</strong>. <br></li>
+<li>Сохраните настройки. <br></li>
+<li>Скопируйте из адресной строки адрес АТС.</li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
-src="/assets/faq/faq_ruch_nastr_1.png"
-data-original="/assets/faq/faq_ruch_nastr_1.png"
-srcset="/assets/faq/faq_ruch_nastr_1_prev.png 1x, /assets/faq/faq_ruch_nastr_1.png 2x" 
+src="/assets/faq/faq_ruch_nastr_3.png"
+data-original="/assets/faq/faq_ruch_nastr_3.png"
+srcset="/assets/faq/faq_ruch_nastr_3_prev.png 1x, /assets/faq/faq_ruch_nastr_3.png 2x" 
 alt="Настройка соединения с АТС в ручном режиме"
 /></p>
-<ol start="2">
-<li>В мастере первоначальной настройки 1С переключатель <strong>Настройка подключения</strong> установите в положение <strong>Ручная настройка</strong>.<br />
-В поле ниже вставьте адрес АТС и выполните <strong>Далее</strong>. Если соединение с АТС установится, мастер перейдет на следующую страницу.</li>
+<ol start="5">
+<li>В мастере первоначальной настройки 1С переключатель типа АТС установите в соответствии с вашей АТС.</li>
+<li><strong>Настройка подключения</strong> установите в положение <strong>Ручная настройка</strong>.</li>
+<li>В поле ниже вставьте адрес АТС и выполните <strong>Далее</strong>. Если соединение с АТС установится, мастер перейдет на следующую страницу.</li>
 </ol>
 <p><img class="miko-shadow img-zoomable"  
-src="/assets/faq/faq_ruch_nastr_0.png"
-data-original="/assets/faq/faq_ruch_nastr_0.png"
-srcset="/assets/faq/faq_ruch_nastr_0_prev.png 1x, /assets/faq/faq_ruch_nastr_0.png 2x" 
+src="/assets/faq/faq_ruch_nastr_4.png"
+data-original="/assets/faq/faq_ruch_nastr_4.png"
+srcset="/assets/faq/faq_ruch_nastr_4_prev.png 1x, /assets/faq/faq_ruch_nastr_4.png 2x" 
 alt="Настройка соединения с АТС в ручном режиме"
 /></p>
 
