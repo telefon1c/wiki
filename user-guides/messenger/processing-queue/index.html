@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.701276605306" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.701340576489" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701276605306" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701340576489" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701276605306" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701340576489" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -244,7 +244,12 @@ alt="МИКО: whatsapp прием чата в работу"
 </doc-anchor-target>
 <p>Для чтения и отправки сообщений в 1С используется встроенный платформу механизм <strong>Обсуждения</strong>. Все чаты привязаны к
 конкретным объектам <strong>Чат</strong>, расположенным в разделе <strong>Звонки и сообщения</strong>.</p>
-<p><a href="/assets/whatsapp/chat-1c.png"><img src="/assets/whatsapp/chat-1c-preview.png" style="box-shadow: 0 0 20px 0 grey"></a></p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/whatsapp/wp_och_0.png"
+data-original="/assets/whatsapp/wp_och_0.png"
+srcset="/assets/whatsapp/wp_och_0_prev.png 1x, /assets/whatsapp/wp_och_0.png 2x" 
+alt="чаты в whatsapp"
+/></p>
 <doc-anchor-target id="для-обработки-сообщения-1">
     <h5>
         <doc-anchor-trigger class="header-anchor-trigger" to="#для-обработки-сообщения-1">#</doc-anchor-trigger>
@@ -252,12 +257,16 @@ alt="МИКО: whatsapp прием чата в работу"
     </h5>
 </doc-anchor-target>
 <ol>
-<li>В разделе <code v-pre>Звонки и сообщения</code> откройте <code v-pre>Чаты</code>.</li>
-<li>Выберите и откройте один из чатов из группы <code v-pre>В очереди</code>.</li>
-<li>Нажмите кнопку <code v-pre>Обсуждения</code> для отображения связанного с объектом чата.</li>
-<li>В поле <code v-pre>Кого оповестить</code> выберите <code v-pre>Внешний пользователь WhatsApp</code>.</li>
+<li>В разделе <strong>Звонки и сообщения</strong> откройте <strong>Чаты</strong>.</li>
+<li>Выберите и откройте один из чатов из группы <strong>В очереди</strong>.</li>
+<li>Нажмите кнопку <strong>Обсуждения</strong> для отображения связанного с объектом чата.</li>
+<li>В поле <strong>Кого оповестить</strong> выберите <strong>Внешний пользователь WhatsApp</strong>.</li>
 <li>Напишите и отправьте сообщение.</li>
 </ol>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/whatsapp/wp_chat_0.gif"
+alt="МИКО: whatsapp прием чата в работу"
+/></p>
 
 
 
