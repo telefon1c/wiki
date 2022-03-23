@@ -10,7 +10,11 @@ order: -6
 Пример `telnet 172.16.32.82 4222` <br>
 
 по 4222 порту ответ должен быть наподобие такого
-`INFO {"server_id":"UFVRBAFWV0BRABlQT0dLAg","version":"1.4.1","proto":1,"go":"go1.15.6","host":"0.0.0.0","port":4222,"max_payload":1000000,"client_id":16}`
+
+<img class="miko-shadow"
+    src="/assets/faq/faq_telnet_0.png"
+/> 
+
 по 8222 порту правильным результатом является просто пустой экран.
 
 <img class="miko-shadow"
@@ -18,22 +22,25 @@ order: -6
 /> 
 
 ## Также можно настроить соединение с АТС в ручном режиме  
-1. Для этого в веб-интерфейсе АТС в модуле **МИКО:Панель телефонии 4.0** на вкладке **Настройка модуля** в разделе **Общие настройки** установите переключатель в положение **Ввести параметры подключения к 1С вручную**. <br>
-В разделе **Связь с 1С:Предприятие 8** установите переключатель в положение **Работать через LongPool соединение (1С подключается к FreePBX)**. <br>
+1. Для этого в веб-интерфейсе АТС в модуле **МИКО:Панель телефонии 4.0** выключить переключатель **Автоматическая настройка параметров связи модуля и 1С** <br>
+2. Переключатель **Режим соединения** установите положение **Через LongPool соединение (1С подключается к MikoPBX)**. <br>
+3. Сохраните настройки. <br>
+4. Скопируйте из адресной строки адрес АТС.  
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/faq/faq_ruch_nastr_1.png"
-    data-original="/assets/faq/faq_ruch_nastr_1.png"
-    srcset="/assets/faq/faq_ruch_nastr_1_prev.png 1x, /assets/faq/faq_ruch_nastr_1.png 2x" 
+    src="/assets/faq/faq_ruch_nastr_3.png"
+    data-original="/assets/faq/faq_ruch_nastr_3.png"
+    srcset="/assets/faq/faq_ruch_nastr_3_prev.png 1x, /assets/faq/faq_ruch_nastr_3.png 2x" 
     alt="Настройка соединения с АТС в ручном режиме"
 /> 
 
-2. В мастере первоначальной настройки 1С переключатель **Настройка подключения** установите в положение **Ручная настройка**.  
-В поле ниже вставьте адрес АТС и выполните **Далее**. Если соединение с АТС установится, мастер перейдет на следующую страницу.
+5. В мастере первоначальной настройки 1С переключатель типа АТС установите в соответствии с вашей АТС.
+6. **Настройка подключения** установите в положение **Ручная настройка**.  
+7. В поле ниже вставьте адрес АТС и выполните **Далее**. Если соединение с АТС установится, мастер перейдет на следующую страницу.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/faq/faq_ruch_nastr_0.png"
-    data-original="/assets/faq/faq_ruch_nastr_0.png"
-    srcset="/assets/faq/faq_ruch_nastr_0_prev.png 1x, /assets/faq/faq_ruch_nastr_0.png 2x" 
+    src="/assets/faq/faq_ruch_nastr_4.png"
+    data-original="/assets/faq/faq_ruch_nastr_4.png"
+    srcset="/assets/faq/faq_ruch_nastr_4_prev.png 1x, /assets/faq/faq_ruch_nastr_4.png 2x" 
     alt="Настройка соединения с АТС в ручном режиме"
 /> 
