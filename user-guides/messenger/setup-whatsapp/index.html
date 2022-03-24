@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.701357732993" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.701444160350" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701357732993" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701444160350" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701357732993" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701444160350" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -224,8 +224,29 @@ data-original="/assets/whatsapp/konstr_ssil_2.png"
 srcset="/assets/whatsapp/konstr_ssil_2_prev.png 1x, /assets/whatsapp/konstr_ssil_2.png 2x"
 alt="МИКО: страница написать в whatsapp"
 /></p>
-<ol start="5">
+<doc-anchor-target id="создание-кнопки-на-сайт">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#создание-кнопки-на-сайт">#</doc-anchor-trigger>
+        <span>Создание кнопки на сайт.</span>
+    </h2>
+</doc-anchor-target>
+<ol>
+<li></li>
+</ol>
+<p><img class="miko-shadow"  
+src="/assets/whatsapp/wp_konstr_0.png"
+alt="МИКО: создание кнопки для whatsapp"
+/></p>
+<ol start="2">
 <li>В поле <strong>HTML код для вставки на сайт</strong> будет сформирован код, который добавляет на сайт кнопку.</li>
+<li>Откройте файл <strong>index.html</strong> и вставьте первую часть кода в конце блока <strong>head</strong>.</li>
+</ol>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/whatsapp/wp_konstr_knop_0.gif"
+alt="МИКО: добавление кода кнопки в html файл"
+/></p>
+<ol start="4">
+<li>Вторую часть кода вставьте в конец блока <strong>body</strong>.</li>
 </ol>
 <p><img class="miko-shadow"  
 src="/assets/whatsapp/konstr_ssil_kn.png"
@@ -236,6 +257,7 @@ alt="МИКО: кнопка для whatsapp на сайте"
 src="/assets/whatsapp/wp_knop.gif"
 alt="МИКО: смена схемы соединения"
 /></p>
+<p>В конструкторе ссылок в поле <strong>Текст сообщения</strong> можно вставить одно из ключевых слов <strong>www</strong>, по которому будет маршрутизироваться входящее сообщение на установленную нами группу пользователей.</p>
 
 
 

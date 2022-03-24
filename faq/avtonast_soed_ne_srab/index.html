@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.701357732993" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.701444160350" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701357732993" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701444160350" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701357732993" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701444160350" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -209,6 +209,15 @@
 src="/assets/faq/faq_telnet_0.png"
 /></p>
 <p>по 8222 порту правильным результатом является просто пустой экран.</p>
+<p>На MikoPBX для открытия вышеуказанных портов достаточно в настройках сетевого экрана для сети (или сетей) в которой находятся сервер 1С, тонкий клиент включить переключатель <strong>CTI CLIENT</strong>.</p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/faq/faq_ruch_nastr_5.png"
+data-original="/assets/faq/faq_ruch_nastr_5.png"
+srcset="/assets/faq/faq_ruch_nastr_5_prev.png 1x, /assets/faq/faq_ruch_nastr_5.png 2x" 
+alt="Настройка соединения с АТС в ручном режиме"
+/></p>
+<p>В FreePBX, если включен firewall, нужно подключиться к АТС по SSH и разрешить входящие подключения для TCP портов 4222, 8222.</p>
+<p>Схематично выглядит следующим образом</p>
 <p><img class="miko-shadow"
 src="/assets/faq/faq_ruch_nastr_2.png"
 /></p>
