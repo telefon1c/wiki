@@ -1,8 +1,15 @@
 ---
-label: Обработка звонков
+label: Обработка вызовов
 order: -1
 ---
 Располагается в **Настройки подсистемы -> Обработка вызовов**
+
+<img class="miko-shadow"  
+    src="/assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/obr_zv_7.png"
+    alt="МИКО: обработка вызовов"
+/> 
+
+Имеет следующий вид
 
 <img src="/assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/obr_zv_0.png" 
     class="miko-shadow" 
