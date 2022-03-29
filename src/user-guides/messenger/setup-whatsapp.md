@@ -68,7 +68,7 @@ icon: paper-airplane
     alt="МИКО: начало чата по QR-коду"
 />
 
-2. Из полученной ссылки сгенерируйте QR-код, используя генератор  <a href='https://www.qr-code-generator.com/solutions/whatsapp-qr-code/' target="_blank">наподобие такого.</a>.
+2. Из полученной ссылки сгенерируйте QR-код, используя генератор  <a href='https://www.qr-code-generator.com/solutions/whatsapp-qr-code/' target="_blank">наподобие такого.</a>
 3. Вставьте QR-код в баннер или распечатайте на визитке.
 4. Клиент отсканирует приложением whatsapp данный код и направится в чат.
 
