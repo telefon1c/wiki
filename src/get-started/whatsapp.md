@@ -86,7 +86,7 @@ icon: tools
    "**Обновить код**".
 
 <img class="miko-shadow play-on-hover"  
-    src="/assets/whatsapp/wp_andr.gif"
+    src="/assets/whatsapp/whatsapp-webclient-login.gif"
     alt="МИКО: whatsapp подключение android"
 /> 
 
