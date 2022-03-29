@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.701858509350" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.701868396150" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701858509350" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701868396150" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701858509350" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701868396150" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -229,7 +229,8 @@ alt="МИКО: Регламентные задания подсистемы те
 Стандартное расписание: <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>один день, по дням недели (суббота); с 20:00:00 один раз в день.</span>
 </span>  <br>
-Когда имеется некоторое количество звонков контрагента, не занесенного в базу 1С, то после его занесения имя контрагента в журнале звонков будет установлено только для его звонков за последние 5 дней. Все предыдущие звонки останутся не переименованными. Данное регламентное задание их переименовывает.</p>
+После обновления контактной информации в карточке контрагента ищет документы телефонный звонок с аналогичным номером телефона и устанавливает связь между документом звонок и партенром/контрагентом/контактом. <br>
+Регламентное задание обрабатывает звонки в которых не проставлен контрагент за последние 3 месяца. Это может оказывать серьезную нагрузку на сервер, поэтому рекомендуется запускать в нерабочее время, например раз в неделю по субботам.</p>
 <doc-anchor-target id="обновлять-контактные-данные-оперативно">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#обновлять-контактные-данные-оперативно">#</doc-anchor-trigger>
@@ -253,7 +254,10 @@ alt="МИКО: Регламентные задания подсистемы те
 Стандартное расписание: <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>каждый день; с 8:00:00 по 21:00:00 каждые 900 секунд.</span>
 </span> <br>
-Оно нужно для работы умной маршрутизации. Если задние отключить, то обновление ранжирования прекратиться.</p>
+Регламентное задание обрабатывает события в базе данных, настроенные в разделе <a href='/user-guides/routing#определение-взаимодействий-на-основании-которых-будет-строиться-таблица-маршрутизации' target="_blank">отслеживаемые взаимодействия</a>,
+строит таблицу маршрутизации которая используется, как для модуля умной маршрутизации, когда клиенту генерируется персональное голосовое меню, так и для функции перехвата на ответственного, если в настройках подсистемы указан
+этот <a href='/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov#группа-перехват-звонка' target="_blank">вариант перехвата</a>. <br>
+Если выключить это задание, то таблица маршрутизации станет неактуальной и вышеописанные функции будут работать с устаревшими данными.</p>
 <doc-anchor-target id="онлайн-обмен-событиями">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#онлайн-обмен-событиями">#</doc-anchor-trigger>
@@ -265,7 +269,7 @@ alt="МИКО: Регламентные задания подсистемы те
 Стандартное расписание: <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>каждый день; с 8:00:00 по 21:00:00 каждую секунду.</span>
 </span> <br>
-Доступно, если канал передачи событий установлен в значение <strong>long-polling соединение</strong>.</p>
+Доступно, если канал передачи событий установлен в значение <strong>long-polling соединение</strong>. Отвечает за открытие карточки клиента в момент входящего звонка, если используется longpoll соединение от сервера 1С к АТС.</p>
 <doc-anchor-target id="онлайн-обмен-контактными-данными">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#онлайн-обмен-контактными-данными">#</doc-anchor-trigger>
@@ -289,6 +293,17 @@ alt="МИКО: Регламентные задания подсистемы те
     <span>каждый 7-й день, по дням недели (воскресенье); с 20:00:00 один раз в день.</span>
 </span> <br>
 Раз в сутки отправляет данные по используемым конфигурации 1С; подсистеме телефонии; версии подсистемы телефонии; версии АТС; диалплана; статистике использования объектов подсистемы.</p>
+<doc-anchor-target id="синхронизировать-сообщения">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#синхронизировать-сообщения">#</doc-anchor-trigger>
+        <span>Синхронизировать сообщения</span>
+    </h2>
+</doc-anchor-target>
+<p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Мессенджер: Синхронизация сообщений</strong>. <br>
+Включает/отключает обмен сообщениями между системой взаимодействия 1С и сервисом whatsapp. Входящие сообщения поступают моментально, время отправки исходящих сообщений будет зависеть от установленного расписания регламентного задания. <br>
+Стандартное расписание: <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>один раз в день.</span>
+</span> Рекомендуется устанавливать интервал <strong>не более 60 с</strong>.</p>
 
 
 
