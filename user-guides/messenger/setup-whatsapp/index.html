@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.701874616618" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.701879063837" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701874616618" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701879063837" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701874616618" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701879063837" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -260,6 +260,24 @@ alt="МИКО: добавление кода кнопки в html файл"
 src="/assets/whatsapp/wp_konstr_knop_0.gif"
 alt="МИКО: кнопка для whatsapp на сайте"
 /></p>
+<doc-anchor-target id="переход-в-чат-по-qr-коду">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#переход-в-чат-по-qr-коду">#</doc-anchor-trigger>
+        <span>Переход в чат по QR-коду</span>
+    </h2>
+</doc-anchor-target>
+<ol>
+<li>Создайте подходящую ссылку в конструкторе.</li>
+</ol>
+<p><img class="miko-shadow"  
+src="/assets/whatsapp/konstr_ssil_qr.png"
+alt="МИКО: начало чата по QR-коду"
+/></p>
+<ol start="2">
+<li>Из полученной ссылки сгенерируйте QR-код, используя генератор  <a href='https://www.qr-code-generator.com/solutions/whatsapp-qr-code/' target="_blank">наподобие такого.</a>.</li>
+<li>Вставьте QR-код в баннер или распечатайте на визитке.</li>
+<li>Клиент отсканирует приложением whatsapp данный код и направится в чат.</li>
+</ol>
 <doc-anchor-target id="маршрутизация-по-ключевым-словам">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#маршрутизация-по-ключевым-словам">#</doc-anchor-trigger>
