@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.701868396150" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.701874616618" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701868396150" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701874616618" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701868396150" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701874616618" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -213,7 +213,7 @@ alt="МИКО: Регламентные задания подсистемы те
     </h2>
 </doc-anchor-target>
 <p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Телефония: Загрузка истории звонков</strong> <br>
-Синхронизирует записи журнала звонков, проверяет наличие незагруженных записей звонков и переносит их в базу. <br>
+По частям загружает историю телефонных звонков с сервера телефонии. При запуске проверяет идентификатор последнего загруженного звонка и выполняет загрузку порции истории звонков в базу 1С. <br>
 Стандартное расписание: <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>каждый день; с 8:00:00 по 21:00:00 каждые 120 секунд.</span>
 </span> <br>

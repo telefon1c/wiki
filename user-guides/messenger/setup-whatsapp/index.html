@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.701868396150" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.701874616618" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701868396150" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701874616618" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701868396150" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701874616618" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -266,13 +266,21 @@ alt="МИКО: кнопка для whatsapp на сайте"
         <span>Маршрутизация по ключевым словам</span>
     </h2>
 </doc-anchor-target>
-<p>В конструкторе ссылок в поле <strong>Текст сообщения</strong> можно вставить одно из ключевых слов, по которому будет маршрутизироваться входящее сообщение.
-В приведенных выше примерах ключевые слова в начале приветствия: <strong>email524</strong>, <strong>www</strong>.</p>
+<p>В конструкторе ссылок в поле <strong>Текст сообщения</strong> можно вставить одно из ключевых слов, по которому будет маршрутизироваться входящее сообщение. <br>
+В приведенных выше примерах ключевые слова в начале приглашения: <strong>email524</strong>, <strong>www</strong>.</p>
 <p>Сами правила маршрутизации устанавливаются в <strong>Звонки и сообщения</strong> -&gt; <strong>Настройки мессенджера</strong> -&gt; <strong>Правила маршрутизации сообщений</strong>.</p>
 <p><img class="miko-shadow"  
 src="/assets/whatsapp/wp_marshrut_0.gif"
 alt="МИКО: маршрутизация входящих сообщений"
 /></p>
+<p><img class="miko-shadow"  
+src="/assets/whatsapp/wp_marshrut_0.png"
+alt="МИКО: маршрутизация входящих сообщений"
+/></p>
+<p>В зависимости от ключевого слова, которое присутствовало в тексте приглашения, при переходе клиентом по ссылке, сообщение, которое клиент отправит на ваш корпоративный номер, будет направлено тому, кто установлен в поле <strong>Группа / пользователь</strong>. <br>
+В данном примере, сообщения клиентов написавших с сайта, то есть с использованием ключевого слова <strong>www</strong> направятся пользователям состоящим в группе <strong>Консультанты</strong>. <br>
+Сообщения клиентов, написавших с использованием ключевого слова <strong>email524</strong>, направятся пользователю <strong>Карпов Василий</strong>. <br>
+Сообщения, отмаршрутизированные таким образом пользователю имеют статус <strong>в очереди</strong>. То есть дальше такое сообщение нужно приять <strong>в работу</strong>.</p>
 
 
 
