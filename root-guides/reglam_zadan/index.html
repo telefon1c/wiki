@@ -8,27 +8,27 @@
     <!-- Primary Meta Tags -->
     <title>Регламентные задания подсистемы телефонии | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
     <meta name="title" content="Регламентные задания подсистемы телефонии | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta name="description" content="Переносит записи о состоявшихся звонках из АТС в журнал звонков подсистемы телефонии. Если регламентное задание отключить журнал звонков в подсистеме..." />
+    <meta name="description" content="Располагаются в Звонки и сообщения -> Настройки подсистемы -> Регламентные задания. Можно включить/отключить, изменить расписание." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/root-guides/reglam_zadan/">
     <meta property="og:title" content="Регламентные задания подсистемы телефонии | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="og:description" content="Переносит записи о состоявшихся звонках из АТС в журнал звонков подсистемы телефонии. Если регламентное задание отключить журнал звонков в подсистеме...">
+    <meta property="og:description" content="Располагаются в Звонки и сообщения -> Настройки подсистемы -> Регламентные задания. Можно включить/отключить, изменить расписание.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/root-guides/reglam_zadan/">
     <meta property="twitter:title" content="Регламентные задания подсистемы телефонии | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="twitter:description" content="Переносит записи о состоявшихся звонках из АТС в журнал звонков подсистемы телефонии. Если регламентное задание отключить журнал звонков в подсистеме...">
+    <meta property="twitter:description" content="Располагаются в Звонки и сообщения -> Настройки подсистемы -> Регламентные задания. Можно включить/отключить, изменить расписание.">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.701799887397" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.701854607819" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701799887397" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701854607819" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701799887397" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701854607819" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -194,41 +194,77 @@
         <span>Регламентные задания подсистемы телефонии</span>
     </h1>
 </doc-anchor-target>
+<p>Располагаются в <strong>Звонки и сообщения -&gt; Настройки подсистемы -&gt; Регламентные задания</strong>.
+Можно включить/отключить, изменить расписание.</p>
+<p><img class="miko-shadow play-on-hover" 
+src="/assets/root-guides/reglam_zadan/rgzd_0.gif"
+alt="МИКО: Регламентные задания подсистемы телефонии"
+/></p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/root-guides/reglam_zadan/rgzd_0.png"
+data-original="/assets/root-guides/reglam_zadan/rgzd_0.png"
+srcset="/assets/root-guides/reglam_zadan/rgzd_0_prev.png 1x, /assets/root-guides/reglam_zadan/rgzd_0.png 2x" 
+alt="МИКО: Регламентные задания подсистемы телефонии"
+/></p>
 <doc-anchor-target id="загружать-историю-звонков">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#загружать-историю-звонков">#</doc-anchor-trigger>
         <span>Загружать историю звонков</span>
     </h2>
 </doc-anchor-target>
-<p>Переносит записи о состоявшихся звонках из АТС в журнал звонков подсистемы телефонии.
+<p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Телефония: Загрузка истории звонков</strong> <br>
+Синхронизирует записи журнала звонков, проверяет наличие незагруженных записей звонков и переносит их в базу. <br>
+Стандартное расписание: каждый день; с 8:00:00 по 21:00:00 каждые 120 секунд. <br>
 Если регламентное задание отключить журнал звонков в подсистеме телефонии заполняться не будет.</p>
-<doc-anchor-target id="онлайн-обмен-контактными-данными">
+<doc-anchor-target id="обновлять-контактные-данные">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#онлайн-обмен-контактными-данными">#</doc-anchor-trigger>
-        <span>Онлайн обмен контактными данными</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#обновлять-контактные-данные">#</doc-anchor-trigger>
+        <span>Обновлять контактные данные</span>
     </h2>
 </doc-anchor-target>
-<p>Устанавливает и постоянно поддерживает соединение с АТС.
-Если его отключить интеграция 1С и телефонии работать не будет (АТС потеряет связь с 1С, внешняя панель не сможет авторизоваться).</p>
-<doc-anchor-target id="обновлять-контактные-данные-обновлять-контактные-данные-оперативно">
+<p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Телефония: Обновление контактных данных</strong>. <br>
+Заполняет информацию о владельцах номеров телефонов (компаниях и контактных лицах) в записях журнала звонков, загруженных за последние 3 месяца, если они еще не были заполнены ранее. <br>
+Стандартное расписание: один день, по дням недели [суббота]; с 20:00:00 один раз в день. <br>
+Когда имеется некоторое количество звонков абонента, не занесенного в базу 1С, то после его занесения имя абонента в журнале звонков будет установлено только для его звонков за последние 5 дней. Все предыдущие звонки останутся не переименованными. Данное регламентное задание их переименовывает.</p>
+<doc-anchor-target id="обновлять-контактные-данные-оперативно">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#обновлять-контактные-данные-обновлять-контактные-данные-оперативно">#</doc-anchor-trigger>
-        <span>Обновлять контактные данные, обновлять контактные данные оперативно</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#обновлять-контактные-данные-оперативно">#</doc-anchor-trigger>
+        <span>Обновлять контактные данные оперативно</span>
     </h2>
 </doc-anchor-target>
+<p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Телефония: Обновление контактных данных (оперативно)</strong>. <br>
+Заполняет информацию о владельцах номеров телефонов за последние 5 дней. <br>
+Стандартное расписание: каждый день; с 8:00:00 по 21:00:00 каждые 900 секунд. <br>
+Делает то же самое, что и <strong>обновлять контактные данные</strong> только для звонков за последние 5 дней.</p>
 <doc-anchor-target id="обновлять-таблицу-маршрутизации">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#обновлять-таблицу-маршрутизации">#</doc-anchor-trigger>
         <span>Обновлять таблицу маршрутизации</span>
     </h2>
 </doc-anchor-target>
-<p>Ранжирует сотрудников на основании отслеживаемых взаимодействий. Если задние отключить, то обновление ранжирования прекратиться.</p>
-<doc-anchor-target id="онлайн-обмен-данными-long-polling-соединение">
+<p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Телефония: Обновление таблицы маршрутизации</strong>. <br>
+Заполняет таблицу маршрутизации для голосового меню данными о клиентах и сотрудниках. Ранжирует сотрудников по степени их участия в работе с клиентом и автоматически выявляет ответственных. <br>
+Стандартное расписание: каждый день; с 8:00:00 по 21:00:00 каждые 900 секунд. <br>
+Оно нужно для работы умной маршрутизации. Если задние отключить, то обновление ранжирования прекратиться.</p>
+<doc-anchor-target id="онлайн-обмен-событиями">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#онлайн-обмен-данными-long-polling-соединение">#</doc-anchor-trigger>
-        <span>Онлайн обмен данными (long-polling соединение)</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#онлайн-обмен-событиями">#</doc-anchor-trigger>
+        <span>Онлайн обмен событиями</span>
     </h2>
 </doc-anchor-target>
+<p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Телефония: Обмен с сервером телефонии событиями</strong>. <br>
+Устанавливает соединение с сервером телефонии для получения данных о выполняемых звонках. Фоновое задание может мешать обновлению информационной базы. Настраивайте расписание с учетом окна для проведения технических работ. <br>
+Стандартное расписание: каждый день; с 8:00:00 по 21:00:00 каждую секунду.
+Доступно, если канал передачи событий установлен в значение <strong>long-polling соединение</strong>.</p>
+<doc-anchor-target id="онлайн-обмен-контактными-данными">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#онлайн-обмен-контактными-данными">#</doc-anchor-trigger>
+        <span>Онлайн обмен контактными данными</span>
+    </h2>
+</doc-anchor-target>
+<p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Телефония: Обмен с сервером телефонии контактными данными</strong>. <br>
+Устанавливает и постоянно поддерживает соединение с АТС.
+Если его отключить интеграция 1С и телефонии работать не будет (АТС потеряет связь с 1С, внешняя панель не сможет авторизоваться).</p>
 
 
 
