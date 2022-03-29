@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.701854607819" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.701858272637" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701854607819" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701858272637" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701854607819" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701858272637" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -214,7 +214,9 @@ alt="МИКО: Регламентные задания подсистемы те
 </doc-anchor-target>
 <p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Телефония: Загрузка истории звонков</strong> <br>
 Синхронизирует записи журнала звонков, проверяет наличие незагруженных записей звонков и переносит их в базу. <br>
-Стандартное расписание: каждый день; с 8:00:00 по 21:00:00 каждые 120 секунд. <br>
+Стандартное расписание: <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 8:00:00 по 21:00:00 каждые 120 секунд.</span>
+</span> <br>
 Если регламентное задание отключить журнал звонков в подсистеме телефонии заполняться не будет.</p>
 <doc-anchor-target id="обновлять-контактные-данные">
     <h2>
@@ -224,8 +226,10 @@ alt="МИКО: Регламентные задания подсистемы те
 </doc-anchor-target>
 <p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Телефония: Обновление контактных данных</strong>. <br>
 Заполняет информацию о владельцах номеров телефонов (компаниях и контактных лицах) в записях журнала звонков, загруженных за последние 3 месяца, если они еще не были заполнены ранее. <br>
-Стандартное расписание: один день, по дням недели [суббота]; с 20:00:00 один раз в день. <br>
-Когда имеется некоторое количество звонков абонента, не занесенного в базу 1С, то после его занесения имя абонента в журнале звонков будет установлено только для его звонков за последние 5 дней. Все предыдущие звонки останутся не переименованными. Данное регламентное задание их переименовывает.</p>
+Стандартное расписание: <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>один день, по дням недели (суббота); с 20:00:00 один раз в день.</span>
+</span>  <br>
+Когда имеется некоторое количество звонков контрагента, не занесенного в базу 1С, то после его занесения имя контрагента в журнале звонков будет установлено только для его звонков за последние 5 дней. Все предыдущие звонки останутся не переименованными. Данное регламентное задание их переименовывает.</p>
 <doc-anchor-target id="обновлять-контактные-данные-оперативно">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#обновлять-контактные-данные-оперативно">#</doc-anchor-trigger>
@@ -234,7 +238,9 @@ alt="МИКО: Регламентные задания подсистемы те
 </doc-anchor-target>
 <p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Телефония: Обновление контактных данных (оперативно)</strong>. <br>
 Заполняет информацию о владельцах номеров телефонов за последние 5 дней. <br>
-Стандартное расписание: каждый день; с 8:00:00 по 21:00:00 каждые 900 секунд. <br>
+Стандартное расписание: <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 8:00:00 по 21:00:00 каждые 900 секунд.</span>
+</span> <br>
 Делает то же самое, что и <strong>обновлять контактные данные</strong> только для звонков за последние 5 дней.</p>
 <doc-anchor-target id="обновлять-таблицу-маршрутизации">
     <h2>
@@ -244,7 +250,9 @@ alt="МИКО: Регламентные задания подсистемы те
 </doc-anchor-target>
 <p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Телефония: Обновление таблицы маршрутизации</strong>. <br>
 Заполняет таблицу маршрутизации для голосового меню данными о клиентах и сотрудниках. Ранжирует сотрудников по степени их участия в работе с клиентом и автоматически выявляет ответственных. <br>
-Стандартное расписание: каждый день; с 8:00:00 по 21:00:00 каждые 900 секунд. <br>
+Стандартное расписание: <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 8:00:00 по 21:00:00 каждые 900 секунд.</span>
+</span> <br>
 Оно нужно для работы умной маршрутизации. Если задние отключить, то обновление ранжирования прекратиться.</p>
 <doc-anchor-target id="онлайн-обмен-событиями">
     <h2>
@@ -254,7 +262,9 @@ alt="МИКО: Регламентные задания подсистемы те
 </doc-anchor-target>
 <p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Телефония: Обмен с сервером телефонии событиями</strong>. <br>
 Устанавливает соединение с сервером телефонии для получения данных о выполняемых звонках. Фоновое задание может мешать обновлению информационной базы. Настраивайте расписание с учетом окна для проведения технических работ. <br>
-Стандартное расписание: каждый день; с 8:00:00 по 21:00:00 каждую секунду.
+Стандартное расписание: <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 8:00:00 по 21:00:00 каждую секунду.</span>
+</span> <br>
 Доступно, если канал передачи событий установлен в значение <strong>long-polling соединение</strong>.</p>
 <doc-anchor-target id="онлайн-обмен-контактными-данными">
     <h2>
@@ -263,8 +273,22 @@ alt="МИКО: Регламентные задания подсистемы те
     </h2>
 </doc-anchor-target>
 <p>Наименование в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot; - <strong>Телефония: Обмен с сервером телефонии контактными данными</strong>. <br>
-Устанавливает и постоянно поддерживает соединение с АТС.
+Устанавливает соединение с сервером телефонии для обмена контактными данными. Фоновое задание может мешать обновлению информационной базы. Настраивайте расписание с учетом окна для проведения технических работ. <br>
+Стандартное расписание: <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 8:00:00 по 21:00:00 каждую секунду.</span>
+</span> <br>
 Если его отключить интеграция 1С и телефонии работать не будет (АТС потеряет связь с 1С, внешняя панель не сможет авторизоваться).</p>
+<doc-anchor-target id="телефония-отправка-метрики-разработчикам">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#телефония-отправка-метрики-разработчикам">#</doc-anchor-trigger>
+        <span>Телефония: Отправка метрики разработчикам</span>
+    </h2>
+</doc-anchor-target>
+<p>Оно есть в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot;, в настройках подсистемы телефонии его нет. <br>
+Стандартное расписание: <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>каждый 7-й день, по дням недели (воскресенье); с 20:00:00 один раз в день.</span>
+</span> <br>
+Раз в сутки отправляет данные по используемым конфигурации 1С; подсистеме телефонии; версии подсистемы телефонии; версии АТС; диалплана; статистике использования объектов подсистемы.</p>
 
 
 
