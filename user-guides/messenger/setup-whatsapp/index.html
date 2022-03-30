@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.701944958426" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.701954898073" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701944958426" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.701954898073" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701944958426" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.701954898073" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -256,7 +256,7 @@ alt="МИКО: добавление кода кнопки в html файл"
 <ol start="4">
 <li>Вторую часть кода вставьте в конец блока <strong>body</strong>. Добавится кнопка внизу страницы, по нажатию которой откроется станица с приглашением написать в whatsapp.</li>
 </ol>
-<p><img class="miko-shadow"  
+<p><img class="miko-shadow play-on-hover"  
 src="/assets/whatsapp/wp_konstr_knop_0.gif"
 alt="МИКО: кнопка для whatsapp на сайте"
 /></p>
@@ -266,6 +266,12 @@ alt="МИКО: кнопка для whatsapp на сайте"
         <span>Переход в чат по QR-коду</span>
     </h2>
 </doc-anchor-target>
+<doc-anchor-target id="1-вариант-создание-qr-кода-на-специализированном-интернет-ресурсе">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-вариант-создание-qr-кода-на-специализированном-интернет-ресурсе">#</doc-anchor-trigger>
+        <span>1 Вариант. Создание QR-кода на специализированном интернет-ресурсе</span>
+    </h3>
+</doc-anchor-target>
 <ol>
 <li>Создайте подходящую ссылку в конструкторе.</li>
 </ol>
@@ -274,9 +280,35 @@ src="/assets/whatsapp/konstr_ssil_qr.png"
 alt="МИКО: начало чата по QR-коду"
 /></p>
 <ol start="2">
-<li>Из полученной ссылки сгенерируйте QR-код, используя генератор  <a href='https://www.qr-code-generator.com/solutions/whatsapp-qr-code/' target="_blank">наподобие такого.</a></li>
+<li>Из полученной ссылки сгенерируйте QR-код, используя генератор  <a href='https://me-qr.com/ru/' target="_blank">наподобие такого.</a></li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/whatsapp/gener_qr.png"
+data-original="/assets/whatsapp/gener_qr.png"
+srcset="/assets/whatsapp/gener_qr_prev.png 1x, /assets/whatsapp/gener_qr.png 2x"
+alt="МИКО: начало чата по QR-коду"
+/></p>
+<ol start="3">
 <li>Вставьте QR-код в баннер или распечатайте на визитке.</li>
-<li>Клиент отсканирует приложением whatsapp данный код и направится в чат.</li>
+<li>Клиент отсканирует приложением для сканера qr-кодов данный код и направится в чат.</li>
+</ol>
+<doc-anchor-target id="2-вариант-создание-qr-кода-в-приложении-whatsapp-business">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-вариант-создание-qr-кода-в-приложении-whatsapp-business">#</doc-anchor-trigger>
+        <span>2 Вариант. Создание QR-кода в приложении &quot;WhatsApp Business&quot;</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>Перейдите. <strong>Настройки -&gt; Инструменты для бизнеса -&gt; Короткая ссылка</strong>.</li>
+<li>Включите переключатель <strong>Сообщение</strong>. Вставьте текст приветствия в поле под переключателем.</li>
+<li>Нажмите <strong>Показать QR-код</strong>.</li>
+</ol>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/whatsapp/wp_bus.gif"
+alt="МИКО: маршрутизация входящих сообщений"
+/></p>
+<ol start="6">
+<li>Данный QR-код можно отсканировать приложением WhatsApp (или WhatsApp Business) и перейти в чат с вашим корпоративным номером.</li>
 </ol>
 <doc-anchor-target id="маршрутизация-по-ключевым-словам">
     <h2>
@@ -287,7 +319,7 @@ alt="МИКО: начало чата по QR-коду"
 <p>В конструкторе ссылок в поле <strong>Текст сообщения</strong> можно вставить одно из ключевых слов, по которому будет маршрутизироваться входящее сообщение. <br>
 В приведенных выше примерах ключевые слова в начале приглашения: <strong>email524</strong>, <strong>www</strong>.</p>
 <p>Сами правила маршрутизации устанавливаются в <strong>Звонки и сообщения</strong> -&gt; <strong>Настройки мессенджера</strong> -&gt; <strong>Правила маршрутизации сообщений</strong>.</p>
-<p><img class="miko-shadow"  
+<p><img class="miko-shadow play-on-hover"  
 src="/assets/whatsapp/wp_marshrut_0.gif"
 alt="МИКО: маршрутизация входящих сообщений"
 /></p>
