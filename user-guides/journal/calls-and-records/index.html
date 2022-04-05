@@ -26,11 +26,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.702030664522" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.702464551243" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.702030664522" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.702464551243" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.702030664522" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.702464551243" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -200,7 +200,12 @@
 <hr />
 <p>Журнал звонков собирает все звонки компании, связывает их с клиентами и сотрудниками, отображает статусы
 звонков и их длительность.</p>
-<p><a href="/assets/journal/overall.png"><img src="/assets/journal/overall-preview.png" style="box-shadow: 0 0 20px 0 grey"></a></p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/journal/overall_0.png"
+data-original="/assets/journal/overall_0.png"
+srcset="/assets/journal/overall_0_prev.png 1x, /assets/journal/overall_0.png 2x"
+alt="МИКО: журнал звонков"
+/></p>
 <p>Каждая строка журнала содержит информацию о звонке:</p>
 <ul>
 <li><strong>дату и время</strong></li>
@@ -263,11 +268,12 @@
 <li><strong>Показывать внутренние звонки</strong> - показывает или скрывает звонки внутри компании.</li>
 <li><strong>Мои звонки</strong> - показывает только звонки, в которых текущий сотрудник принимал участие</li>
 </ul>
-<figure class="content-center">
-  <img  src="/assets/journal/search.png" style="box-shadow: 0 0 20px 0 grey">
-</figure>
 <p>Строка поиск позволяет находить звонки по имени клиента или номеру телефону. Для отбора звонков по сотруднику
 достаточно ввести его имя в строку поиска.</p>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/journal/jur_str_poisk.gif"
+alt="МИКО: строка поиска в журнале звонков"
+/></p>
 <doc-anchor-target id="записи-разговора">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#записи-разговора">#</doc-anchor-trigger>
@@ -275,9 +281,12 @@
     </h3>
 </doc-anchor-target>
 <p>Боковая панель журнала звонков содержит блок с плеером для прослушивания записей разговора.</p>
-<figure class="content-center">
-  <img  src="/assets/journal/records.png" style="box-shadow: 0 0 20px 0 grey">
-</figure>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/journal/records_0.png"
+data-original="/assets/journal/records_0.png"
+srcset="/assets/journal/records_0_prev.png 1x, /assets/journal/records_0.png 2x"
+alt="МИКО: журнал звонков"
+/></p>
 <p>Функции плеера позволяют перематывать записи разговора вперед и назад на 10 секунд
 (<img src="/assets/journal/replay-10.png" alt="" /> и <img src="/assets/journal/forward-10.png" alt="" />), переключатся между частями
 разговора (<img src="/assets/journal/skip-previous.png" alt="" /> и <img src="/assets/journal/skip-next.png" alt="" />),
