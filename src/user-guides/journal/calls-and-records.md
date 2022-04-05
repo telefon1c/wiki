@@ -11,7 +11,12 @@ order: -1
 Журнал звонков собирает все звонки компании, связывает их с клиентами и сотрудниками, отображает статусы
 звонков и их длительность.
 
-[<img src="/assets/journal/overall-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/journal/overall.png)
+<img class="miko-shadow img-zoomable"  
+    src="/assets/journal/overall_0.png"
+    data-original="/assets/journal/overall_0.png"
+    srcset="/assets/journal/overall_0_prev.png 1x, /assets/journal/overall_0.png 2x"
+    alt="МИКО: журнал звонков"
+/> 
 
 Каждая строка журнала содержит информацию о звонке:
 - **дату и время**
@@ -50,20 +55,24 @@ order: -1
 - **Показывать внутренние звонки** - показывает или скрывает звонки внутри компании.
 - **Мои звонки** - показывает только звонки, в которых текущий сотрудник принимал участие
 
-<figure class="content-center">
-  <img  src="/assets/journal/search.png" style="box-shadow: 0 0 20px 0 grey">
-</figure>
-
 Строка поиск позволяет находить звонки по имени клиента или номеру телефону. Для отбора звонков по сотруднику
 достаточно ввести его имя в строку поиска.
+
+<img class="miko-shadow play-on-hover"  
+    src="/assets/journal/jur_str_poisk.gif"
+    alt="МИКО: строка поиска в журнале звонков"
+/> 
 
 ### Записи разговора
 
 Боковая панель журнала звонков содержит блок с плеером для прослушивания записей разговора.
 
-<figure class="content-center">
-  <img  src="/assets/journal/records.png" style="box-shadow: 0 0 20px 0 grey">
-</figure>
+<img class="miko-shadow img-zoomable"  
+    src="/assets/journal/records_0.png"
+    data-original="/assets/journal/records_0.png"
+    srcset="/assets/journal/records_0_prev.png 1x, /assets/journal/records_0.png 2x"
+    alt="МИКО: журнал звонков"
+/> 
 
 Функции плеера позволяют перематывать записи разговора вперед и назад на 10 секунд
 (![](~/assets/journal/replay-10.png) и ![](~/assets/journal/forward-10.png)), переключатся между частями
