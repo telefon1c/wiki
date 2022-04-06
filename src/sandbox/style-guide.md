@@ -101,6 +101,12 @@ srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-detail
 alt="МИКО: Журнал звонков"
 />
 
+## Вставить видео
+
+<video autoplay muted loop style="box-shadow: 0px 0px 20px 0px grey">
+ <source src="/assets/journal/phone-assign.mp4">
+</video>
+
 ## Настройка Chrome
 При разработке используются кастомизированные скрипты и стили, чтобы во время разработки документ выглядел точно так, 
 как он выглядит на опубликованном сайте необходимо в локальный браузер Chrome, в котором вы отркрываете сайт, установить расширение
