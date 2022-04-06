@@ -1,6 +1,6 @@
 ---
 label: Ссылки для клиентов и кнопки на сайте
-order: -1
+order: -2
 icon: paper-airplane
 ---
 
