@@ -26,11 +26,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.702569061722" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.702572439238" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.702569061722" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.702572439238" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.702569061722" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.702572439238" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -310,12 +310,11 @@ alt="МИКО: журнал звонков"
     </h3>
 </doc-anchor-target>
 <p>Для создания нового клиента в блоке <strong>Сведения о звонке</strong> нажмите кнопку <img src="/assets/journal/customer-creation_0.png" alt="" /> <strong>Создать клиента (F7)</strong>.</p>
-<figure class="content-center">
-  <img  class="miko-shadow"
-        src="/assets/journal/customer-creation.png"
-        alt="МИКО: создание нового клиента"
-  />
-</figure>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/journal/sozdanie_klienta.gif"
+alt="МИКО: создание нового клиента"
+/></p>
+<p>Все предыдущие звонки с этого номера (или на этот номер) привяжутся к созданному клиенту автоматически. Звонки, совершенные больше 5 дней назад, привяжутся после выполнения регламентного задания <a href='https://docs.telefon1c.ru/root-guides/reglam_zadan#%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D1%8F%D1%82%D1%8C-%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%BD%D1%8B%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5' target="_blank">Телефония: Обновление контактных данных</a>.</p>
 <p>Поведение программы будет зависеть от конфигурации 1С и установленного в персональных настройках значения параметра
 <strong>Способ регистрации нового клиента</strong>. Во всех конфигурациях доступна регистрация клиента с помощью карточки клиента.</p>
 <p><img class="miko-shadow img-zoomable"  
