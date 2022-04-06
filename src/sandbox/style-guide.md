@@ -101,6 +101,15 @@ srcset="/assets/journal/data-details-preview.png 1x, /assets/journal/data-detail
 alt="МИКО: Журнал звонков"
 />
 
+### Расположить по центру
+
+<figure class="content-center">
+  <img  class="miko-shadow"
+        src="/assets/journal/customer-creation.png"
+        alt="МИКО: создание нового клиента"
+  />
+</figure>
+
 ## Вставить видео
 
 <video autoplay muted loop style="box-shadow: 0px 0px 20px 0px grey">
