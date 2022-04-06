@@ -26,11 +26,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.702560774205" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.702568409615" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.702560774205" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.702568409615" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.702560774205" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.702568409615" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -197,7 +197,12 @@
     </h1>
 </doc-anchor-target>
 <p>Это руководство знакомит пользователя с функциями и возможностями журнала звонков для 1С.</p>
-<hr />
+<doc-anchor-target id="общие-сведения">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#общие-сведения">#</doc-anchor-trigger>
+        <span>Общие сведения</span>
+    </h2>
+</doc-anchor-target>
 <p>Журнал звонков собирает все звонки компании, связывает их с клиентами и сотрудниками, отображает статусы
 звонков и их длительность.</p>
 <p><img class="miko-shadow img-zoomable"  
@@ -217,10 +222,10 @@ alt="МИКО: журнал звонков"
 звонок с комментарием.</li>
 </ul>
 <doc-anchor-target id="статусы-звонков">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#статусы-звонков">#</doc-anchor-trigger>
         <span>Статусы звонков</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <p>Для обозначения статусов звонка используются наименования:</p>
 <ul>
@@ -249,16 +254,15 @@ alt="МИКО: журнал звонков"
 потерянные) звонки от клиентов, с которыми не было последующего контакта в течение дня.</li>
 </ul>
 <doc-anchor-target id="фильтры-и-поиск">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#фильтры-и-поиск">#</doc-anchor-trigger>
         <span>Фильтры и поиск</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
-<p><figure class="content-center">
-    <img src="/assets/journal/filters.png" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
+<p><img class="miko-shadow"  
+src="/assets/journal/filtri_0.png"
+alt="МИКО: фильтры в журнале звонков"
+/></p>
 <p>Для отбора звонков пользователю доступны фильтры:</p>
 <ul>
 <li><strong>По дате</strong> - позволяет задать временной интервал для отбора звонков</li>
@@ -275,10 +279,10 @@ src="/assets/journal/jur_str_poisk.gif"
 alt="МИКО: строка поиска в журнале звонков"
 /></p>
 <doc-anchor-target id="записи-разговора">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#записи-разговора">#</doc-anchor-trigger>
         <span>Записи разговора</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <p>Боковая панель журнала звонков содержит блок с плеером для прослушивания записей разговора.</p>
 <p><img class="miko-shadow img-zoomable"  
@@ -292,63 +296,52 @@ alt="МИКО: журнал звонков"
 разговора (<img src="/assets/journal/skip-previous.png" alt="" /> и <img src="/assets/journal/skip-next.png" alt="" />),
 изменять скорость воспроизведения и скачивать запись на диск (<img src="/assets/journal/download.png" alt="" />).</p>
 <doc-anchor-target id="регистрация-клиента">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#регистрация-клиента">#</doc-anchor-trigger>
         <span>Регистрация клиента</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <p>Журнал звонков позволяет зарегистрировать новый номер телефона в информационной базе, создав нового клиента или
 присвоив его уже существующему.</p>
 <doc-anchor-target id="создание-нового-клиента">
-    <h4>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#создание-нового-клиента">#</doc-anchor-trigger>
         <span>Создание нового клиента</span>
-    </h4>
+    </h3>
 </doc-anchor-target>
+<p>Для создания нового клиента в блоке <strong>Сведения о звонке</strong> нажмите кнопку <img src="/assets/journal/customer-creation_0.png" alt="" /> <strong>Создать клиента (F7)</strong>.</p>
 <figure class="content-center">
-  <img  src="/assets/journal/customer-creation.png" style="box-shadow: 0 0 20px 0 grey">
+  <img  class="miko-shadow"
+        src="/assets/journal/customer-creation.png"
+        alt="МИКО: создание нового клиента"
+  />
 </figure>
-<p>Для создания нового клиента в блоке <code v-pre>Сведения о звонке</code> нажмите кнопку <code v-pre>Создать клиента (F7)</code>.</p>
-<div class="flex mb-6">
-    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3">
-            <h5>Создание клиента</h5>
-<p>Поведение программы
-будет зависеть от конфигурации 1С и установленного в персональных настройках значения параметра
-<strong>Способ регистрации нового клиента</strong>. Во всех конфигурациях доступна регистрация клиента с помошью
-<a href="/user-guides/panel/customer-creation" class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 border border-blue-100 hover:border-blue-300 dark:hover:bg-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-    <span>карточки клиента</span>
-</a>.</p>
-        </div>
-    </div>
-</div>
+<p>Поведение программы будет зависеть от конфигурации 1С и установленного в персональных настройках значения параметра
+<strong>Способ регистрации нового клиента</strong>. Во всех конфигурациях доступна регистрация клиента с помощью карточки клиента.</p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/journal/customer-creation_1.png"
+data-original="/assets/journal/customer-creation_1.png"
+srcset="/assets/journal/customer-creation_1_prev.png 1x, /assets/journal/customer-creation_1.png 2x"
+alt="МИКО: создание нового клиента"
+/></p>
 <doc-anchor-target id="присвоение-номера-существующему-клиенту">
-    <h4>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#присвоение-номера-существующему-клиенту">#</doc-anchor-trigger>
         <span>Присвоение номера существующему клиенту</span>
-    </h4>
+    </h3>
 </doc-anchor-target>
-<video autoplay muted loop style="box-shadow: 0px 0px 20px 0px grey">
- <source src="/assets/journal/phone-assign.mp4">
-</video>
-<br>
 <p>Чтобы сохранить номер за уже существующим клиентом или контактным лицом:</p>
 <ol>
-<li>Установите курсор в поле с надписью <code v-pre>Введите название</code> и начните набирать <strong>имя клиента</strong>.</li>
+<li>Установите курсор в поле с надписью <strong>Введите название</strong> и начните набирать <strong>имя клиента</strong>.</li>
 <li>Выберите из выпадающего списка найденного клиента.</li>
-<li>Выберите <code v-pre>добавить номер клиенту</code> или <code v-pre>добавить номер контактому лицу</code>. Если номер добавляется контактному лицу,
+<li>Выберите <strong>добавить номер клиенту</strong> или <strong>добавить номер контактному лицу</strong>. Если номер добавляется контактному лицу,
 то в появившемся окне выберите контактное лицо клиента.</li>
+<li>Нажмите <strong>Записать</strong> или <strong>Записать и закрыть</strong>.</li>
 </ol>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/journal/phone-assign.gif"
+alt="МИКО: присвоение номера существующему клиенту"
+/></p>
 
 
 
