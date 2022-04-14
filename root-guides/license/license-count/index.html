@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.703176405129" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.703266663121" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.703176405129" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.703266663121" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.703176405129" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.703266663121" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -204,22 +204,46 @@
     <span>Интеграция 1С и телефонии ПРОФ (сеанс в 1С) (48)</span>
 </span>.<br />
 Подсчет пользователей ведется по пользователям компьютера (домена). При задействовании всех имеющихся лицензий, у пользователя, которому не хватило лицензии, при попытке открытия журнала звонков будет выдано следующее сообщение</p>
-<p><img class="miko-shadow"  
-src="/assets/root-guides/license-count/nehvat_lic.png"
-alt="МИКО: нехватка лицензии на сеанс 1С"
-/></p>
+<figure class="content-center">
+    <img class="miko-shadow"  
+    src="/assets/root-guides/license-count/nehvat_lic.png"
+    alt="МИКО: нехватка лицензии на сеанс 1С"
+    /> 
+</figure>
 <p>Сам журнал звонков не откроется. Также появится форма.</p>
-<p><img class="miko-shadow"  
-src="/assets/root-guides/license-count/nehvat_lic_trial.png"
-alt="МИКО: нехватка лицензии на сеанс 1С"
-/></p>
-<p>Возможно получение пин-кода для авторизации внешней панели. Сама авторизация внешней панели также возможна.</p>
+<figure class="content-center">
+    <img class="miko-shadow"  
+    src="/assets/root-guides/license-count/nehvat_lic_trial.png"
+    alt="МИКО: нехватка лицензии на сеанс 1С"
+    /> 
+</figure>
+Возможно получение пин-кода для авторизации внешней панели. Сама авторизация внешней панели также возможна.
+Звонки из 1С работают.
 <doc-anchor-target id="лицензия-на-внешнюю-панель">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#лицензия-на-внешнюю-панель">#</doc-anchor-trigger>
         <span>Лицензия на внешнюю панель</span>
     </h2>
 </doc-anchor-target>
+<p>Внешняя панель использует лицензию <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>Интеграция 1С и телефонии ПРОФ (сеанс в внешней панели) (49)</span>
+</span>.
+Подсчет пользователей ведется также по пользователям компьютера (домена). <br>
+При нехватке лицензий на внешнюю панель возможна ее авторизация и использование (звонки, открытие карточки контрагента из внешней панели). Также возможны звонки из 1С. Наименования контрагентов, контактных лиц загружаются из 1С.<br />
+Сверху раздела <strong>Клиенты</strong> будет уведомление о том, что нет лицензии на внешнюю панель.</p>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/root-guides/license-count/nehv_vp.gif"
+alt="МИКО: нехватка лицензии на внешнюю панель"
+/></p>
+<doc-anchor-target id="лицензия-на-чаты">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#лицензия-на-чаты">#</doc-anchor-trigger>
+        <span>Лицензия на чаты</span>
+    </h2>
+</doc-anchor-target>
+<p>Используетя лицензия <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
+    <span>Интеграция 1С с чатами (WhatsApp) (42)</span>
+</span>.</p>
 
 
 
