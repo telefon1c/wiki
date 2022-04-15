@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.703332658166" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.703350320217" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.703332658166" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.703350320217" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.703332658166" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.703350320217" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -268,13 +268,11 @@
 </doc-anchor-target>
 <p>Большинство диаграмм позволяют сравнивать данные за выбранный период группируя данные по интервалам: дням, неделям и
 месяцам.</p>
-<figure class="content-center">
-  <img class="miko-shadow img-zoomable"
-  src="/assets/journal/data-comparation_0.png"
-  srcset="/assets/journal/data-comparation_0_prev.png 1x, /assets/journal/data-comparation_0.png 2x"
-  alt="МИКО: количество звонков по датам"
-  />
-</figure>
+<p><img class="miko-shadow img-zoomable"
+src="/assets/journal/data-comparation_0.png"
+srcset="/assets/journal/data-comparation_0_prev.png 1x, /assets/journal/data-comparation_0.png 2x"
+alt="МИКО: количество звонков по датам"
+/></p>
 <p>Период отбора данных может быть выбран из предложенных программой или задан произвольным образом.</p>
 <doc-anchor-target id="табличное-представление-данных">
     <h3>
@@ -343,7 +341,13 @@ alt="МИКО: расшифровка данных отчета"
 </doc-anchor-target>
 <p>Общее количество звонков за выбранный период в разрезе направления звонка. Отчет также позволяет сравнивать
 количественные показатели с группировкой по дням, неделям и месяцам.</p>
-<p><a href="/assets/journal/call-count.png"><img src="/assets/journal/call-count-preview.png" style="box-shadow: 0 0 20px 0 grey"></a></p>
+<figure class="content-center">
+  <img class="miko-shadow img-zoomable"
+  src="/assets/journal/call-count_0.png"
+  srcset="/assets/journal/call-count_0_prev.png 1x, /assets/journal/call-count_0.png 2x"
+  alt="МИКО: количество звонков группировка по месяцам"
+  />
+</figure>
 <doc-anchor-target id="направление-звонков">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#направление-звонков">#</doc-anchor-trigger>
@@ -351,7 +355,13 @@ alt="МИКО: расшифровка данных отчета"
     </h3>
 </doc-anchor-target>
 <p>Отчет показывает, с какими регионами ведется взаимодействие. Откуда чаще звонят клиенты или куда звонят сотрудники.</p>
-<p><a href="/assets/journal/call-direction.png"><img src="/assets/journal/call-direction-preview.png" style="box-shadow: 0 0 20px 0 grey"></a></p>
+<figure class="content-center">
+  <img class="miko-shadow img-zoomable"
+  src="/assets/journal/call-direction.png"
+  srcset="/assets/journal/call-direction_prev.png 1x, /assets/journal/call-direction.png 2x"
+  alt="МИКО: направление звонков"
+  />
+</figure>
 <doc-anchor-target id="распределение-звонков-в-течение-дня">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#распределение-звонков-в-течение-дня">#</doc-anchor-trigger>
@@ -360,7 +370,13 @@ alt="МИКО: расшифровка данных отчета"
 </doc-anchor-target>
 <p>Динамика входящих и исходящих звонков в течение суток. Отчет показывает усредненное или максимальное количество звонков
 за выбранный период в определенное время суток.</p>
-<p><a href="/assets/journal/call-in-day.png"><img src="/assets/journal/call-in-day-preview.png" style="box-shadow: 0 0 20px 0 grey"></a></p>
+<figure class="content-center">
+  <img class="miko-shadow img-zoomable"
+  src="/assets/journal/call-in-day_0.png"
+  srcset="/assets/journal/call-in-day_0_prev.png 1x, /assets/journal/call-in-day_0.png 2x"
+  alt="МИКО: график распределения звонков в течение дня"
+  />
+</figure>
 <doc-anchor-target id="распределение-звонков-в-течение-недели">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#распределение-звонков-в-течение-недели">#</doc-anchor-trigger>
@@ -369,7 +385,13 @@ alt="МИКО: расшифровка данных отчета"
 </doc-anchor-target>
 <p>Динамика входящих и исходящих звонков в течение недели. Отчет показывает усредненное или максимальное количество звонков
 приходящиеся на каждый день недели.</p>
-<p><a href="/assets/journal/call-in-week.png"><img src="/assets/journal/call-in-week-preview.png" style="box-shadow: 0 0 20px 0 grey"></a></p>
+<figure class="content-center">
+  <img class="miko-shadow img-zoomable"
+  src="/assets/journal/call-in-week_0.png"
+  srcset="/assets/journal/call-in-week_0_prev.png 1x, /assets/journal/call-in-week_0.png 2x"
+  alt="МИКО: график распределения звонков в течение недели"
+  />
+</figure>
 <doc-anchor-target id="распределение-звонков-по-каналам-привлечения">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#распределение-звонков-по-каналам-привлечения">#</doc-anchor-trigger>
@@ -379,7 +401,11 @@ alt="МИКО: расшифровка данных отчета"
 <p>Количество звонков, поступившие на разные номера телефонов компании. Номера могут быть привязаны к источникам
 привлечения клиентов. Отчет позволяет оценить эффективность разных каналов привлечения, а также отслеживать изменение
 показателей по дням, неделям и месяцам.</p>
-<p><a href="/assets/journal/call-by-chanels.png"><img src="/assets/journal/call-by-chanels-preview.png" style="box-shadow: 0 0 20px 0 grey"></a></p>
+<p><img class="miko-shadow img-zoomable"
+src="/assets/journal/call-by-chanels_0.png"
+srcset="/assets/journal/call-by-chanels_0_prev.png 1x, /assets/journal/call-by-chanels_0.png 2x"
+alt="МИКО: распределение звонков по каналам привлечения"
+/></p>
 <div class="flex mb-6">
     <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -394,9 +420,9 @@ alt="МИКО: расшифровка данных отчета"
         </div>
         <div class="pr-5 ml-3">
             <h5>Каналы привлечения</h5>
-<p>Для работы этого отчета требуется предварительно подготовить данные. В разделе <code v-pre>Звонки и сообщения</code> откройте
-<code v-pre>Справочники</code> -&gt; <code v-pre>Каналы привлечения</code>. Справочник наполняется автоматически номерами линий, на которые приходят
-входящие звонки. Нужно только заполнить поле <code v-pre>Наименование</code>. Наименования могут повторяться. В отчете данные с
+<p>Для работы этого отчета требуется предварительно подготовить данные. В разделе <strong>Звонки и сообщения</strong> откройте
+<strong>Справочники -&gt; Каналы привлечения</strong>. Справочник наполняется автоматически номерами линий, на которые приходят
+входящие звонки. Нужно только заполнить поле <strong>Наименование</strong>. Наименования могут повторяться. В отчете данные с
 одинаковыми наименованиями будут суммированы.</p>
         </div>
     </div>
@@ -409,7 +435,11 @@ alt="МИКО: расшифровка данных отчета"
 </doc-anchor-target>
 <p>Количество звонков приходящихся на каждого сотрудника в отдельности. Отчет позволяет сравнить работу разных сотрудников,
 количество совершаемых и принимаемых звонков каждым из них.</p>
-<p><a href="/assets/journal/call-by-employees.png"><img src="/assets/journal/call-by-employees-preview.png" style="box-shadow: 0 0 20px 0 grey"></a></p>
+<p><img class="miko-shadow img-zoomable"
+src="/assets/journal/call-by-employees_0.png"
+srcset="/assets/journal/call-by-employees_0_prev.png 1x, /assets/journal/call-by-employees_0.png 2x"
+alt="МИКО: распределение звонков по сотрудникам"
+/></p>
 <doc-anchor-target id="распределение-звонков-по-клиентам">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#распределение-звонков-по-клиентам">#</doc-anchor-trigger>
