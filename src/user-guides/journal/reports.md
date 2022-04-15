@@ -37,9 +37,8 @@ icon: graph
 </table>
 <br>
 
-Чтобы открыть диаграммы и отчеты нажмите `Статистика и аналитика` из раздела<br>
-`Звонки и сообщения`. Далее в выпадающем меню
-выберите нужной график.
+Чтобы открыть диаграммы и отчеты нажмите **Статистика и аналитика** из раздела<br>
+З**вонки и сообщения**. Далее в выпадающем меню выберите нужной график.
 
 ![](~/assets/journal/report-selection.png)
 
@@ -51,7 +50,11 @@ icon: graph
 месяцам.
 
 <figure class="content-center">
-  <img  src="/assets/journal/data-comparation.png" style="box-shadow: 0 0 20px 0 grey">
+  <img class="miko-shadow img-zoomable"
+  src="/assets/journal/data-comparation_0.png"
+  srcset="/assets/journal/data-comparation_0_prev.png 1x, /assets/journal/data-comparation_0.png 2x"
+  alt="МИКО: количество звонков по датам"
+  />
 </figure>
 
 Период отбора данных может быть выбран из предложенных программой или задан произвольным образом.
@@ -61,21 +64,33 @@ icon: graph
 Данные могут выведены как в виде диаграмм, так и в табличном виде.
 
 <figure class="content-center">
-  <img  src="/assets/journal/diag-table.png" style="box-shadow: 0 0 20px 0 grey">
+  <img class="miko-shadow img-zoomable"
+  src="/assets/journal/diag-table_0.png"
+  srcset="/assets/journal/diag-table_0_prev.png 1x, /assets/journal/diag-table_0.png 2x"
+  alt="МИКО: количество звонков в табличном виде"
+  />
 </figure>
 
-Для переключения между представлениями нажмите `Таблица` или `Диаграмма`.
+Для переключения между представлениями нажмите **Таблица** или **Диаграмма**.
 
+<img class="miko-shadow play-on-hover"  
+    src="/assets/journal/perekluch_diag_tabl.gif"
+    alt="МИКО: переключение между диаграммой и таблицей"
+/>
 
 ## Расшифровка данных отчета
 
 Для получения расшифровки подсчитанных данных переключите представление на табличный вид. Далее **кликните дважды** по
 ячейке, данные которой требуется расшифровать.
 
-[<img src="/assets/journal/data-details-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/journal/data-details.png)
+<img class="miko-shadow play-on-hover"  
+    src="/assets/journal/rasshifrovka.gif"
+    alt="МИКО: расшифровка данных отчета"
+/>
 
-Окно расшифровки отчета имеет плеер аналогичный тому, что есть в [!badge журнале звонков](calls-and-records),
-позволяя прослушивать и скачивать записи разговора.
+Окно расшифровки отчета имеет плеер аналогичный тому, что есть в
+<a href='/user-guides/journal/calls-and-records#записи-разговора' target="_blank">журнале звонков</a>,
+ позволяя прослушивать и скачивать записи разговора.
 
 !!!info Расшифровка
 Расшифровка некоторых данных (например, звонки в течение дня) не может быть отображена в окне журнала звонков в силу
