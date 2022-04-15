@@ -49,13 +49,11 @@ icon: graph
 Большинство диаграмм позволяют сравнивать данные за выбранный период группируя данные по интервалам: дням, неделям и
 месяцам.
 
-<figure class="content-center">
-  <img class="miko-shadow img-zoomable"
-  src="/assets/journal/data-comparation_0.png"
-  srcset="/assets/journal/data-comparation_0_prev.png 1x, /assets/journal/data-comparation_0.png 2x"
-  alt="МИКО: количество звонков по датам"
-  />
-</figure>
+<img class="miko-shadow img-zoomable"
+src="/assets/journal/data-comparation_0.png"
+srcset="/assets/journal/data-comparation_0_prev.png 1x, /assets/journal/data-comparation_0.png 2x"
+alt="МИКО: количество звонков по датам"
+/>
 
 Период отбора данных может быть выбран из предложенных программой или задан произвольным образом.
 
@@ -104,27 +102,51 @@ icon: graph
 Общее количество звонков за выбранный период в разрезе направления звонка. Отчет также позволяет сравнивать
 количественные показатели с группировкой по дням, неделям и месяцам.
 
-[<img src="/assets/journal/call-count-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/journal/call-count.png)
+<figure class="content-center">
+  <img class="miko-shadow img-zoomable"
+  src="/assets/journal/call-count_0.png"
+  srcset="/assets/journal/call-count_0_prev.png 1x, /assets/journal/call-count_0.png 2x"
+  alt="МИКО: количество звонков группировка по месяцам"
+  />
+</figure>
 
 ### Направление звонков
 
 Отчет показывает, с какими регионами ведется взаимодействие. Откуда чаще звонят клиенты или куда звонят сотрудники.
 
-[<img src="/assets/journal/call-direction-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/journal/call-direction.png)
+<figure class="content-center">
+  <img class="miko-shadow img-zoomable"
+  src="/assets/journal/call-direction.png"
+  srcset="/assets/journal/call-direction_prev.png 1x, /assets/journal/call-direction.png 2x"
+  alt="МИКО: направление звонков"
+  />
+</figure>
 
 ### Распределение звонков в течение дня
 
 Динамика входящих и исходящих звонков в течение суток. Отчет показывает усредненное или максимальное количество звонков
 за выбранный период в определенное время суток.
 
-[<img src="/assets/journal/call-in-day-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/journal/call-in-day.png)
+<figure class="content-center">
+  <img class="miko-shadow img-zoomable"
+  src="/assets/journal/call-in-day_0.png"
+  srcset="/assets/journal/call-in-day_0_prev.png 1x, /assets/journal/call-in-day_0.png 2x"
+  alt="МИКО: график распределения звонков в течение дня"
+  />
+</figure>
 
 ### Распределение звонков в течение недели
 
 Динамика входящих и исходящих звонков в течение недели. Отчет показывает усредненное или максимальное количество звонков
 приходящиеся на каждый день недели.
 
-[<img src="/assets/journal/call-in-week-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/journal/call-in-week.png)
+<figure class="content-center">
+  <img class="miko-shadow img-zoomable"
+  src="/assets/journal/call-in-week_0.png"
+  srcset="/assets/journal/call-in-week_0_prev.png 1x, /assets/journal/call-in-week_0.png 2x"
+  alt="МИКО: график распределения звонков в течение недели"
+  />
+</figure>
 
 ### Распределение звонков по каналам привлечения
 
@@ -132,12 +154,16 @@ icon: graph
 привлечения клиентов. Отчет позволяет оценить эффективность разных каналов привлечения, а также отслеживать изменение
 показателей по дням, неделям и месяцам.
 
-[<img src="/assets/journal/call-by-chanels-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/journal/call-by-chanels.png)
+ <img class="miko-shadow img-zoomable"
+  src="/assets/journal/call-by-chanels_0.png"
+  srcset="/assets/journal/call-by-chanels_0_prev.png 1x, /assets/journal/call-by-chanels_0.png 2x"
+  alt="МИКО: распределение звонков по каналам привлечения"
+  />
 
 !!!info Каналы привлечения
-Для работы этого отчета требуется предварительно подготовить данные. В разделе `Звонки и сообщения` откройте
-`Справочники` -> `Каналы привлечения`. Справочник наполняется автоматически номерами линий, на которые приходят
-входящие звонки. Нужно только заполнить поле `Наименование`. Наименования могут повторяться. В отчете данные с
+Для работы этого отчета требуется предварительно подготовить данные. В разделе **Звонки и сообщения** откройте
+**Справочники -> Каналы привлечения**. Справочник наполняется автоматически номерами линий, на которые приходят
+входящие звонки. Нужно только заполнить поле **Наименование**. Наименования могут повторяться. В отчете данные с
 одинаковыми наименованиями будут суммированы.
 !!!
 
@@ -145,8 +171,12 @@ icon: graph
 
 Количество звонков приходящихся на каждого сотрудника в отдельности. Отчет позволяет сравнить работу разных сотрудников,
 количество совершаемых и принимаемых звонков каждым из них.
-
-[<img src="/assets/journal/call-by-employees-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/journal/call-by-employees.png)
+ 
+<img class="miko-shadow img-zoomable"
+  src="/assets/journal/call-by-employees_0.png"
+  srcset="/assets/journal/call-by-employees_0_prev.png 1x, /assets/journal/call-by-employees_0.png 2x"
+  alt="МИКО: распределение звонков по сотрудникам"
+  />
 
 ### Распределение звонков по клиентам
 
