@@ -38,9 +38,12 @@ icon: graph
 <br>
 
 Чтобы открыть диаграммы и отчеты нажмите **Статистика и аналитика** из раздела<br>
-З**вонки и сообщения**. Далее в выпадающем меню выберите нужной график.
+**Звонки и сообщения**. Далее в выпадающем меню выберите нужной график.
 
-![](~/assets/journal/report-selection.png)
+<img class="miko-shadow play-on-hover"  
+  src="/assets/journal/otkritie.gif"
+  alt="МИКО: открытие отчетов по звонкам"
+/>
 
 ## Настройки диаграммы
 
@@ -50,9 +53,10 @@ icon: graph
 месяцам.
 
 <img class="miko-shadow img-zoomable"
-src="/assets/journal/data-comparation_0.png"
-srcset="/assets/journal/data-comparation_0_prev.png 1x, /assets/journal/data-comparation_0.png 2x"
-alt="МИКО: количество звонков по датам"
+    src="/assets/journal/data-comparation_0.png"
+    data-original="/assets/journal/data-comparation_0.png"
+    srcset="/assets/journal/data-comparation_0_prev.png 1x, /assets/journal/data-comparation_0.png 2x"
+    alt="МИКО: количество звонков по датам"
 />
 
 Период отбора данных может быть выбран из предложенных программой или задан произвольным образом.
@@ -61,13 +65,12 @@ alt="МИКО: количество звонков по датам"
 
 Данные могут выведены как в виде диаграмм, так и в табличном виде.
 
-<figure class="content-center">
-  <img class="miko-shadow img-zoomable"
-  src="/assets/journal/diag-table_0.png"
-  srcset="/assets/journal/diag-table_0_prev.png 1x, /assets/journal/diag-table_0.png 2x"
-  alt="МИКО: количество звонков в табличном виде"
-  />
-</figure>
+<img class="miko-shadow img-zoomable"
+    src="/assets/journal/diag-table_0.png"
+    data-original="/assets/journal/diag-table_0.png"
+    srcset="/assets/journal/diag-table_0_prev.png 1x, /assets/journal/diag-table_0.png 2x"
+    alt="МИКО: количество звонков в табличном виде"
+/>
 
 Для переключения между представлениями нажмите **Таблица** или **Диаграмма**.
 
@@ -102,51 +105,47 @@ alt="МИКО: количество звонков по датам"
 Общее количество звонков за выбранный период в разрезе направления звонка. Отчет также позволяет сравнивать
 количественные показатели с группировкой по дням, неделям и месяцам.
 
-<figure class="content-center">
-  <img class="miko-shadow img-zoomable"
+<img class="miko-shadow img-zoomable"
   src="/assets/journal/call-count_0.png"
+  data-original="/assets/journal/call-count_0.png"
   srcset="/assets/journal/call-count_0_prev.png 1x, /assets/journal/call-count_0.png 2x"
   alt="МИКО: количество звонков группировка по месяцам"
-  />
-</figure>
+/>
 
 ### Направление звонков
 
 Отчет показывает, с какими регионами ведется взаимодействие. Откуда чаще звонят клиенты или куда звонят сотрудники.
 
-<figure class="content-center">
-  <img class="miko-shadow img-zoomable"
+<img class="miko-shadow img-zoomable"
   src="/assets/journal/call-direction.png"
+  data-original="/assets/journal/call-direction.png"
   srcset="/assets/journal/call-direction_prev.png 1x, /assets/journal/call-direction.png 2x"
   alt="МИКО: направление звонков"
-  />
-</figure>
+/>
 
 ### Распределение звонков в течение дня
 
 Динамика входящих и исходящих звонков в течение суток. Отчет показывает усредненное или максимальное количество звонков
 за выбранный период в определенное время суток.
 
-<figure class="content-center">
-  <img class="miko-shadow img-zoomable"
+<img class="miko-shadow img-zoomable"
   src="/assets/journal/call-in-day_0.png"
+  data-original="/assets/journal/call-in-day_0.png"
   srcset="/assets/journal/call-in-day_0_prev.png 1x, /assets/journal/call-in-day_0.png 2x"
   alt="МИКО: график распределения звонков в течение дня"
-  />
-</figure>
+/>
 
 ### Распределение звонков в течение недели
 
 Динамика входящих и исходящих звонков в течение недели. Отчет показывает усредненное или максимальное количество звонков
 приходящиеся на каждый день недели.
 
-<figure class="content-center">
-  <img class="miko-shadow img-zoomable"
+<img class="miko-shadow img-zoomable"
   src="/assets/journal/call-in-week_0.png"
+  data-original="assets/journal/call-in-week_0.png"
   srcset="/assets/journal/call-in-week_0_prev.png 1x, /assets/journal/call-in-week_0.png 2x"
   alt="МИКО: график распределения звонков в течение недели"
-  />
-</figure>
+/>
 
 ### Распределение звонков по каналам привлечения
 
@@ -154,11 +153,12 @@ alt="МИКО: количество звонков по датам"
 привлечения клиентов. Отчет позволяет оценить эффективность разных каналов привлечения, а также отслеживать изменение
 показателей по дням, неделям и месяцам.
 
- <img class="miko-shadow img-zoomable"
+<img class="miko-shadow img-zoomable"
   src="/assets/journal/call-by-chanels_0.png"
+  data-original="assets/journal/call-by-chanels_0.png"
   srcset="/assets/journal/call-by-chanels_0_prev.png 1x, /assets/journal/call-by-chanels_0.png 2x"
   alt="МИКО: распределение звонков по каналам привлечения"
-  />
+/>
 
 !!!info Каналы привлечения
 Для работы этого отчета требуется предварительно подготовить данные. В разделе **Звонки и сообщения** откройте
@@ -174,16 +174,22 @@ alt="МИКО: количество звонков по датам"
  
 <img class="miko-shadow img-zoomable"
   src="/assets/journal/call-by-employees_0.png"
+  data-original="/assets/journal/call-by-employees_0.png"
   srcset="/assets/journal/call-by-employees_0_prev.png 1x, /assets/journal/call-by-employees_0.png 2x"
   alt="МИКО: распределение звонков по сотрудникам"
-  />
+/>
 
 ### Распределение звонков по клиентам
 
 Наиболее активные клиенты. Отчет показывает количество принятых, пропущенных, исходящих успешных и неудачных звонков по
 каждому клиенту.
 
-[<img src="/assets/journal/call-customers-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/journal/call-customers.png)
+<img class="miko-shadow img-zoomable"
+  src="/assets/journal/call-customers_0.png"
+  data-original="/assets/journal/call-customers_0.png"
+  srcset="/assets/journal/call-customers_0_prev.png 1x, /assets/journal/call-customers_0.png 2x"
+  alt="МИКО: распределение звонков по клиентам"
+/>
 
 ### Лиды
 
@@ -191,11 +197,21 @@ alt="МИКО: количество звонков по датам"
 количество таких звонков, а также число потерянных потенциальных клиентов (пропущенный звонок на который не
 перезвонили).
 
-[<img src="/assets/journal/call-by-leeds-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/journal/call-by-leeds.png)
+<img class="miko-shadow img-zoomable"
+  src="/assets/journal/call-by-leeds_0.png"
+  data-original="/assets/journal/call-by-leeds_0.png"
+  srcset="/assets/journal/call-by-leeds_0_prev.png 1x, /assets/journal/call-by-leeds_0.png 2x"
+  alt="МИКО: диаграмма обработки лидов"
+/>
 
 ### Работа с пропущенными звонками
 
 Отчет показывает, как ведется работа с пропущенными звонками от новых и старых клиентов. Перезванивают ли сотрудники,
 если пропустили звонок. И общее количество таких звонков.
 
-[<img src="/assets/journal/call-missing-preview.png" style="box-shadow: 0 0 20px 0 grey">](~/assets/journal/call-missing.png)
+<img class="miko-shadow img-zoomable"
+  src="/assets/journal/call-missing_0.png"
+  data-original="/assets/journal/call-missing_0.png"
+  srcset="/assets/journal/call-missing_0_prev.png 1x, /assets/journal/call-missing_0.png 2x"
+  alt="МИКО: обработка пропущенных звонков"
+/>
