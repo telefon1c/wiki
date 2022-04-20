@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.703606976702" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.703758691535" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.703606976702" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.703758691535" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.703606976702" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.703758691535" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -251,7 +251,8 @@ class="miko-shadow"
             </svg>
         </div>
         <div class="pr-5 ml-3">
-<p>Данный функционал не предусмотрен для АТС Манго Офис.</p>
+<p>Данный функционал не предусмотрен для АТС Манго Офис.
+На FreePBX находится в разработке.</p>
         </div>
     </div>
 </div>
@@ -264,14 +265,23 @@ class="miko-shadow"
 /></p>
 <ul>
 <li>Когда переключатель <strong>Определение ответственного</strong> в положении <strong>По значению реквизита</strong> функция перехвата на ответственного включена. <br>
-В данном случае внешний входящий звонок одновременно с правилом входящей маршрутизации поступает ответственному по данному клиенту. В данном случае ответственный определяется в соответствующем реквизите данного контрагента. <a href="/user-guides/panel/call-pickup/">Подробнее про работу этой функции</a></li>
+В данном случае внешний входящий звонок одновременно с правилом входящей маршрутизации поступает ответственному по данному клиенту.</li>
 </ul>
 <p><img src="/assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/obr_zv_2.png" 
 class="miko-shadow" 
 /></p>
+<p>В данном случае ответственный определяется в соответствующем реквизите данного контрагента.</p>
+<p><img class="miko-shadow img-zoomable"
+src="/assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/kart_kontr.png"
+data-original="/assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/kart_kontr.png"
+srcset="/assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/kart_kontr_prev.png 1x, /assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/kart_kontr.png 2x"
+alt="МИКО: реквизит Ответственный в карточке контрагента"
+/></p>
 <ul>
 <li>Когда переключатель <strong>Определение ответственного</strong> в положении <strong>Автоматически</strong> функция перехвата на ответственного включена. <br>
-В данном случае внешний входящий звонок одновременно с правилом входящей маршрутизации поступает ответственному по данному клиенту. <br> В данном случае ответственный определяется на основании <a href="/user-guides/routing/#%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B7%D0%B0%D0%B8%D0%BC%D0%BE%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B9-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D1%85-%D0%B1%D1%83%D0%B4%D0%B5%D1%82-%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D1%8C%D1%81%D1%8F-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0-%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8">отслеживаемых взаимодействий</a>. Их можно настроить по ссылке в этой же форме.</li>
+В данном случае внешний входящий звонок одновременно с правилом входящей маршрутизации поступает ответственному по данному клиенту. <br>
+Ответственный определяется на основании <a href='/user-guides/routing#определение-взаимодействий-на-основании-которых-будет-строиться-таблица-маршрутизации' target="_blank">отслеживаемых взаимодействий</a>.
+Их можно настроить по ссылке в этой же форме.</li>
 </ul>
 <p><img src="/assets/root-guides/parametri_podsystemi_tel/obrabotka_zvonkov/obr_zv_3.png" 
 class="miko-shadow" 
