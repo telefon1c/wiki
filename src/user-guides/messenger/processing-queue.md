@@ -9,6 +9,9 @@ icon: mortar-board
 телефонии.
 
 ---
+## Как подключить
+
+Описано в разделе <a href='/get-started/whatsapp' target="_blank">быстрого старта.</a>
 
 ## Статус чата
 

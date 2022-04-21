@@ -75,9 +75,9 @@ icon: note
 /> 
 
 Функции плеера позволяют перематывать записи разговора вперед и назад на 10 секунд
-(![](~/assets/journal/replay-10.png) и ![](~/assets/journal/forward-10.png)), переключатся между частями
-разговора (![](~/assets/journal/skip-previous.png) и ![](~/assets/journal/skip-next.png)),
-изменять скорость воспроизведения и скачивать запись на диск (![](~/assets/journal/download.png)).
+![](~/assets/journal/replay-10.png) и ![](~/assets/journal/forward-10.png), переключатся между частями
+разговора ![](~/assets/journal/skip-previous.png) и ![](~/assets/journal/skip-next.png),
+изменять скорость воспроизведения и скачивать запись на диск ![](~/assets/journal/download.png).
 
 ## Регистрация клиента
 
