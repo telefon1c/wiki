@@ -23,47 +23,13 @@ icon: home
 
 ### Быстрый старт
 
-<div class="miko-ref">
-
-[!ref
-  icon="tools"
-  text="Настройка АТС<div class='subtitle text-gray-700 dark:text-dark-300'>MikoPBX, FreePBX, VoxPBX, Mango Office</div>"
-](get-started/nastroyka_ats)
-</div>
-
-<div class="miko-ref">
-
-[!ref
-icon="tools"
-text="Настройка 1C<div class='subtitle text-gray-700 dark:text-dark-300'>Встраивание расширения телефонии в информационную базу</div>"
-](/get-started/nastroyka_1c)
-</div>
-
-<div class="miko-ref">
-
-[!ref
-icon="tools"
-text="Установка внешней панели<div class='subtitle text-gray-700 dark:text-dark-300'>Софтфон, реализующий возможности интеграции 1С и телефонии</div>"
-](/get-started/install)
-</div>
-
-<div class="miko-ref">
-
-[!ref
-icon="rocket"
-text="Звонок из 1С<div class='subtitle text-gray-700 dark:text-dark-300'>Проверка работы интеграции 1С и телефонии. Ваше решение готово к работе</div>"
-](/get-started/proverka_integracii)
-</div>
-
-<div class="miko-ref">
-
-[!ref
-icon="tools"
-text="Интеграция с WhatsApp<div class='subtitle text-gray-700 dark:text-dark-300'>Настройка решения для приема и обработки сообщений из WhatsApp</div>"
-](/get-started/whatsapp)
-</div>
-
-<br>
+||                                                                              | 
+|------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| <a href='/get-started/nastroyka_ats/' target="_blank">Настройка АТС</a>      |Регистрация клиента, установка, настройка модуля панели телефонии|
+| <a href='/get-started/nastroyka_1c/' target="_blank">Настройка АТС</a>       |Встраивание расширения телефонии в информационную базу|
+| <a href='/get-started/install/' target="_blank">Установка внешней панели</a> |Софтфон, реализующий возможности интеграции 1С и телефонии|
+| <a href='/get-started/proverka_integracii/' target="_blank">Звонок из 1С</a> |Проверка работы интеграции 1С и телефонии. Ваше решение готово к работе|
+| <a href='/get-started/whatsapp/' target="_blank">Интеграция с WhatsApp</a>   |Настройка решения для приема и обработки сообщений из WhatsApp|
 
 ### Руководство пользователя
 
