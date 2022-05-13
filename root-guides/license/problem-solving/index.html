@@ -24,11 +24,11 @@
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=1.11.2.705682234204" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.11.2.705744066942" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.705682234204" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.11.2.705744066942" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.705682234204" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=1.11.2.705744066942" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -257,6 +257,12 @@ alt="МИКО: нехватка лицензии"
 /></p>
 <p>Для диагностики проблем с журналом звонков используйте команду:<br />
 <code v-pre>licdiag 31 MIKO-XXXXX-XXXXX-XXXXX-XXXXX</code></p>
+<doc-anchor-target id="фичи-и-их-назначение">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#фичи-и-их-назначение">#</doc-anchor-trigger>
+        <span>Фичи и их назначение</span>
+    </h2>
+</doc-anchor-target>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -267,20 +273,28 @@ alt="МИКО: нехватка лицензии"
 </thead>
 <tbody>
 <tr>
-<td>
-<figure>
-    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
-        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/TyMqBHfwM5M" allowfullscreen></iframe>
-    </div>
-</figure>
-</td>
-<td>
-<figure>
-    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
-        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/GFYMEBzW6WI" allowfullscreen></iframe>
-    </div>
-</figure>
-</td>
+<td>31 Модуль журнал звонков</td>
+<td>Заполнение журнала звонков в подсистеме телефонии 1С</td>
+</tr>
+<tr>
+<td>32 Модуль умной маршрутизации</td>
+<td>функционирование умной маршрутизации - генерация индивидуального приветствия</td>
+</tr>
+<tr>
+<td>42 Интеграция 1С с чатами (WhatsApp)</td>
+<td>Чаты с клиентами посредством WhatsApp</td>
+</tr>
+<tr>
+<td>43 Обновление подсистемы телефонии в 1С</td>
+<td>Возможность обновление подсистемы телефонии. Не влияет на возможность обновления модулей на АТС MikoPBX, FreePBX, обновление самой АТС MikoPBX</td>
+</tr>
+<tr>
+<td>48 Интеграция 1С и телефонии ПРОФ (сеанс в 1С)</td>
+<td>Дает возможность открыть журнал звонков</td>
+</tr>
+<tr>
+<td>49 Интеграция 1С и телефонии ПРОФ (сеанс в внешней панели)</td>
+<td>Позволяет открываться карточке при звонке, открывать карточку контрагента из внешней панели. Не влияет на возможность авторизации внешней панели</td>
 </tr>
 </tbody>
 </table>
