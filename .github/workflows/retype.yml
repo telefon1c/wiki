@@ -16,7 +16,7 @@ jobs:
 
       - uses: retypeapp/action-build@latest
       - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/head.min.js > ${RETYPE_OUTPUT_PATH}/resources/js/retype-new.js
-      - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/google-tag-manager.js >> ${RETYPE_OUTPUT_PATH}/resources/js/retype-new.js
+#      - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/google-tag-manager.js >> ${RETYPE_OUTPUT_PATH}/resources/js/retype-new.js
       - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/zooming.js >> ${RETYPE_OUTPUT_PATH}/resources/js/retype-new.js
       - run: cat ${RETYPE_OUTPUT_PATH}/resources/js/retype.js >> ${RETYPE_OUTPUT_PATH}/resources/js/retype-new.js
       - run: mv ${RETYPE_OUTPUT_PATH}/resources/js/retype-new.js ${RETYPE_OUTPUT_PATH}/resources/js/retype.js
