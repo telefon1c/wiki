@@ -18,23 +18,7 @@
 	return d};d.ready(b,function(){g()&&m(x.ALL,function(a){r(a)});d.feature&&d.feature("domloaded",!0)});if("complete"===b.readyState)p();else if(b.addEventListener)b.addEventListener("DOMContentLoaded",c,!1),a.addEventListener("load",p,!1);else{b.attachEvent("onreadystatechange",c);a.attachEvent("onload",p);var z=!1;try{z=null==a.frameElement&&b.documentElement}catch(F){}z&&z.doScroll&&function E(){if(!u){try{z.doScroll("left")}catch(b){a.clearTimeout(d.readyTimeout);d.readyTimeout=a.setTimeout(E,50);
 	return}p()}}()}setTimeout(function(){l=!0;m(v,function(a){a()})},300)})(window);
 
-<!-- END headjs.github.io -->
-document.addEventListener("turbo:load", function() {
-	head.ready(document, function() {
-		function GTMINIT(w,d,s,l,i) {
-			w[l]=w[l]||[];
-			w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-			var f=d.getElementsByTagName(s)[0],
-				j=d.createElement(s),
-				dl=l!='dataLayer'?'&l='+l:'';
-			j.async=true;
-			j.src=	'https://www.googletagmanager.com/gtm.js?id='+i+dl;
-			f.parentNode.insertBefore(j,f);
-		}
-		GTMINIT(window, document,'script','dataLayer','GTM-KXBHF8J');
-		return true;
-	})
-})<!-- github.com/kingdido999/zooming -->
+<!-- END headjs.github.io --><!-- github.com/kingdido999/zooming -->
 document.addEventListener("turbo:load", function () {
 	head.ready(document, function () {
 		// Отключим зумм для мобильных
