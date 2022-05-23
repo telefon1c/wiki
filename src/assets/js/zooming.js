@@ -1,5 +1,5 @@
 <!-- github.com/kingdido999/zooming -->
-document.addEventListener("turbo:load", function () {
+document.addEventListener("turbo:before-cache", function () {
 	head.ready(document, function () {
 		// Отключим зум для мобильных
 		if (window.innerWidth > 500) {
