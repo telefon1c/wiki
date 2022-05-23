@@ -33,6 +33,7 @@
 
 /* Стиль для картинок с тенью */
 img.miko-shadow {
+    max-height: 650px;
     border-radius: 5px;
     background-color: #e4e4e4;
     border: 1px solid #adadad;
