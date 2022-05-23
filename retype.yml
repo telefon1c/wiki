@@ -20,7 +20,9 @@ links:
   - text: telefon.miko.ru
     link: https://telefon.miko.ru
     target: blank
-
+  - text: Купить
+    link: https://telefon.miko.ru/price/
+    target: blank
 meta:
   title: " | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии"
 
