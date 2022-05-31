@@ -1,30 +1,13 @@
 <!-- github.com/kingdido999/zooming -->
-document.addEventListener("turbo:load", function () {
+document.addEventListener("turbo:before-cache", function () {
 	head.ready(document, function () {
-		// Отключим зумм для мобильных
+		// Отключим зум для мобильных
 		if (window.innerWidth > 500) {
 			head.load('https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.js', function () {
 				var zooming = new Zooming();
 				zooming.listen('.img-zoomable');
 			})
 		}
-		head.load('https://unpkg.com/freezeframe/dist/freezeframe.min.js', function () {
-			// Custom options
-			new Freezeframe({
-				selector: '.play-on-hover',
-				trigger: 'hover',
-				overlay: true,
-				responsive: true,
-				warnings: false
-			});
-			new Freezeframe({
-				selector: '.play-on-click',
-				trigger: 'click',
-				overlay: true,
-				responsive: true,
-				warnings: false
-			})
-		})
 	})
 });
 <!-- End github.com/kingdido999/zooming -->
