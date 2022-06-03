@@ -10,15 +10,18 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.3.0.707572390678">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 2.2">
+    <meta name="generator" content="Retype 2.3.0">
 
     <!-- Primary Meta Tags -->
     <title>Переход с панели телефонии 2.0 на панель телефонии 4.0 | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
     <meta name="title" content="Переход с панели телефонии 2.0 на панель телефонии 4.0 | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
     <meta name="description" content="Для перехода с панели телефонии 2.0 на 4.0 нужно выполнить платное обновление лицензии. За подробностями обращайтесь в отдел продаж МИКО." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://docs.telefon1c.ru/root-guides/perevods2na4/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -34,11 +37,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.707330608159" rel="stylesheet" data-turbo-track="reload" />
+    <link href="../../resources/css/retype.css?v=2.3.0.707572390678" rel="stylesheet" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.707330608159" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.707330608159" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.3.0.707572390678" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/retype.js?v=2.3.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.3.0.707572390678" data-turbo-eval="false" defer></script>
 
     <link href="/assets/css/custom.css" rel="stylesheet" />
 
@@ -67,7 +70,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="/" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">МИКО</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">wiki</span>
                     </div>
@@ -79,18 +82,19 @@
                     <!-- Top Nav -->
                     <nav class="hidden md:flex">
                         <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
-                            <li class="md:mr-6">
-                                <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://crm.miko.ru" target="_blank">CRM</a>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://crm.miko.ru" target="_blank">CRM</a>
                             </li>
-                            <li class="md:mr-6">
-                                <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://www.mikopbx.ru" target="_blank">MikoPBX</a>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://www.mikopbx.ru" target="_blank">MikoPBX</a>
                             </li>
-                            <li class="md:mr-6">
-                                <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://telefon.miko.ru" target="_blank">telefon.miko.ru</a>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://telefon.miko.ru" target="_blank">telefon.miko.ru</a>
                             </li>
-                            <li class="md:mr-6">
-                                <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://telefon.miko.ru/price/" target="_blank">Купить</a>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://telefon.miko.ru/price/" target="_blank">Купить</a>
                             </li>
+        
                         </ul>
                     </nav>
         
@@ -167,17 +171,18 @@
                             <nav>
                                 <ul class="flex flex-wrap justify-center items-center">
                                     <li class="mr-6">
-                                        <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://crm.miko.ru">CRM</a>
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://crm.miko.ru" target="_blank">CRM</a>
                                     </li>
                                     <li class="mr-6">
-                                        <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://www.mikopbx.ru">MikoPBX</a>
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://www.mikopbx.ru" target="_blank">MikoPBX</a>
                                     </li>
                                     <li class="mr-6">
-                                        <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://telefon.miko.ru">telefon.miko.ru</a>
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://telefon.miko.ru" target="_blank">telefon.miko.ru</a>
                                     </li>
                                     <li class="mr-6">
-                                        <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://telefon.miko.ru/price/">Купить</a>
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://telefon.miko.ru/price/" target="_blank">Купить</a>
                                     </li>
+            
                                 </ul>
                             </nav>
                         </div>
@@ -331,7 +336,7 @@ src="/assets/root-guides/obnovlenie/obnov_blok_regl.png"
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Переход с панели телефонии 2.0 на панель телефонии 4.0", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Переход с панели телефонии 2.0 на панель телефонии 4.0", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 
     
 </body>

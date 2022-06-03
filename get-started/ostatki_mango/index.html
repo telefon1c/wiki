@@ -10,15 +10,18 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.3.0.707572390678">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 2.2">
+    <meta name="generator" content="Retype 2.3.0">
 
     <!-- Primary Meta Tags -->
     <title>Ostatki mango | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
     <meta name="title" content="Ostatki mango | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
     <meta name="description" content="Запустите информационную базу 1С в режиме \"1С:Предприятие\". Войдите пользователем, имеющим права администратора." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://docs.telefon1c.ru/get-started/ostatki_mango/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -36,11 +39,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.707330608159" rel="stylesheet" data-turbo-track="reload" />
+    <link href="../../resources/css/retype.css?v=2.3.0.707572390678" rel="stylesheet" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.707330608159" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.707330608159" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.3.0.707572390678" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/retype.js?v=2.3.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.3.0.707572390678" data-turbo-eval="false" defer></script>
 
     <link href="/assets/css/custom.css" rel="stylesheet" />
 
@@ -69,7 +72,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="/" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">МИКО</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">wiki</span>
                     </div>
@@ -81,18 +84,19 @@
                     <!-- Top Nav -->
                     <nav class="hidden md:flex">
                         <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
-                            <li class="md:mr-6">
-                                <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://crm.miko.ru" target="_blank">CRM</a>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://crm.miko.ru" target="_blank">CRM</a>
                             </li>
-                            <li class="md:mr-6">
-                                <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://www.mikopbx.ru" target="_blank">MikoPBX</a>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://www.mikopbx.ru" target="_blank">MikoPBX</a>
                             </li>
-                            <li class="md:mr-6">
-                                <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://telefon.miko.ru" target="_blank">telefon.miko.ru</a>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://telefon.miko.ru" target="_blank">telefon.miko.ru</a>
                             </li>
-                            <li class="md:mr-6">
-                                <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://telefon.miko.ru/price/" target="_blank">Купить</a>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://telefon.miko.ru/price/" target="_blank">Купить</a>
                             </li>
+        
                         </ul>
                     </nav>
         
@@ -169,17 +173,18 @@
                             <nav>
                                 <ul class="flex flex-wrap justify-center items-center">
                                     <li class="mr-6">
-                                        <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://crm.miko.ru">CRM</a>
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://crm.miko.ru" target="_blank">CRM</a>
                                     </li>
                                     <li class="mr-6">
-                                        <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://www.mikopbx.ru">MikoPBX</a>
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://www.mikopbx.ru" target="_blank">MikoPBX</a>
                                     </li>
                                     <li class="mr-6">
-                                        <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://telefon.miko.ru">telefon.miko.ru</a>
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://telefon.miko.ru" target="_blank">telefon.miko.ru</a>
                                     </li>
                                     <li class="mr-6">
-                                        <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://telefon.miko.ru/price/">Купить</a>
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://telefon.miko.ru/price/" target="_blank">Купить</a>
                                     </li>
+            
                                 </ul>
                             </nav>
                         </div>
@@ -285,7 +290,7 @@ srcset="/assets/mango/mango_28_prev.png 1x, /assets/mango/mango_28.png 2x"
 alt="МИКО: установлена подсистема звонки и сообщения"
 /></p>
 <ol start="9">
-<li>На странице <strong>Схема подключения</strong> выберите подходящую вам <a href="/root-guides/select-connection-mode/">схему соединения</a> АТС с 1С. Выбор принципиального значения не имеет - это, своего рода, подсказка. От него будет зависеть первоначальное заполнение каналов передачи событий и контактных данных.<br />
+<li>На странице <strong>Схема подключения</strong> выберите подходящую вам <a href="../../root-guides/select-connection-mode/">схему соединения</a> АТС с 1С. Выбор принципиального значения не имеет - это, своего рода, подсказка. От него будет зависеть первоначальное заполнение каналов передачи событий и контактных данных.<br />
 Откройте <strong>Расширенные настройки</strong> и установите их исходя из выбранной схемы подключения. Выполните <strong>Далее</strong>.<br />
 В данном примере использовалась файловая информационная база, и выбран способ подключения - через веб-сервис.</li>
 </ol>
@@ -422,7 +427,7 @@ alt="МИКО: добавление вида контактной информа
 src="/assets/mango/mango_22.png"
 alt=""
 /></p>
-<p>Выберите <a href="/root-guides/select-connection-mode/">подходящий способ соединения с 1С.</a></p>
+<p>Выберите <a href="../../root-guides/select-connection-mode/">подходящий способ соединения с 1С.</a></p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -438,7 +443,7 @@ alt=""
         <div class="pr-5 ml-3 w-full">
             <h5>Коротко о способах подключения</h5>
 <p>Если у вас <strong>Сервер 1С</strong> и пользователи подключаются посредством тонкого клиента - подойдет способ <strong>Long-pooling</strong>. Канал передачи контактных данных нужно установить в <strong>Long-pooling соединение</strong>, канал передачи событий в <strong>Long-pooling соединение</strong> или <strong>Внешняя компонента</strong>.<br />
-Если у вас <strong>файловая информационная база</strong> - подойдет способ <strong>веб-сервис</strong>. Нужно <a href="/faq/base-publishing/">настроить публикацию</a> информационной базы на сервере IIS или Apache, а каналы передачи событий и контактных данных установить в значение <strong>веб-сервис</strong>.</p>
+Если у вас <strong>файловая информационная база</strong> - подойдет способ <strong>веб-сервис</strong>. Нужно <a href="../../faq/base-publishing/">настроить публикацию</a> информационной базы на сервере IIS или Apache, а каналы передачи событий и контактных данных установить в значение <strong>веб-сервис</strong>.</p>
         </div>
     </div>
 </div>
@@ -493,7 +498,7 @@ alt=""
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Ostatki mango", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Ostatki mango", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 
     
 </body>
