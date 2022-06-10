@@ -83,6 +83,23 @@ icon: mortar-board
     src="/assets/whatsapp/chat_skrit_sbsh.gif"
     alt="МИКО: скрытые комментарии в whatsapp"
 /> 
+### Упомянуть сотрудника
+
+Можно упомянуть сотрудника в чате. У упомянутого сотрудника появится данный чат и он сможет в него писать.
+
+<img class="miko-shadow play-on-hover"  
+    src="/assets/whatsapp/chat_upomanut.gif"
+    alt="МИКО: упомянуть сотрудника в чате"
+/> 
+
+Данный сотрудник станет наблюдателем чата.
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/whatsapp/chat_nabl_0.png"
+    data-original="/assets/whatsapp/chat_nabl_0.png"
+    srcset="/assets/whatsapp/chat_nabl_0_prev.png 1x, /assets/whatsapp/chat_nabl_0.png 2x" 
+    alt="наблюдатель чата"
+/> 
 
 ## Чаты в 1С:Предприятие
 
