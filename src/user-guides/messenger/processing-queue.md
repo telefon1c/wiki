@@ -85,19 +85,29 @@ icon: mortar-board
 /> 
 ### Упомянуть сотрудника
 
-Можно упомянуть сотрудника в чате. У упомянутого сотрудника появится данный чат и он сможет в него писать.
+Можно упомянуть сотрудника в чате. 
 
 <img class="miko-shadow play-on-hover"  
     src="/assets/whatsapp/chat_upomanut.gif"
     alt="МИКО: упомянуть сотрудника в чате"
 /> 
 
-Данный сотрудник станет наблюдателем чата.
+Данный сотрудник станет **наблюдателем** чата.
 
 <img class="miko-shadow img-zoomable"  
     src="/assets/whatsapp/chat_nabl_0.png"
     data-original="/assets/whatsapp/chat_nabl_0.png"
     srcset="/assets/whatsapp/chat_nabl_0_prev.png 1x, /assets/whatsapp/chat_nabl_0.png 2x" 
+    alt="наблюдатель чата"
+/> 
+
+У упомянутого сотрудника появится данный чат, и сотрудник сможет в него писать. <br>
+Он может **покинуть** данный чат по кнопки вверху. **Завершить** чат или **передать** его данный сотрудник не может.
+
+<img class="miko-shadow img-zoomable"  
+    src="/assets/whatsapp/chat_nabl_1.png"
+    data-original="/assets/whatsapp/chat_nabl_1.png"
+    srcset="/assets/whatsapp/chat_nabl_1_prev.png 1x, /assets/whatsapp/chat_nabl_1.png 2x" 
     alt="наблюдатель чата"
 /> 
 
