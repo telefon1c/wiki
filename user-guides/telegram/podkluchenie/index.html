@@ -10,7 +10,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.3.0.709584435782">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.3.0.709593524819">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.3.0">
@@ -37,11 +37,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../resources/css/retype.css?v=2.3.0.709584435782" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.3.0.709593524819" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.3.0.709584435782" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.3.0.709593524819" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.3.0.709584435782" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.3.0.709593524819" data-turbo-eval="false" defer></script>
 
     <link href="/assets/css/custom.css" rel="stylesheet" />
 
@@ -219,7 +219,13 @@
 </doc-anchor-target>
 <p>За образец взята <a href='https://helpdesk.bitrix24.ru/open/6352401/' target="_blank">инструкция битрикс24</a>, адаптированная под нашу задачу.</p>
 <ol>
-<li>В программе <strong>Telegram</strong> (в веб-версии, в десктоп или мобильном приложении Telegram) в списке диалогов найти BotFather и нажать <strong>Начать</strong>.</li>
+<li>В программе <strong>Telegram</strong> (в веб-версии, в десктоп или мобильном приложении Telegram) в списке диалогов найти <strong>BotFather</strong> и нажать <strong>Запустить</strong>.</li>
+</ol>
+<p><img class="miko-shadow"  
+src="/assets/user-guides/telegram/sozd_bot_4.png"
+alt="МИКО: создание бота в телеграм"
+/></p>
+<ol start="2">
 <li>Ввести команду создания нового бота <code v-pre>/newbot</code>.</li>
 </ol>
 <p><img class="miko-shadow"  
@@ -244,11 +250,41 @@ src="/assets/user-guides/telegram/sozd_bot_2.png"
 alt="МИКО: создание бота в телеграм"
 /></p>
 <ol start="5">
-<li>Вам будет выдан токен доступа.</li>
+<li>Вам будет выдан токен доступа. Скопируйте его себе, он будет нужен в дальнейшем.</li>
 </ol>
 <p><img class="miko-shadow"  
 src="/assets/user-guides/telegram/sozd_bot_3.png"
 alt="МИКО: получение токена доступа к боту в телеграм"
+/></p>
+<doc-anchor-target id="подключение-в-подсистеме-телефонии-1с">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#подключение-в-подсистеме-телефонии-1с">#</doc-anchor-trigger>
+        <span>Подключение в подсистеме телефонии 1С</span>
+    </h2>
+</doc-anchor-target>
+<ol>
+<li>Зайдите в <strong>Звонки и сообщения</strong> -&gt; <strong>Настройки мессенджера</strong>.</li>
+</ol>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/user-guides/telegram/nastroyki_mess_0.gif"
+alt="МИКО: настройки мессенджера"
+/></p>
+<ol start="2">
+<li>Включите переключатель напротив <strong>Telegram</strong>, и нажмите кнопку <strong>Настроить</strong>.</li>
+</ol>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/user-guides/telegram/podkluch_teleg_0.gif"
+alt="МИКО: подключение телеграм в 1С"
+/></p>
+<ol start="3">
+<li>В поле <strong>Токен</strong> вставьте скопированный ранее токен доступа чат-бота. <br>
+Нажмите кнопку <strong>Проверить подключение</strong>. <br>
+Ответьте утвердительно на вопрос о создании нового вида контактной информации. <br>
+Ниже кнопки <strong>Проверить подключение</strong> отобразится уникальное имя телеграм-бота, с которым установлено соединение.</li>
+</ol>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/user-guides/telegram/podkluch_teleg_1.gif"
+alt="МИКО: подключение телеграм в 1С"
 /></p>
 
                                 
