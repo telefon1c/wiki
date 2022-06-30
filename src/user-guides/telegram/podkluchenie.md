@@ -19,8 +19,8 @@ icon: paper-airplane
     alt="МИКО: создание бота в телеграм"
 /> 
 
-3. Укажите имя бота. По нему клиенты смогут обратиться к вашей компании через Telegram. <br>
-В нашем примере это - **integrfciya_1C**.
+3. Укажите имя бота.<br>
+В нашем примере это - **integr_1C**.
 
 <img class="miko-shadow"  
     src="/assets/user-guides/telegram/sozd_bot_1.png"
@@ -29,7 +29,7 @@ icon: paper-airplane
 
 4. Далее укажите уникальное имя вашего бота (@username), на основании которого будет сформирована ссылка на вашего бота. <br>
 Имя должно оканчиваться на **bot**. <br>
-В нашем случае уникальное имя бота - **integrfciya_1C_bot**.
+В нашем случае уникальное имя бота - **integr_1C_bot**.
 
 <img class="miko-shadow"  
     src="/assets/user-guides/telegram/sozd_bot_2.png"
