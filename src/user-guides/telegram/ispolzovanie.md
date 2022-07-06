@@ -32,4 +32,3 @@ icon: paper-airplane
     src="/assets/user-guides/telegram/ispolz_2.jpg"
     alt="МИКО: начало диалога в чате телеграм"
 /> 
-
