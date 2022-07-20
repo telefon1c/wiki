@@ -10,7 +10,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.711478242919">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.711672125631">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -37,11 +37,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.711478242919" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.711672125631" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.711478242919" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.711672125631" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.711478242919" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.711672125631" data-turbo-eval="false" defer></script>
 
     <link href="/assets/css/custom.css" rel="stylesheet" />
 
@@ -229,59 +229,32 @@
     </h3>
 </doc-anchor-target>
 <ol>
-<li>Откройте <strong>Звонки и сообщения -&gt; Настройки подсистемы -&gt; Сменить схему подключения</strong>.</li>
+<li>Откройте <strong>Звонки и сообщения -&gt; Настройки подсистемы -&gt; Расширенные настройки подключения -&gt; Настроить модуль АТС</strong>.</li>
 </ol>
 <p><img class="miko-shadow play-on-hover"  
 src="/assets/whatsapp/wp_sm_ch.gif"
 alt="МИКО: смена схемы соединения"
 /></p>
 <ol start="2">
-<li>Выберите либо способ <strong>1С в облаке, сервер АТС в локальной сети</strong> либо <strong>1С и АТС расположены в облаке</strong>. Выполните <strong>Далее</strong>.</li>
+<li>Перейдите в веб-интерфейс АТС. <br>
+Перейдите в <strong>Управление модулями</strong>. <br>
+Найдите модуль <strong>Панель телефонии 4.0 для 1С</strong>. Зайдите в настройки модуля. <br>
+Скопируйте код автонастройки.</li>
 </ol>
-<p><img class="miko-shadow img-zoomable"  
-src="/assets/mango/mango_39.png"
-data-original="/assets/mango/mango_39.png"
-srcset="/assets/mango/mango_39_prev.png 1x, /assets/mango/mango_39.png 2x" 
-alt="МИКО: автонастройка соединения"
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/whatsapp/wp_sm_ch_ats.gif"
+alt="МИКО: смена схемы соединения в 1С"
 /></p>
-<doc-anchor-target id="автонастройка-соединения-с-атс">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#автонастройка-соединения-с-атс">#</doc-anchor-trigger>
-        <span>Автонастройка соединения с АТС</span>
-    </h3>
-</doc-anchor-target>
-<ol start="3">
-<li>Перейдите в веб-интерфейс АТС и скопируйте в модуле <strong>Панель телефонии 4.0 для 1С</strong> код автоматической настройки.</li>
-<li>Вернитесь в 1С:Предприятие. <br>
-На странице <strong>Проверка связи</strong> Переключатель <strong>К какой АТС выполняется подключение</strong> установите в соответствии с вашей АТС. <br>
-Переключатель <strong>Настройка подключения</strong> - в положение <strong>Автоматическая настройка</strong>. <br>
-Ниже в поле вставьте скопированный код автоматической настройки. <br>
-Выполните <strong>Далее</strong>.</li>
+<ol start="4">
+<li>В 1С:Предприятие в поле <strong>Данные для автоматической настройки</strong> вставьте скопированный код. <br>
+В поле <strong>Схема подключения</strong> нажмите кнопку выбора и выберите либо способ <strong>1С в облаке, сервер АТС в локальной сети</strong>, либо <strong>1С и АТС расположены в облаке</strong> (один из двух нижних). <br>
+В поле <strong>Веб-сервер 1С</strong> введите адрес сервера IIS или Apache, на котором у вас опубликована данная база. <br>
+В поле <strong>Имя публикации</strong> введите имя, под которым опубликована ваша база (его можно посмотреть в конфигураторе <strong>Администрирование → Публикация на веб-сервере</strong>, поле <strong>Имя</strong>). <br>
+Нажмите кнопку <strong>Настроить</strong>. Дождитесь завершения настройки соединения (около 30 с).</li>
 </ol>
-<p><img class="miko-shadow img-zoomable"  
-src="/assets/whatsapp/wp_sm_sh_av.png"
-data-original="/assets/whatsapp/wp_sm_sh_av.png"
-srcset="/assets/whatsapp/wp_sm_sh_av_prev.png 1x, /assets/whatsapp/wp_sm_sh_av.png 2x" 
-alt="МИКО: автонастройка соединения"
-/></p>
-<ol start="5">
-<li>В открывшейся форме в поле введите:</li>
-</ol>
-<ul>
-<li>в поле &quot;<strong>веб-сервер</strong>&quot; адрес сервера <strong>Apache</strong> или <strong>IIS</strong></li>
-<li>в поле &quot;<strong>имя публикации</strong>&quot; - <a href='/faq/base-publishing#опубпликуйте-веб-сервис' target="_blank">имя публикации</a>
-Нажмите &quot;<strong>Обновить состояние</strong>&quot;</li>
-</ul>
-<p><img class="miko-shadow"  
-src="/assets/mango/mango_40.png"
-alt="МИКО: автонастройка соединения"
-/></p>
-<ol start="6">
-<li>Дождитесь установления соединения с АТС (около 30 с).</li>
-</ol>
-<p><img class="miko-shadow"  
-src="/assets/mango/mango_41.png"
-alt="МИКО: автонастройка соединения"
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/whatsapp/wp_sm_ch_1s.gif"
+alt="МИКО: смена схемы соединения в 1С"
 /></p>
 <doc-anchor-target id="подключение-whatsapp">
     <h2>
