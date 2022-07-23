@@ -10,7 +10,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.711672125631">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.711919780853">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -37,11 +37,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.711672125631" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.711919780853" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.711672125631" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.711919780853" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.711672125631" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.711919780853" data-turbo-eval="false" defer></script>
 
     <link href="/assets/css/custom.css" rel="stylesheet" />
 
@@ -229,13 +229,55 @@
     </h3>
 </doc-anchor-target>
 <ol>
-<li>Откройте <strong>Звонки и сообщения -&gt; Настройки подсистемы -&gt; Расширенные настройки подключения -&gt; Настроить модуль АТС</strong>.</li>
+<li>Запустите мастер первоначальной настройки. Для этого откройте <strong>Звонки и сообщения -&gt; Мастер первоначальной настройки</strong>.</li>
 </ol>
 <p><img class="miko-shadow play-on-hover"  
-src="/assets/whatsapp/wp_sm_ch.gif"
-alt="МИКО: смена схемы соединения"
+src="/assets/whatsapp/wp_sm_ch_mas.gif"
+alt="МИКО: открытие мастера первоначалььной настройки"
 /></p>
 <ol start="2">
+<li>Выберите вариант <strong>Полная настройка</strong>. Нажмите <strong>Далее</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/whatsapp/wp_mast_poln.png"
+data-original="/assets/whatsapp/wp_mast_poln.png"
+srcset="/assets/whatsapp/wp_mast_poln_prev.png 1x, /assets/whatsapp/wp_mast_poln.png 2x" 
+alt="МИКО: мастер первоначальной настройки полная настройка"
+/></p>
+<ol start="3">
+<li>В поле <strong>Сервер публикации</strong> введите адрес сервера IIS или Apache, на котором у вас опубликована данная база. <br>
+В поле <strong>Имя публикации</strong> введите имя, под которым опубликована данная база (его можно посмотреть в конфигураторе <strong>Администрирование → Публикация на веб-сервере</strong>, поле <strong>Имя</strong>). <br>
+Нажмите <strong>Далее</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/whatsapp/wp_mast_pub.png"
+data-original="/assets/whatsapp/wp_mast_pub.png"
+srcset="/assets/whatsapp/wp_mast_pub_prev.png 1x, /assets/whatsapp/wp_mast_pub.png 2x" 
+alt="МИКО: мастер первоначальной настройки полная настройка"
+/></p>
+<ol start="4">
+<li>Зарегистрируйтесь в системе взаимодействия. Для этого: <br>
+Нажмите <strong>Открыть форму регистрации информационной базы</strong>. <br>
+Введите ваш адрес электронной почты. Оставьте по-умолчанию <strong>Сервер 1С:Диалог</strong>. Нажмите <strong>Зарегистрироваться</strong>. <br>
+Из пришедшего на почту письма скопируйте код и вставьте его в поле <strong>Код регистрации</strong>. <br>
+Нажмите <strong>Зарегистрироваться, Готово</strong>.</li>
+</ol>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/whatsapp/wp_registr_sist_vzaim.gif"
+alt="МИКО: регистрация в системе взаимодействия"
+/></p>
+<ol start="5">
+<li>Установите переключатель типа АТС в соответствии с вашей АТС (в данном примере - это <strong>MikoPBX</strong>). <br>
+Переключатель <strong>Настройка подключения</strong> оставьте в положении <strong>Автоматическая</strong>. <br>
+Нажмите <strong>Далее</strong>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/whatsapp/wp_poln_avt.png"
+data-original="/assets/whatsapp/wp_poln_avt.png"
+srcset="/assets/whatsapp/wp_poln_avt_prev.png 1x, /assets/whatsapp/wp_poln_avt.png 2x" 
+alt="МИКО: мастер первоначальной настройки выбор типа АТС"
+/></p>
+<ol start="6">
 <li>Перейдите в веб-интерфейс АТС. <br>
 Перейдите в <strong>Управление модулями</strong>. <br>
 Найдите модуль <strong>Панель телефонии 4.0 для 1С</strong>. Зайдите в настройки модуля. <br>
@@ -245,16 +287,25 @@ alt="МИКО: смена схемы соединения"
 src="/assets/whatsapp/wp_sm_ch_ats.gif"
 alt="МИКО: смена схемы соединения в 1С"
 /></p>
-<ol start="4">
+<ol start="7">
 <li>В 1С:Предприятие в поле <strong>Данные для автоматической настройки</strong> вставьте скопированный код. <br>
 В поле <strong>Схема подключения</strong> нажмите кнопку выбора и выберите либо способ <strong>1С в облаке, сервер АТС в локальной сети</strong>, либо <strong>1С и АТС расположены в облаке</strong> (один из двух нижних). <br>
 В поле <strong>Веб-сервер 1С</strong> введите адрес сервера IIS или Apache, на котором у вас опубликована данная база. <br>
-В поле <strong>Имя публикации</strong> введите имя, под которым опубликована ваша база (его можно посмотреть в конфигураторе <strong>Администрирование → Публикация на веб-сервере</strong>, поле <strong>Имя</strong>). <br>
+В поле <strong>Имя публикации</strong> введите имя, под которым опубликована ваша база. <br>
 Нажмите кнопку <strong>Настроить</strong>. Дождитесь завершения настройки соединения (около 30 с).</li>
 </ol>
 <p><img class="miko-shadow play-on-hover"  
-src="/assets/whatsapp/wp_sm_ch_1s.gif"
+src="/assets/whatsapp/wp_sm_ch_1s_mast.gif"
 alt="МИКО: смена схемы соединения в 1С"
+/></p>
+<ol start="8">
+<li>На данной странице просто нажмите <strong>Далее</strong>. Телефоны сотрудникам вы уже присваивали <a href="../nastroyka_1c/#%D0%B7%D0%B0%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2-%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%BD%D0%BE%D0%B9-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8">ранее</a>.</li>
+</ol>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/whatsapp/wp_poln_kont_inf.png"
+data-original="/assets/whatsapp/wp_poln_kont_inf.png"
+srcset="/assets/whatsapp/wp_poln_kont_inf_prev.png 1x, /assets/whatsapp/wp_poln_kont_inf.png 2x" 
+alt="МИКО: мастер первоначальной настройки номера телефонов сотрудников"
 /></p>
 <doc-anchor-target id="подключение-whatsapp">
     <h2>
@@ -262,18 +313,17 @@ alt="МИКО: смена схемы соединения в 1С"
         <span>Подключение WhatsApp</span>
     </h2>
 </doc-anchor-target>
-<p>Для работы с мессенджером потребуется телефон, на котором установленно приложение <strong>WhatsApp</strong> или
-<strong>WhatsApp Business</strong>.</p>
 <ol>
-<li>Запустите сеанс 1С:Предприятие и в разделе &quot;<strong>Звонки и сообщения</strong>&quot; откройте <br> &quot;<strong>Настройки мессенджера</strong>&quot;. На экране
-отобразится QR-код.</li>
+<li>Нажмите ссылку <strong>WhatsApp</strong>. Откроется форма <strong>Настройки подключения WhatsApp</strong>.</li>
 </ol>
 <p><img class="miko-shadow play-on-hover"  
-src="/assets/whatsapp/wp_0.gif"
-alt="МИКО: whatsapp отсканировать qr код"
+src="/assets/whatsapp/wp_avt_mast_0.gif"
+alt="МИКО: авторизация whatsapp"
 /></p>
 <ol start="2">
-<li>Откройте приложение <strong>WhatsApp</strong> или <strong>WhatsApp Business</strong> на своём телефоне.</li>
+<li>Для работы с мессенджером потребуется телефон, на котором установленно приложение <strong>WhatsApp</strong> или
+<strong>WhatsApp Business</strong>. <br>
+Откройте приложение WhatsApp или WhatsApp Business на своём телефоне.</li>
 </ol>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
@@ -293,15 +343,33 @@ alt="МИКО: whatsapp отсканировать qr код"
     </div>
 </div>
 <doc-anchor-target id="на-android">
-    <h3>
+    <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#на-android">#</doc-anchor-trigger>
         <span>На Android</span>
-    </h3>
+    </h4>
 </doc-anchor-target>
 <ul>
 <li>Перейдите в <strong>Настройки</strong> WhatsApp. <br></li>
-<li>Нажмите на <strong>Связанные устройства</strong>. <br></li>
-<li>Нажмите <strong>Бета-версия для нескольких устройств</strong> -&gt; Использовать бета-версию.</li>
+<li>Нажмите на <strong>Связанные устройства</strong>.</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Если у вас старая версия приложения, нажмите еще <strong>Бета-версия для нескольких устройств -&gt; Использовать бета-версию</strong>.</p>
+        </div>
+    </div>
+</div>
+<ul>
 <li>Нажмите <strong>Привязка устройства</strong>. <br></li>
 <li>С помощью телефона просканируйте QR-код на своём компьютере. Если время действия QR-кода истекло, нажмите
 &quot;<strong>Обновить код</strong>&quot;.</li>
@@ -311,10 +379,10 @@ src="/assets/whatsapp/whatsapp-webclient-login_1.gif"
 alt="МИКО: whatsapp подключение android"
 /></p>
 <doc-anchor-target id="на-iphone">
-    <h3>
+    <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#на-iphone">#</doc-anchor-trigger>
         <span>На IPhone</span>
-    </h3>
+    </h4>
 </doc-anchor-target>
 <ul>
 <li>Перейдите в &quot;<strong>Настройки</strong>&quot; WhatsApp.</li>
@@ -327,26 +395,74 @@ alt="МИКО: whatsapp подключение android"
 src="/assets/whatsapp/wp_iph.gif"
 alt="МИКО: whatsapp подключение iphone"
 /></p>
+<doc-anchor-target id="инициация-диалога-сотрудниками">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#инициация-диалога-сотрудниками">#</doc-anchor-trigger>
+        <span>Инициация диалога сотрудниками</span>
+    </h2>
+</doc-anchor-target>
+<p>После успешной авторизации, разрешите сотрудникам отправлять сообщения клиенту первыми. По умолчанию этот переключатель выключен, то есть диалог может инициировать только клиент. <br>
+Закройте форму авторизации.</p>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/whatsapp/wp_razr_pisat_perv.gif"
+alt="МИКО: whatsapp разрешить сотрудникам писать первыми клиенту"
+/></p>
+<doc-anchor-target id="завершение-мастера-первоначальной-настройки">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#завершение-мастера-первоначальной-настройки">#</doc-anchor-trigger>
+        <span>Завершение мастера первоначальной настройки</span>
+    </h2>
+</doc-anchor-target>
+<p>После настройки мессенджера нажмите <strong>Далее</strong>, дождитесь заполнения телефонной книги и нажмите <strong>Закрыть</strong>. <br>
+Мастер первоначальной настройки завершен.</p>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/whatsapp/wp_zaversh_mast.gif"
+alt="МИКО: завершение мастера первоначальной настройки"
+/></p>
+<doc-anchor-target id="включение-интеграции-с-мессенджером-в-работу">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#включение-интеграции-с-мессенджером-в-работу">#</doc-anchor-trigger>
+        <span>Включение интеграции с мессенджером в работу</span>
+    </h2>
+</doc-anchor-target>
+<p>Перейдите в <strong>Звонки и сообщения -&gt; Настройки мессенджера</strong>. <br>
+Включите переключатель напротив <strong>WhatsApp</strong>. <br>
+Не закрывайте форму.</p>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/whatsapp/wp_vkl_mess.gif"
+alt="МИКО: whatsapp включение мессенджера в работу"
+/></p>
 <doc-anchor-target id="настройка-синхронизации">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#настройка-синхронизации">#</doc-anchor-trigger>
         <span>Настройка синхронизации</span>
     </h2>
 </doc-anchor-target>
-<p>Для обмена сообщениями с WhatsApp применяется регламентное задание. Убедить, что у информационной базы отключена
-блокировка регламентных заданий и включите опцию &quot;<strong>Синхронизировать сообщения</strong>&quot;.</p>
-<p><img class="miko-shadow img-zoomable"  
-src="/assets/whatsapp/wp_1.png"
-data-original="/assets/whatsapp/wp_1.png"
-srcset="/assets/whatsapp/wp_1_prev.png 1x, /assets/whatsapp/wp_1.png 2x" 
-alt="МИКО: whatsapp синхронизировать сообщения"
-/></p>
-<p>Настройке расписание регламентного задания. Входящие сообщения поступают моментально, время отправки исходящих
-сообщений будет зависеть от установленного расписания.</p>
+<p>Для обмена сообщениями с WhatsApp применяется регламентное задание. <br>
+В группе <strong>Прием и отправка сообщений</strong> включите переключатель <strong>Синхронизировать сообщения</strong>. <br>
+Ниже нажмите на расписание регламентного задания настройте его. <br>
+Входящие сообщения поступают моментально, время отправки исходящих сообщений будет зависеть от установленного расписания.</p>
 <p><img class="miko-shadow play-on-hover"  
-src="/assets/whatsapp/wp_2.gif"
-alt="МИКО: whatsapp расписание регламентного задания"
+src="/assets/whatsapp/wp_sinhr_soobsh.gif"
+alt="МИКО: whatsapp синхронизация сообщений"
 /></p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Убедить, что у информационной базы отключена блокировка регламентных заданий</p>
+        </div>
+    </div>
+</div>
 <doc-anchor-target id="создание-очереди-участников">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#создание-очереди-участников">#</doc-anchor-trigger>
