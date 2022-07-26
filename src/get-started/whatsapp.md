@@ -184,7 +184,7 @@ icon: tools
 новых сообщений.
 
 <img class="miko-shadow play-on-hover"  
-    src="/assets/whatsapp/wp_3.gif"
+    src="/assets/whatsapp/wp_ochered_uch.gif"
    alt="МИКО: whatsapp добавить сотрудников в очередь"
 /> 
 !!! info
@@ -197,7 +197,7 @@ icon: tools
 В данном случае входящие сообщения будут поступать в очередь всем сотрудникам, которые являются участникам очереди.
 
 <img class="miko-shadow play-on-hover"  
-    src="/assets/whatsapp/wp_5.gif"
+    src="/assets/whatsapp/wp_marshr.gif"
    alt="МИКО: whatsapp маршрутизация входящий сообщений"
 /> 
 
@@ -210,7 +210,16 @@ icon: tools
 /> 
 
 ## Прием входящего сообщения
-Теперь сообщения, отправленные в WhatsApp на номер, к которому вы привязывали панель телефонии в пункте [Подключение WhatsApp](#подключение-whatsapp) будут отображаться у сотрудников, которых вы сделали участниками очереди в предыдущем пункте. 
+Теперь сообщения, отправленные в WhatsApp на номер, к которому вы привязывали панель телефонии в пункте [Подключение WhatsApp](#подключение-whatsapp) будут отображаться у сотрудников, которых вы сделали [участниками очереди](#создание-очереди-участников). 
+
+Клиент пишет сообщение
+
+<img class="miko-shadow play-on-hover"  
+    src="/assets/whatsapp/wp_otpr_sbsh.gif"
+    alt="МИКО: whatsapp прием входящего сообщения"
+/> 
+
+Сотрудники получают его
 
 <img class="miko-shadow play-on-hover"  
     src="/assets/whatsapp/wp_vh.gif"
