@@ -9,4 +9,4 @@ order: -1
 |----------------------------------|-----------------------------------------------------------------------------------------------------|
 | [MikoPBX](/get-started/mikopbx)  | Бесплатная АТС MikoPBX - собственная разработка МИКО (рекомендована для работы с панелью телефонии) |
 | [VoxPBX](/get-started/freepbx)   | форк FreePBX версии 14 от компании [**Voxlink**](https://voxlink.ru), asterisk 16                   |
-| [FreePBX](/get-started/freepbx)  | версия 15, Asterisk 16 (поддерживаются SIP, PJSIP внутренние номера)                                |                                                          | 
+| [FreePBX](/get-started/freepbx)  | FreePBX 15 (Asterisk 16), FreePBX 16 (Asterisk 18)                                                  |                                                          | 
