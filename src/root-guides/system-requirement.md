@@ -9,7 +9,7 @@ order: -3
 **Поддерживаемые типы АТС:**
 * MikoPBX - бесплатная АТС, собственная разработка МИКО (рекомендована для работы с панелью телефонии).
 * VoxPBX - форк FreePBX версии 14 от компании [**Voxlink**](https://voxlink.ru), asterisk 16.
-* FreePBX: FreePBX 15 (Asterisk 16), FreePBX 16 (Asterisk 18).   
+* FreePBX: FreePBX 15 (Asterisk 16), FreePBX 16 (Asterisk 18).  
 
 ## Требования к 1C:Предприятие
 * Платформа 1C:Предприятие 8.3.17 и выше
