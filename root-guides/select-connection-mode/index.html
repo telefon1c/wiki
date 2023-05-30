@@ -10,10 +10,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.734878113216">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.0.738752818350">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 2.4.0">
+    <meta name="generator" content="Retype 3.0.0">
 
     <!-- Primary Meta Tags -->
     <title>Выбор режима соединения | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
@@ -37,11 +37,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.734878113216" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.0.738752818350" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.734878113216" data-turbo-eval="false" defer></script>
-    <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.734878113216" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.0.738752818350" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.0.738752818350" data-turbo-eval="false" defer></script>
 
     <link href="/assets/css/custom.css" rel="stylesheet" />
 
@@ -198,8 +198,8 @@
             <div class="grow min-w-0 dark:bg-dark-850">
                 <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
                 <div class="flex">
-                    <div class="grow min-w-0 px-6 md:px-16">
-                        <main class="relative pt-6 pb-16">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
                             <div class="docs-markdown" id="docs-content">
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
@@ -244,7 +244,7 @@ alt="МИКО: канал передачи событий"
 Данный способ невозможно использовать в веб-клиенте.</li>
 <li>Способ <strong>веб-сервис</strong> означает, что АТС будет обращаться к веб-сервису 1С для передачи данных о звонках и текущих соединениях. <br>
 Для этого веб-сервис должен быть опубликован и АТС должна иметь к нему доступ (АТС и сервер 1С должны быть в одной сети или у веб-сервиса должен быть настроен белый IP-адрес, или на маршрутизаторе настроен проброс портов от белого IP-адреса к хосту с опубликованным веб-сервисом). <br></li>
-<li>Способ <strong>Long-polling</strong> означает, что сервер 1С подключается к АТС и устанавливает постоянное соединение (в обе стороны <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.72 21.78a.75.75 0 001.06-1.06L5.56 17.5h14.69a.75.75 0 000-1.5H5.56l3.22-3.22a.75.75 0 10-1.06-1.06l-4.5 4.5a.75.75 0 000 1.06l4.5 4.5zm8.56-9.5a.75.75 0 11-1.06-1.06L18.44 8H3.75a.75.75 0 010-1.5h14.69l-3.22-3.22a.75.75 0 011.06-1.06l4.5 4.5a.75.75 0 010 1.06l-4.5 4.5z"/></g></g></svg>). <br> По нему будут АТС будет передавать события о звонках. АТС должна быть доступна серверу 1С (АТС и сервер 1С должны быть в одной сети или АТС должна иметь белый IP-адрес, или настроен проброс портов от белого IP-адреса к IP-адресу АТС). <br>
+<li>Способ <strong>Long-polling</strong> означает, что сервер 1С подключается к АТС и устанавливает постоянное соединение (в обе стороны <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.72 21.78a.75.75 0 0 0 1.06-1.06L5.56 17.5h14.69a.75.75 0 0 0 0-1.5H5.56l3.22-3.22a.75.75 0 1 0-1.06-1.06l-4.5 4.5a.75.75 0 0 0 0 1.06l4.5 4.5Zm8.56-9.5a.75.75 0 1 1-1.06-1.06L18.44 8H3.75a.75.75 0 0 1 0-1.5h14.69l-3.22-3.22a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5Z"/></g></g></svg>). <br> По нему будут АТС будет передавать события о звонках. АТС должна быть доступна серверу 1С (АТС и сервер 1С должны быть в одной сети или АТС должна иметь белый IP-адрес, или настроен проброс портов от белого IP-адреса к IP-адресу АТС). <br>
 Для данного способа обязательным условием является выполнение регламентного задания <strong>Онлайн обмен контактными данными</strong>.</li>
 </ul>
 <p><strong>Канал передачи контактных данных</strong> отвечает за то, каким способом будут передаваться данные о клиенте (наименование, контактное лицо) от сервера 1С до АТС. <br>
