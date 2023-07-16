@@ -1,5 +1,5 @@
 ---
-label: Подключение мессенджера Telegram к 1С
+label: Подключение мессенджера Telegram к 1С через бота
 order: -1
 icon: paper-airplane
 ---
