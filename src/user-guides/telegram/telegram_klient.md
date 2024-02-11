@@ -29,7 +29,7 @@ icon: paper-airplane
 В приложение **Телеграмм** придет код подтверждения.  
 
 <img class="miko-shadow"  
-    src="/assets/user-guides/telegram/telegram_klient/tg_integr_podkluch_0.jpg"
+    src="/assets/user-guides/telegram/telegram_klient/tg_integr_podkluch_0_1.jpg"
     alt="МИКО: код подтверждения подключения телеграмм"
 />
 
@@ -45,7 +45,7 @@ icon: paper-airplane
 В приложении **Телеграмм** разрешите доступ к вашим чатам.  
 
 <img class="miko-shadow"  
-    src="/assets/user-guides/telegram/telegram_klient/tg_integr_podkluch_1_0.jpg"
+    src="/assets/user-guides/telegram/telegram_klient/tg_integr_podkluch_1_0_0.jpg"
     alt="МИКО: разрешение доступа к чатам"
 />
 
