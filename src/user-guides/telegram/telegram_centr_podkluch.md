@@ -21,14 +21,14 @@ icon: paper-airplane
 Откройте предложенную ссылку приложением **Телеграмм**.
 
 <img class="miko-shadow"  
-    src="/assets/user-guides/telegram/telegram_centr/tg_centr_0_1.jpg"
+    src="/assets/user-guides/telegram/telegram_centr/tg_centr_0_1_0.jpg"
     alt="МИКО: открытие ссылки в телеграмме"
 />
 
 В открывшемся чате оправьте сообщение `/register`.
 
 <img class="miko-shadow"  
-    src="/assets/user-guides/telegram/telegram_centr/tg_centr_1.jpg"
+    src="/assets/user-guides/telegram/telegram_centr/tg_centr_1_0.jpg"
     alt="МИКО: открытие ссылки в телеграмме"
 />
 
@@ -52,7 +52,7 @@ icon: paper-airplane
 Ему придет сообщение о принятии его заявки.
 
 <img class="miko-shadow"  
-    src="/assets/user-guides/telegram/telegram_centr/tg_centr_3.png"
+    src="/assets/user-guides/telegram/telegram_centr/tg_centr_3_0.png"
     alt="МИКО: подключение сотрудника к телеграмм центру"
 />
 
@@ -67,7 +67,7 @@ icon: paper-airplane
 Сотруднику в чате придет сообщение о подтверждении заявки.
 
 <img class="miko-shadow"  
-    src="/assets/user-guides/telegram/telegram_centr/tg_centr_4.png"
+    src="/assets/user-guides/telegram/telegram_centr/tg_centr_4_0.png"
     alt="МИКО: подключение сотрудника к телеграмм центру"
 />
 
