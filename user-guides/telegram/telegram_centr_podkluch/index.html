@@ -10,7 +10,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.760902666885">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.760995423630">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -37,11 +37,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../resources/css/retype.css?v=3.5.0.760902666885" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.760995423630" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.760902666885" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.760995423630" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.760902666885" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.760995423630" data-turbo-eval="false" defer></script>
 
     <link href="/assets/css/custom.css" rel="stylesheet" />
 
@@ -242,6 +242,12 @@
         <span>Подключение Telegram центра</span>
     </h1>
 </doc-anchor-target>
+<doc-anchor-target id="подключение-рабочего-аккаунта-телеграм-к-телеграмм-центру">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#подключение-рабочего-аккаунта-телеграм-к-телеграмм-центру">#</doc-anchor-trigger>
+        <span>Подключение рабочего аккаунта телеграм к телеграмм центру</span>
+    </h2>
+</doc-anchor-target>
 <p>Для подключения телеграмм-центра вам нужно, чтобы у вас мессенджер телеграм был подключен к 1С посредством телеграм-клиента. Сделать это можно по <a href="../telegram_klient/">инструкции</a>.<br />
 ерейдите в <strong>Звонки и сообщения</strong> -&gt; <strong>Telegram центр</strong>.<br>
 В окне приветствия нажмите <strong>Продолжить.</strong> <br>
@@ -268,6 +274,49 @@
 src="/assets/user-guides/telegram/telegram_centr/podkluch_telegram_centra_0.gif"
 alt="МИКО: подключение телеграм центра"
 /></p>
+<p>Откройте предложенную ссылку приложением <strong>Телеграмм</strong>.</p>
+<p><img class="miko-shadow"  
+src="/assets/user-guides/telegram/telegram_centr/tg_centr_0_1.jpg"
+alt="МИКО: открытие ссылки в телеграмме"
+/></p>
+<p>В открывшемся чате оправьте сообщение <code v-pre>/register</code>.</p>
+<p><img class="miko-shadow"  
+src="/assets/user-guides/telegram/telegram_centr/tg_centr_1.jpg"
+alt="МИКО: открытие ссылки в телеграмме"
+/></p>
+<p>В форме телеграм центра 1С появится сообщение <strong>Подключение завершено</strong>. <br>
+Нажмите <strong>Продолжить</strong>.</p>
+<p><img class="miko-shadow"  
+src="/assets/user-guides/telegram/telegram_centr/tg_centr_2_0.png"
+alt="МИКО: завершение подключения к телеграмм центру"
+/></p>
+<p>Теперь к телеграмм центру нужно подключить сотрудников, которые будут общаться с клиентами посредством своих личных телеграмм аккаунтов. <br>
+Сделать это можно двумя способами, в зависимости от удаленности данных сотрудников от технического специалиста, выполняющего данную настройку. <br></p>
+<p><strong>Способ первый.</strong> Когда сотруднику не составит труда подойти к вашему рабочему месту.
+Пригласите сотрудника к себе со своим личным телефоном, на котором сотрудник использует свой телеграмм акккаунт. <br>
+В открытой у вас форме телегамм центра, ему также нужно отсканировать QR-код, перейти по ссылке, используюя свой телеграмм аккаунт и в открывшемся чате отправить сообщение <code v-pre>/register</code>. <br>
+Ему придет сообщение о принятии его заявки.</p>
+<p><img class="miko-shadow"  
+src="/assets/user-guides/telegram/telegram_centr/tg_centr_3.png"
+alt="МИКО: подключение сотрудника к телеграмм центру"
+/></p>
+<p>В форме телеграми центра в группе <strong>ПОЛЬЗОВАТЕЛИ ТELEGRAM</strong>, появится ожидающий авторизации телеграмм аккаунт данного сотрудника. <br>
+Нажмите на данную ссылку и выберите для данного аккаунта соответствующего пользователя информационной базы. <br></p>
+<p><img class="miko-shadow play-on-hover"  
+src="/assets/user-guides/telegram/telegram_centr/podkluch_telegram_centra_1.gif"
+alt="МИКО: подключение телеграм центра"
+/></p>
+<p>Сотруднику в чате придет сообщение о подтверждении заявки.</p>
+<p><img class="miko-shadow"  
+src="/assets/user-guides/telegram/telegram_centr/tg_centr_4.png"
+alt="МИКО: подключение сотрудника к телеграмм центру"
+/></p>
+<p><strong>Способ второй.</strong> Когда сотруднику затруднительно подойти к вашему рабочему месту. <br>
+В 1С Ему нужно перейти в <strong>Звонки и сообщения</strong> -&gt; <strong>Telegram центр</strong>, и в открывшейся форме отсканировать отсканировать QR-код.<br>
+Затем также перейти по ссылке, используюя свой телеграмм аккаунт, и в открывшемся чате отправить сообщение <code v-pre>/register</code>. <br>
+У вас могут несколько сотрудников одновременно отправить заявки на подключение. Для того чтобы вам понять, какой телеграмм аккаунт какому сотруднику принадлежит в присланном сотруднику сообщении о принятии заявки содержится номер заявки. <br>
+Спросите его номер заявки и из списка аккаунтов ожидающих авторизации выберите аккаунт с таким номером заявки. <br>
+Данный номер отображается у вас в форме выбора пользователя, а также в форме списка пользователей телеграмм центра в самом последнем поле <strong>Идентификатор пользователя</strong>.</p>
 
                                 
                                 <!-- Required only on API pages -->
