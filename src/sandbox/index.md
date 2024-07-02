@@ -11,7 +11,7 @@ icon: home
 
 
 <img
-class="miko-shadow"
+class="miko-shadow img-zoomable"
 src="/assets/sandbox/index_tg_center_770x250.png"
 data-original="/assets/sandbox/index_tg_center_770x250.png"
 />
