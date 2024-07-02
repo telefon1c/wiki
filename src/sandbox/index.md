@@ -7,6 +7,16 @@ icon: home
 [Панель телефонии](https://telefon.miko.ru) - это комплексное программное решение, объединяющее телефонию и мессенджер
 с клиентской базой 1С.
 
+Новая картинка Юля
+
+
+<img
+class="miko-shadow"
+src="/assets/sandbox/index_tg_center_770x250.png"
+data-original="/assets/sandbox/index_tg_center_770x250.png"
+/>
+
+
 Картинка Максим
 ![720x411](../assets/sandbox/previewLOWRES.png)
 
