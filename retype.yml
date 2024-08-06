@@ -13,9 +13,6 @@ branding:
   label: wiki
 
 links:
-  - text: CRM
-    link: https://crm.miko.ru
-    target: blank
   - text: MikoPBX
     link: https://www.mikopbx.ru
     target: blank
