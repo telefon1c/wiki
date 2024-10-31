@@ -6,10 +6,10 @@ order: -2
 # Встраивание расширения телефонии в информационную базу 1С:Предприятие
 
 Встраивание расширения телефонии в УНФ, АТС MikoPBX в Яндекс Облаке
-[!embed](https://www.youtube.com/watch?v=TyMqBHfwM5M)
+[!embed](https://rutube.ru/play/embed/e483a63e3ebb1bfd0bd8631b6d14b4a7/)
 
 Встраивание расширения телефонии в УНФ, АТС FreePBX на виртуальной машине vSphere 
-[!embed](https://www.youtube.com/watch?v=GFYMEBzW6WI)
+[!embed](https://rutube.ru/play/embed/456bc82e7e61b6147434f1661848eb1f/)
 
 ### Поддерживаемые конфигурации
 В настоящее время поддерживаются следующие конфигурации:
