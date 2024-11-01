@@ -9,7 +9,7 @@ icon: home
 
   <img class="miko-shadow img-zoomable" data-original="/assets/index/panel-miko2x.png"
     srcset="/assets/index/panel-miko.png 1x, /assets/index/panel-miko2x.png 2x"
-    src="/assets/index/panel-miko.png" alt="МИКО: Панель телефонии 4"/>
+    src="/assets/index/panel-miko.png" alt="МИКО: Панель телефонии для 1С 4"/>
 
 
 
