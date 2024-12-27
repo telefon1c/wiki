@@ -70,4 +70,18 @@ icon: clock
 ## Синхронизировать сообщения
 Наименование в списке регламентных и фоновых заданий раздела "Администрирование" - **Мессенджер: Синхронизация сообщений**. <br>
 Включает/отключает обмен сообщениями между системой взаимодействия 1С и сервисом whatsapp. Входящие сообщения поступают моментально, время отправки исходящих сообщений будет зависеть от установленного расписания регламентного задания. <br>
-Стандартное расписание: [!badge variant="info" text=" один раз в день."] Рекомендуется устанавливать интервал **не более 60 с**.
+Стандартное расписание: [!badge variant="info" text=" каждый день; с 8:00:00 по 21:00:00 каждые 15 секунд."] Рекомендуется устанавливать интервал **не более 60 с**.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/root-guides/reglam_zadan/reglam_zadan_1.png"
+data-original="/assets/root-guides/reglam_zadan/reglam_zadan_1.png"
+srcset="/assets/root-guides/reglam_zadan/reglam_zadan_1.png 1x, /assets/root-guides/reglam_zadan/reglam_zadan_1.png 2x"
+alt="МИКО: Регламентные задания подсистемы телефонии. Синхронизация сообщений"
+/> 
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/root-guides/reglam_zadan/reglam_zadan_2.png"
+data-original="/assets/root-guides/reglam_zadan/reglam_zadan_2.png"
+srcset="/assets/root-guides/reglam_zadan/reglam_zadan_2.png 1x, /assets/root-guides/reglam_zadan/reglam_zadan_2.png 2x"
+alt="МИКО: Регламентные задания подсистемы телефонии. Синхронизация сообщений"
+/> 
