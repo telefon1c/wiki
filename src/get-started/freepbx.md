@@ -4,6 +4,10 @@ label: Интеграция с FreePBX
 icon: tools
 order: -2
 ---
+<style>
+word-wrap: break-word;
+overflow-wrap: break-word;
+</style>
 
 # Интеграция с FreePBX
 
@@ -36,10 +40,6 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
     alt="МИКО: FreePBX установка модуля панель телефонии"
 /> 
 
-!!! info Если вы хотите откатиться или установить конкретную версию модуля
-Для этого укажите эту версию вместо слова **latest** в названии файла, например: <br> 
-`https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/14.0.0.71.tgz`
-!!!
 
 5. Дождитесь загрузки модуля на АТС, затем включите его.
 
@@ -106,3 +106,8 @@ https://releases.mikopbx.com/releases/v1/freepbx/getModuleFile/pt1coutpanel/late
 Перейдите к настройке в 1С:Предприятие.
 
 [!ref Настройка 1С](/get-started/nastroyka_1c)
+
+!!! info Если вы хотите откатиться или установить конкретную версию модуля
+Для этого укажите эту версию вместо слова **latest** в названии файла, например:
+`https://releases.mikopbx.com/releases/`<wbr>`v1/freepbx/getModuleFile/pt1coutpanel/14.0.0.71.tgz`
+!!!
