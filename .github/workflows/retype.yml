@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   publish:
@@ -11,19 +11,13 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
+    permissions:
+      contents: write
 
-      - uses: retypeapp/action-build@v3.5.0
-        with:
-          license: ${{ secrets.RETYPE_SECRET }}
-#      - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/head.min.js > ${RETYPE_OUTPUT_PATH}/resources/js/retype-new.js
-#      - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/google-tag-manager.js >> ${RETYPE_OUTPUT_PATH}/resources/js/retype-new.js
-#      - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/zooming.js >> ${RETYPE_OUTPUT_PATH}/resources/js/retype-new.js
-#      - run: cat ${RETYPE_OUTPUT_PATH}/resources/js/retype.js >> ${RETYPE_OUTPUT_PATH}/resources/js/retype-new.js
-#      - run: mv ${RETYPE_OUTPUT_PATH}/resources/js/retype-new.js ${RETYPE_OUTPUT_PATH}/resources/js/retype.js
-#      - run: cat ${RETYPE_OUTPUT_PATH}/assets/js/custom.js >> ${RETYPE_OUTPUT_PATH}/resources/js/lunr.js
-#      - run: cat ${RETYPE_OUTPUT_PATH}/assets/css/custom.css >> ${RETYPE_OUTPUT_PATH}/resources/css/retype.css
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: retypeapp/action-build@latest
 
       - uses: retypeapp/action-github-pages@latest
         with:
