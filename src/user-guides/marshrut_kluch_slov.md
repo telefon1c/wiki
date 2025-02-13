@@ -1,6 +1,6 @@
 ---
 label: Маршрутизация сообщений
-order: -4
+order: -6
 icon: paper-airplane
 ---
 
