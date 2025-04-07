@@ -12,7 +12,7 @@ order: -1
 Ключ присваивается клиенту единожды и сохраняется за ним. У клиента не может быть два и более лицензионных ключей.  
 Если у вас АТС **MikoPBX** регистрация выполняется <a href='/get-started/mikopbx#регистрация-в-marketplace' target="_blank">таким образом.</a>  
 Если у вас АТС **FreePBX или VoxPBX** регистрация выполняется <a href='/get-started/freepbx#получение-лицензионного-ключа' target="_blank">таким образом.</a>  
-Если у вас АТС **Mango** пройдите регистрацию по инструкции ниже.  
+<!--Если у вас АТС **Mango** пройдите регистрацию по инструкции ниже.
 
 ## Регистрация клиента на при работе с АТС Mango
 ### Если у вас нет лицензионного ключа.
@@ -74,4 +74,4 @@ http://127.0.0.1:8222/license
     data-original="/assets/registration/registraciya_mango_2.png"
     srcset="/assets/registration/registraciya_mango_2_preview.png 1x, /assets/registration/registraciya_mango_2.png 2x" 
     alt="МИКО: Регистрация MikoPBX при использовании ВАТС Манго"
-/>  
+/>-->
