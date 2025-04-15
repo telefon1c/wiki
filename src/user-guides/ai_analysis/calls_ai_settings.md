@@ -22,6 +22,13 @@ icon: paper-airplane
 - YandexGPT Lite — подходит для повседневных задач.
 - YandexGPT Pro — предназначена для более сложного анализа, требующего логики и рассуждений.
 
+<img class="miko-shadow img-zoomable"  
+src="/assets/user-guides/ai_analysis/calls_ai_settings_1.png"
+data-original="/assets/user-guides/ai_analysis/calls_ai_settings_1.png"
+srcset="/assets/user-guides/ai_analysis/calls_ai_settings_1.png 1x, /assets/user-guides/ai_analysis/calls_ai_settings_1.png 2x"
+alt="МИКО: AI анализ звонков в 1С"
+/>
+
 ### Настройки промпта и дополнительных параметров для создания запроса
 
 Укажите **Промпт** (текст запроса для искусственного интеллекта), который будет использоваться для анализа расшифровок разговоров.
@@ -64,3 +71,10 @@ icon: paper-airplane
 Стандартное расписание: [!badge variant="info" text=" каждый день, по дням недели [понедельник, вторник, среда, четверг, пятница]; с 9:00:00 по 18:00:00 каждые 300 секунд"]
 
 Регламентное задание для обработки и анализа звонков и чатов является единым, учитывайте это при настройке расписания.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/user-guides/ai_analysis/calls_ai_settings_2.png"
+data-original="/assets/user-guides/ai_analysis/calls_ai_settings_2.png"
+srcset="/assets/user-guides/ai_analysis/calls_ai_settings_2.png 1x, /assets/user-guides/ai_analysis/calls_ai_settings_2.png 2x"
+alt="МИКО: AI анализ звонков в 1С. Настройки регламентных заданий"
+/>
