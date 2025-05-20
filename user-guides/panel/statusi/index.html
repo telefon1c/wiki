@@ -10,7 +10,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.799924169924">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.801048563204">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -18,7 +18,7 @@
     <!-- Primary Meta Tags -->
     <title>Статусы | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии</title>
     <meta name="title" content="Статусы | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta name="description" content="Устанавливаются путем нажатия на аватарку и далее в меню статусов.">
+    <meta name="description" content="В Панели телефонии есть два типа статусов: статусы присутствия пользователей и статусы подключения телефона сотрудника">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.telefon1c.ru/user-guides/panel/statusi/">
@@ -27,21 +27,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.telefon1c.ru/user-guides/panel/statusi/">
     <meta property="og:title" content="Статусы | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="og:description" content="Устанавливаются путем нажатия на аватарку и далее в меню статусов.">
+    <meta property="og:description" content="В Панели телефонии есть два типа статусов: статусы присутствия пользователей и статусы подключения телефона сотрудника">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.telefon1c.ru/user-guides/panel/statusi/">
     <meta property="twitter:title" content="Статусы | docs.telefon1c.ru - МИКО: Интеграция 1С и телефонии">
-    <meta property="twitter:description" content="Устанавливаются путем нажатия на аватарку и далее в меню статусов.">
+    <meta property="twitter:description" content="В Панели телефонии есть два типа статусов: статусы присутствия пользователей и статусы подключения телефона сотрудника">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../resources/css/retype.css?v=3.5.0.799924169924" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.801048563204" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.799924169924" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.801048563204" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.799924169924" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.801048563204" data-turbo-eval="false" defer></script>
 
     <link href="/assets/css/custom.css" rel="stylesheet" />
 
@@ -234,26 +234,62 @@
         <span>Статусы</span>
     </h1>
 </doc-anchor-target>
-<p>Устанавливаются путем нажатия на аватарку и далее в меню статусов.</p>
+<p>В Панели телефонии есть два типа статусов: <strong>статусы присутствия пользователей</strong> и <strong>статусы подключения телефона сотрудника</strong>.</p>
+<p><strong>Онлайн/Офлайн</strong> — это статусы, отражающие доступность телефона сотрудника.<br>
+Статус Офлайн доступен для ручного выбора, но только при работе Панели телефонии в режиме софтфона. При выборе статуса Офлайн сотрудник становится недоступен для звонков.</p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/panel/statusi/statusi_4.png"
+data-original="/assets/panel/statusi/statusi_4.png"
+srcset="/assets/panel/statusi/statusi_4.png 1x, /assets/panel/statusi/statusi_4.png 2x"
+alt="МИКО: Статусы подключения телефона сотрудника во внешней панели"
+/></p>
+<p><strong>Занят</strong> и <strong>Не беспокоить</strong> — это статусы присутствия сотрудника в Панели телефонии.<br>
+Кроме стандартных статусов присутствия можно установить <strong>текстовый статус</strong>, который будет отображаться рядом с основным статусом и виден другим сотрудникам.</p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/panel/statusi/statusi_3.png"
+data-original="/assets/panel/statusi/statusi_3.png"
+srcset="/assets/panel/statusi/statusi_3.png 1x, /assets/panel/statusi/statusi_3.png 2x"
+alt="МИКО: Статусы присутствия пользователей во внешней панели с текстом"
+/></p>
+<p>Таким образом, сотрудник в Панели телефонии может быть либо офлайн, либо онлайн с выбранным статусом присутствия.<br>
+Все статусы, кроме Офлайн, являются информативными и не влияют на доступность телефона.</p>
+<p><img class="miko-shadow img-zoomable"  
+src="/assets/panel/statusi/statusi_5.png"
+data-original="/assets/panel/statusi/statusi_5.png"
+srcset="/assets/panel/statusi/statusi_5.png 1x, /assets/panel/statusi/statusi_5.png 2x"
+alt="МИКО: Отображение статуса сотрудника в списке Сотрудников в Панели телефонии для 1С"
+/></p>
+<doc-anchor-target id="установка-статуса">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#установка-статуса">#</doc-anchor-trigger>
+        <span>Установка статуса</span>
+    </h3>
+</doc-anchor-target>
+<p>Чтобы изменить свой статус в Панели телефонии для 1С, нажмите на иконку профиля и перейдите в меню статусов.</p>
 <p><img class="miko-shadow play-on-hover"  
 src="/assets/panel/statusi/stat_0.gif"
 alt="МИКО: Статусы внешней панели"
 /></p>
-<p>Помимо простых статусов <strong>Онлайн</strong>, <strong>Занят</strong>, <strong>Не беспокоить</strong>, <strong>Офлайн</strong> возможно установить текст.</p>
-<p><img class="miko-shadow play-on-hover"  
-src="/assets/panel/statusi/stat_1.gif"
-alt="МИКО: Статусы внешней панели с текстом"
-/></p>
-<p>Он также будет виден сотрудникам рядом с вашим статусом.</p>
-<p><img class="miko-shadow img-zoomable"  
-src="/assets/panel/statusi/stat_2.png"
-data-original="/assets/panel/statusi/stat_2.png"
-srcset="/assets/panel/statusi/stat_2_prev.png 1x, /assets/panel/statusi/stat_2.png 2x" 
-alt="МИКО: Статусы внешней панели с текстом"
-/></p>
-<p>Все статусы, кроме <strong>Офлайн</strong> носят информативный характер. Статус <strong>Офлайн</strong> доступен для выбора, когда панель работает в режиме софтфона. <br>
-При статусе <strong>Офлайн</strong> снимается регистрация SIP-учетки на АТС. То есть данный сотрудник будет не доступен для звонка.<br />
-Статус <strong>Отошел</strong> автоматически устанавливается у сотрудника, спустя 15 минут бездействия в операционной системе. После наведения мышкой на аватарку сотрудника статус вернется на <strong>Онлайн</strong>.</p>
+<p>Если сотрудник ни разу не запускал Панель телефонии, по умолчанию у него будет отображаться статус <strong>Онлайн</strong>.
+Если Панель телефонии запускалась, отображается либо текущий установленный статус сотрудника, либо <strong>&quot;Был на месте...&quot;</strong>, если сотрудник не проявлял активности.
+При появлении активности за компьютером статус автоматически изменяется с <strong>&quot;Был на месте...&quot;</strong>, на <strong>Онлайн</strong>.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-gray-500 dark:bg-dark-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-gray-500 dark:text-dark-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>В Панели телефонии сотрудника может быть установлен статус <strong>Офлайн</strong>. Это означает что он не принимает звонки, при этом Панель телефонии может быть запущена и сотрудник может принимать сообщения и общаться в чатах.</p>
+        </div>
+    </div>
+</div>
 
                                 
                                 <!-- Required only on API pages -->
