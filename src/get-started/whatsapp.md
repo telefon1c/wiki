@@ -1,4 +1,5 @@
 ---
+visibility: hidden
 label: Интеграция с WhatsApp
 order: -5
 icon: tools
