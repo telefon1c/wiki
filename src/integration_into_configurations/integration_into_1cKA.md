@@ -18,7 +18,7 @@ order: -1
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_1.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_1.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_1.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_1.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Входящий звонок от клиента, номер которого уже есть в базе"
 />
 
 - **При входящем звонке от неизвестного клиента**, в баннере звонка отображается только номер телефона звонящего. При ответе на звонок в 1С: Комплексная автоматизация откроется карточка создания нового клиента в базе. В 1С:КА можно выбрать альтернативный вариант сохранения нового клиента - помощник регистрации нового партнера.
@@ -27,7 +27,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_2.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_2.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_2.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_2.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Входящий звонок от неизвестного клиента"
 />
 
 - **Если клиент уже есть в базе, но звонит с нового номера**, можно привязать этот номер к существующей карточке клиента — как номер компании, добавив в контактную информацию, или как номер сотрудника, присвоив контактному лицу.
@@ -36,7 +36,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_3.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_3.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_3.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_3.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Входящий звонок от клиента, который уже есть в базе, но звонит с нового номера"
 />
 
 ### Исходящие звонки в один клик
@@ -49,14 +49,14 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_4.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_4.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_4.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_4.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Исходящие звонки из карточки Партнера"
 />
 
 <img class="miko-shadow img-zoomable"  
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_5.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_5.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_5.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_5.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Исходящие звонки из карточки Контактного лица"
 />
 
 - **Исходящие звонки из документа Лента** совершаются при нажатии на гиперссылку с номером компании в блоке Контактная информация или номером сотрудника клиента в блоке Контактные лица.
@@ -65,7 +65,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_6.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_6.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_6.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_6.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Исходящие звонки из документа Лента"
 />
 
 - **Исходящие звонки из Заказа клиента** инициируются нажатием кнопки Позвонить в командной панели. При установлении соединения с клиентом система автоматически открывает карточку клиента с полной историей взаимодействий.
@@ -74,7 +74,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_7.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_7.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_7.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_7.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Исходящие звонки из Заказа клиента"
 />
 
 Панель телефонии позволяет совершать и принимать звонки даже при закрытой 1С:Комплексная автоматизация. Если база 1С:КА открыта, то при ответе клиента на звонок откроется карточка клиента со всей историей взаимодействий.
@@ -85,7 +85,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_8.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_8.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_8.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_8.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Исходящий звонок через строку умного поиска в Панели телефонии для 1С"
 />
 
 - **Исходящий звонок из истории звонков в Панели телефонии** совершается путем нажатия на иконку телефонной трубки.
@@ -94,7 +94,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_9.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_9.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_9.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_9.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Исходящий звонок из истории звонков в Панели телефонии для 1С"
 />
 
 - **Ручной ввод номера в Панели телефонии для совершения исходящего вызова** осуществляется через номеронабиратель, поддерживающий вставку скопированного номера, к примеру из электронного письма. Функция позволяет звонить на номера телефонов, которых нет еще в базе 1С:КА. 
@@ -103,7 +103,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_10.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_10.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_10.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_10.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Ручной ввод номера в Панели телефонии для 1С"
 />
 
 ### Перевод звонка на другого сотрудника
@@ -116,7 +116,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_11.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_11.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_11.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_11.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Консультативный перевод звонка по кнопке Перевод в окне активного разговора в Панели телефонии для 1С"
 />
 
 - **Консультативный перевод звонка по кнопке Перевод в списке сотрудников в Панели телефонии**. При клике на кнопку Перевод клиент переводится в режим удержания, а инициатор перевода соединяется с коллегой. После завершения разговора с коллегой система автоматически соединяет клиента с целевым сотрудником без потери установленного соединения.
@@ -125,7 +125,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_12.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_12.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_12.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_12.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Консультативный перевод звонка по кнопке Перевод в списке сотрудников в Панели телефонии для 1С"
 />
 
 - **Консультативный перевод в Ленте в 1С:КА в блоке активного звонка по кнопке Перевод**. При нажатии на кнопку Перевод система отобразит окно со списком доступных сотрудников в 1С, после выбора сотрудника клиент переводится в режим удержания, в это время инициируется соединение с коллегой. По завершении обсуждения с коллегой выполняет автоматическое соединение клиента с целевым оператором, сохраняя сеанса связи без необходимости повторного дозвона.
@@ -134,7 +134,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_13.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_13.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_13.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_13.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Консультативный перевод в Ленте в 1С:КА в блоке активного звонка по кнопке Перевод"
 />
 
 - **Безконсультативный перевод в Панели телефонии по кнопке Перевод в списке сотрудников**. При поступлении входящего звонка сотрудник не снимая трубки, нажимает на кнопку Перевод в списке сотрудников. Система устанавливает соединение клиента с выбранным сотрудником, обеспечивая непрерывность коммуникации. Таким образом при поступлении второго звонка во время активного разговора пользователь может выполнить бесконсультативный перевод нового вызова без прерывания текущего соединения. 
@@ -143,7 +143,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_14.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_14.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_14.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_14.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Безконсультативный перевод в Панели телефонии для 1С по кнопке Перевод в списке сотрудников"
 />
 
 ### Функции супервизора в Панели телефонии для 1С
@@ -158,14 +158,14 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_16.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_16.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_16.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_16.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Функции супервизора в списке сотрудников Панели телефонии для 1С"
 />
 
 <img class="miko-shadow img-zoomable"  
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_15 .png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_15.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_15.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_15.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Функции супервизора в Панели телефонии для 1С"
 />
 
 Подключение к текущему вызову осуществляется автоматически. В процессе разговора возможна смена режима супервизора без прерывания соединения.
@@ -180,7 +180,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_17.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_17.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_17.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_17.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Журнал звонков со всеми вызовами компании"
 />
 
 В 1С:КА для прослушивания и скачивания разговоров, к которым у сотрудника есть доступ, используется встроенный плеер, отображаемый в боковой панели в блоке Записи разговора. 
@@ -189,17 +189,16 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_18.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_18.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_18.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_18.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Прослушивание и скачивание разговоров в Журнале звонков"
 />
 
 В блоке AI анализ в 1С:КА доступен результат аи анализа разговоров, который содержит ключевые моменты диалога. Функционал предназначен для оперативного ознакомления с содержанием звонков без необходимости прослушивания аудиозаписей.
-
 
 <img class="miko-shadow img-zoomable"  
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_19.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_19.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_19.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_19.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : AI анализ звонков в Журнале звонков"
 />
 
 Для получения полной информации о звонке в 1С:Комплексная автоматизация предусмотрена форма Детализация звонка, доступная по гиперссылке Подробнее в блоке Сведения о звонке.
@@ -216,7 +215,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_20.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_20.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_20.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_20.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Детализация звонка"
 />
 
 Журнал звонков в 1С:КА также предоставляет функции по регистрации новых клиентов. При наличии входящего вызова с незарегистрированного номера сотрудник может создать карточку нового клиента при нажатии на кнопку Создать клиента в блоке Сведения о звонке. Все предыдущие звонки с этим номером будут автоматически связаны с этим клиентом.
@@ -225,7 +224,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_21.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_21.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_21.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_21.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Регистрация новых клиентов в Журнале звонков"
 />
 
 В Журнале звонков в 1С:КА доступен механизм фильтрации и поиска, позволяющий быстро находить нужные звонки по разным параметрам. 
@@ -234,7 +233,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_22.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_22.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_22.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_22.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Фильтры и поиск в Журнале звонков"
 />
 
 ## Чаты в 1С:КА. Интеграция 1С:КА с WhatsApp и Telegram
@@ -249,7 +248,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_23.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_23.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_23.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_23.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Отправка первого сообщения клиенту из Карточки клиента 1С"
 />
 
 либо кликнуть по номеру телефона в блоках Контактная информация или Контактные лица и в выпадающем списке меню выбрать пункт Написать в WhatsApp или Написать в Telegram. 
@@ -258,7 +257,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_24.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_24.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_24.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_24.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Отправка первого сообщения клиенту по номеру телефона в блоках Контактная информация или Контактные лица"
 />
 
 Есть возможность инициировать диалог с клиентом из Заказа клиента в 1С:КА, нажав на кнопку Написать в командной панели.
@@ -267,7 +266,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_25.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_25.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_25.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_25.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Отправка первого сообщения клиенту из Заказа клиента в 1С"
 />
 
 В форме отправки сообщений в системе 1С:КА предусмотрена возможность прикрепления вложений (изображения, pdf документ, файл docx). Также доступна функция использования шаблонов сообщений, для этого необходимо воспользоваться гиперссылкой Шаблон и выбрать нужный вариант из предложенного списка.
@@ -282,14 +281,14 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_26.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_26.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_26.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_26.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Чаты WhatsApp и Telegram в журнале Чатов в 1С"
 />
 
 <img class="miko-shadow img-zoomable"  
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_27.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_27.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_27.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_27.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Чаты WhatsApp и Telegram в журнале Чатов в 1С. Открытый чат с клиентом"
 />
 
 - В 1С:КА в Ленте активные диалоги отображаются с кнопкой Открыть для мгновенного перехода к чату и продолжения взаимодействия с клиентом.
@@ -298,7 +297,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_28.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_28.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_28.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_28.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Чаты WhatsApp и Telegram в Ленте"
 />
 
 - В 1С:Комплексная автоматизация при работе с документом Заказ клиента нажатие кнопки Написать открывает форму отправки сообщения, позволяющую начать новый диалог с клиентом или продолжить общение в существующем активном чате WhatsApp или Telegram.
@@ -307,7 +306,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_29.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_29.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_29.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_29.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Чаты WhatsApp и Telegram по кнопке из Заказа клиента"
 />
 
 - В Панели телефонии для 1С во вкладке Чаты. В группе Мои чаты содержатся чаты, где текущий пользователь назначен ответственным. Группа Наблюдаемые включает чаты, в которых текущий пользователь является наблюдателем с возможностью отправки сообщений. Все новые входящие сообщения автоматически распределяются в раздел Очередь.
@@ -316,7 +315,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_30.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_30.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_30.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_30.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Чаты WhatsApp и Telegram в Панели телефонии для 1С во вкладке Чаты"
 />
 
 - При подключении своего Telegram-аккаунта через Telegram-центр 1С:КА сотрудник может отвечать клиентам прямо со своего телефона, что позволяет оперативно отвечать на сообщения, даже если нет доступа к рабочему компьютеру. Все сообщения будут синхронизироваться в 1С: КА.
@@ -325,7 +324,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_31.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_31.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_31.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_31.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Чаты WhatsApp и Telegram в мобильном менеджера"
 />
 
 ### Передача чатов и добавление наблюдателей в чат
@@ -340,7 +339,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_32.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_32.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_32.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_32.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Добавление наблюдателей в чат в 1С"
 />
 
 - В Панели телефонии путем упоминания сотрудника в тексте сообщения. 
@@ -349,7 +348,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_33.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_33.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_33.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_33.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Добавление наблюдателей в чат в Панели телефонии для 1С"
 />
 
 Помимо этого есть возможность сменить ответственного в чате. При передаче чата новый ответственный получает полные права владельца, а предыдущий - теряет доступ, если не был добавлен как наблюдатель. Сделать это можно:
@@ -360,7 +359,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_34.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_34.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_34.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_34.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Смена ответственного в 1С"
 />
 
 - Через кнопку Передать чат в Панели телефонии. 
@@ -369,7 +368,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_35.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_35.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_35.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_35.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Смена ответственного в Панели телефонии для 1С"
 />
 
 ### Отправка вложений и счетов на оплату из 1С в чаты WhatsApp и Telegram 
@@ -380,14 +379,14 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_36.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_36.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_36.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_36.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Отправка и получение вложений через WhatsApp и Telegram в Панели телефонии"
 />
 
 <img class="miko-shadow img-zoomable"  
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_37.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_37.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_37.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_37.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Отправка и получение вложений через WhatsApp и Telegram в 1С"
 />
 
 Также в 1С:Комплексная автоматизация реализована возможность прямой отправки счетов клиенту в WhatsApp и Telegram непосредственно из формы Счета на оплату. Данный функционал позволяет отправлять счета без необходимости дополнительного скачивания или сохранения файлов, документ автоматически формируется и прикрепляется к сообщению клиенту в виде вложения. 
@@ -396,7 +395,7 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_38.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_38.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_38.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_38.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : Отправки счетов клиенту в WhatsApp и Telegram из 1С"
 />
 
 ### AI анализ чатов с клиентами
@@ -407,7 +406,7 @@ AI анализ переписки с клиентом доступен по к�
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_39.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_39.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_39.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_39.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : AI анализ чата по кнопке Получить анализ диалога в карточке чата"
 />
 
 Результат автоматически сохраняется и отображается как в карточке чата, так и в журнале чатов в 1С: КА. Если чат закрыли без предварительного анализа, система сама сформирует его автоматически. Это помогает быстро понять суть общения, не перечитывая всю переписку.  
@@ -416,5 +415,5 @@ alt="МИКО: Автоответ на звонок для аккаунта Tele
 src="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_40.png"
 data-original="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_40.png"
 srcset="/assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_40.png 1x, /assets/integration_into_configurations/integration_into_1cKA/integration_into_1cKA_40.png 2x"
-alt="МИКО: Автоответ на звонок для аккаунта Telegram"
+alt="МИКО в 1С:КА : AI анализ в журнале чатов в 1С"
 />
