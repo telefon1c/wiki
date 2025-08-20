@@ -1,6 +1,6 @@
 ---
 icon: history
-order: -1
+order: -2
 ---
 # Интеграция 1С:Управление торговлей 11 с телефонией и чатами WhatsApp и Telegram
 
