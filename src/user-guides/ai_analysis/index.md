@@ -21,6 +21,13 @@ alt="МИКО: Распознавание речи и AI анализ в 1С"
 
 Для использования Речевой аналитики необходимо пополнить баланс в [личном кабинете системы лицензирования](https://lm.miko.ru/client-cabinet/billingAi/index) по регистрационному номеру вида MIKO-XXXX-XXXX-XXXX-XXXX или купону(лицензии) вида MIKOUPD-XXXX-XXXX-XXXX-XXXX, пополнить можно картой или по счету. Перейти к личному кабинету можно прямо из 1С, нажав на кнопку ![](/assets/journal/customer-creation_0.png) **Пополнить**.
 
+<img class="miko-shadow img-zoomable"  
+src="/assets/user-guides/ai_analysis/ai_analysis_2.png"
+data-original="/assets/user-guides/ai_analysis/ai_analysis_2.png"
+srcset="/assets/user-guides/ai_analysis/ai_analysis_2.png 1x, /assets/user-guides/ai_analysis/ai_analysis_2.png 2x"
+alt="МИКО: Пополнение баланса для распознавания речи и AI анализа из 1С"
+/>
+
 Рекомендуем ориентироваться на таблицу с актуальными тарифами на использование ИИ-моделей — она доступна внутри [личного кабинета на вкладке Цены](https://lm.miko.ru/client-cabinet/billingAi/index) и поможет рассчитать необходимую сумму для пополнения.
 
 !!!secondary Например
