@@ -14,8 +14,8 @@ order: -2
 
 Инструкции по подключению аккаунтов мессенджеров в 1С:
 
-[!ref Как добавить аккаунт WhatsApp](/root-guides/-connecting_messengers/сonnecting_whatsapp)
+[!ref Как добавить аккаунт WhatsApp](/root-guides/connecting_messengers/сonnecting_whatsapp)
 
-[!ref Как подключить Telegram-бота](/root-guides/-connecting_messengers/сonnecting_telegram_bot)
+[!ref Как подключить Telegram-бота](/root-guides/connecting_messengers/сonnecting_telegram_bot)
 
-[!ref Как добавить аккаунт Telegram](/root-guides/-connecting_messengers/сonnecting_telegram)
+[!ref Как добавить аккаунт Telegram](/root-guides/connecting_messengers/сonnecting_telegram)
