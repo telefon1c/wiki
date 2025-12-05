@@ -11,7 +11,7 @@ order: -1
 
 ---
 
-[!embed](https://rutube.ru/play/embed/7b535c91ba15d48317ed93a9ac176df5/)
+[!embed](https://rutube.ru/play/embed/ecb68917a1cc4edc1c0a5393f3061012/)
 
 ### Регистрация в Marketplace
 

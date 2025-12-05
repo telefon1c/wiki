@@ -5,7 +5,7 @@ order: -2
 ---
 # Встраивание расширения в информационную базу 1С:Предприятие
 
-[!embed Встраивание расширения телефонии в УНФ, АТС MikoPBX в Яндекс Облаке](https://rutube.ru/play/embed/e483a63e3ebb1bfd0bd8631b6d14b4a7/)
+[!embed Встраивание расширения телефонии в УНФ, АТС MikoPBX в Яндекс Облаке](https://rutube.ru/play/embed/d60d60ba352966e40b07cf49e159ab5e/)
 
 [!embed Встраивание расширения телефонии в УНФ, АТС FreePBX на виртуальной машине vSphere](https://rutube.ru/play/embed/456bc82e7e61b6147434f1661848eb1f/)
 
