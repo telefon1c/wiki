@@ -5,6 +5,9 @@ order: -1
 ---
 # Подключение MAX бота в 1С
 
+Инструкция по созданию бота в мессенджере MAX доступна по ссылке: 
+[!ref text="Создание чат-бота" target="blank"](https://dev.max.ru/docs/chatbots/bots-create)
+
 Перейдите в раздел **Звонки и сообщения** -> **Мессенджер** -> **Настройки мессенджера**.
 
 <img class="miko-shadow img-zoomable"  
