@@ -27,14 +27,9 @@ jobs:
         with:
           license: ${{ secrets.RETYPE_SECRET }}
 
-      # Copy Retype output to .retype/ for Docker build
+      # Copy Retype output to .retype/ for S3 and Docker
       - name: Copy Retype output
         run: cp -r "$RETYPE_OUTPUT_PATH" .retype
-
-      # Fallback: update GitHub Pages (during migration)
-      - uses: retypeapp/action-github-pages@latest
-        with:
-          update-branch: true
 
       # Upload assets to Yandex Object Storage
       - name: Install s3cmd
@@ -83,3 +78,8 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      # Fallback: update GitHub Pages (during migration, last step — switches branches)
+      - uses: retypeapp/action-github-pages@latest
+        with:
+          update-branch: true
