@@ -11,7 +11,6 @@ jobs:
     with:
       image-name: telefon1c/docs-v4
       s3-prefix: v4
-      enable-github-pages: true
     secrets:
       RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}
       YC_ACCESS_KEY: ${{ secrets.YC_ACCESS_KEY }}
