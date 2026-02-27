@@ -1,6 +1,6 @@
 input: src
 output: .retype
-url: https://docs.telefon1c.ru
+url: https://docs.telefon1c.ru/v4/
 
 start.pro: true
 
