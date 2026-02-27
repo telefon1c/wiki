@@ -81,5 +81,6 @@ jobs:
 
       # Fallback: update GitHub Pages (during migration, last step — switches branches)
       - uses: retypeapp/action-github-pages@latest
+        continue-on-error: true
         with:
           update-branch: true
