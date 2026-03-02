@@ -194,7 +194,7 @@ Get-WmiObject -Class Win32_Product | Where-Object { $_.Name -like '*MIKO CTI*' }
    \\fileserver\Distrib\MikoCTI\MIKO CTI 4.9.241.msi
    ```
 2. Откройте GPO в редакторе и перейдите к разделу **Software installation**
-3. Создайте новый пакет (аналогично разделу <a href='/root-guides/installation_via_GPO/#настройка-software-installation'>Настройка Software Installation</a>)
+3. Создайте новый пакет (аналогично разделу <a href='/v4/root-guides/installation_via_gpo/#настройка-software-installation'>Настройка Software Installation</a>)
 4. Откройте свойства нового пакета → вкладка **Upgrades** 
 5. Нажмите **Добавить** и укажите предыдущий пакет MIKO CTI 4.9.226 
 6. Установите флаг **Required upgrade for existing packages** для принудительного обновления 
