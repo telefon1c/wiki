@@ -43,3 +43,9 @@ integrations:
 
 footer:
   copyright: "&copy; {{ year }} [МИКО](https://www.miko.ru/) . Все права защищены."
+
+backlinks:
+  enabled: false
+
+toc:
+  label: Содержимое
