@@ -5,9 +5,38 @@ order: -2
 ---
 # Встраивание расширения в информационную базу 1С:Предприятие
 
-[!embed Встраивание расширения телефонии в УНФ, АТС MikoPBX в Яндекс Облаке](https://rutube.ru/play/embed/d60d60ba352966e40b07cf49e159ab5e/)
+<div style="width: 100%; max-width: 100%; margin-bottom: 1.5em;">
+  <div style="position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
+    <iframe
+      src="https://vkvideo.ru/video_ext.php?oid=-100268702&id=456239062&hash=a438b44c7c3097e6&hd=3"
+      style="position: absolute; inset: 0; width: 100%; height: 100%;"
+      allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
 
-[!embed Встраивание расширения телефонии в УНФ, АТС FreePBX на виртуальной машине vSphere](https://rutube.ru/play/embed/ff70409a698b084167530d40bee57547/)
+  <div style="margin-top: 8px; font-size: 14px; line-height: 1.4; color: #666; text-align: center;">
+    Встраивание расширения телефонии в УНФ, АТС MikoPBX в Яндекс Облаке
+  </div>
+</div>
+
+
+<div style="width: 100%; max-width: 100%; margin-bottom: 1.5em;">
+  <div style="position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
+    <iframe
+      src="https://vkvideo.ru/video_ext.php?oid=-100268702&id=456239059&hash=6eb1ef588f057239&hd=3"
+      style="position: absolute; inset: 0; width: 100%; height: 100%;"
+      allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div style="margin-top: 8px; font-size: 14px; line-height: 1.4; color: #666; text-align: center;">
+    Встраивание расширения телефонии в УНФ, АТС FreePBX на виртуальной машине vSphere
+  </div>
+</div>
 
 !!!
 Для выполнения действий, описанных в данной инструкции, необходима информационная база, размещенная на сервере 1С:Предприятие.

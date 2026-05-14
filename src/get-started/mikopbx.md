@@ -11,7 +11,21 @@ order: -1
 
 ---
 
-[!embed](https://rutube.ru/play/embed/ecb68917a1cc4edc1c0a5393f3061012/)
+<div style="width: 100%; max-width: 100%; margin-bottom: 1.5em;">
+  <div style="position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
+    <iframe
+      src="https://vkvideo.ru/video_ext.php?oid=-100268702&id=456239060&hash=5544c9514923aea3&hd=3"
+      style="position: absolute; inset: 0; width: 100%; height: 100%;"
+      allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div style="margin-top: 8px; font-size: 14px; line-height: 1.4; color: #666; text-align: center;">
+    Установка и настройка АТС MikoPBX, АТС MikoPBX в Яндекс Облаке
+  </div>
+</div>
 
 ### Регистрация в Marketplace
 
