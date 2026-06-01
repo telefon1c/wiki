@@ -13,3 +13,4 @@ order: -4
 
 ### Диагностика
 #### [Как собрать логи для отладки проблем](/faq/how-to-collect-logs)
+#### [Анализ проблем лицензирования](/faq/licensing-troubleshooting)
