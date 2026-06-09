@@ -1,7 +1,7 @@
 ---
 label: Подключение аккаунта WhatsApp в 1С
 icon: comment-discussion
-order: -4
+order: -5
 ---
 # Подключение мессенджера WhatsApp к 1С
 

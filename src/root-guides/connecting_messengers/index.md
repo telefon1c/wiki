@@ -16,6 +16,8 @@ order: -2
 
 [!ref Как добавить бота MAX](/root-guides/connecting_messengers/сonnecting_max_bot)
 
+[!ref Как добавить аккаунт MAX](/root-guides/connecting_messengers/сonnecting_max)
+
 [!ref Как подключить Telegram-бота](/root-guides/connecting_messengers/сonnecting_telegram_bot)
 
 [!ref Как добавить аккаунт Telegram](/root-guides/connecting_messengers/сonnecting_telegram)

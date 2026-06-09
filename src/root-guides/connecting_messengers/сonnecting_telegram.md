@@ -1,7 +1,7 @@
 ---
 label: Подключение аккаунта Telegram в 1С
 icon: comment-discussion
-order: -3
+order: -4
 ---
 # Подключение мессенджера Telegram к 1С
 

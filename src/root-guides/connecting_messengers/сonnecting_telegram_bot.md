@@ -1,7 +1,7 @@
 ---
 label: Подключение Telegram бота в 1С
 icon: comment-discussion
-order: -2
+order: -3
 ---
 # Подключение Telegram бота в 1С
 
