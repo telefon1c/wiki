@@ -1,59 +1,63 @@
 ---
-order: -10
+order: -8
 ---
 
-# Подслушивание звонков коллег
-!!!
-Недоступно при работе с АТС Mango.
-!!!
-Функция супервизора может быть применена только на сотрудника, то есть внутренний номер.  
-Во внешней панели есть следующие функции супервизора:
-- "**Подслушать**" - вы слушаете разговор сотрудника с другим абонентом (сотрудником или внешним абонентом), при этом они вас не слышат. Он не уведомляются, что их подслушивают.
-- "**Шепнуть**"- вы слушаете разговор сотрудника с другим абонентом (сотрудником или внешним абонентом). То что вы скажете, услышит сотрудник, на которого функция вызвана. Абонент, с которым он разговаривает, вас не услышит.
-- "**Присоединиться к разговору**" - вы подключаетесь к разговору третьим участником. По своей сути образуется конференция из 3 абонентов.
+# Супервизор
 
-Есть возможность установить будут ли доступны сотруднику функции супервизора или нет.
-Делается это в 1С:Предприятие: "**Звонки и сообщения**" -> "**Разрешения в CTI приложении**".
+Настройка функций супервизора для сотрудников выполняется в 1С.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/supervisor/cti_superviz_0.png"
-    data-original="/assets/panel/supervisor/cti_superviz_0.png"
-    srcset="/assets/panel/supervisor/cti_superviz_0_prev.png 1x, /assets/panel/supervisor/cti_superviz_0.png 2x" 
-    alt="МИКО: разрешения супервизора"
+src="/assets/panel/supervisor/cti_superviz_0.png"
+data-original="/assets/panel/supervisor/cti_superviz_0.png"
+srcset="/assets/panel/supervisor/cti_superviz_0_prev.png 1x, /assets/panel/supervisor/cti_superviz_0.png 2x"
+alt="МИКО: разрешения супервизора"
 />
-
-В поле "**Прослушивание**" отметьте флажками сотрудников, которым функции супервизора будут доступны для использования.
 
 <img class="miko-shadow"  
-    src="/assets/panel/supervisor/cti_superviz_1.png"
-    alt="МИКО: разрешения супервизора"
+src="/assets/panel/supervisor/cti_superviz_1.png"
+alt="МИКО: разрешения супервизора"
 />
 
-Чтобы воспользоваться функцией супервизора, нужно во время разговора сотрудника с другим абонентом, на закладке "**Сотрудники**" нажать правой кнопкой мыши на нужного сотрудника и в открывшемся списке выбрать нужную функцию.  
+Функция супервизора позволяет подключаться к активному разговору сотрудника в одном из режимов: прослушать, шепнуть или присоединиться к разговору.
+
+Функция супервизора применяется только к сотруднику, то есть к внутреннему номеру.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/supervisor/cti_superviz_3_1.png"
-    data-original="/assets/panel/supervisor/cti_superviz_3_1.png"
-    srcset="/assets/panel/supervisor/cti_superviz_3_1_prev.png 1x, /assets/panel/supervisor/cti_superviz_3_1.png 2x" 
-    alt="МИКО: внешняя панель, вызов функции супервизора"
-/> 
+src="/assets/panel/supervisor/cti_superviz_3_1.png"
+data-original="/assets/panel/supervisor/cti_superviz_3_1.png"
+srcset="/assets/panel/supervisor/cti_superviz_3_1_prev.png 1x, /assets/panel/supervisor/cti_superviz_3_1.png 2x"
+alt="МИКО: внешняя панель, вызов функции супервизора"
+/>
 
-После активации функции в блоке звонка вы будете видеть сотрудника, на которого вы вызвали функцию и абонента, с которым он разговаривает.  
-
-<img class="miko-shadow img-zoomable"  
-    src="/assets/panel/supervisor/cti_superviz_4_1.png"
-    data-original="/assets/panel/supervisor/cti_superviz_4_1.png"
-    srcset="/assets/panel/supervisor/cti_superviz_4_1_prev.png 1x, /assets/panel/supervisor/cti_superviz_4_1.png 2x" 
-    alt="МИКО: внешняя панель, функция супервизора"
-/> 
-
-По кнопке "**Супервизор**", можно изменить выбранную функцию на другую.
+Во время активного звонка коллеги супервизор выбирает сотрудника из списка Сотрудники и подключается к его разговору в нужном режиме.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/supervisor/cti_superviz_6_1.png"
-    data-original="/assets/panel/supervisor/cti_superviz_6_1.png"
-    srcset="/assets/panel/supervisor/cti_superviz_6_1_prev.png 1x, /assets/panel/supervisor/cti_superviz_6_1.png 2x" 
-    alt="МИКО: внешняя панель, смена функции супервизора"
-/> 
+src="/assets/panel/supervisor/cti_superviz_4_1.png"
+data-original="/assets/panel/supervisor/cti_superviz_4_1.png"
+srcset="/assets/panel/supervisor/cti_superviz_4_1_prev.png 1x, /assets/panel/supervisor/cti_superviz_4_1.png 2x"
+alt="МИКО: внешняя панель, функция супервизора"
+/>
 
-По кнопке "**Завершить**" вы отсоединяетесь от подслушиваемого разговора. 
+Во время активного подключения можно изменить режим супервизора. Для этого нажмите кнопку **Супервизор** и выберите другую функцию.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/supervisor/cti_superviz_6_1.png"
+data-original="/assets/panel/supervisor/cti_superviz_6_1.png"
+srcset="/assets/panel/supervisor/cti_superviz_6_1_prev.png 1x, /assets/panel/supervisor/cti_superviz_6_1.png 2x"
+alt="МИКО: внешняя панель, смена функции супервизора"
+/>
+
+Чтобы отключиться от прослушиваемого или совместного разговора, нажмите кнопку **Завершить**.
+
+## Режимы супервизора
+
+Во внешней панели доступны следующие режимы:
+
+**Подслушать** <br>
+Вы слышите разговор сотрудника с другим абонентом, но не участвуете в нем. Участники разговора вас не слышат. Режим используется для контроля качества, обучения и оценки работы оператора.
+
+**Шепнуть** <br>
+Вы слышите разговор и может говорить с сотрудником, при этом клиент не слышит вас. Режим удобен, когда оператору нужна помощь во время сложного звонка: например, подсказка по скрипту, условиям сделки или дальнейшим действиям.
+
+**Присоединиться к разговору** <br>
+Вы подключаетесь к разговору как полноценный участник. Вас слышат и сотрудник, и клиент. Этот режим используется, когда необходимо быстро взять ситуацию под контроль, помочь в спорном вопросе или продолжить разговор вместе с оператором.
