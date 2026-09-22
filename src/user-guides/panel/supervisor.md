@@ -4,18 +4,13 @@ order: -8
 
 # Супервизор
 
-Настройка функций супервизора для сотрудников выполняется в 1С.
+Настройка функций супервизора для сотрудников выполняется в разделе Звонки и сообщения → Настройки → Дополнительные разрешения в 1С.
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/panel/supervisor/cti_superviz_0.png"
-data-original="/assets/panel/supervisor/cti_superviz_0.png"
-srcset="/assets/panel/supervisor/cti_superviz_0_prev.png 1x, /assets/panel/supervisor/cti_superviz_0.png 2x"
-alt="МИКО: разрешения супервизора"
-/>
-
-<img class="miko-shadow"  
-src="/assets/panel/supervisor/cti_superviz_1.png"
-alt="МИКО: разрешения супервизора"
+src="/assets/panel/supervisor/cti_supervisor_1c_settings.png" loading="lazy"
+data-original="/assets/panel/supervisor/cti_supervisor_1c_settings.png"
+srcset="/assets/panel/supervisor/cti_supervisor_1c_settings.png 1x, /assets/panel/supervisor/cti_supervisor_1c_settings.png 2x"
+alt="Панель телефонии МИКО: Настройка функций супервизора в 1С"
 />
 
 Функция супервизора позволяет подключаться к активному разговору сотрудника в одном из режимов: прослушать, шепнуть или присоединиться к разговору.
@@ -23,28 +18,28 @@ alt="МИКО: разрешения супервизора"
 Функция супервизора применяется только к сотруднику, то есть к внутреннему номеру.
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/panel/supervisor/cti_superviz_3_1.png"
-data-original="/assets/panel/supervisor/cti_superviz_3_1.png"
-srcset="/assets/panel/supervisor/cti_superviz_3_1_prev.png 1x, /assets/panel/supervisor/cti_superviz_3_1.png 2x"
-alt="МИКО: внешняя панель, вызов функции супервизора"
+src="/assets/panel/supervisor/cti_supervisor_select_mode.png" loading="lazy"
+data-original="/assets/panel/supervisor/cti_supervisor_select_mode.png"
+srcset="/assets/panel/supervisor/cti_supervisor_select_mode.png 1x, /assets/panel/supervisor/cti_supervisor_select_mode.png 2x"
+alt="Панель телефонии МИКО: Режимы подключения супервизора к активному разговору"
 />
 
 Во время активного звонка коллеги супервизор выбирает сотрудника из списка Сотрудники и подключается к его разговору в нужном режиме.
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/panel/supervisor/cti_superviz_4_1.png"
-data-original="/assets/panel/supervisor/cti_superviz_4_1.png"
-srcset="/assets/panel/supervisor/cti_superviz_4_1_prev.png 1x, /assets/panel/supervisor/cti_superviz_4_1.png 2x"
-alt="МИКО: внешняя панель, функция супервизора"
+src="/assets/panel/supervisor/cti_supervisor_active_connection.png" loading="lazy"
+data-original="/assets/panel/supervisor/cti_supervisor_active_connection.png"
+srcset="/assets/panel/supervisor/cti_supervisor_active_connection.png 1x, /assets/panel/supervisor/cti_supervisor_active_connection.png 2x"
+alt="Панель телефонии МИКО: Подключение супервизора к разговору коллеги"
 />
 
 Во время активного подключения можно изменить режим супервизора. Для этого нажмите кнопку **Супервизор** и выберите другую функцию.
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/panel/supervisor/cti_superviz_6_1.png"
-data-original="/assets/panel/supervisor/cti_superviz_6_1.png"
-srcset="/assets/panel/supervisor/cti_superviz_6_1_prev.png 1x, /assets/panel/supervisor/cti_superviz_6_1.png 2x"
-alt="МИКО: внешняя панель, смена функции супервизора"
+src="/assets/panel/supervisor/cti_supervisor_change_mode.png" loading="lazy"
+data-original="/assets/panel/supervisor/cti_supervisor_change_mode.png"
+srcset="/assets/panel/supervisor/cti_supervisor_change_mode.png 1x, /assets/panel/supervisor/cti_supervisor_change_mode.png 2x"
+alt="Панель телефонии МИКО: Изменение режима супервизора во время активного подключения"
 />
 
 Чтобы отключиться от прослушиваемого или совместного разговора, нажмите кнопку **Завершить**.

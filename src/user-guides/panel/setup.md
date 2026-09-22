@@ -5,21 +5,14 @@ order: -1
 # Персональные настройки
 Раздел **Настройки** позволяет настроить режим работы панели телефонии, параметры SIP-подключения, аудиоустройства, внешний вид приложения, уведомления и поведение при входящих вызовах.
 
-<img class="miko-shadow img-zoomable"  
-    src="/assets/panel/setup/nastr_0.png"
-    data-original="/assets/panel/setup/nastr_0.png"
-    srcset="/assets/panel/setup/nastr_0_prev.png 1x, /assets/panel/setup/nastr_0.png 2x" 
-    alt="МИКО: настройки внешней панели"
-/> 
-
 ## Режимы работы
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/setup/nastr_1.png"
-    data-original="/assets/panel/setup/nastr_1.png"
-    srcset="/assets/panel/setup/nastr_1_prev.png 1x, /assets/panel/setup/nastr_1.png 2x" 
-    alt="МИКО: настройки внешней панели, режим работы"
-/> 
+src="/assets/panel/setup/cti_setup_operating_modes.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_operating_modes.png"
+srcset="/assets/panel/setup/cti_setup_operating_modes.png 1x, /assets/panel/setup/cti_setup_operating_modes.png 2x"
+alt="Панель телефонии МИКО: Настройки Режимы работы"
+/>
 
 Пользователь может выбрать один из **режимов работы со звонками**:
 - **Настольный телефон** используется для управления аппаратным телефоном. В этом режиме звонки выполняются через подключенный телефонный аппарат, а панель телефонии служит интерфейсом для управления вызовами.
@@ -32,11 +25,11 @@ order: -1
 ## SIP аккаунт
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/setup/cti_nastr_2.png"
-    data-original="/assets/panel/setup/cti_nastr_2.png"
-    srcset="/assets/panel/setup/cti_nastr_2_prev.png 1x, /assets/panel/setup/cti_nastr_2.png 2x"
-    alt="МИКО: настройки внешней панели, SIP аккаунт"
-/> 
+src="/assets/panel/setup/cti_setup_sip_account.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_sip_account.png"
+srcset="/assets/panel/setup/cti_setup_sip_account.png 1x, /assets/panel/setup/cti_setup_sip_account.png 2x"
+alt="Панель телефонии МИКО: Настройки SIP аккаунт"
+/>
 
 На этой вкладке настраивается подключение софтфона к телефонии.
 
@@ -51,17 +44,24 @@ order: -1
 ## Аудио устройства  
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/setup/cti_nastr_3.png"
-    data-original="/assets/panel/setup/cti_nastr_3.png"
-    srcset="/assets/panel/setup/cti_nastr_3_prev.png 1x, /assets/panel/setup/cti_nastr_3.png 2x"   
-    alt="МИКО: настройки внешней панели, аудио устройства"
-/> 
+src="/assets/panel/setup/cti_setup_audio_devices.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_audio_devices.png"
+srcset="/assets/panel/setup/cti_setup_audio_devices.png 1x, /assets/panel/setup/cti_setup_audio_devices.png 2x"
+alt="Панель телефонии МИКО: Настройки Аудио устройства"
+/>
 
 В разделе **Аудио устройства** выбираются микрофон, наушники и устройство звонка. Можно использовать системные устройства по умолчанию или указать отдельные устройства для разговора и воспроизведения рингтона.
 
 Доступна настройка громкости, тест динамиков и эхо-тест для проверки качества звука. Дополнительно можно включить VAD и эхоподавление для улучшения качества разговора и снижения фоновых шумов.
 
 ## Разрешения
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/setup/cti_setup_permissions_1.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_permissions_1.png"
+srcset="/assets/panel/setup/cti_setup_permissions_1.png 1x, /assets/panel/setup/cti_setup_permissions_1.png 2x"
+alt="Панель телефонии МИКО: Настройки Разрешения"
+/>
 
 В разделе **Разрешения** можно проверить доступ приложения к микрофону и отправке уведомлений.
 
@@ -70,29 +70,37 @@ order: -1
 
 Если доступ запрещен, нажмите кнопку Открыть настройки ОС и разрешите использование микрофона в системных настройках устройства.
 
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/setup/cti_setup_permissions_2.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_permissions_2.png"
+srcset="/assets/panel/setup/cti_setup_permissions_2.png 1x, /assets/panel/setup/cti_setup_permissions_2.png 2x"
+alt="Панель телефонии МИКО: Настройки Разрешения доступ к микрофону"
+/>
+
 **Уведомления** <br>
 Чтобы проверить, есть ли у приложения доступ к отправке уведомлений, нажмите кнопку Отправить тестовое уведомление. Если тестовое уведомление не появилось, проверьте разрешение на отправку уведомлений для приложения в системных настройках устройства.
 
 ## Оформление  
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/setup/cti_nastr_4.png"
-    data-original="/assets/panel/setup/cti_nastr_4.png"
-    srcset="/assets/panel/setup/cti_nastr_4_prev.png 1x, /assets/panel/setup/cti_nastr_4.png 2x"   
-    alt="МИКО: настройки внешней панели, оформление"
-/> 
+src="/assets/panel/setup/cti_setup_visual.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_visual.png"
+srcset="/assets/panel/setup/cti_setup_visual.png 1x, /assets/panel/setup/cti_setup_visual.png 2x"
+alt="Панель телефонии МИКО: Настройки Оформление"
+/>
 
 В настройках оформления выбирается язык интерфейса: русский или английский.
 
 Также пользователь может выбрать фоновую тему приложения.
 
 ## Поведение
+
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/setup/cti_nastr_5.png"
-    data-original="/assets/panel/setup/cti_nastr_5.png"
-    srcset="/assets/panel/setup/cti_nastr_5_prev.png 1x, /assets/panel/setup/cti_nastr_5.png 2x" 
-    alt="МИКО: настройки внешней панели, поведение"
-/> 
+src="/assets/panel/setup/cti_setup_behavior.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_behavior.png"
+srcset="/assets/panel/setup/cti_setup_behavior.png 1x, /assets/panel/setup/cti_setup_behavior.png 2x"
+alt="Панель телефонии МИКО: Настройки Поведение"
+/>
 
 Раздел управляет тем, как приложение ведет себя при запуске, закрытии и работе с окнами.
 
@@ -108,23 +116,26 @@ order: -1
 - **Автоматически проверять обновления** — приложение будет само проверять, доступны ли новые версии.
 
 ## Звонки
-В разделе **Звонки** можно настроить поведение приложения при работе с вызовами.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/setup/cti_nastr_6.png"
-    data-original="/assets/panel/setup/cti_nastr_6.png"
-    srcset="/assets/panel/setup/cti_nastr_6_prev.png 1x, /assets/panel/setup/cti_nastr_6.png 2x"
-    alt="МИКО: настройки внешней панели, звонки"
-/> 
+src="/assets/panel/setup/cti_setup_calls_1.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_calls_1.png"
+srcset="/assets/panel/setup/cti_setup_calls_1.png 1x, /assets/panel/setup/cti_setup_calls_1.png 2x"
+alt="Панель телефонии МИКО: Настройки Звонки"
+/>
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/setup/cti_setup_calls_2.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_calls_2.png"
+srcset="/assets/panel/setup/cti_setup_calls_2.png 1x, /assets/panel/setup/cti_setup_calls_2.png 2x"
+alt="Панель телефонии МИКО: Настройки Звонки"
+/>
+
+В разделе **Звонки** можно настроить поведение приложения при работе с вызовами.
 
 #### Интеграции
 **Набор номера кликом по ссылке (callto: и tel:) в браузере** <br>
 После включения можно кликать по номеру телефона на сайте и вызов будет запускаться через Панель телефонии.
-
-<img class="miko-shadow"  
-    src="/assets/panel/setup/cti_callto.gif"
-    alt="МИКО: настройки внешней панели, звонок из браузера"
-/> 
 
 **Интеграция с гарнитурой Jabra** <br>
 Включает управление звонками через гарнитуру Jabra: отвечать на входящие вызовы, завершать разговор и отключать микрофон кнопкой.
@@ -139,25 +150,39 @@ order: -1
 Можно включить автоматический перевод входящего звонка на мобильный телефон, если вызов не был принят в приложении за указанное количество секунд. Время ожидания настраивается вручную.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/setup/cti_nastr_8_1.png"
-    data-original="/assets/panel/setup/cti_nastr_8_1.png"
-    srcset="/assets/panel/setup/cti_nastr_8_1_prev.png 1x, /assets/panel/setup/cti_nastr_8_1.png 2x" 
-    alt="МИКО: настройки внешней панели, переводить на мобильный телефон"
+src="/assets/panel/setup/cti_setup_mobile_1.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_mobile_1.png"
+srcset="/assets/panel/setup/cti_setup_mobile_1.png 1x, /assets/panel/setup/cti_setup_mobile_1.png 2x"
+alt="Панель телефонии МИКО: Настройки Переводить звонки на мобильный"
 />
 
-Для внутренних и мобильных номеров должны использоваться отдельные виды контактной информации.
+Для внутренних и мобильных номеров должны использоваться отдельные виды контактной информации в 1С.
 
-Для мобильного телефона выберите вид контактной информации Мобильный, если он уже существует. Если такого вида нет, добавьте его в настройках 1С, а затем укажите в настройках телефонии Звонки и сообщения - Настройки подсистемы - Параметры конфигурации.
+Для мобильного телефона выберите вид контактной информации Мобильный, если он уже существует. Если такого вида нет, добавьте его в настройках 1С, а затем укажите в настройках телефонии Звонки и сообщения → Настройки подсистемы → Параметры конфигурации.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/setup/cti_setup_mobile_2.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_mobile_2.png"
+srcset="/assets/panel/setup/cti_setup_mobile_2.png 1x, /assets/panel/setup/cti_setup_mobile_2.png 2x"
+alt="Панель телефонии МИКО: Настройки Переводить звонки на мобильный"
+/>
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/setup/cti_setup_mobile_3.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_mobile_3.png"
+srcset="/assets/panel/setup/cti_setup_mobile_3.png 1x, /assets/panel/setup/cti_setup_mobile_3.png 2x"
+alt="Панель телефонии МИКО: Настройки Переводить звонки на мобильный"
+/>
 
 **Переадресация только при статусе "Звонить на мобильный"** <br>
 Дополнительная настройка для переадресации. Если она включена, звонки будут переводиться на мобильный не всегда, а только когда у пользователя установлен соответствующий статус в Панели.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/setup/cti_nastr_9_1.png"
-    data-original="/assets/panel/setup/cti_nastr_9_1.png"
-    srcset="/assets/panel/setup/cti_nastr_9_1_prev.png 1x, /assets/panel/setup/cti_nastr_9_1.png 2x" 
-    alt="МИКО: настройки внешней панели, статус звонить на мобильный"
-/> 
+src="/assets/panel/setup/cti_setup_mobile_text_status.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_mobile_text_status.png"
+srcset="/assets/panel/setup/cti_setup_mobile_text_status.png 1x, /assets/panel/setup/cti_setup_mobile_text_status.png 2x"
+alt="Панель телефонии МИКО: Настройки Переадресация при статусе Звонить на мобильный"
+/>
 
 #### Перевод вызова после поднятия трубки
 Можно выбрать, как приложение будет переводить звонки после поднятия трубки:
@@ -169,14 +194,15 @@ order: -1
 Если пользователь работает через настольный телефон, можно включить возможность отвечать на звонок прямо из приложения. Функция зависит от модели телефона и может потребовать предварительной настройки устройства. Список поддерживаемых производителей указан в приложении.
 
 ## Чаты
-В разделе **Чаты** доступны параметры уведомлений для сообщений.
 
 <img class="miko-shadow img-zoomable"  
-    src="/assets/panel/setup/cti_nastr_7.png"
-    data-original="/assets/panel/setup/cti_nastr_7.png"
-    srcset="/assets/panel/setup/cti_nastr_7_prev.png 1x, /assets/panel/setup/cti_nastr_7.png 2x"
-    alt="МИКО: настройки внешней панели, чаты"
-/> 
+src="/assets/panel/setup/cti_setup_chats.png" loading="lazy"
+data-original="/assets/panel/setup/cti_setup_chats.png"
+srcset="/assets/panel/setup/cti_setup_chats.png 1x, /assets/panel/setup/cti_setup_chats.png 2x"
+alt="Панель телефонии МИКО: Настройки Чаты"
+/>
+
+В разделе **Чаты** доступны параметры уведомлений для сообщений.
 
 #### Уведомления
 **Показывать сообщения на рабочем столе** <br>

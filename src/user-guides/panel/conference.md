@@ -6,18 +6,20 @@ order: -10
 
 Конференц-вызов позволяет создать групповое совещание с несколькими сотрудниками. Конференции можно создавать только с внутренними сотрудниками. Внешних абонентов пригласить в конференцию нельзя.
 
-<img class="miko-shadow play-on-hover"  
-src="/assets/panel/conference/sozd_sovesh.gif"
-alt="МИКО: создание совещания"
-/>
-
-Пользователь может создать конференцию и пригласить в нее одного или нескольких участников. После создания конференции приглашенные пользователи получают уведомление с возможностью принять или отклонить участие.
+Пользователь может создать конференцию, нажав кнопку **Совещание** на вкладке Сотрудники, и пригласить в нее одного или нескольких участников. После создания конференции приглашенные пользователи получают уведомление с возможностью принять или отклонить участие.
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/panel/conference/cti_sovesh_3.png"
-data-original="/assets/panel/conference/cti_sovesh_3.png"
-srcset="/assets/panel/conference/cti_sovesh_3_prev.png 1x, /assets/panel/conference/cti_sovesh_3.png 2x"
-alt="МИКО: внешняя панель, конференция"
+src="/assets/panel/conference/cti_conference_creation_1.png" loading="lazy"
+data-original="/assets/panel/conference/cti_conference_creation_1.png"
+srcset="/assets/panel/conference/cti_conference_creation_1.png 1x, /assets/panel/conference/cti_conference_creation_1.png 2x"
+alt="Панель телефонии МИКО: Создание конференции"
+/>
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/conference/cti_conference_creation_2.png" loading="lazy"
+data-original="/assets/panel/conference/cti_conference_creation_2.png"
+srcset="/assets/panel/conference/cti_conference_creation_2.png 1x, /assets/panel/conference/cti_conference_creation_2.png 2x"
+alt="Панель телефонии МИКО: Уведомление участникам конференц-вызова"
 />
 
 Участников можно пригласить как при создании конференции, так и во время уже активного конференц-вызова. Новый участник получает приглашение и подключается к конференции после его принятия.
@@ -26,3 +28,10 @@ alt="МИКО: внешняя панель, конференция"
 - добавить участника;
 - отключить участника от конференции;
 - включить или отключить микрофон участника или свой микрофон.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/conference/cti_conference_connecting_colleagues.png" loading="lazy"
+data-original="/assets/panel/conference/cti_conference_connecting_colleagues.png"
+srcset="/assets/panel/conference/cti_conference_connecting_colleagues.png 1x, /assets/panel/conference/cti_conference_connecting_colleagues.png 2x"
+alt="Панель телефонии МИКО: Участники активного конференц-вызова"
+/>

@@ -17,23 +17,63 @@ order: -12
 
 Перед началом работы необходимо авторизоваться в чатах. После авторизации пользователь получает доступ к перепискам с коллегами и может отправлять сообщения, файлы и изображения.
 
-<img class="miko-shadow play-on-hover"  
-src="/assets/whatsapp/wp_avt_cht.gif"
-alt="МИКО: whatsapp прием входящего сообщения"
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues.png" loading="lazy"
+data-original="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues.png"
+srcset="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues.png 1x, /assets/panel/chat-with-colleagues/cti_chat-with-colleagues.png 2x"
+alt="Панель телефонии МИКО: Чаты с коллегами"
 />
 
 В чатах доступны основные действия с сообщениями:
 - отправка текста, файлов и изображений,
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_file_sending.png" loading="lazy"
+data-original="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_file_sending.png"
+srcset="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_file_sending.png 1x, /assets/panel/chat-with-colleagues/cti_chat-with-colleagues_file_sending.png 2x"
+alt="Панель телефонии МИКО: Отправка файлов в чат"
+/>
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_sending_image_1.png" loading="lazy"
+data-original="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_sending_image_1.png"
+srcset="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_sending_image_1.png 1x, /assets/panel/chat-with-colleagues/cti_chat-with-colleagues_sending_image_1.png 2x"
+alt="Панель телефонии МИКО: Отправка изображений в чат"
+/>
+
 - использование эмодзи,
 - цитирование сообщений,
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_options.png" loading="lazy"
+data-original="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_options.png"
+srcset="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_options.png 1x, /assets/panel/chat-with-colleagues/cti_chat-with-colleagues_options.png 2x"
+alt="Панель телефонии МИКО: Добавление коллег к чату"
+/>
+
 - редактирование сообщений,
 - удаление отправленных сообщений.
 
-Также можно упоминать сотрудников, чтобы привлечь их внимание к конкретному сообщению или вопросу.
+## Групповые чаты
+
+Для обсуждения вопросов с несколькими сотрудниками можно создать групповой чат.
+
+Чтобы создать групповой чат, на вкладке Сотрудники нажмите кнопку **Новый чат**. Укажите название чата, выберите сотрудников, которых хотите добавить в обсуждение, и нажмите Создать.
+
+После создания чат станет доступен всем выбранным участникам. В нем можно обмениваться сообщениями, файлами и изображениями.
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/panel/chat/cti_chat_1.png"
-data-original="/assets/panel/chat/cti_chat_1.png"
-srcset="/assets/panel/chat/cti_chat_1_prev.png 1x, /assets/panel/chat/cti_chat_1.png 2x"
-alt="МИКО: внешняя панель, писать в чат"
-/> 
+src="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_group_chat.png" loading="lazy"
+data-original="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_group_chat.png"
+srcset="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_group_chat.png 1x, /assets/panel/chat-with-colleagues/cti_chat-with-colleagues_group_chat.png 2x"
+alt="Панель телефонии МИКО: Групповой чат коллег"
+/>
+
+В групповых чатах также можно упоминать сотрудников, чтобы обратить их внимание на конкретное сообщение или вопрос.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_mention_employee.png" loading="lazy"
+data-original="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_mention_employee.png"
+srcset="/assets/panel/chat-with-colleagues/cti_chat-with-colleagues_mention_employee.png 1x, /assets/panel/chat-with-colleagues/cti_chat-with-colleagues_mention_employee.png 2x"
+alt="Панель телефонии МИКО: Упоминание коллеги в групповом чате"
+/>

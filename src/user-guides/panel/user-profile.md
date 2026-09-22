@@ -7,47 +7,50 @@ order: -2
 
 Профиль помогает другим сотрудникам быстро понять, доступен ли коллега для звонков и общения, а также увидеть дополнительный текстовый статус.
 
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/user-profile/cti_user-profile.png" loading="lazy"
+data-original="/assets/panel/user-profile/cti_user-profile.png"
+srcset="/assets/panel/user-profile/cti_user-profile.png 1x, /assets/panel/user-profile/cti_user-profile.png 2x"
+alt="Панель телефонии МИКО: Профиль пользователя"
+/>
+
 ## Статусы
 В Панели телефонии есть два типа статусов: **статусы присутствия пользователей** и **статусы подключения телефона сотрудника**.
 
 **Онлайн/Офлайн** — это статусы, отражающие доступность телефона сотрудника.<br>
 Статус Офлайн доступен для ручного выбора, но только при работе Панели телефонии в режиме софтфона. При выборе статуса Офлайн сотрудник становится недоступен для звонков.
 
+**Занят** и **Не беспокоить** — это статусы присутствия сотрудника в Панели телефонии.
+
 <img class="miko-shadow img-zoomable"  
-src="/assets/panel/statusi/statusi_4.png"
-data-original="/assets/panel/statusi/statusi_4.png"
-srcset="/assets/panel/statusi/statusi_4.png 1x, /assets/panel/statusi/statusi_4.png 2x"
-alt="МИКО: Статусы подключения телефона сотрудника во внешней панели"
+src="/assets/panel/user-profile/cti_user-profile_status.png" loading="lazy"
+data-original="/assets/panel/user-profile/cti_user-profile_status.png"
+srcset="/assets/panel/user-profile/cti_user-profile_status.png 1x, /assets/panel/user-profile/cti_user-profile_status.png 2x"
+alt="Панель телефонии МИКО: Статусы"
 />
 
-**Занят** и **Не беспокоить** — это статусы присутствия сотрудника в Панели телефонии.<br>
 Кроме стандартных статусов присутствия можно установить **текстовый статус**, который будет отображаться рядом с основным статусом и виден другим сотрудникам.
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/panel/statusi/statusi_3.png"
-data-original="/assets/panel/statusi/statusi_3.png"
-srcset="/assets/panel/statusi/statusi_3.png 1x, /assets/panel/statusi/statusi_3.png 2x"
-alt="МИКО: Статусы присутствия пользователей во внешней панели с текстом"
+src="/assets/panel/user-profile/cti_user-profile_text_status.png" loading="lazy"
+data-original="/assets/panel/user-profile/cti_user-profile_text_status.png"
+srcset="/assets/panel/user-profile/cti_user-profile_text_status.png 1x, /assets/panel/user-profile/cti_user-profile_text_status.png 2x"
+alt="Панель телефонии МИКО: Текстовые статусы"
 />
 
 Таким образом, сотрудник в Панели телефонии может быть либо офлайн, либо онлайн с выбранным статусом присутствия.<br>
 Все статусы, кроме Офлайн, являются информативными и не влияют на доступность телефона.
 
 <img class="miko-shadow img-zoomable"  
-src="/assets/panel/statusi/statusi_5.png"
-data-original="/assets/panel/statusi/statusi_5.png"
-srcset="/assets/panel/statusi/statusi_5.png 1x, /assets/panel/statusi/statusi_5.png 2x"
-alt="МИКО: Отображение статуса сотрудника в списке Сотрудников в Панели телефонии для 1С"
+src="/assets/panel/user-profile/cti_user-profile_colleague_status.png" loading="lazy"
+data-original="/assets/panel/user-profile/cti_user-profile_colleague_status.png"
+srcset="/assets/panel/user-profile/cti_user-profile_colleague_status.png 1x, /assets/panel/user-profile/cti_user-profile_colleague_status.png 2x"
+alt="Панель телефонии МИКО: Отображение статуса"
 />
 
 ### Установка статуса
 
 Чтобы изменить свой статус в Панели телефонии для 1С, нажмите на иконку профиля и перейдите в меню статусов.
-
-<img class="miko-shadow play-on-hover"  
-src="/assets/panel/statusi/stat_0.gif"
-alt="МИКО: Статусы внешней панели"
-/>
 
 Если сотрудник ни разу не запускал Панель телефонии, по умолчанию у него будет отображаться статус **Онлайн**.<br>
 Если Панель телефонии запускалась, отображается либо текущий установленный статус сотрудника, либо **"Был на месте..."**, если сотрудник не проявлял активности.<br>

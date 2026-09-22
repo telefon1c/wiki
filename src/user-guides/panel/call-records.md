@@ -6,14 +6,14 @@ order: -9
 
 Во вкладке **Последние вызовы** отображаются входящие, исходящие и пропущенные звонки. Для каждого вызова показываются номер абонента, тип звонка, дата и время, а также длительность разговора.
 
-<img class="miko-shadow img-zoomable"  
-src="/assets/panel/call-records/cti_zapisi_0.png"
-data-original="/assets/panel/call-records/cti_zapisi_0.png"
-srcset="/assets/panel/call-records/cti_zapisi_0_prev.png 1x, /assets/panel/call-records/cti_zapisi_0.png 2x"
-alt="МИКО: внешняя панель, последние вызовы"
-/>
-
 Повторные пропущенные вызовы от одного номера группируются, чтобы список оставался компактным и удобным для просмотра.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/call-records/cti_call-records_call_history.png" loading="lazy"
+data-original="/assets/panel/call-records/cti_call-records_call_history.png"
+srcset="/assets/panel/call-records/cti_call-records_call_history.png 1x, /assets/panel/call-records/cti_call-records_call_history.png 2x"
+alt="Панель телефонии МИКО: История звонков"
+/>
 
 Из истории вызовов можно сразу выполнить основные действия:
 - перезвонить клиенту,
@@ -25,3 +25,10 @@ alt="МИКО: внешняя панель, последние вызовы"
 Если есть запись разговора, она загружается из АТС и становится доступна прямо в истории вызовов.
 
 Прослушивание выполняется во встроенном плеере: запись можно запустить или поставить на паузу без перехода на отдельную страницу.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/call-records/cti_call-records_player.png" loading="lazy"
+data-original="/assets/panel/call-records/cti_call-records_player.png"
+srcset="/assets/panel/call-records/cti_call-records_player.png 1x, /assets/panel/call-records/cti_call-records_player.png 2x"
+alt="Панель телефонии МИКО: Встроенный плеер для прослушивания записей разговоров"
+/>

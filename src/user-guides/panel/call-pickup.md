@@ -3,11 +3,26 @@ order: -7
 ---
 
 # Перехват вызова
-Возможность перехвата вызова настраивается для пользователей в дополнительных разрешениях в 1С.
+
+Возможность перехвата вызова настраивается для пользователей в разделе Звонки и сообщения → Настройки → Дополнительные разрешения в 1С.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/call-pickup/cti_call-pickup_1c_settings.png" loading="lazy"
+data-original="/assets/panel/call-pickup/cti_call-pickup_1c_settings.png"
+srcset="/assets/panel/call-pickup/cti_call-pickup_1c_settings.png 1x, /assets/panel/call-pickup/cti_call-pickup_1c_settings.png 2x"
+alt="Панель телефонии МИКО: Настройка возможности перехвата вызова в 1С"
+/>
 
 Функция перехвата вызова позволяет ответственному сотруднику увидеть входящий вызов, доступный для перехвата, и принять его вручную прямо из панели. Ответственный - сотрудник, который в 1С назначен ответственным для данного клиента.
 
 Это позволяет быстрее соединить клиента с сотрудником, который с ним работает, без ожидания в очереди или дополнительного перевода через секретаря.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/call-pickup/cti_call-pickup.png" loading="lazy"
+data-original="/assets/panel/call-pickup/cti_call-pickup.png"
+srcset="/assets/panel/call-pickup/cti_call-pickup.png 1x, /assets/panel/call-pickup/cti_call-pickup.png 2x"
+alt="Панель телефонии МИКО: Перехват вызова"
+/>
 
 Как работает:
 1. При поступлении внешнего входящего вызова он обрабатывается по стандартному правилу маршрутизации, настроенному на АТС. Одновременно вызов отображается в панели у ответственного сотрудника, если для клиента такой ответственный назначен и звонок доступен для перехвата.

@@ -24,7 +24,46 @@ order: -13
 
 Дополнительные действия с сообщениями:
 - Отправляйте и получайте файлы прямо в чате: счета, изображения, документы и другие вложения.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/chat/cti_chat_sending_attachments.png" loading="lazy"
+data-original="/assets/panel/chat/cti_chat_sending_attachments.png"
+srcset="/assets/panel/chat/cti_chat_sending_attachments.png 1x, /assets/panel/chat/cti_chat_sending_attachments.png 2x"
+alt="Панель телефонии МИКО: Отправка и получение файлов в чате"
+/>
+
 - Передавайте чат другому сотруднику без потери истории переписки и контекста обращения.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/chat/cti_chat_transfer_chat.png" loading="lazy"
+data-original="/assets/panel/chat/cti_chat_transfer_chat.png"
+srcset="/assets/panel/chat/cti_chat_transfer_chat.png 1x, /assets/panel/chat/cti_chat_transfer_chat.png 2x"
+alt="Панель телефонии МИКО: Передача чата сотруднику"
+/>
+
 - Подключайте коллег к чату для совместного решения вопроса клиента.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/chat/cti_chat_adding_colleagues.png" loading="lazy"
+data-original="/assets/panel/chat/cti_chat_adding_colleagues.png"
+srcset="/assets/panel/chat/cti_chat_adding_colleagues.png 1x, /assets/panel/chat/cti_chat_adding_colleagues.png 2x"
+alt="Панель телефонии МИКО: Добавление коллег к чату"
+/>
+
 - Оставляйте внутренние комментарии, заметки себе или сообщения коллегам, которые не видны клиенту.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/chat/cti_chat_notes.png" loading="lazy"
+data-original="/assets/panel/chat/cti_chat_notes.png"
+srcset="/assets/panel/chat/cti_chat_notes.png 1x, /assets/panel/chat/cti_chat_notes.png 2x"
+alt="Панель телефонии МИКО: Внутренние заметки в чате"
+/>
+
 - Создавайте задачи на основании сообщений, чтобы не упустить важные запросы клиента.
+
+<img class="miko-shadow img-zoomable"  
+src="/assets/panel/chat/cti_chat_tasks.png" loading="lazy"
+data-original="/assets/panel/chat/cti_chat_tasks.png"
+srcset="/assets/panel/chat/cti_chat_tasks.png 1x, /assets/panel/chat/cti_chat_tasks.png 2x"
+alt="Панель телефонии МИКО: Задача на основнии сообщения из чата"
+/>
